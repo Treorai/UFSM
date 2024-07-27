@@ -1,0 +1,15 @@
+{
+    "g4" : {
+        "kos" : "#5895a3",
+        "falls" : "#f0b1c9",
+        "suicides" : "#f2dfbb",
+        "tks" : "#f2d680"
+    },
+    "g5" : {
+        "main" : "#bf808c",
+        "off" : "#d99b84",
+        "unarmed" : "#f2d680",
+        "gadget" : "#f2dfbb",
+        "item" : "#9beaf2"
+    }
+}

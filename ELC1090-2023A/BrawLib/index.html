@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BrawLib</title>
+    <link rel="icon" type="image/png" href="assets/favicon.ico">
+
+    <!-- Import the Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script type="module" src="js/app.js"></script>
+    <style type="text/css">
+        .chartBox {
+            width: 206px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body background="assets/bg.jpg" style="background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+    <div class="mx-auto bg-light mt-5" style="width: 1000px; border-radius: 1rem;">
+        <div class="w-100">
+            <div class="w-100" style="border-radius: 0.5rem 0.5rem 0 0;">
+                <img src="assets/headerImg.png" alt="Banner" style="border-radius: 0.5rem 0.5rem 0 0;">
+            </div>
+            <form id="brawlForm" class="form-inline mx-auto w-100 p-2 pr-5 pl-5">
+                <div style="width: 290px; height: 148px;">
+                        <!-- Profile Info -->
+                    <div id="profilehead" class="input-group mb-3">
+                        <div class="menu" style="display: inline-block; margin-left: 4px;">
+                            <p>Username: </p>
+                            <p>Level: </p>
+                            <p>Total Games: </p>
+                            <p>Winrate: </p>
+                        </div>
+                        <div class="menuinfo" style="display: inline-block; text-align: right; margin-right: 4px; margin-left: 20%; align-content: auto">
+                            <p id="miuser"></p>
+                            <p id="milvl"></p>
+                            <p id="migames"></p>
+                            <p id="miwins"></p>
+                        </div>
+                    </div>
+                </div>
+                <div style="width: 324px;">
+                    <label for="usernameInput"></label>
+                    <div class="input-group mb-3">
+                            <!-- User ID Input -->
+                        <input id="usernameInput" class="form-control mb-3" type="text" name="username" placeholder="Your brawlhalla user ID" title="e.g: 37218590">
+    
+                        <div class="input-group-append">
+                            <button class="btn btn-dark mb-3 text-light" id="searchRepoButton" title="If you type your steam-id, this button will try to find your brawlhalla-user-id from the imput">
+                                ⥂ Steam ID
+                            </button>
+                        </div>
+                    </div>
+                    <!-- was here -->
+                        <!-- Search Button -->
+                    <input type="submit" id="inputSubmit" class="btn btn-dark mb-3 w-100" value="Search Brawlhalla User ID">
+                    <div id="sortfield">
+                        <!-- Sorting options -->
+                        <div style="display: inline-block">
+                            <input type="submit" id="sbName" class="btn btn-dark mb-3 w-100" value="⥮ A-Z">
+                        </div>
+                        <div style="display: inline-block">
+                            <input type="submit" id="sbLvl" class="btn btn-dark mb-3 w-100" value="⥮ Level">
+                        </div>
+                        <div style="display: inline-block">
+                            <input type="submit" id="sbKDA" class="btn btn-dark mb-3 w-100" value="⥮ KDA">
+                        </div>
+                        <div style="display: inline-block">
+                            <input type="submit" id="sbWR" class="btn btn-dark mb-3 w-100" value="⥮ Winrate">
+                        </div>
+                    </div>
+                </div>
+                <div style="width: 290px; height: 148px;">
+                    <!-- rigth head-->
+                </div>
+            </form>
+            <ul id="repoCommits" class="list-group mx-auto mb-5 w-100"></ul>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.js" referrerpolicy="no-referrer"></script>
+            
+        </div>
+    </div>
+</body>
+
+</html>

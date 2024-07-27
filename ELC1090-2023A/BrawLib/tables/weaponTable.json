@@ -1,0 +1,234 @@
+{
+    "ada" : {
+        "main" : "Blasters",
+        "off" : "Spear"
+    },
+    "arcadia" : {
+        "main" : "Spear",
+        "off" : "Greatsword"
+    },
+    "artemis" : {
+        "main" : "Lance",
+        "off" : "Scythe"
+    },
+    "asuri" : {
+        "main" : "Katars",
+        "off" : "Sword"
+    },
+    "azoth" : {
+        "main" : "Bow",
+        "off" : "Axe"
+    },
+    "barraza" : {
+        "main" : "Axe",
+        "off" : "Bow"
+    },
+    "bodvar" : {
+        "main" : "Hammer",
+        "off" : "Sword"
+    },
+    "brynn" : {
+        "main" : "Axe",
+        "off" : "Spear"
+    },
+    "caspian" : {
+        "main" : "Gauntlets",
+        "off" : "Katars"
+    },
+    "cassidy" : {
+        "main" : "Blasters",
+        "off" : "Hammer"
+    },
+    "cross" : {
+        "main" : "Blasters",
+        "off" : "Gauntlets"
+    },
+    "diana" : {
+        "main" : "Bow",
+        "off" : "Blasters"
+    },
+    "dusk" : {
+        "main" : "Spear",
+        "off" : "Orb"
+    },
+    "ember" : {
+        "main" : "Bow",
+        "off" : "Katars"
+    },
+    "ezio" : {
+        "main" : "Sword",
+        "off" : "Orb"
+    },
+    "fait" : {
+        "main" : "Scythe",
+        "off" : "Orb"
+    },
+    "gnash" : {
+        "main" : "Hammer",
+        "off" : "Spear"
+    },
+    "hattori" : {
+        "main" : "Sword",
+        "off" : "Spear"
+    },
+    "isaiah" : {
+        "main" : "Cannon",
+        "off" : "Blasters"
+    },
+    "jaeyun" : {
+        "main" : "Sword",
+        "off" : "Greatsword"
+    },
+    "jhala" : {
+        "main" : "Axe",
+        "off" : "Sword"
+    },
+    "jiro" : {
+        "main" : "Sword",
+        "off" : "Scythe"
+    },
+    "kaya" : {
+        "main" : "Spear",
+        "off" : "Bow"
+    },
+    "koji" : {
+        "main" : "Bow",
+        "off" : "Spear"
+    },
+    "kor" : {
+        "main" : "Gauntlets",
+        "off" : "Hammer"
+    },
+    "lin fei" : {
+        "main" : "Katars",
+        "off" : "Cannon"
+    },
+    "lucien" : {
+        "main" : "Katars",
+        "off" : "Blasters"
+    },
+    "magyar" : {
+        "main" : "Hammer",
+        "off" : "Greatsword"
+    },
+    "mako" : {
+        "main" : "Katars",
+        "off" : "Greatsword"
+    },
+    "mirage" : {
+        "main" : "Scythe",
+        "off" : "Spear"
+    },
+    "mordex" : {
+        "main" : "Scythe",
+        "off" : "Gauntlets"
+    },
+    "munin" : {
+        "main" : "Bow",
+        "off" : "Scythe"
+    },
+    "queen nai" : {
+        "main" : "Spear",
+        "off" : "Katars"
+    },
+    "nix" : {
+        "main" : "Scythe",
+        "off" : "Blasters"
+    },
+    "onyx" : {
+        "main" : "Gauntlets",
+        "off" : "Cannon"
+    },
+    "orion" : {
+        "main" : "Lance",
+        "off" : "Spear"
+    },
+    "petra" : {
+        "main" : "Gauntlets",
+        "off" : "Orb"
+    },
+    "ragnir" : {
+        "main" : "Katars",
+        "off" : "Axe"
+    },
+    "rayman" : {
+        "main" : "Gauntlets",
+        "off" : "Axe"
+    },
+    "reno" : {
+        "main" : "Blasters",
+        "off" : "Orb"
+    },
+    "sir roland" : {
+        "main" : "Lance",
+        "off" : "Sword"
+    },
+    "scarlet" : {
+        "main" : "Hammer",
+        "off" : "Lance"
+    },
+    "sentinel" : {
+        "main" : "Hammer",
+        "off" : "Katars"
+    },
+    "sidra" : {
+        "main" : "Cannon",
+        "off" : "Sword"
+    },
+    "teros" : {
+        "main" : "Axe",
+        "off" : "Hammer"
+    },
+    "tezca" : {
+        "main" : "Battle Boots",
+        "off" : "Gauntlets"
+    },
+    "thatch" : {
+        "main" : "Sword",
+        "off" : "Blasters"
+    },
+    "thea" : {
+        "main" : "Battle Boots",
+        "off" : "Lance"
+    },
+    "thor" : {
+        "main" : "Hammer",
+        "off" : "Orb"
+    },
+    "ulgrim" : {
+        "main" : "Axe",
+        "off" : "Lance"
+    },
+    "val" : {
+        "main" : "Gauntlets",
+        "off" : "Sword"
+    },
+    "vector" : {
+        "main" : "Lance",
+        "off" : "Bow"
+    },
+    "volkov" : {
+        "main" : "Axe",
+        "off" : "Scythe"
+    },
+    "lord vraxx" : {
+        "main" : "Lance",
+        "off" : "Blasters"
+    },
+    "wu shang" : {
+        "main" : "Gauntlets",
+        "off" : "Spear"
+    },
+    "xull" : {
+        "main" : "Cannon",
+        "off" : "Axe"
+    },
+    "yumiko" : {
+        "main" : "Bow",
+        "off" : "Hammer"
+    },
+    "zariel" : {
+        "main" : "Gauntlets",
+        "off" : "Bow"
+    }
+}
