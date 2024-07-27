@@ -1,0 +1,149 @@
+{
+  "groups": [
+    {
+      "name": "group1",
+      "items": [
+        "./src/thumbnails/Li_Ling_avatar.webp",
+        "./src/thumbnails/Tang_Xuan_avatar.webp"
+      ]
+    },
+    {
+      "name": "group2",
+      "items": [
+        "./src/thumbnails/Mona_avatar.webp"
+      ]
+    },
+    {
+      "name": "group3",
+      "items": [
+        "./src/thumbnails/Brynn_avatar.webp"
+      ]
+    },
+    {
+      "name": "group4",
+      "items": [
+        "./src/thumbnails/Lewis_avatar.webp",
+        "./src/thumbnails/Ollie_avatar.webp",
+        "./src/thumbnails/Zora_avatar.webp",
+        "./src/thumbnails/Yamato_avatar.webp",
+        "./src/thumbnails/Xuan_Pin_avatar.webp",
+        "./src/thumbnails/Jiang_Jiuli_avatar.webp",
+        "./src/thumbnails/Leora_avatar.webp",
+        "./src/thumbnails/Jin_Yuyao_avatar.webp",
+        "./src/thumbnails/Mateo_avatar.webp",
+        "./src/thumbnails/Hyde_avatar.webp",
+        "./src/thumbnails/Ife_avatar.webp",
+        "./src/thumbnails/Clara_avatar.webp",
+        "./src/thumbnails/Unas_avatar.webp",
+        "./src/thumbnails/Yun_Chuan_avatar.webp",
+        "./src/thumbnails/Tiye_avatar.webp",
+        "./src/thumbnails/Tevor_avatar.webp",
+        "./src/thumbnails/Intisar_avatar.webp",
+        "./src/thumbnails/Feng_Nuxi_avatar.webp",
+        "./src/thumbnails/Gaius_avatar.webp",
+        "./src/thumbnails/Cecilia_avatar.webp",
+        "./src/thumbnails/Cang_Ji_avatar.webp",
+        "./src/thumbnails/Brewster_avatar.webp",
+        "./src/thumbnails/Biondina_avatar.webp",
+        "./src/thumbnails/Fatum_Sisters_avatar.webp",
+        "./src/thumbnails/Triki_avatar.webp",
+        "./src/thumbnails/Sienna_avatar.webp",
+        "./src/thumbnails/Sally_avatar.webp",
+        "./src/thumbnails/Donar_avatar_new.webp",
+        "./src/thumbnails/Everett_avatar.webp",
+        "./src/thumbnails/Elaine_avatar.webp",
+        "./src/thumbnails/Elliot_avatar.webp",
+        "./src/thumbnails/Embla_avatar.webp",
+        "./src/thumbnails/Ethan_avatar.webp",
+        "./src/thumbnails/Ashley_avatar.webp",
+        "./src/thumbnails/Yuuhime_avatar.webp",
+        "./src/thumbnails/Ahmed_avatar.webp",
+        "./src/thumbnails/Abigail_avatar.webp",
+        "./src/thumbnails/Raven_avatar.webp",
+        "./src/thumbnails/Narmer_avatar.webp",
+        "./src/thumbnails/Ophelia_avatar.webp",
+        "./src/thumbnails/Camille_avatar.webp",
+        "./src/thumbnails/Lucas_avatar.webp",
+        "./src/thumbnails/Gabrielle_avatar.webp"
+      ]
+    },
+    {
+      "name": "group5",
+      "items": [
+        "./src/thumbnails/Parmi_avatar.webp",
+        "./src/thumbnails/Pritzker_avatar.webp",
+        "./src/thumbnails/Ren_Si_avatar.webp",
+        "./src/thumbnails/Xiao_Yin_avatar.webp",
+        "./src/thumbnails/Kara_avatar.webp",
+        "./src/thumbnails/Kaylee_avatar.webp",
+        "./src/thumbnails/Laura_avatar.webp",
+        "./src/thumbnails/Long_Mian_avatar.webp",
+        "./src/thumbnails/Luo_Yan_avatar_new.webp",
+        "./src/thumbnails/Lu_Yi_avatar.webp",
+        "./src/thumbnails/Lynn_avatar.webp",
+        "./src/thumbnails/Chloe_avatar.webp",
+        "./src/thumbnails/Jacob_avatar.webp",
+        "./src/thumbnails/Heng_Yue_avatar.webp",
+        "./src/thumbnails/Celine_avatar.webp",
+        "./src/thumbnails/Catherine_avatar.webp",
+        "./src/thumbnails/Bonnie_avatar.webp",
+        "./src/thumbnails/Uday_avatar.webp",
+        "./src/thumbnails/Stewart_avatar.webp",
+        "./src/thumbnails/Sander_avatar.webp",
+        "./src/thumbnails/Meredith_avatar.webp",
+        "./src/thumbnails/Eira_avatar.webp",
+        "./src/thumbnails/Djoser_avatar.webp",
+        "./src/thumbnails/Dhalia_avatar.webp",
+        "./src/thumbnails/Falken_avatar.webp",
+        "./src/thumbnails/Fabrice_avatar.webp",
+        "./src/thumbnails/Taylor_avatar.webp",
+        "./src/thumbnails/Zhong_Nan_avatar.webp",
+        "./src/thumbnails/Death_Guard_Hei_avatar.webp",
+        "./src/thumbnails/Death_Guard_Bai_avatar.webp",
+        "./src/thumbnails/Daylon_avatar.webp",
+        "./src/thumbnails/Aurelius_avatar.webp",
+        "./src/thumbnails/Asenath_avatar.webp",
+        "./src/thumbnails/Alexa_avatar.webp",
+        "./src/thumbnails/Daniel_avatar.webp",
+        "./src/thumbnails/Alice_avatar.webp",
+        "./src/thumbnails/Ain_avatar.webp",
+        "./src/thumbnails/Anesidora_avatar.webp",
+        "./src/thumbnails/Arcana_avatar.webp",
+        "./src/thumbnails/Odette_avatar.webp",
+        "./src/thumbnails/Nick_avatar.webp",
+        "./src/thumbnails/Lin_Xiao_avatar.webp",
+        "./src/thumbnails/Nicole_avatar.webp",
+        "./src/thumbnails/Li_Guang_avatar.webp",
+        "./src/thumbnails/Jiang_Man_avatar.webp",
+        "./src/thumbnails/Jin-Hee_avatar.webp",
+        "./src/thumbnails/Koharu_avatar.webp"
+      ]
+    },
+    {
+      "name": "group6",
+      "items": [
+        "./src/thumbnails/Li_Ao_avatar.webp",
+        "./src/thumbnails/Jeanne_avatar.webp",
+        "./src/thumbnails/Hall_avatar.webp",
+        "./src/thumbnails/Freddy_avatar.webp",
+        "./src/thumbnails/Chalmers_avatar.webp",
+        "./src/thumbnails/Berenice_avatar.webp",
+        "./src/thumbnails/Unky_Chai_avatar.webp",
+        "./src/thumbnails/Melanie_avatar.webp",
+        "./src/thumbnails/Tang_Yun_avatar.webp",
+        "./src/thumbnails/David_avatar.webp",
+        "./src/thumbnails/Bardon_avatar.webp",
+        "./src/thumbnails/Bai_Liuli_avatar.webp",
+        "./src/thumbnails/Zelmer_avatar.webp",
+        "./src/thumbnails/Lauren_avatar.webp",
+        "./src/thumbnails/Leon_avatar.webp",
+        "./src/thumbnails/Layla_avatar.webp",
+        "./src/thumbnails/Chang_Pu_avatar.webp",
+        "./src/thumbnails/Ye_Suhua_avatar.webp",
+        "./src/thumbnails/Drew_avatar.webp",
+        "./src/thumbnails/Helena_avatar.webp",
+        "./src/thumbnails/Q_avatar.webp"
+      ]
+    }
+  ]
+}
