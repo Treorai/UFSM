@@ -45,6 +45,26 @@ void *processarComando(void *arg){
                 writer =0;
             }
         }
+        else if (strcasecmp(buffer_msg_cliente, "temperatura") == 0 || strcasecmp(buffer_msg_cliente, "tempo" ) == 0)
+        {
+            processandoComando=1;
+            temperaturaAtual();
+            if (write(nodo[id_cliente].server_socket, mensagemResposta, MSG_DO_SERVIDOR) == -1 )
+            {
+                printf("Erro ao retornar mensagem do temperatura atual\n");
+            }
+        }
+        //Umidade
+        else if (strcasecmp(buffer_msg_cliente, "umidade") == 0)
+        {
+            processandoComando=1;
+            umidadeAtual();
+            if (write(nodo[id_cliente].server_socket, mensagemResposta, MSG_DO_SERVIDOR) == -1 || writer==-1)
+            {
+                printf("Erro ao retornar mensagem da umidade atual\n");
+                writer =0;
+            }
+        }
         else if (strcasecmp(buffer_msg_cliente, "coordenadas") == 0){
             processandoComando=1;
             coordenadasGPS();
@@ -140,16 +160,22 @@ void *cliente(void *arg){
 
 int main(int argc, char *argv[])
 {
+    pthread_t temperatura;
+    pthread_t umidade;
+
     sigset_t alarm_sig; //variável é usada para armazenar um conjunto de sinais.
     int i;
     sigemptyset (&alarm_sig); //inicializa o conjunto de sinais alarm_sig, removendo todos os sinais do conjunto.
-    for (i = SIGRTMIN; i <= SIGRTMAX; i++)
-    {
-        sigaddset (&alarm_sig, i);//adiciona cada sinal ao conjunto alarm_sig
+    for (i = SIGRTMIN; i <= SIGRTMAX; i++) {
+        sigaddset (&alarm_sig, i);//adiciona os sinais ao alarm_sig
     }
     sigprocmask (SIG_BLOCK, &alarm_sig, NULL);
-    //bloqueia todos os sinais contidos no conjunto alarm_sig.
+    //bloqueia todos os sinais contidos no alarm_sig.
     //sinais adicionados ao conjunto alarm_sig não serão entregues ao processo enquanto estiverem bloqueados.
+
+    //threads periodicas
+    pthread_create (&temperatura, NULL, temperaturaPeriodica, NULL) ;
+    pthread_create (&umidade, NULL, umidadePeriodica, NULL) ;
 
     pthread_t t_gps; //thread que coleta info do GPS
     int codRetGps;
