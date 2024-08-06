@@ -16,8 +16,51 @@ struct nodo{
 struct nodo nodo[1]; // List<struct nodo> size 1,
 pthread_mutex_t globalMutex = PTHREAD_MUTEX_INITIALIZER;
 pthread_cond_t condVar = PTHREAD_COND_INITIALIZER;
+int tempDesligar=0, desligado=0, tempFlag =0;
 
 pthread_mutex_t respostaMutex = PTHREAD_MUTEX_INITIALIZER; // Mutex para proteger o acesso à mensagem de resposta
+
+void estadoAquecedor()
+{
+    if(writer!=-1)
+    {
+        pthread_mutex_lock(&globalMutex);
+
+        char tempResposta[256]; // Variável temporária para armazenar a mensagem de resposta
+
+        if ((temperatura <= tempDesligar && tempDesligar!=0) || desligado==1 )
+        {
+            strcpy(tempResposta, "\nEstado aquecedor: desligado!\n");
+
+        }
+        else
+        {
+            strcpy(tempResposta, "\nEstado aquecedor: aberta! \n");
+
+            if (tempDesligar == 0)
+            {
+                strcat(tempResposta, "\nDeseja determinar uma temperatura para DESLIGAR o aquecedor? Digite -- desligar aquecedor em <temperatura desejada>--\n\n");
+            }
+        }
+
+        pthread_mutex_lock(&respostaMutex); // Bloqueia o acesso de outras threads à variável mensagemResposta
+        if(tempFlag==1 || desligado==1 || desligado==0)
+        {
+            tempFlag=0;
+            strcat(mensagemResposta, tempResposta); // Concatena a mensagem temporária à mensagem de resposta global
+        }
+
+        else
+        {
+            snprintf(mensagemResposta,sizeof(mensagemResposta),"%s",tempResposta);
+        }
+
+        pthread_mutex_unlock(&respostaMutex); // Libera o acesso para outras threads
+
+        pthread_mutex_unlock(&globalMutex);
+        pthread_cond_signal(&condVar);
+    }
+}
 
 void horas(){
     pthread_mutex_lock(&globalMutex);
@@ -80,6 +123,7 @@ void *temperaturaPeriodica (void *arg){
 
 void temperaturaAtual(){
     srand( (unsigned)time(NULL) );
+    tempFlag=1;
     double myDouble = nan("-nan");
 
     pthread_mutex_lock(&globalMutex);
@@ -122,3 +166,76 @@ void umidadeAtual(){
 
 }
 
+void desligarAquecedorEm (int temp)
+{
+    tempDesligar=temp;
+    pthread_mutex_lock(&globalMutex);
+    if(tempDesligar==0)
+    {
+        snprintf(mensagemResposta,sizeof(mensagemResposta),"\nTemperatura não definida! Defina usando  -- desligar aquecedor em <temperatura desejada> --\n");
+    }
+    else
+    {
+        snprintf(mensagemResposta,sizeof(mensagemResposta),"\nTemperatura definida para desligar aquecedor em: %d °C!\n",tempDesligar);
+        desligado=1;
+    }
+    pthread_mutex_unlock(&globalMutex);
+    pthread_cond_signal(&condVar);
+}
+
+void desligarAquecedor()
+{
+    desligado = 1;
+    int contador=0;
+    pthread_mutex_lock(&globalMutex);
+
+    for(contador=0; contador<=10; contador++)
+    {
+
+        snprintf(mensagemResposta,sizeof(mensagemResposta)-1,"Desligando aquecedor...%d\n",contador);
+        write(nodo[id_cliente].server_socket, mensagemResposta, MSG_DO_SERVIDOR);
+        sleep(1);
+    }
+    pthread_cond_signal(&condVar);
+    pthread_mutex_unlock(&globalMutex);
+
+    estadoAquecedor();
+}
+
+
+void ligarAquecedor()
+{
+    desligado=0;
+    int contador=0;
+    pthread_mutex_lock(&globalMutex);
+    for(contador=0; contador<=10; contador++)
+    {
+
+        snprintf(mensagemResposta,sizeof(mensagemResposta)-1,"Ligando aquecedor...%d\n",contador);
+        write(nodo[id_cliente].server_socket, mensagemResposta, MSG_DO_SERVIDOR);
+        sleep(1);
+    }
+    pthread_mutex_unlock(&globalMutex);
+    pthread_cond_signal(&condVar);
+
+    estadoAquecedor();
+}
+
+void estadoAtualAquecedor()
+{
+    pthread_mutex_lock(&globalMutex);
+    if(desligado==1)
+    {
+        snprintf(mensagemResposta,sizeof(mensagemResposta),"Aquecedor desligado!\n");
+    }
+    else if(desligado==0)
+    {
+        snprintf(mensagemResposta,sizeof(mensagemResposta),"Aquecedor ligado!\n");
+    }
+    else
+    {
+        snprintf(mensagemResposta,sizeof(mensagemResposta),"Erro ao retornar mensagem!\n");
+    }
+    pthread_mutex_unlock(&globalMutex);
+    pthread_cond_signal(&condVar);
+}

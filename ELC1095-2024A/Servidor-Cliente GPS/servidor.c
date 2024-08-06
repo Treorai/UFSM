@@ -17,6 +17,7 @@ pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
 
 int processandoComando = 0;
 char buffer_msg_cliente[MSG_DO_CLIENTE];
+char* token; //essa merdinha era pra estar lá no *cliente mas o gcc tá de frescurinha
 
 void *processarComando(void *arg){
 	processandoComando = 1;
@@ -73,7 +74,70 @@ void *processarComando(void *arg){
                 writer =0;
             }
         }
-		
+        else if (token != NULL && strcasecmp(token, "desligar") == 0)
+        {
+            token = strtok(NULL, " "); // Obtém o próximo token
+
+            if (token != NULL && strcasecmp(token, "aquecedor") == 0)
+            {
+                token = strtok(NULL, " "); // Obtém o próximo token
+
+                if (token != NULL && strcasecmp(token, "em") == 0)
+                {
+                    token = strtok(NULL, " "); // Obtém o próximo token
+
+                    if (token != NULL)
+                    {
+                        processandoComando=1;
+                        temperatura_requerida = atoi(token);
+                        desligarAquecedorEm(temperatura_requerida);
+                    }
+                    else
+                    {
+                        fprintf(stderr, "Erro: TOKEN de digítido para temperatura não encontrado!\n");
+                        snprintf(mensagemResposta, sizeof(mensagemResposta), "\nErro ao retornar resposta solicitada. Digite -- desligar aquecedor em <temperatura> --\n");
+                    }
+                }
+                else
+                {
+                    fprintf(stderr, "Erro: TOKEN em não encontrado!\n");
+                    snprintf(mensagemResposta, sizeof(mensagemResposta), "\nErro ao retornar resposta solicitada. Digite -- desligar aquecedor em <temperatura> --\n");
+                }
+            }
+            else
+            {
+                fprintf(stderr, "Erro: TOKEN aquecedor não encontrado!\n");
+                snprintf(mensagemResposta, sizeof(mensagemResposta), "\nErro ao retornar resposta solicitada. Digite -- desligar aquecedor em <temperatura> --\n");
+            }
+            if (write(nodo[id_cliente].server_socket, mensagemResposta, strlen(mensagemResposta)) == -1)
+            {
+                fprintf(stderr, "Erro ao enviar a mensagem de resposta\n");
+
+            }
+
+        }
+        else if (token != NULL && strcasecmp(token, "estado") == 0)
+        {
+            token = strtok(NULL, " "); // Obtém o próximo token
+
+            if (token != NULL && strcasecmp(token, "aquecedor") == 0)
+            {
+                token = strtok(NULL, " "); // Obtém o próximo token
+                processandoComando=1;
+                estadoAtualAquecedor();
+            }
+            else
+            {
+                fprintf(stderr, "Erro: TOKEN aquecedor não encontrado!\n");
+                snprintf(mensagemResposta, sizeof(mensagemResposta), "\nErro ao retornar resposta solicitada. Digite -- estado aquecedor--\n");
+
+            }
+
+            if (write(nodo[id_cliente].server_socket, mensagemResposta, strlen(mensagemResposta)) == -1)
+            {
+                fprintf(stderr, "Erro ao enviar a mensagem de resposta\n");
+            }
+        }
         else
         {
             printf("Erro - comando desconhecido\n");
@@ -103,7 +167,7 @@ void *cliente(void *arg){
 //criação do tokenizer que permitira mais de um comando concatenados gerando um unico
     while (1)
     {
-        char* token;
+        //char* token;
         char *saveptr;
         token=NULL;
         bzero(buffer, sizeof(buffer)); // zerar o conteúdo do buffer
@@ -288,7 +352,7 @@ int main(int argc, char *argv[])
             }
             if (close(nodo[idCliente].server_socket) == -1)  // a conexão com esse cliente é encerrada e o descritor de socket é liberado
             {
-                perror("Houve erro ao fechar o socket\n");
+                perror("Houve erro ao desligar o socket\n");
                 return -1;
             }
             else{
