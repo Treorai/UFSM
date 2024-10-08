@@ -46,20 +46,14 @@
 
 ## Flipflop Tipo T
 
-### Tabela Verdade
+> T = K = J
 
-| xxx | Q | !Q |
+### Tabela de Excitação
+
+| T | Q | !Q |
 | :-: | :-: | :-: |
-| 0 | 0 | 1 |
-| 1 | 1 | 0 |
-
-### Excitação
-
-| xxx | Q | !Q |
-| :-: | :-: | :-: |
-| 0 | 0 | 1 |
-| 1 | 1 | 0 |
-
+| 0 | Q | !Q |
+| 1 | !Q | Q |
 
 ## Flipflop JK
 
