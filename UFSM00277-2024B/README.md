@@ -1,5 +1,2 @@
-# UFSM00277-2024B
-
-## Sistemas Digitais II
-
-> PSD
+# ELC / UFSM00277-2024B
+Trabalhos Realizados na diciplina Sistemas Digitais II (UFSM00277) no segundo semestre de 2024
