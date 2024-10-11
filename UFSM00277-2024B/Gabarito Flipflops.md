@@ -1,8 +1,8 @@
 # Gabarito Flipflops
 
-## Flipflop JK (Latch)
+## Flipflop SR (Latch)
 
-> JK é uma latch sensível ao clock
+> ff é uma latch sensível ao clock
 
 ### Tabela Verdade
 
@@ -38,8 +38,6 @@
 ## Flipflop Tipo T
 
 > T = K = J
-
-### Tabela de Excitação
 
 | T | Q | !Q |
 | :-: | :-: | :-: |
