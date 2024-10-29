@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/watto/Documents/ISE Projects/Avaliacao1/fumiga.ncd
+OUTFILE=/home/watto/Documents/ISE Projects/Avaliacao1/fumiga.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=/home/watto/Documents/ISE Projects/Avaliacao1
+LICENSE=WebPack
+USER_INFO=213207699_0_0_110

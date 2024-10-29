@@ -1,0 +1,28 @@
+
+net switch(0) loc = T10; //switch direito
+net switch(1) loc = T9;
+net switch(2) loc = V9;
+net switch(3) loc = M8;
+net switch(4) loc = N8;
+net switch(5) loc = U8;
+net switch(6) loc = V8;
+net switch(7) loc = T5; //switch esquerdo
+
+net joystick(0) loc = A8; //bt U
+net joystick(1) loc = D9; //bt R
+net joystick(2) loc = C9; //bt D
+net joystick(3) loc = C4; //bt L
+net joystick(4) loc = B8; //bt S
+
+net disp(0) loc = L14;
+net disp(1) loc = N14;
+net disp(2) loc = M14;
+net disp(3) loc = U18;
+net disp(4) loc = U17;
+net disp(5) loc = T18; //display B
+net disp(6) loc = T17; //display A
+
+net sel(0) loc = N16; //bem da direita
+net sel(1) loc = N15;
+net sel(2) loc = P18;
+net sel(3) loc = P17; //bem da esquerda

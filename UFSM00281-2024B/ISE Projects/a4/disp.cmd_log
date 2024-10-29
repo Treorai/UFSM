@@ -1,0 +1,23 @@
+xst -intstyle ise -ifn "/home/aluno/Downloads/ProjetosISE/asdfd/disp.xst" -ofn "/home/aluno/Downloads/ProjetosISE/asdfd/disp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 disp.ngc disp.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o disp_map.ncd disp.ngd disp.pcf 
+par -w -intstyle ise -ol high -mt off disp_map.ncd disp.ncd disp.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml disp.twx disp.ncd -o disp.twr disp.pcf 
+bitgen -intstyle ise -f disp.ut disp.ncd 
+xst -intstyle ise -ifn "/home/aluno/Downloads/ProjetosISE/asdfd/disp.xst" -ofn "/home/aluno/Downloads/ProjetosISE/asdfd/disp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 disp.ngc disp.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o disp_map.ncd disp.ngd disp.pcf 
+par -w -intstyle ise -ol high -mt off disp_map.ncd disp.ncd disp.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml disp.twx disp.ncd -o disp.twr disp.pcf 
+bitgen -intstyle ise -f disp.ut disp.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc dd.ucf -p xc6slx16-csg324-3 disp.ngc disp.ngd  
+xst -intstyle ise -ifn "/home/aluno/Downloads/ProjetosISE/asdfd/disp.xst" -ofn "/home/aluno/Downloads/ProjetosISE/asdfd/disp.syr" 
+xst -intstyle ise -ifn "/home/aluno/Downloads/ProjetosISE/asdfd/disp.xst" -ofn "/home/aluno/Downloads/ProjetosISE/asdfd/disp.syr" 
+xst -intstyle ise -ifn "/home/aluno/Downloads/ProjetosISE/asdfd/disp.xst" -ofn "/home/aluno/Downloads/ProjetosISE/asdfd/disp.syr" 
+xst -intstyle ise -ifn "/home/aluno/Downloads/ProjetosISE/asdfd/disp.xst" -ofn "/home/aluno/Downloads/ProjetosISE/asdfd/disp.syr" 
+xst -intstyle ise -ifn "/home/aluno/Downloads/ProjetosISE/asdfd/disp.xst" -ofn "/home/aluno/Downloads/ProjetosISE/asdfd/disp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc dd.ucf -p xc6slx16-csg324-3 disp.ngc disp.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o disp_map.ncd disp.ngd disp.pcf 
+par -w -intstyle ise -ol high -mt off disp_map.ncd disp.ncd disp.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml disp.twx disp.ncd -o disp.twr disp.pcf -ucf dd.ucf 
+bitgen -intstyle ise -f disp.ut disp.ncd 
