@@ -22,7 +22,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity fumiga is
     Port ( clk : in  STD_LOGIC;
-           disp : out  STD_LOGIC_VECTOR (6 downto 0);
+           --disp : out  STD_LOGIC_VECTOR (6 downto 0);
            sel : inout  STD_LOGIC_VECTOR (3 downto 0);
            switch : in  STD_LOGIC_VECTOR (6 downto 0);
 			  orientation : in STD_LOGIC;
@@ -31,14 +31,24 @@ end fumiga;
 
 architecture Behavioral of fumiga is
 
-constant freq : integer := 100000000;
+component disp is
+	port( disp: out std_logic_vector(6 downto 0);
+			output: in integer range 0 to 15 );
+end component;
+
+constant freq : integer := 100000000; -- freq nexys
 constant steps : integer := 10; -- led steps for the fumiga
-constant matricula : integer := 3+1;
-constant tempo : integer := (freq*matricula)/steps;
-constant customtempo : integer := freq/4;
+constant matricula : integer := 3+1; -- periodo
+constant tempo : integer := (freq*matricula)/steps; -- tempo avaliacao
+constant customtempo : integer := freq/4; -- tempo extra
+constant muxtime : integer := 1e6; -- tempo do mux
+
+signal n, n1, n2 : integer range 0 to 9;
 
 begin
+	u1 : disp port map (n, d);
 	--sel <= "1011";
+	
 	process(clk, switch)
 		variable cont : integer range 0 to 100e6 := 0;
 		variable height : integer range 0 to 1 := 1;
@@ -100,40 +110,47 @@ begin
 				then if cont < 100e6 then cont := cont+1;
 											else cont := 0;
 					  end if; -- if cont < 100e6
-					  if cont < tempo
-							then disp <= "1111110";
-									sel <= "1110";
-					  elsif cont < tempo*2
-							then disp <= "1111101";
-									sel <= "1110";
-					  elsif cont < tempo*3
-							then disp <= "1111011";
-									sel <= "1110";
-					  elsif cont < tempo*4
-							then disp <= "1110111";
-										sel <= "1110";
-					  elsif cont < tempo*5
-							then disp <= "1110111";
-									sel <= "1101";
-					  elsif cont < tempo*6
-							then disp <= "1110111";
-									sel <= "1011";
-					  elsif cont < tempo*7
-							then disp <= "1101111";
-									sel <= "1011";
-					  elsif cont < tempo*8
-							then disp <= "1011111";
-									sel <= "1101";
-					  elsif cont < tempo*9
-							then disp <= "1111110";
-									sel <= "1101";
-					  elsif cont < tempo*10
-							then disp <= "1111110";
-									sel <= "1011";
+					  
+					  if cont < tempo/2
+							then sel <= "0111";
+									 n <= n1;
 					  else
-								  disp <= "0111111";
-									sel <= "0111";
-					  end if; -- cont
+					  
+						  if cont < tempo
+								then disp <= "1111110";
+										sel <= "1110";
+						  elsif cont < tempo*2
+								then disp <= "1111101";
+										sel <= "1110";
+						  elsif cont < tempo*3
+								then disp <= "1111011";
+										sel <= "1110";
+						  elsif cont < tempo*4
+								then disp <= "1110111";
+											sel <= "1110";
+						  elsif cont < tempo*5
+								then disp <= "1110111";
+										sel <= "1101";
+						  elsif cont < tempo*6
+								then disp <= "1110111";
+										sel <= "1011";
+						  elsif cont < tempo*7
+								then disp <= "1101111";
+										sel <= "1011";
+						  elsif cont < tempo*8
+								then disp <= "1011111";
+										sel <= "1101";
+						  elsif cont < tempo*9
+								then disp <= "1111110";
+										sel <= "1101";
+						  elsif cont < tempo*10
+								then disp <= "1111110";
+										sel <= "1011";
+						  else
+									  disp <= "0111111";
+										sel <= "1000";
+						  end if; -- cont
+					end if; -- mux t/2
 			end if; -- rising edge
 		end if; -- switch avaliacao
 	end process;

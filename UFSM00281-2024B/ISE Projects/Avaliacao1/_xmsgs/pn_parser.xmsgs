@@ -8,7 +8,7 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/watto/Documents/ISE Projects/Avaliacao1/fumiga.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Watto/Documents/GitHub/UFSM/UFSM00281-2024B/ISE Projects/Avaliacao1/fumiga.vhd&quot; into library work</arg>
 </msg>
 
 </messages>

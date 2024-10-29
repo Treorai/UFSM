@@ -1,26 +1,30 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.NUMERIC_STD.ALL;
+
 entity disp is
-	port( e : in std_logic_vector(3 downto 0);
-			d: out std_logic_vector(6 downto 0);
-			sel: out std_logic_vector(3 downto 0) );
+	port( disp: out std_logic_vector(6 downto 0);
+			output: in integer range 0 to 15 );
 end disp;
 
 architecture Behavioral of disp is
 begin
-sel <= "1110";
-with e select
-	d<= 	"0000001" when "0000",
-					"1001111" when "0001",
-					"0010010" when "0010",
-					"0000110" when "0011",
-					"0111000" when "0100",
-					"0100100" when "0101",
-					"0100000" when "0110",
-					"0001111" when "0111",
-					"0000000" when "1000",
-					"0000100" when "1001",
+with output select
+		disp<= 	"0000001" when 0,
+					"1001111" when 1,
+					"0010010" when 2,
+					"0000110" when 3,
+					"0111000" when 4,
+					"0100100" when 5,
+					"0100000" when 6,
+					"0001111" when 7,
+					"0000000" when 8,
+					"0000100" when 9,
+					"0001000" when 10,
+					"1100000" when 11,
+					"0110001" when 12,
+					"1000010" when 13,
+					"0110000" when 14,
+					"0111000" when 15,
 					"1111110" when others;
 
 end Behavioral;
