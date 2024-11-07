@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/aluno/trab_test_certo/dispint/displint.ncd
+OUTFILE=/home/aluno/trab_test_certo/dispint/displint.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=/home/aluno/trab_test_certo/dispint
+LICENSE=WebPack
+USER_INFO=__0_0_0

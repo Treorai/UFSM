@@ -1,0 +1,27 @@
+
+net e(0) loc = T10; //switch direito
+net e(1) loc = T9;
+net e(2) loc = V9;
+net e(3) loc = M8;
+net ef(0) loc = N8;
+net ef(1) loc = U8;
+net ef(2) loc = V8;
+net ef(3) loc = T5; //switch esquerdo
+
+net g(0) loc = D9; //bt R
+net g(1) loc = B8; //bt S
+net g(2) loc = C4; //bt L
+net g(3) loc = A8; //bt U
+
+net d(0) loc = L14;
+net d(1) loc = N14;
+net d(2) loc = M14;
+net d(3) loc = U18;
+net d(4) loc = U17;
+net d(5) loc = T18; //display B
+net d(6) loc = T17; //display A
+
+net sel(0) loc = N16; //bem da direita
+net sel(1) loc = N15;
+net sel(2) loc = P18;
+net sel(3) loc = P17; //bem da esquerda
