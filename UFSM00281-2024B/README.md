@@ -10,5 +10,5 @@ djtgcfg init -d Nexys3
 ```
 
 ```sh 
-djtgcfg prog -d Nexys3 -i 0 -f my_awesom_program.bit
+djtgcfg prog -d Nexys3 -i 0 -f __.bit
 ```
