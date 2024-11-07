@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "/home/watto/Documents/ISE Projects/Avaliacao1watto-update/fumiga_isim_beh.exe" -prj "/home/watto/Documents/ISE Projects/Avaliacao1watto-update/fumiga_beh.prj" "work.fumiga" 

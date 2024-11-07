@@ -4,15 +4,15 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.21 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.18 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.21 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.18 secs
  
 --> 
 Reading design: fumiga.prj
@@ -108,7 +108,7 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "/home/watto/Documents/ISE Projects/Avaliacao1/fumiga.vhd" into library work
+Parsing VHDL file "/home/watto/Documents/ISE Projects/Avaliacao1watto-update/fumiga.vhd" into library work
 Parsing entity <fumiga>.
 Parsing architecture <Behavioral> of entity <fumiga>.
 
@@ -123,65 +123,35 @@ Elaborating entity <fumiga> (architecture <Behavioral>) from library <work>.
 =========================================================================
 
 Synthesizing Unit <fumiga>.
-    Related source file is "/home/watto/Documents/ISE Projects/Avaliacao1/fumiga.vhd".
-WARNING:Xst:647 - Input <btn_s> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 1-bit register for signal <height>.
-    Found 4-bit register for signal <sel[3]_dff_36_OUT>.
-    Found 7-bit register for signal <GND_3_o_dff_37_OUT>.
-    Found 27-bit register for signal <GND_3_o_dff_35_OUT>.
-    Found 1-bit register for signal <cont<26>>.
-    Found 1-bit register for signal <cont<25>>.
-    Found 1-bit register for signal <cont<24>>.
-    Found 1-bit register for signal <cont<23>>.
-    Found 1-bit register for signal <cont<22>>.
-    Found 1-bit register for signal <cont<21>>.
-    Found 1-bit register for signal <cont<20>>.
-    Found 1-bit register for signal <cont<19>>.
-    Found 1-bit register for signal <cont<18>>.
-    Found 1-bit register for signal <cont<17>>.
-    Found 1-bit register for signal <cont<16>>.
-    Found 1-bit register for signal <cont<15>>.
-    Found 1-bit register for signal <cont<14>>.
-    Found 1-bit register for signal <cont<13>>.
-    Found 1-bit register for signal <cont<12>>.
-    Found 1-bit register for signal <cont<11>>.
-    Found 1-bit register for signal <cont<10>>.
-    Found 1-bit register for signal <cont<9>>.
-    Found 1-bit register for signal <cont<8>>.
-    Found 1-bit register for signal <cont<7>>.
-    Found 1-bit register for signal <cont<6>>.
-    Found 1-bit register for signal <cont<5>>.
-    Found 1-bit register for signal <cont<4>>.
-    Found 1-bit register for signal <cont<3>>.
-    Found 1-bit register for signal <cont<2>>.
-    Found 1-bit register for signal <cont<1>>.
-    Found 1-bit register for signal <cont<0>>.
-    Found 1-bit register for signal <disp<6>>.
-    Found 1-bit register for signal <disp<5>>.
-    Found 1-bit register for signal <disp<4>>.
-    Found 1-bit register for signal <disp<3>>.
-    Found 1-bit register for signal <disp<2>>.
-    Found 1-bit register for signal <disp<1>>.
-    Found 1-bit register for signal <disp<0>>.
-    Found 1-bit register for signal <sel<3>>.
-    Found 1-bit register for signal <sel<2>>.
-    Found 1-bit register for signal <sel<1>>.
-    Found 1-bit register for signal <sel<0>>.
-    Found 27-bit adder for signal <cont[26]_GND_3_o_add_39_OUT> created at line 100.
-    Found 27-bit subtractor for signal <GND_3_o_GND_3_o_sub_6_OUT<26:0>> created at line 54.
-    Found 27-bit comparator greater for signal <GND_3_o_cont[26]_LessThan_5_o> created at line 53
-    Found 27-bit comparator greater for signal <GND_3_o_GND_3_o_LessThan_9_o> created at line 58
-    Found 27-bit comparator greater for signal <GND_3_o_GND_3_o_LessThan_22_o> created at line 80
-    Found 27-bit comparator greater for signal <GND_3_o_PWR_3_o_LessThan_25_o> created at line 84
-    Found 27-bit comparator lessequal for signal <GND_3_o_PWR_3_o_LessThan_28_o> created at line 88
-    Found 27-bit comparator greater for signal <cont[26]_PWR_3_o_LessThan_39_o> created at line 100
-    Found 27-bit comparator greater for signal <GND_3_o_GND_3_o_LessThan_42_o> created at line 103
-    Found 27-bit comparator greater for signal <GND_3_o_PWR_3_o_LessThan_43_o> created at line 106
+    Related source file is "/home/watto/Documents/ISE Projects/Avaliacao1watto-update/fumiga.vhd".
+    Found 20-bit register for signal <muxcont>.
+    Found 4-bit register for signal <sel>.
+    Found 7-bit register for signal <disp>.
+    Found 29-bit register for signal <cont>.
+    Found 29-bit adder for signal <cont[28]_GND_3_o_add_1_OUT> created at line 47.
+    Found 20-bit adder for signal <muxcont[19]_GND_3_o_add_10_OUT> created at line 59.
+    Found 29-bit subtractor for signal <GND_3_o_GND_3_o_sub_8_OUT<28:0>> created at line 56.
+    Found 29-bit comparator greater for signal <cont[28]_PWR_3_o_LessThan_1_o> created at line 47
+    Found 29-bit comparator greater for signal <cont[28]_GND_3_o_LessThan_7_o> created at line 55
+    Found 20-bit comparator greater for signal <muxcont[19]_PWR_3_o_LessThan_10_o> created at line 59
+    Found 20-bit comparator greater for signal <GND_3_o_GND_3_o_LessThan_15_o> created at line 63
+    Found 29-bit comparator greater for signal <GND_3_o_GND_3_o_LessThan_16_o> created at line 66
+    Found 29-bit comparator greater for signal <GND_3_o_PWR_3_o_LessThan_18_o> created at line 68
+    Found 29-bit comparator greater for signal <GND_3_o_GND_3_o_LessThan_24_o> created at line 74
+    Found 29-bit comparator greater for signal <GND_3_o_GND_3_o_LessThan_25_o> created at line 77
+    Found 29-bit comparator greater for signal <GND_3_o_GND_3_o_LessThan_26_o> created at line 80
+    Found 29-bit comparator greater for signal <GND_3_o_GND_3_o_LessThan_27_o> created at line 83
+    Found 29-bit comparator greater for signal <GND_3_o_GND_3_o_LessThan_28_o> created at line 86
+    Found 29-bit comparator greater for signal <GND_3_o_GND_3_o_LessThan_29_o> created at line 89
+    Found 29-bit comparator greater for signal <GND_3_o_PWR_3_o_LessThan_30_o> created at line 92
+    Found 29-bit comparator greater for signal <GND_3_o_PWR_3_o_LessThan_31_o> created at line 95
+    Found 29-bit comparator greater for signal <GND_3_o_PWR_3_o_LessThan_32_o> created at line 98
+    Found 29-bit comparator greater for signal <GND_3_o_PWR_3_o_LessThan_33_o> created at line 101
     Summary:
 	inferred   2 Adder/Subtractor(s).
-	inferred  77 D-type flip-flop(s).
-	inferred   8 Comparator(s).
-	inferred  12 Multiplexer(s).
+	inferred  60 D-type flip-flop(s).
+	inferred  16 Comparator(s).
+	inferred  28 Multiplexer(s).
 Unit <fumiga> synthesized.
 
 =========================================================================
@@ -189,120 +159,67 @@ HDL Synthesis Report
 
 Macro Statistics
 # Adders/Subtractors                                   : 2
- 27-bit adder                                          : 1
- 27-bit subtractor                                     : 1
-# Registers                                            : 42
- 1-bit register                                        : 39
- 27-bit register                                       : 1
+ 20-bit adder                                          : 1
+ 29-bit addsub                                         : 1
+# Registers                                            : 4
+ 20-bit register                                       : 1
+ 29-bit register                                       : 1
  4-bit register                                        : 1
  7-bit register                                        : 1
-# Comparators                                          : 8
- 27-bit comparator greater                             : 7
- 27-bit comparator lessequal                           : 1
-# Multiplexers                                         : 12
- 1-bit 2-to-1 multiplexer                              : 2
- 27-bit 2-to-1 multiplexer                             : 3
- 4-bit 2-to-1 multiplexer                              : 3
- 7-bit 2-to-1 multiplexer                              : 4
+# Comparators                                          : 16
+ 20-bit comparator greater                             : 2
+ 29-bit comparator greater                             : 14
+# Multiplexers                                         : 28
+ 20-bit 2-to-1 multiplexer                             : 1
+ 29-bit 2-to-1 multiplexer                             : 6
+ 4-bit 2-to-1 multiplexer                              : 9
+ 7-bit 2-to-1 multiplexer                              : 12
 
 =========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
 
 =========================================================================
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
 
+Synthesizing (advanced) Unit <fumiga>.
+The following registers are absorbed into counter <muxcont>: 1 register on signal <muxcont>.
+Unit <fumiga> synthesized (advanced).
+
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
 # Adders/Subtractors                                   : 2
- 27-bit adder                                          : 1
- 27-bit subtractor                                     : 1
-# Registers                                            : 77
- Flip-Flops                                            : 77
-# Comparators                                          : 8
- 27-bit comparator greater                             : 7
- 27-bit comparator lessequal                           : 1
-# Multiplexers                                         : 12
- 1-bit 2-to-1 multiplexer                              : 2
- 27-bit 2-to-1 multiplexer                             : 3
- 4-bit 2-to-1 multiplexer                              : 3
- 7-bit 2-to-1 multiplexer                              : 4
+ 20-bit adder                                          : 1
+ 29-bit addsub                                         : 1
+# Counters                                             : 1
+ 20-bit up counter                                     : 1
+# Registers                                            : 40
+ Flip-Flops                                            : 40
+# Comparators                                          : 16
+ 20-bit comparator greater                             : 2
+ 29-bit comparator greater                             : 14
+# Multiplexers                                         : 28
+ 20-bit 2-to-1 multiplexer                             : 1
+ 29-bit 2-to-1 multiplexer                             : 6
+ 4-bit 2-to-1 multiplexer                              : 9
+ 7-bit 2-to-1 multiplexer                              : 12
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
-   incompatible with the Spartan6 architecture. The two primary causes of this is
-   either a register or latch described with both an asynchronous set and
-   asynchronous reset, or a register or latch described with an asynchronous
-   set or reset which however has an initialization value of the opposite 
-   polarity (i.e. asynchronous reset with an initialization value of 1).
-    While this circuit can be built, it creates a sub-optimal implementation
-   in terms of area, power and performance. For a more optimal implementation
-   Xilinx highly recommends one of the following:
-
-          1) Remove either the set or reset from all registers and latches
-             if not needed for required functionality
-          2) Modify the code in order to produce a synchronous set
-             and/or reset (both is preferred)
-          3) Ensure all registers have the same initialization value as the
-             described asynchronous set or reset polarity
-          4) Use the -async_to_sync option to transform the asynchronous
-             set/reset to synchronous operation
-             (timing simulation highly recommended when using this option)
-
-  Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
-
-  List of register instances with asynchronous set and reset:
-    disp_0 in unit <fumiga>
-    disp_1 in unit <fumiga>
-    disp_2 in unit <fumiga>
-    disp_3 in unit <fumiga>
-    disp_4 in unit <fumiga>
-    disp_5 in unit <fumiga>
-    disp_6 in unit <fumiga>
-    cont_0 in unit <fumiga>
-    sel_0 in unit <fumiga>
-    sel_1 in unit <fumiga>
-    sel_2 in unit <fumiga>
-    sel_3 in unit <fumiga>
-    cont_1 in unit <fumiga>
-    cont_2 in unit <fumiga>
-    cont_3 in unit <fumiga>
-    cont_4 in unit <fumiga>
-    cont_5 in unit <fumiga>
-    cont_6 in unit <fumiga>
-    cont_7 in unit <fumiga>
-    cont_8 in unit <fumiga>
-    cont_9 in unit <fumiga>
-    cont_10 in unit <fumiga>
-    cont_11 in unit <fumiga>
-    cont_12 in unit <fumiga>
-    cont_13 in unit <fumiga>
-    cont_14 in unit <fumiga>
-    cont_15 in unit <fumiga>
-    cont_16 in unit <fumiga>
-    cont_17 in unit <fumiga>
-    cont_18 in unit <fumiga>
-    cont_19 in unit <fumiga>
-    cont_20 in unit <fumiga>
-    cont_21 in unit <fumiga>
-    cont_22 in unit <fumiga>
-    cont_23 in unit <fumiga>
-    cont_24 in unit <fumiga>
-    cont_25 in unit <fumiga>
-    cont_26 in unit <fumiga>
-
 
 Optimizing unit <fumiga> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block fumiga, actual ratio is 3.
+Found area constraint ratio of 100 (+ 5) on block fumiga, actual ratio is 2.
+FlipFlop cont_27 has been replicated 1 time(s)
+FlipFlop cont_28 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -310,8 +227,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 107
- Flip-Flops                                            : 107
+# Registers                                            : 62
+ Flip-Flops                                            : 62
 
 =========================================================================
 
@@ -334,29 +251,27 @@ Top Level Output File Name         : fumiga.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 438
+# BELS                             : 379
 #      GND                         : 1
-#      LUT1                        : 27
-#      LUT2                        : 105
-#      LUT3                        : 72
-#      LUT4                        : 13
-#      LUT5                        : 54
-#      LUT6                        : 37
-#      MUXCY                       : 72
-#      MUXF7                       : 2
+#      INV                         : 2
+#      LUT1                        : 20
+#      LUT2                        : 35
+#      LUT3                        : 17
+#      LUT4                        : 17
+#      LUT5                        : 31
+#      LUT6                        : 106
+#      MUXCY                       : 84
+#      MUXF7                       : 1
 #      VCC                         : 1
-#      XORCY                       : 54
-# FlipFlops/Latches                : 145
-#      FD                          : 35
-#      FDC                         : 37
-#      FDP                         : 31
-#      FDR                         : 1
-#      FDS                         : 3
-#      LDC                         : 38
+#      XORCY                       : 64
+# FlipFlops/Latches                : 62
+#      FD                          : 52
+#      FDR                         : 2
+#      FDS                         : 8
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 23
-#      IBUF                        : 12
+# IO Buffers                       : 12
+#      IBUF                        : 1
 #      OBUF                        : 11
 
 Device utilization summary:
@@ -366,20 +281,20 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             145  out of  18224     0%  
- Number of Slice LUTs:                  308  out of   9112     3%  
-    Number used as Logic:               308  out of   9112     3%  
+ Number of Slice Registers:              62  out of  18224     0%  
+ Number of Slice LUTs:                  228  out of   9112     2%  
+    Number used as Logic:               228  out of   9112     2%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    390
-   Number with an unused Flip Flop:     245  out of    390    62%  
-   Number with an unused LUT:            82  out of    390    21%  
-   Number of fully used LUT-FF pairs:    63  out of    390    16%  
-   Number of unique control sets:       108
+ Number of LUT Flip Flop pairs used:    254
+   Number with an unused Flip Flop:     192  out of    254    75%  
+   Number with an unused LUT:            26  out of    254    10%  
+   Number of fully used LUT-FF pairs:    36  out of    254    14%  
+   Number of unique control sets:         3
 
 IO Utilization: 
- Number of IOs:                          25
- Number of bonded IOBs:                  24  out of    232    10%  
+ Number of IOs:                          13
+ Number of bonded IOBs:                  13  out of    232     5%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
@@ -402,53 +317,11 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------------------------+------------------------+-------+
-Clock Signal                                         | Clock buffer(FF name)  | Load  |
------------------------------------------------------+------------------------+-------+
-clk                                                  | BUFGP                  | 107   |
-GND_3_o_GND_3_o_AND_3_o(GND_3_o_GND_3_o_AND_3_o1:O)  | NONE(*)(cont_26_LDC)   | 1     |
-GND_3_o_GND_3_o_AND_5_o(GND_3_o_GND_3_o_AND_5_o1:O)  | NONE(*)(cont_25_LDC)   | 1     |
-GND_3_o_GND_3_o_AND_7_o(GND_3_o_GND_3_o_AND_7_o1:O)  | NONE(*)(cont_24_LDC)   | 1     |
-GND_3_o_GND_3_o_AND_9_o(GND_3_o_GND_3_o_AND_9_o1:O)  | NONE(*)(cont_23_LDC)   | 1     |
-GND_3_o_GND_3_o_AND_11_o(GND_3_o_GND_3_o_AND_11_o1:O)| NONE(*)(cont_22_LDC)   | 1     |
-GND_3_o_GND_3_o_AND_13_o(GND_3_o_GND_3_o_AND_13_o1:O)| NONE(*)(cont_21_LDC)   | 1     |
-GND_3_o_GND_3_o_AND_15_o(GND_3_o_GND_3_o_AND_15_o1:O)| NONE(*)(cont_20_LDC)   | 1     |
-GND_3_o_GND_3_o_AND_17_o(GND_3_o_GND_3_o_AND_17_o1:O)| NONE(*)(cont_19_LDC)   | 1     |
-GND_3_o_GND_3_o_AND_19_o(GND_3_o_GND_3_o_AND_19_o1:O)| NONE(*)(cont_18_LDC)   | 1     |
-GND_3_o_GND_3_o_AND_21_o(GND_3_o_GND_3_o_AND_21_o1:O)| NONE(*)(cont_17_LDC)   | 1     |
-GND_3_o_GND_3_o_AND_23_o(GND_3_o_GND_3_o_AND_23_o1:O)| NONE(*)(cont_16_LDC)   | 1     |
-GND_3_o_GND_3_o_AND_25_o(GND_3_o_GND_3_o_AND_25_o1:O)| NONE(*)(cont_15_LDC)   | 1     |
-GND_3_o_GND_3_o_AND_27_o(GND_3_o_GND_3_o_AND_27_o1:O)| NONE(*)(cont_14_LDC)   | 1     |
-GND_3_o_GND_3_o_AND_29_o(GND_3_o_GND_3_o_AND_29_o1:O)| NONE(*)(cont_13_LDC)   | 1     |
-GND_3_o_GND_3_o_AND_31_o(GND_3_o_GND_3_o_AND_31_o1:O)| NONE(*)(cont_12_LDC)   | 1     |
-GND_3_o_GND_3_o_AND_33_o(GND_3_o_GND_3_o_AND_33_o1:O)| NONE(*)(cont_11_LDC)   | 1     |
-GND_3_o_GND_3_o_AND_35_o(GND_3_o_GND_3_o_AND_35_o1:O)| NONE(*)(cont_10_LDC)   | 1     |
-GND_3_o_GND_3_o_AND_37_o(GND_3_o_GND_3_o_AND_37_o1:O)| NONE(*)(cont_9_LDC)    | 1     |
-GND_3_o_GND_3_o_AND_39_o(GND_3_o_GND_3_o_AND_39_o1:O)| NONE(*)(cont_8_LDC)    | 1     |
-GND_3_o_GND_3_o_AND_41_o(GND_3_o_GND_3_o_AND_41_o1:O)| NONE(*)(cont_7_LDC)    | 1     |
-GND_3_o_GND_3_o_AND_43_o(GND_3_o_GND_3_o_AND_43_o1:O)| NONE(*)(cont_6_LDC)    | 1     |
-GND_3_o_GND_3_o_AND_45_o(GND_3_o_GND_3_o_AND_45_o1:O)| NONE(*)(cont_5_LDC)    | 1     |
-GND_3_o_GND_3_o_AND_47_o(GND_3_o_GND_3_o_AND_47_o1:O)| NONE(*)(cont_4_LDC)    | 1     |
-GND_3_o_GND_3_o_AND_49_o(GND_3_o_GND_3_o_AND_49_o1:O)| NONE(*)(cont_3_LDC)    | 1     |
-GND_3_o_GND_3_o_AND_51_o(GND_3_o_GND_3_o_AND_51_o1:O)| NONE(*)(cont_2_LDC)    | 1     |
-GND_3_o_GND_3_o_AND_53_o(GND_3_o_GND_3_o_AND_53_o1:O)| NONE(*)(cont_1_LDC)    | 1     |
-GND_3_o_sel[3]_AND_71_o(GND_3_o_sel[3]_AND_71_o1:O)  | NONE(*)(sel_3_LDC)     | 1     |
-GND_3_o_sel[3]_AND_73_o(GND_3_o_sel[3]_AND_73_o1:O)  | NONE(*)(sel_2_LDC)     | 1     |
-GND_3_o_sel[3]_AND_75_o(GND_3_o_sel[3]_AND_75_o1:O)  | NONE(*)(sel_1_LDC)     | 1     |
-GND_3_o_sel[3]_AND_77_o(GND_3_o_sel[3]_AND_77_o1:O)  | NONE(*)(sel_0_LDC)     | 1     |
-GND_3_o_GND_3_o_AND_55_o(GND_3_o_GND_3_o_AND_55_o1:O)| NONE(*)(cont_0_LDC)    | 1     |
-GND_3_o_GND_3_o_AND_57_o(GND_3_o_GND_3_o_AND_57_o1:O)| NONE(*)(disp_6_LDC)    | 1     |
-GND_3_o_GND_3_o_AND_59_o(GND_3_o_GND_3_o_AND_59_o1:O)| NONE(*)(disp_5_LDC)    | 1     |
-GND_3_o_GND_3_o_AND_61_o(GND_3_o_GND_3_o_AND_61_o1:O)| NONE(*)(disp_4_LDC)    | 1     |
-GND_3_o_GND_3_o_AND_63_o(GND_3_o_GND_3_o_AND_63_o1:O)| NONE(*)(disp_3_LDC)    | 1     |
-GND_3_o_GND_3_o_AND_65_o(GND_3_o_GND_3_o_AND_65_o1:O)| NONE(*)(disp_2_LDC)    | 1     |
-GND_3_o_GND_3_o_AND_67_o(GND_3_o_GND_3_o_AND_67_o1:O)| NONE(*)(disp_1_LDC)    | 1     |
-GND_3_o_GND_3_o_AND_69_o(GND_3_o_GND_3_o_AND_69_o1:O)| NONE(*)(disp_0_LDC)    | 1     |
------------------------------------------------------+------------------------+-------+
-(*) These 38 clock signal(s) are generated by combinatorial logic,
-and XST is not able to identify which are the primary clock signals.
-Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
-INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 62    |
+-----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -458,9 +331,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 8.873ns (Maximum Frequency: 112.698MHz)
-   Minimum input arrival time before clock: 7.080ns
-   Maximum output required time after clock: 4.804ns
+   Minimum period: 9.715ns (Maximum Frequency: 102.938MHz)
+   Minimum input arrival time before clock: 9.251ns
+   Maximum output required time after clock: 3.597ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -469,1495 +342,133 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 8.873ns (frequency: 112.698MHz)
-  Total number of paths / destination ports: 242247 / 171
+  Clock period: 9.715ns (frequency: 102.938MHz)
+  Total number of paths / destination ports: 6103245 / 71
 -------------------------------------------------------------------------
-Delay:               8.873ns (Levels of Logic = 9)
-  Source:            cont_23_C_23 (FF)
-  Destination:       _i000049_3 (FF)
+Delay:               9.715ns (Levels of Logic = 24)
+  Source:            cont_21 (FF)
+  Destination:       disp_6 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: cont_23_C_23 to _i000049_3
+  Data Path: cont_21 to disp_6
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              2   0.447   0.721  cont_23_C_23 (cont_23_C_23)
-     LUT3:I1->O            3   0.203   0.995  cont_231 (cont_23)
-     LUT5:I0->O            2   0.203   0.845  cont[26]_PWR_3_o_LessThan_39_o31 (cont[26]_PWR_3_o_LessThan_39_o3)
-     LUT6:I3->O           19   0.205   1.072  cont[26]_PWR_3_o_LessThan_39_o34_1 (cont[26]_PWR_3_o_LessThan_39_o34)
-     LUT5:I4->O           16   0.205   1.233  Mmux_GND_3_o_GND_3_o_mux_7_OUT181 (GND_3_o_GND_3_o_mux_7_OUT<25>)
-     LUT5:I2->O            1   0.205   0.000  Mcompar_GND_3_o_GND_3_o_LessThan_9_o_lut<3> (Mcompar_GND_3_o_GND_3_o_LessThan_9_o_lut<3>)
-     MUXCY:S->O            1   0.172   0.000  Mcompar_GND_3_o_GND_3_o_LessThan_9_o_cy<3> (Mcompar_GND_3_o_GND_3_o_LessThan_9_o_cy<3>)
-     MUXCY:CI->O          17   0.019   1.256  Mcompar_GND_3_o_GND_3_o_LessThan_9_o_cy<4> (Mcompar_GND_3_o_GND_3_o_LessThan_9_o_cy<4>)
-     LUT6:I3->O            1   0.205   0.580  Mmux_GND_3_o_GND_3_o_mux_34_OUT41 (GND_3_o_GND_3_o_mux_34_OUT<3>)
-     LUT4:I3->O            1   0.205   0.000  _i000049_3_rstpot (_i000049_3_rstpot)
-     FD:D                      0.102          _i000049_3
+     FD:C->Q               7   0.447   1.118  cont_21 (cont_21)
+     LUT5:I0->O            1   0.203   0.000  Mcompar_cont[28]_GND_3_o_LessThan_7_o_lut<4> (Mcompar_cont[28]_GND_3_o_LessThan_7_o_lut<4>)
+     MUXCY:S->O            1   0.172   0.000  Mcompar_cont[28]_GND_3_o_LessThan_7_o_cy<4> (Mcompar_cont[28]_GND_3_o_LessThan_7_o_cy<4>)
+     MUXCY:CI->O          57   0.019   1.698  Mcompar_cont[28]_GND_3_o_LessThan_7_o_cy<5> (Mcompar_cont[28]_GND_3_o_LessThan_7_o_cy<5>)
+     LUT6:I4->O            1   0.203   0.000  Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_lut<0>1 (Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<0> (Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<1> (Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<2> (Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<3> (Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<4> (Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<5> (Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<6> (Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<7> (Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<8> (Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<9> (Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<10> (Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<11> (Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<12> (Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<12>)
+     XORCY:CI->O          13   0.180   1.161  Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_xor<13> (GND_3_o_GND_3_o_mux_12_OUT<13>)
+     LUT3:I0->O            1   0.205   0.580  GND_3_o_PWR_3_o_LessThan_31_o23 (GND_3_o_PWR_3_o_LessThan_31_o22)
+     LUT6:I5->O            1   0.205   0.580  GND_3_o_PWR_3_o_LessThan_31_o24 (GND_3_o_PWR_3_o_LessThan_31_o23)
+     LUT6:I5->O            6   0.205   1.109  GND_3_o_PWR_3_o_LessThan_31_o25 (GND_3_o_PWR_3_o_LessThan_31_o)
+     LUT6:I0->O            1   0.203   0.000  Mmux_PWR_3_o_GND_3_o_mux_54_OUT72_SW0_G (N70)
+     MUXF7:I1->O           1   0.140   0.580  Mmux_PWR_3_o_GND_3_o_mux_54_OUT72_SW0 (N23)
+     LUT6:I5->O            1   0.205   0.000  Mmux_PWR_3_o_GND_3_o_mux_54_OUT73 (PWR_3_o_GND_3_o_mux_54_OUT<6>)
+     FDR:D                     0.102          disp_6
     ----------------------------------------
-    Total                      8.873ns (2.171ns logic, 6.702ns route)
-                                       (24.5% logic, 75.5% route)
+    Total                      9.715ns (2.889ns logic, 6.826ns route)
+                                       (29.7% logic, 70.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 1927 / 111
+  Total number of paths / destination ports: 83551 / 47
 -------------------------------------------------------------------------
-Offset:              7.080ns (Levels of Logic = 7)
+Offset:              9.251ns (Levels of Logic = 22)
   Source:            orientation (PAD)
-  Destination:       _i000049_3 (FF)
+  Destination:       disp_6 (FF)
   Destination Clock: clk rising
 
-  Data Path: orientation to _i000049_3
+  Data Path: orientation to disp_6
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            35   1.222   1.679  orientation_IBUF (orientation_IBUF)
-     LUT5:I0->O           16   0.203   1.233  Mmux_GND_3_o_GND_3_o_mux_7_OUT181 (GND_3_o_GND_3_o_mux_7_OUT<25>)
-     LUT5:I2->O            1   0.205   0.000  Mcompar_GND_3_o_GND_3_o_LessThan_9_o_lut<3> (Mcompar_GND_3_o_GND_3_o_LessThan_9_o_lut<3>)
-     MUXCY:S->O            1   0.172   0.000  Mcompar_GND_3_o_GND_3_o_LessThan_9_o_cy<3> (Mcompar_GND_3_o_GND_3_o_LessThan_9_o_cy<3>)
-     MUXCY:CI->O          17   0.019   1.256  Mcompar_GND_3_o_GND_3_o_LessThan_9_o_cy<4> (Mcompar_GND_3_o_GND_3_o_LessThan_9_o_cy<4>)
-     LUT6:I3->O            1   0.205   0.580  Mmux_GND_3_o_GND_3_o_mux_34_OUT41 (GND_3_o_GND_3_o_mux_34_OUT<3>)
-     LUT4:I3->O            1   0.205   0.000  _i000049_3_rstpot (_i000049_3_rstpot)
-     FD:D                      0.102          _i000049_3
+     IBUF:I->O            59   1.222   1.971  orientation_IBUF (orientation_IBUF)
+     LUT6:I0->O            1   0.203   0.000  Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_lut<0>1 (Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<0> (Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<1> (Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<2> (Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<3> (Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<4> (Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<5> (Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<6> (Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<7> (Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<8> (Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<9> (Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<10> (Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<11> (Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<12> (Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_cy<12>)
+     XORCY:CI->O          13   0.180   1.161  Mmux_GND_3_o_GND_3_o_mux_12_OUT_rs_xor<13> (GND_3_o_GND_3_o_mux_12_OUT<13>)
+     LUT3:I0->O            1   0.205   0.580  GND_3_o_PWR_3_o_LessThan_31_o23 (GND_3_o_PWR_3_o_LessThan_31_o22)
+     LUT6:I5->O            1   0.205   0.580  GND_3_o_PWR_3_o_LessThan_31_o24 (GND_3_o_PWR_3_o_LessThan_31_o23)
+     LUT6:I5->O            6   0.205   1.109  GND_3_o_PWR_3_o_LessThan_31_o25 (GND_3_o_PWR_3_o_LessThan_31_o)
+     LUT6:I0->O            1   0.203   0.000  Mmux_PWR_3_o_GND_3_o_mux_54_OUT72_SW0_G (N70)
+     MUXF7:I1->O           1   0.140   0.580  Mmux_PWR_3_o_GND_3_o_mux_54_OUT72_SW0 (N23)
+     LUT6:I5->O            1   0.205   0.000  Mmux_PWR_3_o_GND_3_o_mux_54_OUT73 (PWR_3_o_GND_3_o_mux_54_OUT<6>)
+     FDR:D                     0.102          disp_6
     ----------------------------------------
-    Total                      7.080ns (2.333ns logic, 4.747ns route)
-                                       (33.0% logic, 67.0% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'GND_3_o_GND_3_o_AND_3_o'
-  Total number of paths / destination ports: 7 / 1
--------------------------------------------------------------------------
-Offset:              5.966ns (Levels of Logic = 4)
-  Source:            switch<1> (PAD)
-  Destination:       cont_26_LDC (LATCH)
-  Destination Clock: GND_3_o_GND_3_o_AND_3_o falling
-
-  Data Path: switch<1> to cont_26_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.684  switch_1_IBUF (switch_1_IBUF)
-     LUT2:I0->O            1   0.203   0.580  n0000<6>_SW0 (N4)
-     LUT6:I5->O           76   0.205   1.823  n0000<6> (n0000)
-     LUT2:I0->O            2   0.203   0.616  GND_3_o_GND_3_o_AND_4_o1 (GND_3_o_GND_3_o_AND_4_o)
-     LDC:CLR                   0.430          cont_26_LDC
-    ----------------------------------------
-    Total                      5.966ns (2.263ns logic, 3.703ns route)
-                                       (37.9% logic, 62.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'GND_3_o_GND_3_o_AND_5_o'
-  Total number of paths / destination ports: 7 / 1
--------------------------------------------------------------------------
-Offset:              5.966ns (Levels of Logic = 4)
-  Source:            switch<1> (PAD)
-  Destination:       cont_25_LDC (LATCH)
-  Destination Clock: GND_3_o_GND_3_o_AND_5_o falling
-
-  Data Path: switch<1> to cont_25_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.684  switch_1_IBUF (switch_1_IBUF)
-     LUT2:I0->O            1   0.203   0.580  n0000<6>_SW0 (N4)
-     LUT6:I5->O           76   0.205   1.823  n0000<6> (n0000)
-     LUT2:I0->O            2   0.203   0.616  GND_3_o_GND_3_o_AND_6_o1 (GND_3_o_GND_3_o_AND_6_o)
-     LDC:CLR                   0.430          cont_25_LDC
-    ----------------------------------------
-    Total                      5.966ns (2.263ns logic, 3.703ns route)
-                                       (37.9% logic, 62.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'GND_3_o_GND_3_o_AND_7_o'
-  Total number of paths / destination ports: 7 / 1
--------------------------------------------------------------------------
-Offset:              5.966ns (Levels of Logic = 4)
-  Source:            switch<1> (PAD)
-  Destination:       cont_24_LDC (LATCH)
-  Destination Clock: GND_3_o_GND_3_o_AND_7_o falling
-
-  Data Path: switch<1> to cont_24_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.684  switch_1_IBUF (switch_1_IBUF)
-     LUT2:I0->O            1   0.203   0.580  n0000<6>_SW0 (N4)
-     LUT6:I5->O           76   0.205   1.823  n0000<6> (n0000)
-     LUT2:I0->O            2   0.203   0.616  GND_3_o_GND_3_o_AND_8_o1 (GND_3_o_GND_3_o_AND_8_o)
-     LDC:CLR                   0.430          cont_24_LDC
-    ----------------------------------------
-    Total                      5.966ns (2.263ns logic, 3.703ns route)
-                                       (37.9% logic, 62.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'GND_3_o_GND_3_o_AND_9_o'
-  Total number of paths / destination ports: 7 / 1
--------------------------------------------------------------------------
-Offset:              5.966ns (Levels of Logic = 4)
-  Source:            switch<1> (PAD)
-  Destination:       cont_23_LDC (LATCH)
-  Destination Clock: GND_3_o_GND_3_o_AND_9_o falling
-
-  Data Path: switch<1> to cont_23_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.684  switch_1_IBUF (switch_1_IBUF)
-     LUT2:I0->O            1   0.203   0.580  n0000<6>_SW0 (N4)
-     LUT6:I5->O           76   0.205   1.823  n0000<6> (n0000)
-     LUT2:I0->O            2   0.203   0.616  GND_3_o_GND_3_o_AND_10_o1 (GND_3_o_GND_3_o_AND_10_o)
-     LDC:CLR                   0.430          cont_23_LDC
-    ----------------------------------------
-    Total                      5.966ns (2.263ns logic, 3.703ns route)
-                                       (37.9% logic, 62.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'GND_3_o_GND_3_o_AND_11_o'
-  Total number of paths / destination ports: 7 / 1
--------------------------------------------------------------------------
-Offset:              5.966ns (Levels of Logic = 4)
-  Source:            switch<1> (PAD)
-  Destination:       cont_22_LDC (LATCH)
-  Destination Clock: GND_3_o_GND_3_o_AND_11_o falling
-
-  Data Path: switch<1> to cont_22_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.684  switch_1_IBUF (switch_1_IBUF)
-     LUT2:I0->O            1   0.203   0.580  n0000<6>_SW0 (N4)
-     LUT6:I5->O           76   0.205   1.823  n0000<6> (n0000)
-     LUT2:I0->O            2   0.203   0.616  GND_3_o_GND_3_o_AND_12_o1 (GND_3_o_GND_3_o_AND_12_o)
-     LDC:CLR                   0.430          cont_22_LDC
-    ----------------------------------------
-    Total                      5.966ns (2.263ns logic, 3.703ns route)
-                                       (37.9% logic, 62.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'GND_3_o_GND_3_o_AND_13_o'
-  Total number of paths / destination ports: 7 / 1
--------------------------------------------------------------------------
-Offset:              5.966ns (Levels of Logic = 4)
-  Source:            switch<1> (PAD)
-  Destination:       cont_21_LDC (LATCH)
-  Destination Clock: GND_3_o_GND_3_o_AND_13_o falling
-
-  Data Path: switch<1> to cont_21_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.684  switch_1_IBUF (switch_1_IBUF)
-     LUT2:I0->O            1   0.203   0.580  n0000<6>_SW0 (N4)
-     LUT6:I5->O           76   0.205   1.823  n0000<6> (n0000)
-     LUT2:I0->O            2   0.203   0.616  GND_3_o_GND_3_o_AND_14_o1 (GND_3_o_GND_3_o_AND_14_o)
-     LDC:CLR                   0.430          cont_21_LDC
-    ----------------------------------------
-    Total                      5.966ns (2.263ns logic, 3.703ns route)
-                                       (37.9% logic, 62.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'GND_3_o_GND_3_o_AND_15_o'
-  Total number of paths / destination ports: 7 / 1
--------------------------------------------------------------------------
-Offset:              5.966ns (Levels of Logic = 4)
-  Source:            switch<1> (PAD)
-  Destination:       cont_20_LDC (LATCH)
-  Destination Clock: GND_3_o_GND_3_o_AND_15_o falling
-
-  Data Path: switch<1> to cont_20_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.684  switch_1_IBUF (switch_1_IBUF)
-     LUT2:I0->O            1   0.203   0.580  n0000<6>_SW0 (N4)
-     LUT6:I5->O           76   0.205   1.823  n0000<6> (n0000)
-     LUT2:I0->O            2   0.203   0.616  GND_3_o_GND_3_o_AND_16_o1 (GND_3_o_GND_3_o_AND_16_o)
-     LDC:CLR                   0.430          cont_20_LDC
-    ----------------------------------------
-    Total                      5.966ns (2.263ns logic, 3.703ns route)
-                                       (37.9% logic, 62.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'GND_3_o_GND_3_o_AND_17_o'
-  Total number of paths / destination ports: 7 / 1
--------------------------------------------------------------------------
-Offset:              5.966ns (Levels of Logic = 4)
-  Source:            switch<1> (PAD)
-  Destination:       cont_19_LDC (LATCH)
-  Destination Clock: GND_3_o_GND_3_o_AND_17_o falling
-
-  Data Path: switch<1> to cont_19_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.684  switch_1_IBUF (switch_1_IBUF)
-     LUT2:I0->O            1   0.203   0.580  n0000<6>_SW0 (N4)
-     LUT6:I5->O           76   0.205   1.823  n0000<6> (n0000)
-     LUT2:I0->O            2   0.203   0.616  GND_3_o_GND_3_o_AND_18_o1 (GND_3_o_GND_3_o_AND_18_o)
-     LDC:CLR                   0.430          cont_19_LDC
-    ----------------------------------------
-    Total                      5.966ns (2.263ns logic, 3.703ns route)
-                                       (37.9% logic, 62.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'GND_3_o_GND_3_o_AND_19_o'
-  Total number of paths / destination ports: 7 / 1
--------------------------------------------------------------------------
-Offset:              5.966ns (Levels of Logic = 4)
-  Source:            switch<1> (PAD)
-  Destination:       cont_18_LDC (LATCH)
-  Destination Clock: GND_3_o_GND_3_o_AND_19_o falling
-
-  Data Path: switch<1> to cont_18_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.684  switch_1_IBUF (switch_1_IBUF)
-     LUT2:I0->O            1   0.203   0.580  n0000<6>_SW0 (N4)
-     LUT6:I5->O           76   0.205   1.823  n0000<6> (n0000)
-     LUT2:I0->O            2   0.203   0.616  GND_3_o_GND_3_o_AND_20_o1 (GND_3_o_GND_3_o_AND_20_o)
-     LDC:CLR                   0.430          cont_18_LDC
-    ----------------------------------------
-    Total                      5.966ns (2.263ns logic, 3.703ns route)
-                                       (37.9% logic, 62.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'GND_3_o_GND_3_o_AND_21_o'
-  Total number of paths / destination ports: 7 / 1
--------------------------------------------------------------------------
-Offset:              5.966ns (Levels of Logic = 4)
-  Source:            switch<1> (PAD)
-  Destination:       cont_17_LDC (LATCH)
-  Destination Clock: GND_3_o_GND_3_o_AND_21_o falling
-
-  Data Path: switch<1> to cont_17_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.684  switch_1_IBUF (switch_1_IBUF)
-     LUT2:I0->O            1   0.203   0.580  n0000<6>_SW0 (N4)
-     LUT6:I5->O           76   0.205   1.823  n0000<6> (n0000)
-     LUT2:I0->O            2   0.203   0.616  GND_3_o_GND_3_o_AND_22_o1 (GND_3_o_GND_3_o_AND_22_o)
-     LDC:CLR                   0.430          cont_17_LDC
-    ----------------------------------------
-    Total                      5.966ns (2.263ns logic, 3.703ns route)
-                                       (37.9% logic, 62.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'GND_3_o_GND_3_o_AND_23_o'
-  Total number of paths / destination ports: 7 / 1
--------------------------------------------------------------------------
-Offset:              5.966ns (Levels of Logic = 4)
-  Source:            switch<1> (PAD)
-  Destination:       cont_16_LDC (LATCH)
-  Destination Clock: GND_3_o_GND_3_o_AND_23_o falling
-
-  Data Path: switch<1> to cont_16_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.684  switch_1_IBUF (switch_1_IBUF)
-     LUT2:I0->O            1   0.203   0.580  n0000<6>_SW0 (N4)
-     LUT6:I5->O           76   0.205   1.823  n0000<6> (n0000)
-     LUT2:I0->O            2   0.203   0.616  GND_3_o_GND_3_o_AND_24_o1 (GND_3_o_GND_3_o_AND_24_o)
-     LDC:CLR                   0.430          cont_16_LDC
-    ----------------------------------------
-    Total                      5.966ns (2.263ns logic, 3.703ns route)
-                                       (37.9% logic, 62.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'GND_3_o_GND_3_o_AND_25_o'
-  Total number of paths / destination ports: 7 / 1
--------------------------------------------------------------------------
-Offset:              5.966ns (Levels of Logic = 4)
-  Source:            switch<1> (PAD)
-  Destination:       cont_15_LDC (LATCH)
-  Destination Clock: GND_3_o_GND_3_o_AND_25_o falling
-
-  Data Path: switch<1> to cont_15_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.684  switch_1_IBUF (switch_1_IBUF)
-     LUT2:I0->O            1   0.203   0.580  n0000<6>_SW0 (N4)
-     LUT6:I5->O           76   0.205   1.823  n0000<6> (n0000)
-     LUT2:I0->O            2   0.203   0.616  GND_3_o_GND_3_o_AND_26_o1 (GND_3_o_GND_3_o_AND_26_o)
-     LDC:CLR                   0.430          cont_15_LDC
-    ----------------------------------------
-    Total                      5.966ns (2.263ns logic, 3.703ns route)
-                                       (37.9% logic, 62.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'GND_3_o_GND_3_o_AND_27_o'
-  Total number of paths / destination ports: 7 / 1
--------------------------------------------------------------------------
-Offset:              5.966ns (Levels of Logic = 4)
-  Source:            switch<1> (PAD)
-  Destination:       cont_14_LDC (LATCH)
-  Destination Clock: GND_3_o_GND_3_o_AND_27_o falling
-
-  Data Path: switch<1> to cont_14_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.684  switch_1_IBUF (switch_1_IBUF)
-     LUT2:I0->O            1   0.203   0.580  n0000<6>_SW0 (N4)
-     LUT6:I5->O           76   0.205   1.823  n0000<6> (n0000)
-     LUT2:I0->O            2   0.203   0.616  GND_3_o_GND_3_o_AND_28_o1 (GND_3_o_GND_3_o_AND_28_o)
-     LDC:CLR                   0.430          cont_14_LDC
-    ----------------------------------------
-    Total                      5.966ns (2.263ns logic, 3.703ns route)
-                                       (37.9% logic, 62.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'GND_3_o_GND_3_o_AND_29_o'
-  Total number of paths / destination ports: 7 / 1
--------------------------------------------------------------------------
-Offset:              5.966ns (Levels of Logic = 4)
-  Source:            switch<1> (PAD)
-  Destination:       cont_13_LDC (LATCH)
-  Destination Clock: GND_3_o_GND_3_o_AND_29_o falling
-
-  Data Path: switch<1> to cont_13_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.684  switch_1_IBUF (switch_1_IBUF)
-     LUT2:I0->O            1   0.203   0.580  n0000<6>_SW0 (N4)
-     LUT6:I5->O           76   0.205   1.823  n0000<6> (n0000)
-     LUT2:I0->O            2   0.203   0.616  GND_3_o_GND_3_o_AND_30_o1 (GND_3_o_GND_3_o_AND_30_o)
-     LDC:CLR                   0.430          cont_13_LDC
-    ----------------------------------------
-    Total                      5.966ns (2.263ns logic, 3.703ns route)
-                                       (37.9% logic, 62.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'GND_3_o_GND_3_o_AND_31_o'
-  Total number of paths / destination ports: 7 / 1
--------------------------------------------------------------------------
-Offset:              5.966ns (Levels of Logic = 4)
-  Source:            switch<1> (PAD)
-  Destination:       cont_12_LDC (LATCH)
-  Destination Clock: GND_3_o_GND_3_o_AND_31_o falling
-
-  Data Path: switch<1> to cont_12_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.684  switch_1_IBUF (switch_1_IBUF)
-     LUT2:I0->O            1   0.203   0.580  n0000<6>_SW0 (N4)
-     LUT6:I5->O           76   0.205   1.823  n0000<6> (n0000)
-     LUT2:I0->O            2   0.203   0.616  GND_3_o_GND_3_o_AND_32_o1 (GND_3_o_GND_3_o_AND_32_o)
-     LDC:CLR                   0.430          cont_12_LDC
-    ----------------------------------------
-    Total                      5.966ns (2.263ns logic, 3.703ns route)
-                                       (37.9% logic, 62.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'GND_3_o_GND_3_o_AND_33_o'
-  Total number of paths / destination ports: 7 / 1
--------------------------------------------------------------------------
-Offset:              5.966ns (Levels of Logic = 4)
-  Source:            switch<1> (PAD)
-  Destination:       cont_11_LDC (LATCH)
-  Destination Clock: GND_3_o_GND_3_o_AND_33_o falling
-
-  Data Path: switch<1> to cont_11_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.684  switch_1_IBUF (switch_1_IBUF)
-     LUT2:I0->O            1   0.203   0.580  n0000<6>_SW0 (N4)
-     LUT6:I5->O           76   0.205   1.823  n0000<6> (n0000)
-     LUT2:I0->O            2   0.203   0.616  GND_3_o_GND_3_o_AND_34_o1 (GND_3_o_GND_3_o_AND_34_o)
-     LDC:CLR                   0.430          cont_11_LDC
-    ----------------------------------------
-    Total                      5.966ns (2.263ns logic, 3.703ns route)
-                                       (37.9% logic, 62.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'GND_3_o_GND_3_o_AND_35_o'
-  Total number of paths / destination ports: 7 / 1
--------------------------------------------------------------------------
-Offset:              5.966ns (Levels of Logic = 4)
-  Source:            switch<1> (PAD)
-  Destination:       cont_10_LDC (LATCH)
-  Destination Clock: GND_3_o_GND_3_o_AND_35_o falling
-
-  Data Path: switch<1> to cont_10_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.684  switch_1_IBUF (switch_1_IBUF)
-     LUT2:I0->O            1   0.203   0.580  n0000<6>_SW0 (N4)
-     LUT6:I5->O           76   0.205   1.823  n0000<6> (n0000)
-     LUT2:I0->O            2   0.203   0.616  GND_3_o_GND_3_o_AND_36_o1 (GND_3_o_GND_3_o_AND_36_o)
-     LDC:CLR                   0.430          cont_10_LDC
-    ----------------------------------------
-    Total                      5.966ns (2.263ns logic, 3.703ns route)
-                                       (37.9% logic, 62.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'GND_3_o_GND_3_o_AND_37_o'
-  Total number of paths / destination ports: 7 / 1
--------------------------------------------------------------------------
-Offset:              5.966ns (Levels of Logic = 4)
-  Source:            switch<1> (PAD)
-  Destination:       cont_9_LDC (LATCH)
-  Destination Clock: GND_3_o_GND_3_o_AND_37_o falling
-
-  Data Path: switch<1> to cont_9_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.684  switch_1_IBUF (switch_1_IBUF)
-     LUT2:I0->O            1   0.203   0.580  n0000<6>_SW0 (N4)
-     LUT6:I5->O           76   0.205   1.823  n0000<6> (n0000)
-     LUT2:I0->O            2   0.203   0.616  GND_3_o_GND_3_o_AND_38_o1 (GND_3_o_GND_3_o_AND_38_o)
-     LDC:CLR                   0.430          cont_9_LDC
-    ----------------------------------------
-    Total                      5.966ns (2.263ns logic, 3.703ns route)
-                                       (37.9% logic, 62.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'GND_3_o_GND_3_o_AND_39_o'
-  Total number of paths / destination ports: 7 / 1
--------------------------------------------------------------------------
-Offset:              5.966ns (Levels of Logic = 4)
-  Source:            switch<1> (PAD)
-  Destination:       cont_8_LDC (LATCH)
-  Destination Clock: GND_3_o_GND_3_o_AND_39_o falling
-
-  Data Path: switch<1> to cont_8_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.684  switch_1_IBUF (switch_1_IBUF)
-     LUT2:I0->O            1   0.203   0.580  n0000<6>_SW0 (N4)
-     LUT6:I5->O           76   0.205   1.823  n0000<6> (n0000)
-     LUT2:I0->O            2   0.203   0.616  GND_3_o_GND_3_o_AND_40_o1 (GND_3_o_GND_3_o_AND_40_o)
-     LDC:CLR                   0.430          cont_8_LDC
-    ----------------------------------------
-    Total                      5.966ns (2.263ns logic, 3.703ns route)
-                                       (37.9% logic, 62.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'GND_3_o_GND_3_o_AND_41_o'
-  Total number of paths / destination ports: 7 / 1
--------------------------------------------------------------------------
-Offset:              5.966ns (Levels of Logic = 4)
-  Source:            switch<1> (PAD)
-  Destination:       cont_7_LDC (LATCH)
-  Destination Clock: GND_3_o_GND_3_o_AND_41_o falling
-
-  Data Path: switch<1> to cont_7_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.684  switch_1_IBUF (switch_1_IBUF)
-     LUT2:I0->O            1   0.203   0.580  n0000<6>_SW0 (N4)
-     LUT6:I5->O           76   0.205   1.823  n0000<6> (n0000)
-     LUT2:I0->O            2   0.203   0.616  GND_3_o_GND_3_o_AND_42_o1 (GND_3_o_GND_3_o_AND_42_o)
-     LDC:CLR                   0.430          cont_7_LDC
-    ----------------------------------------
-    Total                      5.966ns (2.263ns logic, 3.703ns route)
-                                       (37.9% logic, 62.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'GND_3_o_GND_3_o_AND_43_o'
-  Total number of paths / destination ports: 7 / 1
--------------------------------------------------------------------------
-Offset:              5.966ns (Levels of Logic = 4)
-  Source:            switch<1> (PAD)
-  Destination:       cont_6_LDC (LATCH)
-  Destination Clock: GND_3_o_GND_3_o_AND_43_o falling
-
-  Data Path: switch<1> to cont_6_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.684  switch_1_IBUF (switch_1_IBUF)
-     LUT2:I0->O            1   0.203   0.580  n0000<6>_SW0 (N4)
-     LUT6:I5->O           76   0.205   1.823  n0000<6> (n0000)
-     LUT2:I0->O            2   0.203   0.616  GND_3_o_GND_3_o_AND_44_o1 (GND_3_o_GND_3_o_AND_44_o)
-     LDC:CLR                   0.430          cont_6_LDC
-    ----------------------------------------
-    Total                      5.966ns (2.263ns logic, 3.703ns route)
-                                       (37.9% logic, 62.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'GND_3_o_GND_3_o_AND_45_o'
-  Total number of paths / destination ports: 7 / 1
--------------------------------------------------------------------------
-Offset:              5.966ns (Levels of Logic = 4)
-  Source:            switch<1> (PAD)
-  Destination:       cont_5_LDC (LATCH)
-  Destination Clock: GND_3_o_GND_3_o_AND_45_o falling
-
-  Data Path: switch<1> to cont_5_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.684  switch_1_IBUF (switch_1_IBUF)
-     LUT2:I0->O            1   0.203   0.580  n0000<6>_SW0 (N4)
-     LUT6:I5->O           76   0.205   1.823  n0000<6> (n0000)
-     LUT2:I0->O            2   0.203   0.616  GND_3_o_GND_3_o_AND_46_o1 (GND_3_o_GND_3_o_AND_46_o)
-     LDC:CLR                   0.430          cont_5_LDC
-    ----------------------------------------
-    Total                      5.966ns (2.263ns logic, 3.703ns route)
-                                       (37.9% logic, 62.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'GND_3_o_GND_3_o_AND_47_o'
-  Total number of paths / destination ports: 7 / 1
--------------------------------------------------------------------------
-Offset:              5.966ns (Levels of Logic = 4)
-  Source:            switch<1> (PAD)
-  Destination:       cont_4_LDC (LATCH)
-  Destination Clock: GND_3_o_GND_3_o_AND_47_o falling
-
-  Data Path: switch<1> to cont_4_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.684  switch_1_IBUF (switch_1_IBUF)
-     LUT2:I0->O            1   0.203   0.580  n0000<6>_SW0 (N4)
-     LUT6:I5->O           76   0.205   1.823  n0000<6> (n0000)
-     LUT2:I0->O            2   0.203   0.616  GND_3_o_GND_3_o_AND_48_o1 (GND_3_o_GND_3_o_AND_48_o)
-     LDC:CLR                   0.430          cont_4_LDC
-    ----------------------------------------
-    Total                      5.966ns (2.263ns logic, 3.703ns route)
-                                       (37.9% logic, 62.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'GND_3_o_GND_3_o_AND_49_o'
-  Total number of paths / destination ports: 7 / 1
--------------------------------------------------------------------------
-Offset:              5.966ns (Levels of Logic = 4)
-  Source:            switch<1> (PAD)
-  Destination:       cont_3_LDC (LATCH)
-  Destination Clock: GND_3_o_GND_3_o_AND_49_o falling
-
-  Data Path: switch<1> to cont_3_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.684  switch_1_IBUF (switch_1_IBUF)
-     LUT2:I0->O            1   0.203   0.580  n0000<6>_SW0 (N4)
-     LUT6:I5->O           76   0.205   1.823  n0000<6> (n0000)
-     LUT2:I0->O            2   0.203   0.616  GND_3_o_GND_3_o_AND_50_o1 (GND_3_o_GND_3_o_AND_50_o)
-     LDC:CLR                   0.430          cont_3_LDC
-    ----------------------------------------
-    Total                      5.966ns (2.263ns logic, 3.703ns route)
-                                       (37.9% logic, 62.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'GND_3_o_GND_3_o_AND_51_o'
-  Total number of paths / destination ports: 7 / 1
--------------------------------------------------------------------------
-Offset:              5.966ns (Levels of Logic = 4)
-  Source:            switch<1> (PAD)
-  Destination:       cont_2_LDC (LATCH)
-  Destination Clock: GND_3_o_GND_3_o_AND_51_o falling
-
-  Data Path: switch<1> to cont_2_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.684  switch_1_IBUF (switch_1_IBUF)
-     LUT2:I0->O            1   0.203   0.580  n0000<6>_SW0 (N4)
-     LUT6:I5->O           76   0.205   1.823  n0000<6> (n0000)
-     LUT2:I0->O            2   0.203   0.616  GND_3_o_GND_3_o_AND_52_o1 (GND_3_o_GND_3_o_AND_52_o)
-     LDC:CLR                   0.430          cont_2_LDC
-    ----------------------------------------
-    Total                      5.966ns (2.263ns logic, 3.703ns route)
-                                       (37.9% logic, 62.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'GND_3_o_GND_3_o_AND_53_o'
-  Total number of paths / destination ports: 7 / 1
--------------------------------------------------------------------------
-Offset:              5.966ns (Levels of Logic = 4)
-  Source:            switch<1> (PAD)
-  Destination:       cont_1_LDC (LATCH)
-  Destination Clock: GND_3_o_GND_3_o_AND_53_o falling
-
-  Data Path: switch<1> to cont_1_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.684  switch_1_IBUF (switch_1_IBUF)
-     LUT2:I0->O            1   0.203   0.580  n0000<6>_SW0 (N4)
-     LUT6:I5->O           76   0.205   1.823  n0000<6> (n0000)
-     LUT2:I0->O            2   0.203   0.616  GND_3_o_GND_3_o_AND_54_o1 (GND_3_o_GND_3_o_AND_54_o)
-     LDC:CLR                   0.430          cont_1_LDC
-    ----------------------------------------
-    Total                      5.966ns (2.263ns logic, 3.703ns route)
-                                       (37.9% logic, 62.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'GND_3_o_sel[3]_AND_71_o'
-  Total number of paths / destination ports: 7 / 1
--------------------------------------------------------------------------
-Offset:              5.966ns (Levels of Logic = 4)
-  Source:            switch<1> (PAD)
-  Destination:       sel_3_LDC (LATCH)
-  Destination Clock: GND_3_o_sel[3]_AND_71_o falling
-
-  Data Path: switch<1> to sel_3_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.684  switch_1_IBUF (switch_1_IBUF)
-     LUT2:I0->O            1   0.203   0.580  n0000<6>_SW0 (N4)
-     LUT6:I5->O           76   0.205   1.823  n0000<6> (n0000)
-     LUT2:I0->O            2   0.203   0.616  GND_3_o_sel[3]_AND_72_o1 (GND_3_o_sel[3]_AND_72_o)
-     LDC:CLR                   0.430          sel_3_LDC
-    ----------------------------------------
-    Total                      5.966ns (2.263ns logic, 3.703ns route)
-                                       (37.9% logic, 62.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'GND_3_o_sel[3]_AND_73_o'
-  Total number of paths / destination ports: 7 / 1
--------------------------------------------------------------------------
-Offset:              5.966ns (Levels of Logic = 4)
-  Source:            switch<1> (PAD)
-  Destination:       sel_2_LDC (LATCH)
-  Destination Clock: GND_3_o_sel[3]_AND_73_o falling
-
-  Data Path: switch<1> to sel_2_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.684  switch_1_IBUF (switch_1_IBUF)
-     LUT2:I0->O            1   0.203   0.580  n0000<6>_SW0 (N4)
-     LUT6:I5->O           76   0.205   1.823  n0000<6> (n0000)
-     LUT2:I0->O            2   0.203   0.616  GND_3_o_sel[3]_AND_74_o1 (GND_3_o_sel[3]_AND_74_o)
-     LDC:CLR                   0.430          sel_2_LDC
-    ----------------------------------------
-    Total                      5.966ns (2.263ns logic, 3.703ns route)
-                                       (37.9% logic, 62.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'GND_3_o_sel[3]_AND_75_o'
-  Total number of paths / destination ports: 7 / 1
--------------------------------------------------------------------------
-Offset:              5.966ns (Levels of Logic = 4)
-  Source:            switch<1> (PAD)
-  Destination:       sel_1_LDC (LATCH)
-  Destination Clock: GND_3_o_sel[3]_AND_75_o falling
-
-  Data Path: switch<1> to sel_1_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.684  switch_1_IBUF (switch_1_IBUF)
-     LUT2:I0->O            1   0.203   0.580  n0000<6>_SW0 (N4)
-     LUT6:I5->O           76   0.205   1.823  n0000<6> (n0000)
-     LUT2:I0->O            2   0.203   0.616  GND_3_o_sel[3]_AND_76_o1 (GND_3_o_sel[3]_AND_76_o)
-     LDC:CLR                   0.430          sel_1_LDC
-    ----------------------------------------
-    Total                      5.966ns (2.263ns logic, 3.703ns route)
-                                       (37.9% logic, 62.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'GND_3_o_sel[3]_AND_77_o'
-  Total number of paths / destination ports: 7 / 1
--------------------------------------------------------------------------
-Offset:              5.929ns (Levels of Logic = 4)
-  Source:            switch<1> (PAD)
-  Destination:       sel_0_LDC (LATCH)
-  Destination Clock: GND_3_o_sel[3]_AND_77_o falling
-
-  Data Path: switch<1> to sel_0_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.684  switch_1_IBUF (switch_1_IBUF)
-     LUT2:I0->O            1   0.203   0.580  n0000<6>_SW0 (N4)
-     LUT6:I5->O           76   0.205   1.823  n0000<6> (n0000)
-     LUT2:I0->O            1   0.203   0.579  GND_3_o_sel[3]_AND_78_o1 (GND_3_o_sel[3]_AND_78_o)
-     LDC:CLR                   0.430          sel_0_LDC
-    ----------------------------------------
-    Total                      5.929ns (2.263ns logic, 3.666ns route)
-                                       (38.2% logic, 61.8% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'GND_3_o_GND_3_o_AND_55_o'
-  Total number of paths / destination ports: 7 / 1
--------------------------------------------------------------------------
-Offset:              5.966ns (Levels of Logic = 4)
-  Source:            switch<1> (PAD)
-  Destination:       cont_0_LDC (LATCH)
-  Destination Clock: GND_3_o_GND_3_o_AND_55_o falling
-
-  Data Path: switch<1> to cont_0_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.684  switch_1_IBUF (switch_1_IBUF)
-     LUT2:I0->O            1   0.203   0.580  n0000<6>_SW0 (N4)
-     LUT6:I5->O           76   0.205   1.823  n0000<6> (n0000)
-     LUT2:I0->O            2   0.203   0.616  GND_3_o_GND_3_o_AND_56_o1 (GND_3_o_GND_3_o_AND_56_o)
-     LDC:CLR                   0.430          cont_0_LDC
-    ----------------------------------------
-    Total                      5.966ns (2.263ns logic, 3.703ns route)
-                                       (37.9% logic, 62.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'GND_3_o_GND_3_o_AND_57_o'
-  Total number of paths / destination ports: 7 / 1
--------------------------------------------------------------------------
-Offset:              5.966ns (Levels of Logic = 4)
-  Source:            switch<1> (PAD)
-  Destination:       disp_6_LDC (LATCH)
-  Destination Clock: GND_3_o_GND_3_o_AND_57_o falling
-
-  Data Path: switch<1> to disp_6_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.684  switch_1_IBUF (switch_1_IBUF)
-     LUT2:I0->O            1   0.203   0.580  n0000<6>_SW0 (N4)
-     LUT6:I5->O           76   0.205   1.823  n0000<6> (n0000)
-     LUT2:I0->O            2   0.203   0.616  GND_3_o_GND_3_o_AND_58_o1 (GND_3_o_GND_3_o_AND_58_o)
-     LDC:CLR                   0.430          disp_6_LDC
-    ----------------------------------------
-    Total                      5.966ns (2.263ns logic, 3.703ns route)
-                                       (37.9% logic, 62.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'GND_3_o_GND_3_o_AND_59_o'
-  Total number of paths / destination ports: 7 / 1
--------------------------------------------------------------------------
-Offset:              5.966ns (Levels of Logic = 4)
-  Source:            switch<1> (PAD)
-  Destination:       disp_5_LDC (LATCH)
-  Destination Clock: GND_3_o_GND_3_o_AND_59_o falling
-
-  Data Path: switch<1> to disp_5_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.684  switch_1_IBUF (switch_1_IBUF)
-     LUT2:I0->O            1   0.203   0.580  n0000<6>_SW0 (N4)
-     LUT6:I5->O           76   0.205   1.823  n0000<6> (n0000)
-     LUT2:I0->O            2   0.203   0.616  GND_3_o_GND_3_o_AND_60_o1 (GND_3_o_GND_3_o_AND_60_o)
-     LDC:CLR                   0.430          disp_5_LDC
-    ----------------------------------------
-    Total                      5.966ns (2.263ns logic, 3.703ns route)
-                                       (37.9% logic, 62.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'GND_3_o_GND_3_o_AND_61_o'
-  Total number of paths / destination ports: 7 / 1
--------------------------------------------------------------------------
-Offset:              5.966ns (Levels of Logic = 4)
-  Source:            switch<1> (PAD)
-  Destination:       disp_4_LDC (LATCH)
-  Destination Clock: GND_3_o_GND_3_o_AND_61_o falling
-
-  Data Path: switch<1> to disp_4_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.684  switch_1_IBUF (switch_1_IBUF)
-     LUT2:I0->O            1   0.203   0.580  n0000<6>_SW0 (N4)
-     LUT6:I5->O           76   0.205   1.823  n0000<6> (n0000)
-     LUT2:I0->O            2   0.203   0.616  GND_3_o_GND_3_o_AND_62_o1 (GND_3_o_GND_3_o_AND_62_o)
-     LDC:CLR                   0.430          disp_4_LDC
-    ----------------------------------------
-    Total                      5.966ns (2.263ns logic, 3.703ns route)
-                                       (37.9% logic, 62.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'GND_3_o_GND_3_o_AND_63_o'
-  Total number of paths / destination ports: 7 / 1
--------------------------------------------------------------------------
-Offset:              5.966ns (Levels of Logic = 4)
-  Source:            switch<1> (PAD)
-  Destination:       disp_3_LDC (LATCH)
-  Destination Clock: GND_3_o_GND_3_o_AND_63_o falling
-
-  Data Path: switch<1> to disp_3_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.684  switch_1_IBUF (switch_1_IBUF)
-     LUT2:I0->O            1   0.203   0.580  n0000<6>_SW0 (N4)
-     LUT6:I5->O           76   0.205   1.823  n0000<6> (n0000)
-     LUT2:I0->O            2   0.203   0.616  GND_3_o_GND_3_o_AND_64_o1 (GND_3_o_GND_3_o_AND_64_o)
-     LDC:CLR                   0.430          disp_3_LDC
-    ----------------------------------------
-    Total                      5.966ns (2.263ns logic, 3.703ns route)
-                                       (37.9% logic, 62.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'GND_3_o_GND_3_o_AND_65_o'
-  Total number of paths / destination ports: 7 / 1
--------------------------------------------------------------------------
-Offset:              5.966ns (Levels of Logic = 4)
-  Source:            switch<1> (PAD)
-  Destination:       disp_2_LDC (LATCH)
-  Destination Clock: GND_3_o_GND_3_o_AND_65_o falling
-
-  Data Path: switch<1> to disp_2_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.684  switch_1_IBUF (switch_1_IBUF)
-     LUT2:I0->O            1   0.203   0.580  n0000<6>_SW0 (N4)
-     LUT6:I5->O           76   0.205   1.823  n0000<6> (n0000)
-     LUT2:I0->O            2   0.203   0.616  GND_3_o_GND_3_o_AND_66_o1 (GND_3_o_GND_3_o_AND_66_o)
-     LDC:CLR                   0.430          disp_2_LDC
-    ----------------------------------------
-    Total                      5.966ns (2.263ns logic, 3.703ns route)
-                                       (37.9% logic, 62.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'GND_3_o_GND_3_o_AND_67_o'
-  Total number of paths / destination ports: 7 / 1
--------------------------------------------------------------------------
-Offset:              5.966ns (Levels of Logic = 4)
-  Source:            switch<1> (PAD)
-  Destination:       disp_1_LDC (LATCH)
-  Destination Clock: GND_3_o_GND_3_o_AND_67_o falling
-
-  Data Path: switch<1> to disp_1_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.684  switch_1_IBUF (switch_1_IBUF)
-     LUT2:I0->O            1   0.203   0.580  n0000<6>_SW0 (N4)
-     LUT6:I5->O           76   0.205   1.823  n0000<6> (n0000)
-     LUT2:I0->O            2   0.203   0.616  GND_3_o_GND_3_o_AND_68_o1 (GND_3_o_GND_3_o_AND_68_o)
-     LDC:CLR                   0.430          disp_1_LDC
-    ----------------------------------------
-    Total                      5.966ns (2.263ns logic, 3.703ns route)
-                                       (37.9% logic, 62.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'GND_3_o_GND_3_o_AND_69_o'
-  Total number of paths / destination ports: 7 / 1
--------------------------------------------------------------------------
-Offset:              5.966ns (Levels of Logic = 4)
-  Source:            switch<1> (PAD)
-  Destination:       disp_0_LDC (LATCH)
-  Destination Clock: GND_3_o_GND_3_o_AND_69_o falling
-
-  Data Path: switch<1> to disp_0_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.684  switch_1_IBUF (switch_1_IBUF)
-     LUT2:I0->O            1   0.203   0.580  n0000<6>_SW0 (N4)
-     LUT6:I5->O           76   0.205   1.823  n0000<6> (n0000)
-     LUT2:I0->O            2   0.203   0.616  GND_3_o_GND_3_o_AND_70_o1 (GND_3_o_GND_3_o_AND_70_o)
-     LDC:CLR                   0.430          disp_0_LDC
-    ----------------------------------------
-    Total                      5.966ns (2.263ns logic, 3.703ns route)
-                                       (37.9% logic, 62.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'GND_3_o_GND_3_o_AND_57_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              4.661ns (Levels of Logic = 2)
-  Source:            disp_6_LDC (LATCH)
-  Destination:       disp<6> (PAD)
-  Source Clock:      GND_3_o_GND_3_o_AND_57_o falling
-
-  Data Path: disp_6_LDC to disp<6>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LDC:G->Q              1   0.498   0.808  disp_6_LDC (disp_6_LDC)
-     LUT3:I0->O            1   0.205   0.579  disp_61 (disp_6)
-     OBUF:I->O                 2.571          disp_6_OBUF (disp<6>)
-    ----------------------------------------
-    Total                      4.661ns (3.274ns logic, 1.387ns route)
-                                       (70.2% logic, 29.8% route)
+    Total                      9.251ns (3.270ns logic, 5.981ns route)
+                                       (35.3% logic, 64.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 14 / 11
+  Total number of paths / destination ports: 11 / 11
 -------------------------------------------------------------------------
-Offset:              4.627ns (Levels of Logic = 2)
-  Source:            sel_3_C_3 (FF)
-  Destination:       sel<3> (PAD)
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            disp_6 (FF)
+  Destination:       disp<6> (PAD)
   Source Clock:      clk rising
 
-  Data Path: sel_3_C_3 to sel<3>
+  Data Path: disp_6 to disp<6>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              3   0.447   0.755  sel_3_C_3 (sel_3_C_3)
-     LUT3:I1->O            3   0.203   0.650  sel_31 (sel_3)
-     OBUF:I->O                 2.571          sel_3_OBUF (sel<3>)
+     FDR:C->Q              1   0.447   0.579  disp_6 (disp_6)
+     OBUF:I->O                 2.571          disp_6_OBUF (disp<6>)
     ----------------------------------------
-    Total                      4.627ns (3.221ns logic, 1.405ns route)
-                                       (69.6% logic, 30.4% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'GND_3_o_GND_3_o_AND_59_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              4.661ns (Levels of Logic = 2)
-  Source:            disp_5_LDC (LATCH)
-  Destination:       disp<5> (PAD)
-  Source Clock:      GND_3_o_GND_3_o_AND_59_o falling
-
-  Data Path: disp_5_LDC to disp<5>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LDC:G->Q              1   0.498   0.808  disp_5_LDC (disp_5_LDC)
-     LUT3:I0->O            1   0.205   0.579  disp_51 (disp_5)
-     OBUF:I->O                 2.571          disp_5_OBUF (disp<5>)
-    ----------------------------------------
-    Total                      4.661ns (3.274ns logic, 1.387ns route)
-                                       (70.2% logic, 29.8% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'GND_3_o_GND_3_o_AND_61_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              4.661ns (Levels of Logic = 2)
-  Source:            disp_4_LDC (LATCH)
-  Destination:       disp<4> (PAD)
-  Source Clock:      GND_3_o_GND_3_o_AND_61_o falling
-
-  Data Path: disp_4_LDC to disp<4>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LDC:G->Q              1   0.498   0.808  disp_4_LDC (disp_4_LDC)
-     LUT3:I0->O            1   0.205   0.579  disp_41 (disp_4)
-     OBUF:I->O                 2.571          disp_4_OBUF (disp<4>)
-    ----------------------------------------
-    Total                      4.661ns (3.274ns logic, 1.387ns route)
-                                       (70.2% logic, 29.8% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'GND_3_o_GND_3_o_AND_63_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              4.661ns (Levels of Logic = 2)
-  Source:            disp_3_LDC (LATCH)
-  Destination:       disp<3> (PAD)
-  Source Clock:      GND_3_o_GND_3_o_AND_63_o falling
-
-  Data Path: disp_3_LDC to disp<3>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LDC:G->Q              1   0.498   0.808  disp_3_LDC (disp_3_LDC)
-     LUT3:I0->O            1   0.205   0.579  disp_31 (disp_3)
-     OBUF:I->O                 2.571          disp_3_OBUF (disp<3>)
-    ----------------------------------------
-    Total                      4.661ns (3.274ns logic, 1.387ns route)
-                                       (70.2% logic, 29.8% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'GND_3_o_GND_3_o_AND_65_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              4.661ns (Levels of Logic = 2)
-  Source:            disp_2_LDC (LATCH)
-  Destination:       disp<2> (PAD)
-  Source Clock:      GND_3_o_GND_3_o_AND_65_o falling
-
-  Data Path: disp_2_LDC to disp<2>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LDC:G->Q              1   0.498   0.808  disp_2_LDC (disp_2_LDC)
-     LUT3:I0->O            1   0.205   0.579  disp_21 (disp_2)
-     OBUF:I->O                 2.571          disp_2_OBUF (disp<2>)
-    ----------------------------------------
-    Total                      4.661ns (3.274ns logic, 1.387ns route)
-                                       (70.2% logic, 29.8% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'GND_3_o_GND_3_o_AND_67_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              4.661ns (Levels of Logic = 2)
-  Source:            disp_1_LDC (LATCH)
-  Destination:       disp<1> (PAD)
-  Source Clock:      GND_3_o_GND_3_o_AND_67_o falling
-
-  Data Path: disp_1_LDC to disp<1>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LDC:G->Q              1   0.498   0.808  disp_1_LDC (disp_1_LDC)
-     LUT3:I0->O            1   0.205   0.579  disp_11 (disp_1)
-     OBUF:I->O                 2.571          disp_1_OBUF (disp<1>)
-    ----------------------------------------
-    Total                      4.661ns (3.274ns logic, 1.387ns route)
-                                       (70.2% logic, 29.8% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'GND_3_o_GND_3_o_AND_69_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              4.661ns (Levels of Logic = 2)
-  Source:            disp_0_LDC (LATCH)
-  Destination:       disp<0> (PAD)
-  Source Clock:      GND_3_o_GND_3_o_AND_69_o falling
-
-  Data Path: disp_0_LDC to disp<0>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LDC:G->Q              1   0.498   0.808  disp_0_LDC (disp_0_LDC)
-     LUT3:I0->O            1   0.205   0.579  disp_01 (disp_0)
-     OBUF:I->O                 2.571          disp_0_OBUF (disp<0>)
-    ----------------------------------------
-    Total                      4.661ns (3.274ns logic, 1.387ns route)
-                                       (70.2% logic, 29.8% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'GND_3_o_sel[3]_AND_71_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              4.804ns (Levels of Logic = 2)
-  Source:            sel_3_LDC (LATCH)
-  Destination:       sel<3> (PAD)
-  Source Clock:      GND_3_o_sel[3]_AND_71_o falling
-
-  Data Path: sel_3_LDC to sel<3>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LDC:G->Q              3   0.498   0.879  sel_3_LDC (sel_3_LDC)
-     LUT3:I0->O            3   0.205   0.650  sel_31 (sel_3)
-     OBUF:I->O                 2.571          sel_3_OBUF (sel<3>)
-    ----------------------------------------
-    Total                      4.804ns (3.274ns logic, 1.530ns route)
-                                       (68.2% logic, 31.8% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'GND_3_o_sel[3]_AND_73_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              4.804ns (Levels of Logic = 2)
-  Source:            sel_2_LDC (LATCH)
-  Destination:       sel<2> (PAD)
-  Source Clock:      GND_3_o_sel[3]_AND_73_o falling
-
-  Data Path: sel_2_LDC to sel<2>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LDC:G->Q              3   0.498   0.879  sel_2_LDC (sel_2_LDC)
-     LUT3:I0->O            3   0.205   0.650  sel_21 (sel_2)
-     OBUF:I->O                 2.571          sel_2_OBUF (sel<2>)
-    ----------------------------------------
-    Total                      4.804ns (3.274ns logic, 1.530ns route)
-                                       (68.2% logic, 31.8% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'GND_3_o_sel[3]_AND_75_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              4.804ns (Levels of Logic = 2)
-  Source:            sel_1_LDC (LATCH)
-  Destination:       sel<1> (PAD)
-  Source Clock:      GND_3_o_sel[3]_AND_75_o falling
-
-  Data Path: sel_1_LDC to sel<1>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LDC:G->Q              3   0.498   0.879  sel_1_LDC (sel_1_LDC)
-     LUT3:I0->O            3   0.205   0.650  sel_11 (sel_1)
-     OBUF:I->O                 2.571          sel_1_OBUF (sel<1>)
-    ----------------------------------------
-    Total                      4.804ns (3.274ns logic, 1.530ns route)
-                                       (68.2% logic, 31.8% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'GND_3_o_sel[3]_AND_77_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              4.802ns (Levels of Logic = 2)
-  Source:            sel_0_LDC (LATCH)
-  Destination:       sel<0> (PAD)
-  Source Clock:      GND_3_o_sel[3]_AND_77_o falling
-
-  Data Path: sel_0_LDC to sel<0>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LDC:G->Q              2   0.498   0.845  sel_0_LDC (sel_0_LDC)
-     LUT3:I0->O            4   0.205   0.683  sel_01 (sel_0)
-     OBUF:I->O                 2.571          sel_0_OBUF (sel<0>)
-    ----------------------------------------
-    Total                      4.802ns (3.274ns logic, 1.528ns route)
-                                       (68.2% logic, 31.8% route)
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
 
 =========================================================================
 
 Cross Clock Domains Report:
 --------------------------
 
-Clock to Setup on destination clock GND_3_o_GND_3_o_AND_11_o
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    2.316|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock GND_3_o_GND_3_o_AND_13_o
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    2.316|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock GND_3_o_GND_3_o_AND_15_o
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    2.316|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock GND_3_o_GND_3_o_AND_17_o
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    2.316|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock GND_3_o_GND_3_o_AND_19_o
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    2.316|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock GND_3_o_GND_3_o_AND_21_o
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    2.316|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock GND_3_o_GND_3_o_AND_23_o
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    2.316|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock GND_3_o_GND_3_o_AND_25_o
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    2.316|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock GND_3_o_GND_3_o_AND_27_o
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    2.316|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock GND_3_o_GND_3_o_AND_29_o
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    2.316|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock GND_3_o_GND_3_o_AND_31_o
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    2.316|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock GND_3_o_GND_3_o_AND_33_o
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    2.316|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock GND_3_o_GND_3_o_AND_35_o
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    2.316|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock GND_3_o_GND_3_o_AND_37_o
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    2.316|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock GND_3_o_GND_3_o_AND_39_o
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    2.316|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock GND_3_o_GND_3_o_AND_3_o
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    2.316|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock GND_3_o_GND_3_o_AND_41_o
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    2.316|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock GND_3_o_GND_3_o_AND_43_o
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    2.316|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock GND_3_o_GND_3_o_AND_45_o
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    2.316|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock GND_3_o_GND_3_o_AND_47_o
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    2.316|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock GND_3_o_GND_3_o_AND_49_o
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    2.316|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock GND_3_o_GND_3_o_AND_51_o
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    2.316|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock GND_3_o_GND_3_o_AND_53_o
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    2.316|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock GND_3_o_GND_3_o_AND_55_o
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    2.316|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock GND_3_o_GND_3_o_AND_57_o
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    2.316|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock GND_3_o_GND_3_o_AND_59_o
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    2.316|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock GND_3_o_GND_3_o_AND_5_o
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    2.316|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock GND_3_o_GND_3_o_AND_61_o
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    2.316|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock GND_3_o_GND_3_o_AND_63_o
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    2.316|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock GND_3_o_GND_3_o_AND_65_o
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    2.316|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock GND_3_o_GND_3_o_AND_67_o
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    2.316|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock GND_3_o_GND_3_o_AND_69_o
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    2.316|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock GND_3_o_GND_3_o_AND_7_o
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    2.316|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock GND_3_o_GND_3_o_AND_9_o
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    2.316|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock GND_3_o_sel[3]_AND_71_o
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    2.316|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock GND_3_o_sel[3]_AND_73_o
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    2.316|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock GND_3_o_sel[3]_AND_75_o
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    2.316|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock GND_3_o_sel[3]_AND_77_o
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    2.278|         |
----------------+---------+---------+---------+---------+
-
 Clock to Setup on destination clock clk
-------------------------+---------+---------+---------+---------+
-                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-------------------------+---------+---------+---------+---------+
-GND_3_o_GND_3_o_AND_11_o|         |    8.936|         |         |
-GND_3_o_GND_3_o_AND_13_o|         |    8.810|         |         |
-GND_3_o_GND_3_o_AND_15_o|         |    8.708|         |         |
-GND_3_o_GND_3_o_AND_17_o|         |    8.860|         |         |
-GND_3_o_GND_3_o_AND_19_o|         |    8.616|         |         |
-GND_3_o_GND_3_o_AND_21_o|         |    8.758|         |         |
-GND_3_o_GND_3_o_AND_23_o|         |    8.842|         |         |
-GND_3_o_GND_3_o_AND_25_o|         |    8.827|         |         |
-GND_3_o_GND_3_o_AND_27_o|         |    8.924|         |         |
-GND_3_o_GND_3_o_AND_29_o|         |    8.944|         |         |
-GND_3_o_GND_3_o_AND_31_o|         |    8.725|         |         |
-GND_3_o_GND_3_o_AND_33_o|         |    8.708|         |         |
-GND_3_o_GND_3_o_AND_35_o|         |    8.582|         |         |
-GND_3_o_GND_3_o_AND_37_o|         |    8.822|         |         |
-GND_3_o_GND_3_o_AND_39_o|         |    8.485|         |         |
-GND_3_o_GND_3_o_AND_3_o |         |    8.034|         |         |
-GND_3_o_GND_3_o_AND_41_o|         |    8.468|         |         |
-GND_3_o_GND_3_o_AND_43_o|         |    8.565|         |         |
-GND_3_o_GND_3_o_AND_45_o|         |    8.242|         |         |
-GND_3_o_GND_3_o_AND_47_o|         |    8.344|         |         |
-GND_3_o_GND_3_o_AND_49_o|         |    8.470|         |         |
-GND_3_o_GND_3_o_AND_51_o|         |    8.487|         |         |
-GND_3_o_GND_3_o_AND_53_o|         |    8.584|         |         |
-GND_3_o_GND_3_o_AND_55_o|         |    8.185|         |         |
-GND_3_o_GND_3_o_AND_5_o |         |    8.232|         |         |
-GND_3_o_GND_3_o_AND_7_o |         |    8.953|         |         |
-GND_3_o_GND_3_o_AND_9_o |         |    9.050|         |         |
-GND_3_o_sel[3]_AND_71_o |         |    4.324|         |         |
-GND_3_o_sel[3]_AND_73_o |         |    4.207|         |         |
-GND_3_o_sel[3]_AND_75_o |         |    4.304|         |         |
-GND_3_o_sel[3]_AND_77_o |         |    4.188|         |         |
-clk                     |    8.873|         |         |         |
-------------------------+---------+---------+---------+---------+
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    9.715|         |         |         |
+---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 24.00 secs
-Total CPU time to Xst completion: 23.10 secs
+Total REAL time to Xst completion: 18.00 secs
+Total CPU time to Xst completion: 16.92 secs
  
 --> 
 
 
-Total memory usage is 371232 kilobytes
+Total memory usage is 371152 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    2 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
 Number of infos    :    1 (   0 filtered)
 

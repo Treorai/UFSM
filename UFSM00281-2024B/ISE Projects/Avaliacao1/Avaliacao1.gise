@@ -52,7 +52,11 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="fumiga.ut" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="fumiga.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="fumiga.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="fumiga_beh.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="fumiga_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="fumiga_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="fumiga_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="fumiga_isim_beh.wdb"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="fumiga_map.map" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="fumiga_map.mrp" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="fumiga_map.ncd" xil_pn:subbranch="Map"/>
@@ -62,18 +66,86 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="fumiga_pad.csv" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="fumiga_pad.txt" xil_pn:subbranch="Par"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="fumiga_par.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="fumiga_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="fumiga_summary.html"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="fumiga_summary.xml"/>
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="fumiga_usage.xml"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="fumiga_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1730729393" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1730729393">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1730730530" xil_pn:in_ck="2895116140072824681" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1730730530">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="disp.vhd"/>
+      <outfile xil_pn:name="fumiga.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1730729398" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-8660838839135132730" xil_pn:start_ts="1730729398">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1730729398" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="715418043631961988" xil_pn:start_ts="1730729398">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1730729398" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-2771899024749043981" xil_pn:start_ts="1730729398">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1730730530" xil_pn:in_ck="2895116140072824681" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1730730530">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="disp.vhd"/>
+      <outfile xil_pn:name="fumiga.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1730730537" xil_pn:in_ck="2895116140072824681" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-8677558333524708363" xil_pn:start_ts="1730730530">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="fumiga_beh.prj"/>
+      <outfile xil_pn:name="fumiga_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1730730930" xil_pn:in_ck="-8560071719856164504" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3424231846915743192" xil_pn:start_ts="1730730929">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="fumiga_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
     <transform xil_pn:end_ts="1730224449" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1730224448">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -102,14 +174,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1730225801" xil_pn:in_ck="4903306379519593" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="8712065396603803490" xil_pn:start_ts="1730225765">
+    <transform xil_pn:end_ts="1731006547" xil_pn:in_ck="2895116140072824681" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="8712065396603803490" xil_pn:start_ts="1731006522">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="fumiga.lso"/>
@@ -119,34 +187,28 @@
       <outfile xil_pn:name="fumiga.stx"/>
       <outfile xil_pn:name="fumiga.syr"/>
       <outfile xil_pn:name="fumiga.xst"/>
+      <outfile xil_pn:name="fumiga_beh.prj"/>
+      <outfile xil_pn:name="fumiga_stx_beh.prj"/>
       <outfile xil_pn:name="fumiga_xst.xrpt"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1730224479" xil_pn:in_ck="4913312808198" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-8753889520814432399" xil_pn:start_ts="1730224479">
+    <transform xil_pn:end_ts="1730756702" xil_pn:in_ck="4913312808198" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-8753889520814432399" xil_pn:start_ts="1730756701">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputChanged"/>
     </transform>
-    <transform xil_pn:end_ts="1730225817" xil_pn:in_ck="-492897693348048827" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="5448417808748229428" xil_pn:start_ts="1730225801">
+    <transform xil_pn:end_ts="1731006559" xil_pn:in_ck="-492897693348048827" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="5448417808748229428" xil_pn:start_ts="1731006547">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="fumiga.bld"/>
       <outfile xil_pn:name="fumiga.ngd"/>
       <outfile xil_pn:name="fumiga_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1730225868" xil_pn:in_ck="-492896286939430586" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1730225817">
+    <transform xil_pn:end_ts="1731006590" xil_pn:in_ck="-492896286939430586" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1731006559">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="fumiga.pcf"/>
       <outfile xil_pn:name="fumiga_map.map"/>
@@ -157,12 +219,9 @@
       <outfile xil_pn:name="fumiga_summary.xml"/>
       <outfile xil_pn:name="fumiga_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1730225915" xil_pn:in_ck="5828239903030294879" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1730225868">
+    <transform xil_pn:end_ts="1731006627" xil_pn:in_ck="5828239903030294879" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1731006590">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
       <outfile xil_pn:name="fumiga.ncd"/>
       <outfile xil_pn:name="fumiga.pad"/>
@@ -174,12 +233,9 @@
       <outfile xil_pn:name="fumiga_pad.txt"/>
       <outfile xil_pn:name="fumiga_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1730225954" xil_pn:in_ck="4903306379510716" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="396117104113915555" xil_pn:start_ts="1730225925">
+    <transform xil_pn:end_ts="1731006652" xil_pn:in_ck="4903306379510716" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1731006627">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="fumiga.bgn"/>
       <outfile xil_pn:name="fumiga.bit"/>
@@ -189,12 +245,9 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1730225915" xil_pn:in_ck="-493081932877038398" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1730225897">
+    <transform xil_pn:end_ts="1731006627" xil_pn:in_ck="-493081932877038398" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1731006612">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
       <outfile xil_pn:name="fumiga.twr"/>
       <outfile xil_pn:name="fumiga.twx"/>
