@@ -1,0 +1,14 @@
+net "clk" loc = V10; # clock
+
+net disp(0) loc = L14;
+net disp(1) loc = N14;
+net disp(2) loc = M14;
+net disp(3) loc = U18;
+net disp(4) loc = U17;
+net disp(5) loc = T18;
+net disp(6) loc = T17;
+
+net sel(0) loc = N16;
+net sel(1) loc = N15;
+net sel(2) loc = P18;
+net sel(3) loc = P17;
