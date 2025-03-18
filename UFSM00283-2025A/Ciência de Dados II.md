@@ -44,3 +44,15 @@
 - Não etruturados
     - Texto livre (Nesta categoria o KDD é chamado KDT)
     - Imagem, audio, video
+
+## Revisão Python
+
+### Bibliotecas
+
+- Pandas
+- Numpy
+- Scikit-learn
+- Seaborn
+- **Jupyter Notebook**
+- Spyder IDE
+
