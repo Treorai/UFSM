@@ -6,3 +6,5 @@ Trabalhos realizados na diciplina CIÊNCIA DE DADOS II (UFSM00283) no primeiro s
 
 - [KDnuggets](https://www.kdnuggets.com/datasets/index.html)
     - Fonte confiável de analytics
+- [Kaggle](https://www.kaggle.com/)
+- [UCI](https://archive.ics.uci.edu/datasets)
