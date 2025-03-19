@@ -50,6 +50,35 @@ Para provar, infermalmente, a corretude de um algoritmo podemos fazer as seguint
 - Como garantir que o algoritmo sempre termina?  
 - Como garantir que o algoritmo produz a saída correta?  
 
+### Exercício
 
+Implemente um algoritmo, em pseudocódigo, que **calcula a média dos valores de um array** de números de qualquer tamanho.
 
+```dart
+List<Float> vetor[(dados)];
+int n;
+float soma;
 
+for(n = 0; n++; n < vetor[-1]) {
+  soma =+ vetor[n];
+  n++;
+}
+
+return (soma/n); 
+```
+
+Quais são as entradas válidas para o algorítmo?
+
+> Números ou Vetor de números. Não é especificado no problema quem fornece o array.
+
+O que o algoritmo deve fazer para cada entrada válida?
+
+> Somar o valor total, Somar uma unidade para média, dividir pelo total para média.
+
+Como garantir que o algoritmo sempre termina?  
+
+> Lista finita
+
+Como garantir que o algoritmo produz a saída correta?  
+
+> Lista existe e não é vazia, valores da lista são números
