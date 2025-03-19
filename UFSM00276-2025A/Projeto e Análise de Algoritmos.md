@@ -54,17 +54,21 @@ Para provar, infermalmente, a corretude de um algoritmo podemos fazer as seguint
 
 Implemente um algoritmo, em pseudocódigo, que **calcula a média dos valores de um array** de números de qualquer tamanho.
 
-```dart
-List<Float> vetor[(dados)];
-int n;
-float soma;
+```c
+# Algorithm 1
+Require: Lista de números ou números para pôr em lista.
+Ensure: Retorna o valor da média dos números.
 
-for(n = 0; n++; n < vetor[-1]) {
-  soma =+ vetor[n];
-  n++;
-}
+indice ← 0
+n ← tamanho(lista)
+soma
 
-return (soma/n); 
+while indice < n do
+  soma += lista[indice]
+  indice++;
+end while
+
+return soma/indice;
 ```
 
 Quais são as entradas válidas para o algorítmo?
