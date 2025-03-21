@@ -73,16 +73,37 @@ return soma/indice;
 
 Quais são as entradas válidas para o algorítmo?
 
-> Números ou Vetor de números. Não é especificado no problema quem fornece o array.
+> Números ou Vetor de números. Não é especificado no problema quem fornece o array.'
+
+>> Tamanho de A >= 1
 
 O que o algoritmo deve fazer para cada entrada válida?
 
 > Somar o valor total, Somar uma unidade para média, dividir pelo total para média.
 
+>> Inicializa soma = 0  
+>> Percorre cada elemento de A e acc. Soma  
+>> Calcula a média soma/n  
+>> Retorno da média  
+
 Como garantir que o algoritmo sempre termina?  
 
 > Lista finita
 
+>> Progresso: a cada iteração i = i+1  
+>> condição de parada: assumo n finito, portanto laço termina
+
 Como garantir que o algoritmo produz a saída correta?  
 
 > Lista existe e não é vazia, valores da lista são números
+
+>> | Caso | Resultado |
+>> | :- | :- |
+>> | Caso Base (n=1) | O único valor no vetor é a média |
+>> | Caso geral (n>1) | O laço soma todos os valores de A<br>A média é soma/n<br>É correto, termina |
+
+### Provando invariantes
+
+P($\theta$) => Antes da $\theta$-ésima iteração comeaçar, "Soma <- $\theta$ referente aos $i = \theta$ primeiros elementos do vetor $A[\theta \theta - 1$]  
+
+$$\sum_{k=\theta}^{\theta - 1} A[k] = \sum_{k=\theta}^{-1} \theta_{n}$$
