@@ -4,7 +4,7 @@
 
 | Pré-processamento/Seleção | Pré-processamento/Seleção | Pré-processamento/Seleção | Processamento | Interpretação |
 | :- | :- | :- | :- | :- |
-| Seleção | Limpeza | Transformação | Mineração | Interpretação | 
+| Seleção | Limpeza | Transformação | Mineração | Interpretação |
 | Os dados são selecionados a partir de uma ou mais fontes <br> Independe da estrutura | Garantir a qualidade dos dados <br> Padronizar, eliminar duplicatas, tratamento de valores ausentes | Transformar valores simbólicos para numéricos <br> Discretização de atributos <br> Criação de novos atributos | Selecionar tarefas <br> Associação, Classificação, Agrupamento, Predição <br> Escolha e aplicação do algoritmo para construir o modelo | Visualização em gráfico, mapa, etc <br>  |
 
 ### Tipos de Mineração
@@ -23,29 +23,29 @@
 
 - Apoiam o processo de KDD
 - Ferramentas visuais
-    - Weka
-    - Rapid Miner
-    - Orange data mining (DM)
+  - Weka
+  - Rapid Miner
+  - Orange data mining (DM)
 - Ferramentas não visuais
-    - Linguagem R
-    - Python para análise de dados
+  - Linguagem R
+  - Python para análise de dados
 
-### Atributos 
+### Atributos
 
 - Atributo Discreto
-    - Número finito de valores
-    - e.g: CEP, CPF
-    - Frequentemente uma variável inteira
+  - Número finito de valores
+  - e.g: CEP, CPF
+  - Frequentemente uma variável inteira
 - Atributo Contínuo
-    - Número real
-    - e.g: Temperatura
+  - Número real
+  - e.g: Temperatura
 - Estruturados
-    - Banco de dados relacional, planilhas
+  - Banco de dados relacional, planilhas
 - Semi estruturados
-    - Arquivo JSON
+  - Arquivo JSON
 - Não etruturados
-    - Texto livre (Nesta categoria o KDD é chamado KDT)
-    - Imagem, audio, video
+  - Texto livre (Nesta categoria o KDD é chamado KDT)
+  - Imagem, audio, video
 
 ## Python
 
@@ -75,20 +75,20 @@
 ### Recursos estatísticos
 
 - Distribuição de frequência
-    - Histogramas (variaveis contínuas)
-    - Gráficos de barras (variáveis categóricas)
+  - Histogramas (variaveis contínuas)
+  - Gráficos de barras (variáveis categóricas)
 - Medidas de Tendência Central
-    - Media
-    - Mediana
-    - Moda
+  - Media
+  - Mediana
+  - Moda
 - Medidas de Dispersão
-    - Variancia
-    - Desvio padrão
-    - Amplitude
+  - Variancia
+  - Desvio padrão
+  - Amplitude
 - Identificação de Outliers
-    - Boxplots
-    - Z-scores
- 
+  - Boxplots
+  - Z-scores
+
 Box-plot:
 
 ![box-plot-img](https://miro.medium.com/v2/resize:fit:8000/1*0MPDTLn8KoLApoFvI0P2vQ.png)
