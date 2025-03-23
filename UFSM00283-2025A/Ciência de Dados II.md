@@ -93,12 +93,4 @@ Box-plot:
 
 ![box-plot-img](https://miro.medium.com/v2/resize:fit:8000/1*0MPDTLn8KoLApoFvI0P2vQ.png)
 
-> Anexar collab code
-
-```py
-import numpy as np
-import IPython.display as display
-from matplotlib import pyplot as plt
-import io
-import base64
-```
+> Anexo: [Colab: 20032025](20032025_colab.md)
