@@ -6,10 +6,10 @@ Trabalhos realizados na diciplina PROJETO DIGITAL COM FPGA (UFSM00281) no segund
 djtgcfg enum
 ```
 
-```sh 
+```sh
 djtgcfg init -d Nexys3
 ```
 
-```sh 
+```sh
 djtgcfg prog -d Nexys3 -i 0 -f __.bit
 ```
