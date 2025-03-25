@@ -9,3 +9,7 @@ classes
 endereçamento sem classes
 
 criar sub redes : aumentar bits 1
+
+total se maquinas endereço 2 ^ (32-mascara)
+
+calcular primeiro e último endereço 
