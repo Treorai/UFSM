@@ -23,5 +23,5 @@ loop:
 
 	mul r16, r17	; r1:r0 <- r16 * r17
 
-	out PORTD, r0	; PORTD são os pinos pra saida
+	out PORTD, r0	; PORTD são os pinos pra saida | r0 é a saída padrão das multiplicações
 	jmp loop
