@@ -17,3 +17,6 @@ ex' 17.12.14.0/26
 calcular primeiro e último endereço e tamanho total
 
 o primeiro endereço é reservado ao modem, ou aquilo q identifica a rede ppara toda internet, e o último endereço é reservado ao broadcast
+
+
+programa wisechark??? listen to msg in betwork
