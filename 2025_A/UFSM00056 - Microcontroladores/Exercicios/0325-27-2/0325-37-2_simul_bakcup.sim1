@@ -1,0 +1,45 @@
+<circuit version="1.1.0-SR1" rev="2005" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="MCU" CircId="mega328-1" mainComp="false" Show_id="true" Show_Val="false" Pos="-124,-108" rotation="0" hflip="1" vflip="1" label="mega328-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="Exercício02_25032025/0325-27-2.hex" Auto_Load="false" saveEepr="true" Logic_Symbol="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" Clk_Out="false" MainMcu="true" SerialMon="-1" />
+
+<item itemtype="LedBar" CircId="LedBar-2" mainComp="false" Show_id="false" Show_Val="false" Pos="-204,28" rotation="90" hflip="1" vflip="1" label="LedBar-2" idLabPos="-16,-44" labelrot="0" valLabPos="-16,-56" valLabRot="0" Color="Yellow" Size="8 _Leds" Grounded="true" Threshold="2.4 V" MaxCurrent="30 mA" Resistance="0.6 Ω" />
+
+<item itemtype="SwitchDip" CircId="SwitchDip-3" mainComp="false" Show_id="false" Show_Val="false" Pos="-28,-156" rotation="90" hflip="1" vflip="1" label="SwitchDip-3" idLabPos="-16,-44" labelrot="0" valLabPos="-16,20" valLabRot="0" Size="8" Exclusive="false" CommonPin="true" State="253" />
+
+<item itemtype="Ground" CircId="Ground-4" mainComp="false" Show_id="false" Show_Val="false" Pos="-52,-168" rotation="0" hflip="1" vflip="1" label="Ground-4" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Connector" uid="Connector-2" startpinid="SwitchDip-3-switch0-pinP" endpinid="Ground-4-Gnd" pointList="-4,-164,-4,-184,-52,-184" />
+
+<item itemtype="Connector" uid="Connector-4" startpinid="mega328-1-PORTB1" endpinid="SwitchDip-3-switch1-pinN" pointList="-84,4,-12,4,-12,-140" />
+
+<item itemtype="Connector" uid="Connector-6" startpinid="SwitchDip-3-switch2-pinN" endpinid="mega328-1-PORTB2" pointList="-20,-140,-20,-4,-84,-4" />
+
+<item itemtype="Connector" uid="Connector-7" startpinid="SwitchDip-3-switch3-pinN" endpinid="mega328-1-PORTB3" pointList="-28,-140,-28,-12,-84,-12" />
+
+<item itemtype="Connector" uid="Connector-8" startpinid="SwitchDip-3-switch4-pinN" endpinid="mega328-1-PORTB4" pointList="-36,-140,-36,-20,-84,-20" />
+
+<item itemtype="Connector" uid="Connector-9" startpinid="SwitchDip-3-switch5-pinN" endpinid="mega328-1-PORTB5" pointList="-44,-140,-44,-28,-84,-28" />
+
+<item itemtype="Connector" uid="Connector-11" startpinid="mega328-1-PORTB0" endpinid="SwitchDip-3-switch0-pinN" pointList="-132,4,-132,20,-4,20,-4,-140" />
+
+<item itemtype="Connector" uid="Connector-12" startpinid="mega328-1-PORTB7" endpinid="SwitchDip-3-switch7-pinN" pointList="-132,-28,-140,-28,-140,28,-60,28,-60,-140" />
+
+<item itemtype="Connector" uid="Connector-13" startpinid="mega328-1-PORTB6" endpinid="SwitchDip-3-switch6-pinN" pointList="-132,-36,-148,-36,-148,36,-52,36,-52,-140" />
+
+<item itemtype="Connector" uid="Connector-14" startpinid="mega328-1-PORTD0" endpinid="LedBar-2-led0-pinP" pointList="-132,-92,-180,-92,-180,12" />
+
+<item itemtype="Connector" uid="Connector-15" startpinid="mega328-1-PORTD1" endpinid="LedBar-2-led1-pinP" pointList="-132,-84,-188,-84,-188,12" />
+
+<item itemtype="Connector" uid="Connector-16" startpinid="mega328-1-PORTD2" endpinid="LedBar-2-led2-pinP" pointList="-132,-76,-196,-76,-196,12" />
+
+<item itemtype="Connector" uid="Connector-17" startpinid="mega328-1-PORTD3" endpinid="LedBar-2-led3-pinP" pointList="-132,-68,-204,-68,-204,12" />
+
+<item itemtype="Connector" uid="Connector-18" startpinid="mega328-1-PORTD4" endpinid="LedBar-2-led4-pinP" pointList="-132,-60,-212,-60,-212,12" />
+
+<item itemtype="Connector" uid="Connector-19" startpinid="mega328-1-PORTD5" endpinid="LedBar-2-led5-pinP" pointList="-132,-20,-220,-20,-220,12" />
+
+<item itemtype="Connector" uid="Connector-20" startpinid="mega328-1-PORTD6" endpinid="LedBar-2-led6-pinP" pointList="-132,-12,-228,-12,-228,12" />
+
+<item itemtype="Connector" uid="Connector-21" startpinid="mega328-1-PORTD7" endpinid="LedBar-2-led7-pinP" pointList="-132,-4,-236,-4,-236,12" />
+
+</circuit>
