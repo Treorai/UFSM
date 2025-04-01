@@ -22,3 +22,5 @@ o primeiro endereço é reservado ao modem, ou aquilo q identifica a rede ppara 
 programa wireshark listen to msg in betwork
 
 https://www.wireshark.org/
+
+- protocolo (proxy) arp
