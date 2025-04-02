@@ -1,0 +1,11 @@
+<!DOCTYPE SimulIDE>
+
+<itemlib>
+	
+	<itemset category="Watto Circuits" type="Subcircuit">
+	
+		<item name="255 dec Display" folder="watto_custom" info=" Conversor de 2 bits hex para display decimal"/>
+		
+	</itemset>
+
+</itemlib>
