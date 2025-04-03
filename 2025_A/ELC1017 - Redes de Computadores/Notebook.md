@@ -24,3 +24,6 @@ programa wireshark listen to msg in betwork
 https://www.wireshark.org/
 
 - protocolo (proxy) arp
+
+$ netstat -rn
+ver os endereços de encaminhamento, dos roteadores
