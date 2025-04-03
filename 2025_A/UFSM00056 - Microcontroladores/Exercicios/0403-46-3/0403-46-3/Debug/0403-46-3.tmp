@@ -1,0 +1,59 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>c:\users\aluno\Documents\Atmel Studio\7.0\0403-46-3\0403-46-3\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>c:\users\aluno\Documents\Atmel Studio\7.0\0403-46-3\0403-46-3\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>c:\users\aluno\Documents\Atmel Studio\7.0\0403-46-3\0403-46-3\Debug\0403-46-3.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>0403-46-3.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>0403-46-3.map</FILE>
+  <FILE>0403-46-3.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <start><FILE>c:\users\aluno\Documents\Atmel Studio\7.0\0403-46-3\0403-46-3\main.asm</FILE><LINE>9</LINE></start>
+  <loop><FILE>c:\users\aluno\Documents\Atmel Studio\7.0\0403-46-3\0403-46-3\main.asm</FILE><LINE>17</LINE></loop>
+  <n1><FILE>c:\users\aluno\Documents\Atmel Studio\7.0\0403-46-3\0403-46-3\main.asm</FILE><LINE>26</LINE></n1>
+  <iszero><FILE>c:\users\aluno\Documents\Atmel Studio\7.0\0403-46-3\0403-46-3\main.asm</FILE><LINE>102</LINE></iszero>
+  <n2><FILE>c:\users\aluno\Documents\Atmel Studio\7.0\0403-46-3\0403-46-3\main.asm</FILE><LINE>31</LINE></n2>
+  <isone><FILE>c:\users\aluno\Documents\Atmel Studio\7.0\0403-46-3\0403-46-3\main.asm</FILE><LINE>106</LINE></isone>
+  <n3><FILE>c:\users\aluno\Documents\Atmel Studio\7.0\0403-46-3\0403-46-3\main.asm</FILE><LINE>36</LINE></n3>
+  <istwo><FILE>c:\users\aluno\Documents\Atmel Studio\7.0\0403-46-3\0403-46-3\main.asm</FILE><LINE>110</LINE></istwo>
+  <n4><FILE>c:\users\aluno\Documents\Atmel Studio\7.0\0403-46-3\0403-46-3\main.asm</FILE><LINE>41</LINE></n4>
+  <isthree><FILE>c:\users\aluno\Documents\Atmel Studio\7.0\0403-46-3\0403-46-3\main.asm</FILE><LINE>114</LINE></isthree>
+  <n5><FILE>c:\users\aluno\Documents\Atmel Studio\7.0\0403-46-3\0403-46-3\main.asm</FILE><LINE>46</LINE></n5>
+  <isfour><FILE>c:\users\aluno\Documents\Atmel Studio\7.0\0403-46-3\0403-46-3\main.asm</FILE><LINE>118</LINE></isfour>
+  <n6><FILE>c:\users\aluno\Documents\Atmel Studio\7.0\0403-46-3\0403-46-3\main.asm</FILE><LINE>51</LINE></n6>
+  <isfive><FILE>c:\users\aluno\Documents\Atmel Studio\7.0\0403-46-3\0403-46-3\main.asm</FILE><LINE>122</LINE></isfive>
+  <n7><FILE>c:\users\aluno\Documents\Atmel Studio\7.0\0403-46-3\0403-46-3\main.asm</FILE><LINE>56</LINE></n7>
+  <issix><FILE>c:\users\aluno\Documents\Atmel Studio\7.0\0403-46-3\0403-46-3\main.asm</FILE><LINE>126</LINE></issix>
+  <n8><FILE>c:\users\aluno\Documents\Atmel Studio\7.0\0403-46-3\0403-46-3\main.asm</FILE><LINE>61</LINE></n8>
+  <isseven><FILE>c:\users\aluno\Documents\Atmel Studio\7.0\0403-46-3\0403-46-3\main.asm</FILE><LINE>130</LINE></isseven>
+  <n9><FILE>c:\users\aluno\Documents\Atmel Studio\7.0\0403-46-3\0403-46-3\main.asm</FILE><LINE>66</LINE></n9>
+  <iseight><FILE>c:\users\aluno\Documents\Atmel Studio\7.0\0403-46-3\0403-46-3\main.asm</FILE><LINE>134</LINE></iseight>
+  <nA><FILE>c:\users\aluno\Documents\Atmel Studio\7.0\0403-46-3\0403-46-3\main.asm</FILE><LINE>71</LINE></nA>
+  <isnine><FILE>c:\users\aluno\Documents\Atmel Studio\7.0\0403-46-3\0403-46-3\main.asm</FILE><LINE>138</LINE></isnine>
+  <nB><FILE>c:\users\aluno\Documents\Atmel Studio\7.0\0403-46-3\0403-46-3\main.asm</FILE><LINE>76</LINE></nB>
+  <isA><FILE>c:\users\aluno\Documents\Atmel Studio\7.0\0403-46-3\0403-46-3\main.asm</FILE><LINE>142</LINE></isA>
+  <nC><FILE>c:\users\aluno\Documents\Atmel Studio\7.0\0403-46-3\0403-46-3\main.asm</FILE><LINE>81</LINE></nC>
+  <isB><FILE>c:\users\aluno\Documents\Atmel Studio\7.0\0403-46-3\0403-46-3\main.asm</FILE><LINE>146</LINE></isB>
+  <nD><FILE>c:\users\aluno\Documents\Atmel Studio\7.0\0403-46-3\0403-46-3\main.asm</FILE><LINE>86</LINE></nD>
+  <isC><FILE>c:\users\aluno\Documents\Atmel Studio\7.0\0403-46-3\0403-46-3\main.asm</FILE><LINE>150</LINE></isC>
+  <nE><FILE>c:\users\aluno\Documents\Atmel Studio\7.0\0403-46-3\0403-46-3\main.asm</FILE><LINE>91</LINE></nE>
+  <isD><FILE>c:\users\aluno\Documents\Atmel Studio\7.0\0403-46-3\0403-46-3\main.asm</FILE><LINE>154</LINE></isD>
+  <nF><FILE>c:\users\aluno\Documents\Atmel Studio\7.0\0403-46-3\0403-46-3\main.asm</FILE><LINE>96</LINE></nF>
+  <isE><FILE>c:\users\aluno\Documents\Atmel Studio\7.0\0403-46-3\0403-46-3\main.asm</FILE><LINE>158</LINE></isE>
+  <isF><FILE>c:\users\aluno\Documents\Atmel Studio\7.0\0403-46-3\0403-46-3\main.asm</FILE><LINE>162</LINE></isF>
+ </LABELS>
+</ASSEMBLER_INFO>
