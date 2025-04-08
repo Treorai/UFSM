@@ -126,3 +126,16 @@ start:
   lds   r19, k
   lds   r20, k+1
 ```
+
+### Portas
+```arm
+; DDRB DDRC DDRD
+; 0=in 1=out
+
+; PORTB PORTC PORTD
+; para escrever na porta
+; manda 1 para ligar pull up
+
+; PINB PINC PIND
+; para ler do pin
+```
