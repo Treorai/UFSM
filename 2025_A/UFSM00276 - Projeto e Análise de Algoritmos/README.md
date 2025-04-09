@@ -5,3 +5,7 @@ Trabalhos realizados na diciplina PROJETO E ANÁLISE DE ALGORITMOS (UFSM00276) n
 ### Links
 
 - [Markdown Math Db](https://rpruim.github.io/s341/S19/from-class/MathinRmd.html)
+
+### Livros
+
+- NIVIO - Projeto de Algoritmos
