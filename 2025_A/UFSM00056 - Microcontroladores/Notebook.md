@@ -139,3 +139,11 @@ start:
 ; PINB PINC PIND
 ; para ler do pin
 ```
+
+
+## Conversor A/D
+> Rede R2R
+
+![](https://blog.ryndackcomponentes.com.br/wp-content/uploads/2023/10/Captura-de-tela-de-2023-10-18-08-50-41.png)
+
+Amostra > Comparador > Somador > Conversor::tensão
