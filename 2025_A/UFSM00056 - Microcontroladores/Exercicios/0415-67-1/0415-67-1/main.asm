@@ -9,7 +9,7 @@
 start:
     ldi r16, 0b01100000
 			  ;||||||||
-			  ;||||0000	=> ler AD0
+			  ;||||0000	=> ler PORTC[0] | Se for ler do PORTC[3], usa '0011'
 			  ;|||x
 			  ;||1		=> ADLAR = 8 bits valor na parte alta
 			  ;01		=> tensao de ref = 01 = vcc
