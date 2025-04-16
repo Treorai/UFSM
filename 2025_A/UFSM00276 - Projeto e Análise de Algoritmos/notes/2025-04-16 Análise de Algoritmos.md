@@ -9,3 +9,5 @@ return fib1(n-1)+fib1(n-2)
 ```
 
 Complexibilidade: $ 2^{0.264} $
+
+Leitura: Capitulo 1 - Cormen et al. 2009
