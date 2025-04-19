@@ -4,9 +4,9 @@
 	
 	<itemset category="Watto Circuits" type="Subcircuit">
 		
-		<item name="Watto Disp" folder="watto_custom" info="Conversor de 8 bits binarios para display decimal"/>
-		<item name="Watto Disp Ledless" folder="watto_custom" info="Conversor de 8 bits binarios para display decimal"/>
-	
+		<item name="Watto Display" folder="watto_custom" info="Conversor de 8 bits binarios para display decimal"/>
+		<item name="Watto Display Bus" folder="watto_custom" info="Conversor com input bus de 8 bits binarios para display decimal"/>
+		
 	</itemset>
 
 </itemlib>

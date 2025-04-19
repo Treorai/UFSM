@@ -4,14 +4,13 @@
 ; Created: 01-Apr-25 16:44:28
 ; Author : Watto
 ;
-
-.include "m328pdef.inc"
+; Projeto de display conversor de entrada binaria para decimal de 0 a 255
 
 start:
     clr r16
     out DDRB, r16   ; PORTB como entrada
 
-    ser r16         ; r16 = 0xFF
+    ser r16         ; r16
 	out PORTB, r16	; ativa pull ups
     out DDRD, r16   ; PORTD -> saida (unidades)
     out DDRC, r16   ; PORTC -> saida (dezenas)
@@ -43,7 +42,7 @@ skip_tens:
     ; agora r16 contem as unidades
     mov r17, r16
 
-	; shift r19 to the top bits of r17
+	; shift r19 para os bits maiores de r17
 	lsl r19
 	lsl r19
 	lsl r19
@@ -56,6 +55,5 @@ skip_tens:
     ; print
     out PORTD, r17		; unidades em PORTD
     out PORTC, r18		; dezenas no PORTC
-    ; Se usar centenas, pode enviar para outro pino (ex: PB0 = 1 se r19=1)
 
     rjmp loop 

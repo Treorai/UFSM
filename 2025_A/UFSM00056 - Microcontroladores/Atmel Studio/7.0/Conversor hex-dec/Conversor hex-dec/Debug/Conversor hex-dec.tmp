@@ -1,19 +1,18 @@
 <ASSEMBLER_INFO>
  <VERSION>2.2.8</VERSION>
  <DEVICE>"ATmega328P"</DEVICE>
- <WORKING_DIR>c:\users\watto\Documents\Atmel Studio\7.0\Conversor hex-dec\Conversor hex-dec\Debug</WORKING_DIR>
+ <WORKING_DIR>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Atmel Studio\7.0\Conversor hex-dec\Conversor hex-dec\Debug</WORKING_DIR>
  <INCLUDE_PATH>
   <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc</DIR>
   <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
   <DIR></DIR>
  </INCLUDE_PATH>
- <SOURCE_FILE>c:\users\watto\Documents\Atmel Studio\7.0\Conversor hex-dec\Conversor hex-dec\main.asm</SOURCE_FILE>
+ <SOURCE_FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Atmel Studio\7.0\Conversor hex-dec\Conversor hex-dec\main.asm</SOURCE_FILE>
  <INCLUDED_FILES>
   <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc</FILE>
-  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328pdef.inc</FILE>
  </INCLUDED_FILES>
  <OBJECT_FILES>
-  <FILE>c:\users\watto\Documents\Atmel Studio\7.0\Conversor hex-dec\Conversor hex-dec\Debug\Conversor hex-dec.obj</FILE>
+  <FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Atmel Studio\7.0\Conversor hex-dec\Conversor hex-dec\Debug\Conversor hex-dec.obj</FILE>
  </OBJECT_FILES>
  <HEX_FILES>
   <FILE>Conversor hex-dec.hex</FILE>
@@ -23,11 +22,11 @@
   <FILE>Conversor hex-dec.lss</FILE>
  </OUTPUT_FILES>
  <LABELS>
-  <start><FILE>c:\users\watto\Documents\Atmel Studio\7.0\Conversor hex-dec\Conversor hex-dec\main.asm</FILE><LINE>10</LINE></start>
-  <loop><FILE>c:\users\watto\Documents\Atmel Studio\7.0\Conversor hex-dec\Conversor hex-dec\main.asm</FILE><LINE>19</LINE></loop>
-  <check_hundreds><FILE>c:\users\watto\Documents\Atmel Studio\7.0\Conversor hex-dec\Conversor hex-dec\main.asm</FILE><LINE>26</LINE></check_hundreds>
-  <skip_hundreds><FILE>c:\users\watto\Documents\Atmel Studio\7.0\Conversor hex-dec\Conversor hex-dec\main.asm</FILE><LINE>33</LINE></skip_hundreds>
-  <check_tens><FILE>c:\users\watto\Documents\Atmel Studio\7.0\Conversor hex-dec\Conversor hex-dec\main.asm</FILE><LINE>35</LINE></check_tens>
-  <skip_tens><FILE>c:\users\watto\Documents\Atmel Studio\7.0\Conversor hex-dec\Conversor hex-dec\main.asm</FILE><LINE>42</LINE></skip_tens>
+  <start><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Atmel Studio\7.0\Conversor hex-dec\Conversor hex-dec\main.asm</FILE><LINE>9</LINE></start>
+  <loop><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Atmel Studio\7.0\Conversor hex-dec\Conversor hex-dec\main.asm</FILE><LINE>18</LINE></loop>
+  <check_hundreds><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Atmel Studio\7.0\Conversor hex-dec\Conversor hex-dec\main.asm</FILE><LINE>25</LINE></check_hundreds>
+  <skip_hundreds><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Atmel Studio\7.0\Conversor hex-dec\Conversor hex-dec\main.asm</FILE><LINE>32</LINE></skip_hundreds>
+  <check_tens><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Atmel Studio\7.0\Conversor hex-dec\Conversor hex-dec\main.asm</FILE><LINE>34</LINE></check_tens>
+  <skip_tens><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Atmel Studio\7.0\Conversor hex-dec\Conversor hex-dec\main.asm</FILE><LINE>41</LINE></skip_tens>
  </LABELS>
 </ASSEMBLER_INFO>

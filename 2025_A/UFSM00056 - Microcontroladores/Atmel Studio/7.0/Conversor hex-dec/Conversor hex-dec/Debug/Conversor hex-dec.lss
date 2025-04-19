@@ -1,10 +1,8 @@
 
-AVRASM ver. 2.2.8  c:\users\watto\Documents\Atmel Studio\7.0\Conversor hex-dec\Conversor hex-dec\main.asm Tue Apr 01 21:48:08 2025
+AVRASM ver. 2.2.8  C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Atmel Studio\7.0\Conversor hex-dec\Conversor hex-dec\main.asm Fri Apr 18 22:02:57 2025
 
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc'
-c:\users\watto\Documents\Atmel Studio\7.0\Conversor hex-dec\Conversor hex-dec\main.asm(8): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328pdef.inc'
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc'
-c:\users\watto\Documents\Atmel Studio\7.0\Conversor hex-dec\Conversor hex-dec\main.asm(8): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328pdef.inc'
                                  
                                  ;
                                  
@@ -992,57 +990,13 @@ c:\users\watto\Documents\Atmel Studio\7.0\Conversor hex-dec\Conversor hex-dec\ma
                                  ; Created: 01-Apr-25 16:44:28
                                  ; Author : Watto
                                  ;
-                                 
-                                 .include "m328pdef.inc"
-                                 
-                                 ;***** Created: 2011-02-09 12:03 ******* Source: ATmega328P.xml **********
-                                 ;*************************************************************************
-                                 ;* A P P L I C A T I O N   N O T E   F O R   T H E   A V R   F A M I L Y
-                                 ;* 
-                                 ;* Number            : AVR000
-                                 ;* File Name         : "m328Pdef.inc"
-                                 ;* Title             : Register/Bit Definitions for the ATmega328P
-                                 ;* Date              : 2011-02-09
-                                 ;* Version           : 2.35
-                                 ;* Support E-mail    : avr@atmel.com
-                                 ;* Target MCU        : ATmega328P
-                                 ;* 
-                                 ;* DESCRIPTION
-                                 ;* When including this file in the assembly program file, all I/O register 
-                                 ;* names and I/O register bit names appearing in the data book can be used.
-                                 ;* In addition, the six registers forming the three data pointers X, Y and 
-                                 ;* Z have been assigned names XL - ZH. Highest RAM address for Internal 
-                                 ;* SRAM is also defined 
-                                 ;* 
-                                 ;* The Register names are represented by their hexadecimal address.
-                                 ;* 
-                                 ;* The Register Bit names are represented by their bit number (0-7).
-                                 ;* 
-                                 ;* Please observe the difference in using the bit names with instructions
-                                 ;* such as "sbr"/"cbr" (set/clear bit in register) and "sbrs"/"sbrc"
-                                 ;* (skip if bit in register set/cleared). The following example illustrates
-                                 ;* this:
-                                 ;* 
-                                 ;* in    r16,PORTB             ;read PORTB latch
-                                 ;* sbr   r16,(1<<PB6)+(1<<PB5) ;set PB6 and PB5 (use masks, not bit#)
-                                 ;* out   PORTB,r16             ;output to PORTB
-                                 ;* 
-                                 ;* in    r16,TIFR              ;read the Timer Interrupt Flag Register
-                                 ;* sbrc  r16,TOV0              ;test the overflow flag (use bit#)
-                                 ;* rjmp  TOV0_is_set           ;jump if set
-                                 ;* ...                         ;otherwise do something else
-                                 ;*************************************************************************
-                                 
-                                 #ifndef _M328PDEF_INC_
-                                 #endif  /* _M328PDEF_INC_ */
-                                 
-                                 ; ***** END OF FILE ******************************************************
+                                 ; Projeto de display conversor de entrada binaria para decimal de 0 a 255
                                  
                                  start:
 000000 2700                          clr r16
 000001 b904                          out DDRB, r16   ; PORTB como entrada
                                  
-000002 ef0f                          ser r16         ; r16 = 0xFF
+000002 ef0f                          ser r16         ; r16
 000003 b905                      	out PORTB, r16	; ativa pull ups
 000004 b90a                          out DDRD, r16   ; PORTD -> saida (unidades)
 000005 b907                          out DDRC, r16   ; PORTC -> saida (dezenas)
@@ -1074,7 +1028,7 @@ c:\users\watto\Documents\Atmel Studio\7.0\Conversor hex-dec\Conversor hex-dec\ma
                                      ; agora r16 contem as unidades
 000013 2f10                          mov r17, r16
                                  
-                                 	; shift r19 to the top bits of r17
+                                 	; shift r19 para os bits maiores de r17
 000014 0f33                      	lsl r19
 000015 0f33                      	lsl r19
 000016 0f33                      	lsl r19
@@ -1087,7 +1041,6 @@ c:\users\watto\Documents\Atmel Studio\7.0\Conversor hex-dec\Conversor hex-dec\ma
                                      ; print
 00001b b91b                          out PORTD, r17		; unidades em PORTD
 00001c b928                          out PORTC, r18		; dezenas no PORTC
-                                     ; Se usar centenas, pode enviar para outro pino (ex: PB0 = 1 se r19=1)
                                  
 
 
