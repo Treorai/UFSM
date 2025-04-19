@@ -1,18 +1,18 @@
 <ASSEMBLER_INFO>
  <VERSION>2.2.8</VERSION>
  <DEVICE>"ATmega328P"</DEVICE>
- <WORKING_DIR>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\Debug</WORKING_DIR>
+ <WORKING_DIR>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\Debug</WORKING_DIR>
  <INCLUDE_PATH>
   <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc</DIR>
   <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
   <DIR></DIR>
  </INCLUDE_PATH>
- <SOURCE_FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</SOURCE_FILE>
+ <SOURCE_FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</SOURCE_FILE>
  <INCLUDED_FILES>
   <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc</FILE>
  </INCLUDED_FILES>
  <OBJECT_FILES>
-  <FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\Debug\Trabalho01.obj</FILE>
+  <FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\Debug\Trabalho01.obj</FILE>
  </OBJECT_FILES>
  <HEX_FILES>
   <FILE>Trabalho01.hex</FILE>
@@ -22,16 +22,57 @@
   <FILE>Trabalho01.lss</FILE>
  </OUTPUT_FILES>
  <LABELS>
-  <start><FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>18</LINE></start>
-  <loop><FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>31</LINE></loop>
-  <coluna4><FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>57</LINE></coluna4>
-  <coluna5><FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>60</LINE></coluna5>
-  <coluna6><FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>63</LINE></coluna6>
-  <testelinha><FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>67</LINE></testelinha>
-  <linha0><FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>81</LINE></linha0>
-  <linha1><FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>84</LINE></linha1>
-  <linha2><FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>87</LINE></linha2>
-  <linha3><FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>90</LINE></linha3>
-  <fim><FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>94</LINE></fim>
+  <start><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>18</LINE></start>
+  <loop><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>32</LINE></loop>
+  <coluna4><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>58</LINE></coluna4>
+  <coluna5><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>61</LINE></coluna5>
+  <coluna6><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>64</LINE></coluna6>
+  <testelinha><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>68</LINE></testelinha>
+  <linha0><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>80</LINE></linha0>
+  <linha1><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>83</LINE></linha1>
+  <linha2><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>86</LINE></linha2>
+  <linha3><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>89</LINE></linha3>
+  <fim><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>93</LINE></fim>
+  <tecla1><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>141</LINE></tecla1>
+  <tecla2><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>144</LINE></tecla2>
+  <tecla3><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>147</LINE></tecla3>
+  <tecla4><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>150</LINE></tecla4>
+  <tecla5><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>153</LINE></tecla5>
+  <tecla6><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>156</LINE></tecla6>
+  <tecla7><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>159</LINE></tecla7>
+  <tecla8><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>162</LINE></tecla8>
+  <tecla9><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>165</LINE></tecla9>
+  <tecla0><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>168</LINE></tecla0>
+  <tecladot><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>171</LINE></tecladot>
+  <teclae><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>174</LINE></teclae>
+  <mult><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>178</LINE></mult>
+  <displaydot1><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>223</LINE></displaydot1>
+  <displaydot2><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>227</LINE></displaydot2>
+  <displayit><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>186</LINE></displayit>
+  <testedezena><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>189</LINE></testedezena>
+  <skipdezena><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>196</LINE></skipdezena>
+  <testeportD><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>202</LINE></testeportD>
+  <display1d><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>235</LINE></display1d>
+  <display2d><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>238</LINE></display2d>
+  <display3d><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>241</LINE></display3d>
+  <display4d><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>244</LINE></display4d>
+  <display5d><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>247</LINE></display5d>
+  <display6d><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>250</LINE></display6d>
+  <display7d><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>253</LINE></display7d>
+  <display8d><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>256</LINE></display8d>
+  <display9d><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>259</LINE></display9d>
+  <display0d><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>232</LINE></display0d>
+  <print><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>316</LINE></print>
+  <testeportB><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>263</LINE></testeportB>
+  <display1b><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>288</LINE></display1b>
+  <display2b><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>291</LINE></display2b>
+  <display3b><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>294</LINE></display3b>
+  <display4b><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>297</LINE></display4b>
+  <display5b><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>300</LINE></display5b>
+  <display6b><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>303</LINE></display6b>
+  <display7b><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>306</LINE></display7b>
+  <display8b><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>309</LINE></display8b>
+  <display9b><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>312</LINE></display9b>
+  <display0b><FILE>C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>285</LINE></display0b>
  </LABELS>
 </ASSEMBLER_INFO>

@@ -1,60 +1,82 @@
 <circuit version="1.1.0-SR1" rev="2005" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
 
-<item itemtype="KeyPad" CircId="KeyPad-1" mainComp="false" Show_id="false" Show_Val="false" Pos="-352,-120" rotation="0" hflip="1" vflip="1" label="KeyPad-1" idLabPos="-8,-16" labelrot="0" valLabPos="-16,20" valLabRot="0" Rows="4" Cols="3" Key_Labels="789456123.0e" />
+<item itemtype="KeyPad" CircId="KeyPad-1" mainComp="false" Show_id="false" Show_Val="false" Pos="-312,-140" rotation="0" hflip="1" vflip="1" label="KeyPad-1" idLabPos="-8,-16" labelrot="0" valLabPos="-16,20" valLabRot="0" Rows="4" Cols="3" Key_Labels="789456123,0." />
 
-<item itemtype="LedBar" CircId="LedBar-3" mainComp="false" Show_id="false" Show_Val="false" Pos="-244,-112" rotation="0" hflip="-1" vflip="1" label="LedBar-3" idLabPos="-16,-44" labelrot="0" valLabPos="-16,-56" valLabRot="0" Color="Yellow" Size="7 _Leds" Grounded="true" Threshold="2.4 V" MaxCurrent="30 mA" Resistance="0.6 Ω" />
+<item itemtype="MCU" CircId="mega328-24" mainComp="false" Show_id="false" Show_Val="false" Pos="-176,-152" rotation="0" hflip="1" vflip="1" label="mega328-24" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="Debug/Trabalho01.hex" Auto_Load="false" saveEepr="true" Logic_Symbol="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" Clk_Out="false" MainMcu="false" SerialMon="-1" />
 
-<item itemtype="Voltimeter" CircId="Voltimeter-5" mainComp="false" Show_id="false" Show_Val="false" Pos="-32,-184" rotation="0" hflip="1" vflip="1" label="Voltimeter-5" idLabPos="-24,-40" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+<item itemtype="Tunnel" CircId="Tunnel-25" mainComp="false" Show_id="false" Show_Val="false" Pos="-252,-120" rotation="90" hflip="-1" vflip="1" label="Tunnel-25" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="io" IsBus="true" />
 
-<item itemtype="Ground" CircId="Ground-10" mainComp="false" Show_id="false" Show_Val="false" Pos="-320,-188" rotation="-90" hflip="1" vflip="1" label="Ground-10" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+<item itemtype="Tunnel" CircId="Tunnel-26" mainComp="false" Show_id="false" Show_Val="false" Pos="-116,-100" rotation="0" hflip="-1" vflip="1" label="Tunnel-26" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="io" IsBus="true" />
 
-<item itemtype="Rail" CircId="Rail-16" mainComp="false" ShowProp="Voltage" Show_id="false" Show_Val="true" Pos="-320,-204" rotation="180" hflip="1" vflip="1" label="Rail-16" idLabPos="-5,-10" labelrot="-90" valLabPos="-15.9061,5.02348" valLabRot="-90" Voltage="5 V" />
+<item itemtype="Tunnel" CircId="Tunnel-27" mainComp="false" Show_id="false" Show_Val="false" Pos="-196,-152" rotation="0" hflip="1" vflip="1" label="Tunnel-27" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="io" IsBus="true" />
 
-<item itemtype="Tunnel" CircId="Tunnel-20" mainComp="false" Show_id="false" Show_Val="false" Pos="-340,-204" rotation="0" hflip="1" vflip="1" label="Tunnel-20" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="VCC" IsBus="false" />
+<item itemtype="Bus" CircId="Bus-28" mainComp="false" Show_id="false" Show_Val="false" Pos="-252,-96" rotation="0" hflip="1" vflip="1" label="Bus-28" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Num_Bits="4 _bits" Start_Bit="0" />
 
-<item itemtype="Tunnel" CircId="Tunnel-21" mainComp="false" Show_id="false" Show_Val="false" Pos="-100,-196" rotation="0" hflip="1" vflip="1" label="Tunnel-21" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="VCC" IsBus="false" />
-
-<item itemtype="Tunnel" CircId="Tunnel-22" mainComp="false" Show_id="false" Show_Val="false" Pos="-340,-188" rotation="0" hflip="1" vflip="1" label="Tunnel-22" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="GRD" IsBus="false" />
-
-<item itemtype="MCU" CircId="mega328-24" mainComp="false" Show_id="false" Show_Val="false" Pos="-176,-152" rotation="0" hflip="1" vflip="1" label="mega328-24" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="Debug/Trabalho01.hex" Auto_Load="false" saveEepr="true" Logic_Symbol="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" Clk_Out="false" MainMcu="true" SerialMon="-1" />
-
-<item itemtype="Tunnel" CircId="Tunnel-25" mainComp="false" Show_id="false" Show_Val="false" Pos="-292,-100" rotation="90" hflip="-1" vflip="1" label="Tunnel-25" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="io0" IsBus="true" />
-
-<item itemtype="Tunnel" CircId="Tunnel-26" mainComp="false" Show_id="false" Show_Val="false" Pos="-116,-104" rotation="0" hflip="-1" vflip="1" label="Tunnel-26" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="io0" IsBus="true" />
-
-<item itemtype="Tunnel" CircId="Tunnel-27" mainComp="false" Show_id="false" Show_Val="false" Pos="-196,-144" rotation="0" hflip="1" vflip="1" label="Tunnel-27" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="io0" IsBus="true" />
-
-<item itemtype="Bus" CircId="Bus-28" mainComp="false" Show_id="false" Show_Val="false" Pos="-292,-76" rotation="0" hflip="1" vflip="1" label="Bus-28" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Num_Bits="4 _bits" Start_Bit="0" />
-
-<item itemtype="Bus" CircId="Bus-30" mainComp="false" Show_id="false" Show_Val="false" Pos="-120,-144" rotation="180" hflip="-1" vflip="1" label="Bus-30" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Num_Bits="6 _bits" Start_Bit="0" />
+<item itemtype="Bus" CircId="Bus-30" mainComp="false" Show_id="false" Show_Val="false" Pos="-120,-144" rotation="360" hflip="1" vflip="-1" label="Bus-30" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Num_Bits="6 _bits" Start_Bit="0" />
 
 <item itemtype="Bus" CircId="Bus-32" mainComp="false" Show_id="false" Show_Val="false" Pos="-196,-144" rotation="0" hflip="-1" vflip="1" label="Bus-32" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Num_Bits="1 _bits" Start_Bit="6" />
 
-<item itemtype="Tunnel" CircId="Tunnel-36" mainComp="false" Show_id="false" Show_Val="false" Pos="-348,-36" rotation="0" hflip="1" vflip="1" label="Tunnel-36" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="io0" IsBus="true" />
+<item itemtype="Tunnel" CircId="Tunnel-36" mainComp="false" Show_id="false" Show_Val="false" Pos="-308,-56" rotation="0" hflip="1" vflip="1" label="Tunnel-36" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="io" IsBus="true" />
 
-<item itemtype="Bus" CircId="Bus-37" mainComp="false" Show_id="false" Show_Val="false" Pos="-328,-36" rotation="90" hflip="-1" vflip="1" label="Bus-37" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Num_Bits="3 _bits" Start_Bit="4" />
+<item itemtype="Bus" CircId="Bus-37" mainComp="false" Show_id="false" Show_Val="false" Pos="-288,-56" rotation="90" hflip="-1" vflip="1" label="Bus-37" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Num_Bits="3 _bits" Start_Bit="4" />
 
-<item itemtype="Seven Segment" CircId="Seven Segment-38" mainComp="false" Show_id="false" Show_Val="false" Pos="-56,-56" rotation="0" hflip="1" vflip="1" label="Seven Segment-38" idLabPos="20,-44" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" NumDisplays="1" Vertical_Pins="false" CommonCathode="true" Threshold="2.4 V" MaxCurrent="20 mA" Resistance="1 Ω" />
+<item itemtype="Seven Segment" CircId="Seven Segment-63" mainComp="false" Show_id="false" Show_Val="false" Pos="0,-92" rotation="0" hflip="1" vflip="1" label="Seven Segment-63" idLabPos="20,-44" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" NumDisplays="1" Vertical_Pins="true" CommonCathode="true" Threshold="1.4 V" MaxCurrent="30 mA" Resistance="1 Ω" />
 
-<item itemtype="Tunnel" CircId="Tunnel-39" mainComp="false" Show_id="false" Show_Val="false" Pos="-48,0" rotation="0" hflip="1" vflip="1" label="Tunnel-39" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="GRD" IsBus="false" />
+<item itemtype="Seven Segment" CircId="Seven Segment-64" mainComp="false" Show_id="false" Show_Val="false" Pos="-40,-92" rotation="0" hflip="1" vflip="1" label="Seven Segment-64" idLabPos="20,-44" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" NumDisplays="1" Vertical_Pins="true" CommonCathode="true" Threshold="1.4 V" MaxCurrent="20 mA" Resistance="1 Ω" />
 
-<item itemtype="Connector" uid="Connector-47" startpinid="Rail-16-outnod" endpinid="Tunnel-20-pin" pointList="-336,-204,-340,-204" />
+<item itemtype="Bus" CircId="Bus-65" mainComp="false" Show_id="false" Show_Val="false" Pos="-24,-136" rotation="-90" hflip="1" vflip="1" label="Bus-65" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Num_Bits="5 _bits" Start_Bit="0" />
 
-<item itemtype="Connector" uid="Connector-75" startpinid="Bus-28-busPinI" endpinid="Tunnel-25-pin" pointList="-292,-100,-292,-100" />
+<item itemtype="Bus" CircId="Bus-66" mainComp="false" Show_id="false" Show_Val="false" Pos="16,-136" rotation="-90" hflip="1" vflip="1" label="Bus-66" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Num_Bits="5 _bits" Start_Bit="0" />
 
-<item itemtype="Connector" uid="Connector-76" startpinid="Bus-30-busPinI" endpinid="Tunnel-26-pin" pointList="-120,-104,-116,-104" />
+<item itemtype="Bus" CircId="Bus-67" mainComp="false" Show_id="false" Show_Val="false" Pos="-40,-48" rotation="90" hflip="-1" vflip="1" label="Bus-67" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Num_Bits="3 _bits" Start_Bit="5" />
 
-<item itemtype="Connector" uid="Connector-86" startpinid="Tunnel-27-pin" endpinid="Bus-32-busPinI" pointList="-196,-144,-196,-144" />
+<item itemtype="Bus" CircId="Bus-69" mainComp="false" Show_id="false" Show_Val="false" Pos="0,-48" rotation="90" hflip="-1" vflip="1" label="Bus-69" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Num_Bits="3 _bits" Start_Bit="5" />
 
-<item itemtype="Connector" uid="Connector-49" startpinid="Ground-10-Gnd" endpinid="Tunnel-22-pin" pointList="-336,-188,-340,-188" />
+<item itemtype="Bus" CircId="Bus-70" mainComp="false" Show_id="false" Show_Val="false" Pos="-200,-104" rotation="0" hflip="-1" vflip="1" label="Bus-70" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Num_Bits="5 _bits" Start_Bit="0" />
 
-<item itemtype="Connector" uid="Connector-98" startpinid="KeyPad-1-Pin0" endpinid="Bus-28-ePin1" pointList="-304,-112,-300,-112,-300,-100" />
+<item itemtype="Bus" CircId="Bus-71" mainComp="false" Show_id="false" Show_Val="false" Pos="-200,-48" rotation="0" hflip="-1" vflip="1" label="Bus-71" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Num_Bits="3 _bits" Start_Bit="5" />
 
-<item itemtype="Connector" uid="Connector-99" startpinid="KeyPad-1-Pin1" endpinid="Bus-28-ePin2" pointList="-304,-96,-300,-96,-300,-92" />
+<item itemtype="Tunnel" CircId="Tunnel-73" mainComp="false" Show_id="false" Show_Val="false" Pos="-200,-72" rotation="0" hflip="1" vflip="1" label="Tunnel-73" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="portD" IsBus="true" />
 
-<item itemtype="Connector" uid="Connector-101" startpinid="KeyPad-1-Pin3" endpinid="Bus-28-ePin4" pointList="-304,-64,-300,-64,-300,-76" />
+<item itemtype="Tunnel" CircId="Tunnel-77" mainComp="false" Show_id="false" Show_Val="false" Pos="-56,-24" rotation="0" hflip="-1" vflip="1" label="Tunnel-77" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="portD" IsBus="true" />
 
-<item itemtype="Connector" uid="Connector-105" startpinid="Tunnel-36-pin" endpinid="Bus-37-busPinI" pointList="-348,-36,-344,-36" />
+<item itemtype="Tunnel" CircId="Tunnel-78" mainComp="false" Show_id="false" Show_Val="false" Pos="-56,-148" rotation="0" hflip="-1" vflip="1" label="Tunnel-78" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="portD" IsBus="true" />
+
+<item itemtype="Bus" CircId="Bus-79" mainComp="false" Show_id="false" Show_Val="false" Pos="-120,-72" rotation="0" hflip="1" vflip="-1" label="Bus-79" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Num_Bits="5 _bits" Start_Bit="1" />
+
+<item itemtype="Tunnel" CircId="Tunnel-80" mainComp="false" Show_id="false" Show_Val="false" Pos="-120,-32" rotation="0" hflip="-1" vflip="1" label="Tunnel-80" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="portB" IsBus="true" />
+
+<item itemtype="Tunnel" CircId="Tunnel-81" mainComp="false" Show_id="false" Show_Val="false" Pos="-200,-88" rotation="0" hflip="1" vflip="1" label="Tunnel-81" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="portB" IsBus="true" />
+
+<item itemtype="Bus" CircId="Bus-82" mainComp="false" Show_id="false" Show_Val="false" Pos="-196,-40" rotation="0" hflip="-1" vflip="1" label="Bus-82" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Num_Bits="1 _bits" Start_Bit="0" />
+
+<item itemtype="Bus" CircId="Bus-83" mainComp="false" Show_id="false" Show_Val="false" Pos="-196,-72" rotation="0" hflip="-1" vflip="1" label="Bus-83" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Num_Bits="2 _bits" Start_Bit="6" />
+
+<item itemtype="Tunnel" CircId="Tunnel-85" mainComp="false" Show_id="false" Show_Val="false" Pos="-16,-148" rotation="0" hflip="-1" vflip="1" label="Tunnel-85" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="portB" IsBus="true" />
+
+<item itemtype="Tunnel" CircId="Tunnel-86" mainComp="false" Show_id="false" Show_Val="false" Pos="-16,-24" rotation="0" hflip="-1" vflip="1" label="Tunnel-86" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="portB" IsBus="true" />
+
+<item itemtype="Ground" CircId="Ground-88" mainComp="false" Show_id="false" Show_Val="false" Pos="8,-32" rotation="0" hflip="1" vflip="1" label="Ground-88" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Ground" CircId="Ground-89" mainComp="false" Show_id="false" Show_Val="false" Pos="-32,-32" rotation="0" hflip="1" vflip="1" label="Ground-89" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Tunnel" CircId="Tunnel-92" mainComp="false" Show_id="false" Show_Val="false" Pos="-204,-140" rotation="0" hflip="1" vflip="1" label="Tunnel-92" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="portD" IsBus="true" />
+
+<item itemtype="Tunnel" CircId="Tunnel-93" mainComp="false" Show_id="false" Show_Val="false" Pos="-200,-36" rotation="0" hflip="1" vflip="1" label="Tunnel-93" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="portB" IsBus="true" />
+
+<item itemtype="Connector" uid="Connector-75" startpinid="Bus-28-busPinI" endpinid="Tunnel-25-pin" pointList="-252,-120,-252,-120" />
+
+<item itemtype="Connector" uid="Connector-76" startpinid="Bus-30-busPinI" endpinid="Tunnel-26-pin" pointList="-120,-104,-120,-100,-116,-100" />
+
+<item itemtype="Connector" uid="Connector-86" startpinid="Tunnel-27-pin" endpinid="Bus-32-busPinI" pointList="-196,-152,-196,-144" />
+
+<item itemtype="Connector" uid="Connector-98" startpinid="KeyPad-1-Pin0" endpinid="Bus-28-ePin1" pointList="-264,-132,-260,-132,-260,-120" />
+
+<item itemtype="Connector" uid="Connector-99" startpinid="KeyPad-1-Pin1" endpinid="Bus-28-ePin2" pointList="-264,-116,-260,-116,-260,-112" />
+
+<item itemtype="Connector" uid="Connector-101" startpinid="KeyPad-1-Pin3" endpinid="Bus-28-ePin4" pointList="-264,-84,-260,-84,-260,-96" />
+
+<item itemtype="Connector" uid="Connector-105" startpinid="Tunnel-36-pin" endpinid="Bus-37-busPinI" pointList="-308,-56,-304,-56" />
 
 <item itemtype="Connector" uid="Connector-107" startpinid="Bus-30-ePin1" endpinid="mega328-24-PORTC0" pointList="-128,-104,-136,-104" />
 
@@ -70,28 +92,98 @@
 
 <item itemtype="Connector" uid="Connector-113" startpinid="Bus-32-ePin1" endpinid="mega328-24-PORTC6" pointList="-188,-144,-184,-144" />
 
-<item itemtype="Connector" uid="Connector-114" startpinid="Bus-37-ePin1" endpinid="KeyPad-1-Pin4" pointList="-344,-44,-352,-44,-352,-48" />
+<item itemtype="Connector" uid="Connector-114" startpinid="Bus-37-ePin1" endpinid="KeyPad-1-Pin4" pointList="-304,-64,-312,-64,-312,-68" />
 
-<item itemtype="Connector" uid="Connector-115" startpinid="Bus-37-ePin2" endpinid="KeyPad-1-Pin5" pointList="-336,-44,-336,-48" />
+<item itemtype="Connector" uid="Connector-115" startpinid="Bus-37-ePin2" endpinid="KeyPad-1-Pin5" pointList="-296,-64,-296,-68" />
 
-<item itemtype="Connector" uid="Connector-116" startpinid="Bus-37-ePin3" endpinid="KeyPad-1-Pin6" pointList="-328,-44,-320,-44,-320,-48" />
+<item itemtype="Connector" uid="Connector-116" startpinid="Bus-37-ePin3" endpinid="KeyPad-1-Pin6" pointList="-288,-64,-280,-64,-280,-68" />
 
-<item itemtype="Connector" uid="Connector-118" startpinid="Bus-28-ePin3" endpinid="KeyPad-1-Pin2" pointList="-300,-84,-300,-80,-304,-80" />
+<item itemtype="Connector" uid="Connector-118" startpinid="Bus-28-ePin3" endpinid="KeyPad-1-Pin2" pointList="-260,-104,-260,-100,-264,-100" />
 
-<item itemtype="Connector" uid="Connector-120" startpinid="Seven Segment-38-pin_commona" endpinid="Tunnel-39-pin" pointList="-48,-24,-48,0" />
+<item itemtype="Connector" uid="Connector-188" startpinid="Bus-65-ePin1" endpinid="Seven Segment-64-pin_a" pointList="-56,-128,-56,-124" />
 
-<item itemtype="Connector" uid="Connector-141" startpinid="mega328-24-PORTD0" endpinid="LedBar-3-led0-pinP" pointList="-184,-136,-228,-136" />
+<item itemtype="Connector" uid="Connector-189" startpinid="Bus-65-ePin2" endpinid="Seven Segment-64-pin_b" pointList="-48,-128,-48,-124" />
 
-<item itemtype="Connector" uid="Connector-142" startpinid="LedBar-3-led1-pinP" endpinid="mega328-24-PORTD1" pointList="-228,-128,-184,-128" />
+<item itemtype="Connector" uid="Connector-190" startpinid="Bus-65-ePin3" endpinid="Seven Segment-64-pin_c" pointList="-40,-128,-40,-124" />
 
-<item itemtype="Connector" uid="Connector-143" startpinid="mega328-24-PORTD2" endpinid="LedBar-3-led2-pinP" pointList="-184,-120,-228,-120" />
+<item itemtype="Connector" uid="Connector-191" startpinid="Bus-65-ePin4" endpinid="Seven Segment-64-pin_d" pointList="-32,-128,-32,-124" />
 
-<item itemtype="Connector" uid="Connector-144" startpinid="LedBar-3-led3-pinP" endpinid="mega328-24-PORTD3" pointList="-228,-112,-184,-112" />
+<item itemtype="Connector" uid="Connector-192" startpinid="Bus-65-ePin5" endpinid="Seven Segment-64-pin_e" pointList="-24,-128,-24,-124" />
 
-<item itemtype="Connector" uid="Connector-145" startpinid="mega328-24-PORTD4" endpinid="LedBar-3-led4-pinP" pointList="-184,-104,-228,-104" />
+<item itemtype="Connector" uid="Connector-193" startpinid="Bus-66-ePin1" endpinid="Seven Segment-63-pin_a" pointList="-16,-128,-16,-124" />
 
-<item itemtype="Connector" uid="Connector-146" startpinid="mega328-24-PORTD5" endpinid="LedBar-3-led5-pinP" pointList="-184,-64,-204,-64,-204,-96,-228,-96" />
+<item itemtype="Connector" uid="Connector-194" startpinid="Bus-66-ePin2" endpinid="Seven Segment-63-pin_b" pointList="-8,-128,-8,-124" />
 
-<item itemtype="Connector" uid="Connector-147" startpinid="mega328-24-PORTD6" endpinid="LedBar-3-led6-pinP" pointList="-184,-56,-212,-56,-212,-88,-228,-88" />
+<item itemtype="Connector" uid="Connector-195" startpinid="Bus-66-ePin3" endpinid="Seven Segment-63-pin_c" pointList="0,-128,0,-124" />
+
+<item itemtype="Connector" uid="Connector-196" startpinid="Bus-66-ePin4" endpinid="Seven Segment-63-pin_d" pointList="8,-128,8,-124" />
+
+<item itemtype="Connector" uid="Connector-197" startpinid="Bus-66-ePin5" endpinid="Seven Segment-63-pin_e" pointList="16,-128,16,-124" />
+
+<item itemtype="Connector" uid="Connector-198" startpinid="Bus-67-ePin1" endpinid="Seven Segment-64-pin_f" pointList="-56,-56,-56,-60" />
+
+<item itemtype="Connector" uid="Connector-199" startpinid="Bus-67-ePin2" endpinid="Seven Segment-64-pin_g" pointList="-48,-56,-48,-60" />
+
+<item itemtype="Connector" uid="Connector-200" startpinid="Bus-67-ePin3" endpinid="Seven Segment-64-pin_dot" pointList="-40,-56,-40,-60" />
+
+<item itemtype="Connector" uid="Connector-201" startpinid="Seven Segment-63-pin_f" endpinid="Bus-69-ePin1" pointList="-16,-60,-16,-56" />
+
+<item itemtype="Connector" uid="Connector-202" startpinid="Seven Segment-63-pin_g" endpinid="Bus-69-ePin2" pointList="-8,-60,-8,-56" />
+
+<item itemtype="Connector" uid="Connector-203" startpinid="Bus-69-ePin3" endpinid="Seven Segment-63-pin_dot" pointList="0,-56,0,-60" />
+
+<item itemtype="Connector" uid="Connector-207" startpinid="mega328-24-PORTD0" endpinid="Bus-70-ePin1" pointList="-184,-136,-192,-136" />
+
+<item itemtype="Connector" uid="Connector-210" startpinid="Bus-70-ePin2" endpinid="mega328-24-PORTD1" pointList="-192,-128,-184,-128" />
+
+<item itemtype="Connector" uid="Connector-211" startpinid="mega328-24-PORTD2" endpinid="Bus-70-ePin3" pointList="-184,-120,-192,-120" />
+
+<item itemtype="Connector" uid="Connector-212" startpinid="Bus-70-ePin4" endpinid="mega328-24-PORTD3" pointList="-192,-112,-184,-112" />
+
+<item itemtype="Connector" uid="Connector-213" startpinid="mega328-24-PORTD4" endpinid="Bus-70-ePin5" pointList="-184,-104,-192,-104" />
+
+<item itemtype="Connector" uid="Connector-214" startpinid="Bus-71-ePin1" endpinid="mega328-24-PORTD5" pointList="-192,-64,-184,-64" />
+
+<item itemtype="Connector" uid="Connector-215" startpinid="mega328-24-PORTD6" endpinid="Bus-71-ePin2" pointList="-184,-56,-192,-56" />
+
+<item itemtype="Connector" uid="Connector-216" startpinid="Bus-71-ePin3" endpinid="mega328-24-PORTD7" pointList="-192,-48,-184,-48" />
+
+<item itemtype="Connector" uid="Connector-224" startpinid="Tunnel-77-pin" endpinid="Bus-67-busPinI" pointList="-56,-24,-56,-48" />
+
+<item itemtype="Connector" uid="Connector-225" startpinid="Tunnel-78-pin" endpinid="Bus-65-busPinI" pointList="-56,-148,-56,-136" />
+
+<item itemtype="Connector" uid="Connector-226" startpinid="Bus-79-ePin5" endpinid="mega328-24-PORTB5" pointList="-128,-72,-136,-72" />
+
+<item itemtype="Connector" uid="Connector-227" startpinid="Bus-79-ePin4" endpinid="mega328-24-PORTB4" pointList="-128,-64,-136,-64" />
+
+<item itemtype="Connector" uid="Connector-228" startpinid="Bus-79-ePin3" endpinid="mega328-24-PORTB3" pointList="-128,-56,-136,-56" />
+
+<item itemtype="Connector" uid="Connector-229" startpinid="Bus-79-ePin2" endpinid="mega328-24-PORTB2" pointList="-128,-48,-136,-48" />
+
+<item itemtype="Connector" uid="Connector-230" startpinid="Bus-79-ePin1" endpinid="mega328-24-PORTB1" pointList="-128,-40,-136,-40" />
+
+<item itemtype="Connector" uid="Connector-231" startpinid="Bus-79-busPinI" endpinid="Tunnel-80-pin" pointList="-120,-40,-120,-32" />
+
+<item itemtype="Connector" uid="Connector-232" startpinid="Bus-82-ePin1" endpinid="mega328-24-PORTB0" pointList="-188,-40,-184,-40" />
+
+<item itemtype="Connector" uid="Connector-234" startpinid="Bus-83-ePin1" endpinid="mega328-24-PORTB6" pointList="-188,-80,-184,-80" />
+
+<item itemtype="Connector" uid="Connector-235" startpinid="mega328-24-PORTB7" endpinid="Bus-83-ePin2" pointList="-184,-72,-188,-72" />
+
+<item itemtype="Connector" uid="Connector-239" startpinid="Tunnel-85-pin" endpinid="Bus-66-busPinI" pointList="-16,-148,-16,-136" />
+
+<item itemtype="Connector" uid="Connector-240" startpinid="Bus-69-busPinI" endpinid="Tunnel-86-pin" pointList="-16,-48,-16,-24" />
+
+<item itemtype="Connector" uid="Connector-241" startpinid="Seven Segment-63-pin_commona" endpinid="Ground-88-Gnd" pointList="8,-60,8,-48" />
+
+<item itemtype="Connector" uid="Connector-242" startpinid="Seven Segment-64-pin_commona" endpinid="Ground-89-Gnd" pointList="-32,-60,-32,-48" />
+
+<item itemtype="Connector" uid="Connector-247" startpinid="Tunnel-73-pin" endpinid="Bus-71-busPinI" pointList="-200,-72,-200,-64" />
+
+<item itemtype="Connector" uid="Connector-248" startpinid="Tunnel-92-pin" endpinid="Bus-70-busPinI" pointList="-204,-140,-200,-140,-200,-136" />
+
+<item itemtype="Connector" uid="Connector-250" startpinid="Tunnel-81-pin" endpinid="Bus-83-busPinI" pointList="-200,-88,-196,-88,-196,-80" />
+
+<item itemtype="Connector" uid="Connector-251" startpinid="Tunnel-93-pin" endpinid="Bus-82-ePin0" pointList="-200,-36,-196,-36,-196,-40" />
 
 </circuit>

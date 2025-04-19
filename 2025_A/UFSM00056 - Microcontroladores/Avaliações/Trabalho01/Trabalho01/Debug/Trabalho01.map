@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.8  c:\users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm Fri Apr 18 21:40:58 2025
+AVRASM ver. 2.2.8  C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm Sat Apr 19 12:23:19 2025
 
 
 EQU  SIGNATURE_000 0000001e
@@ -696,13 +696,54 @@ EQU  TWIaddr      00000030
 EQU  SPMRaddr     00000032
 EQU  INT_VECTORS_SIZE 00000034
 CSEG start        00000000
-CSEG loop         00000007
-CSEG coluna4      0000001a
-CSEG coluna5      0000001d
-CSEG coluna6      00000020
-CSEG testelinha   00000023
+CSEG loop         00000009
+CSEG coluna4      0000001c
+CSEG coluna5      0000001f
+CSEG coluna6      00000022
+CSEG testelinha   00000025
 CSEG linha0       00000033
 CSEG linha1       00000036
 CSEG linha2       00000039
 CSEG linha3       0000003c
 CSEG fim          0000003f
+CSEG tecla1       0000005e
+CSEG tecla2       00000061
+CSEG tecla3       00000064
+CSEG tecla4       00000067
+CSEG tecla5       0000006a
+CSEG tecla6       0000006d
+CSEG tecla7       00000070
+CSEG tecla8       00000073
+CSEG tecla9       00000076
+CSEG tecla0       00000079
+CSEG tecladot     0000007c
+CSEG teclae       0000007f
+CSEG mult         00000082
+CSEG displaydot1  0000009f
+CSEG displaydot2  000000a3
+CSEG displayit    00000084
+CSEG testedezena  00000085
+CSEG skipdezena   0000008b
+CSEG testeportD   0000008b
+CSEG display1d    000000aa
+CSEG display2d    000000ad
+CSEG display3d    000000b0
+CSEG display4d    000000b3
+CSEG display5d    000000b6
+CSEG display6d    000000b9
+CSEG display7d    000000bc
+CSEG display8d    000000bf
+CSEG display9d    000000c2
+CSEG display0d    000000a7
+CSEG print        000000f7
+CSEG testeportB   000000c5
+CSEG display1b    000000dc
+CSEG display2b    000000df
+CSEG display3b    000000e2
+CSEG display4b    000000e5
+CSEG display5b    000000e8
+CSEG display6b    000000eb
+CSEG display7b    000000ee
+CSEG display8b    000000f1
+CSEG display9b    000000f4
+CSEG display0b    000000d9

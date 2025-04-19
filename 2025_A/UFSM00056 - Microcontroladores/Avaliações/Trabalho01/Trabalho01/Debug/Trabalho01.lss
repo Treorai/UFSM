@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.8  c:\users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm Fri Apr 18 21:40:58 2025
+AVRASM ver. 2.2.8  C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm Sat Apr 19 12:23:19 2025
 
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc'
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc'
@@ -1003,66 +1003,65 @@ AVRASM ver. 2.2.8  c:\users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho
                                  
                                  start:
 000000 ef0f                      	ser r16
-000001 b90a                      	out DDRD, r16		; portD saida
-000002 b904                      	out DDRB, r16		; portB saida flags
-                                 							; PB0 = error
-                                 							; PB1 = decimal
+000001 b90a                      	out DDRD, r16		; portD saida dezenas
+000002 b904                      	out DDRB, r16		; portB saida unidades
                                  
-000003 e740                      	ldi r20, 0b1110000	; r20 = colunas high
-000004 e05f                      	ldi r21, 0b0001111	; r21 = colunas low
+000003 ef00                      	ldi r16, 0b11110000
+000004 b908                      	out PORTC, r16		; portB liga pull up
+                                 
+000005 e740                      	ldi r20, 0b1110000	; r20 = colunas high
+000006 e05f                      	ldi r21, 0b0001111	; r21 = colunas low
                                  	
-000005 b957                      	out DDRC, r21		; R1-R4 como saidas | C1-C3 como entradas
-000006 b948                      	out PORTC, r20		; portC liga pull up
-                                 
-                                 loop:
-                                 	; reset das entradas apos o loop
 000007 b957                      	out DDRC, r21		; R1-R4 como saidas | C1-C3 como entradas
 000008 b948                      	out PORTC, r20		; portC liga pull up
                                  
+                                 loop:
+                                 	; reset das entradas apos o loop
+000009 b957                      	out DDRC, r21		; R1-R4 como saidas | C1-C3 como entradas
+00000a b948                      	out PORTC, r20		; portC liga pull up
+                                 
                                  	; Todas colunas estao high
                                  	; Quando um botao eh pressionado, a coluna vai para low
-000009 b106                      	in r16, PINC
-00000a 9500                      	com r16				; r16 recebe bit da coluna ligada
+00000b b106                      	in r16, PINC
+00000c 9500                      	com r16				; r16 recebe bit da coluna ligada
                                  
                                  	; Adiantar a mudanca nas portas
-00000b b947                      	out DDRC, r20		
-00000c b958                      	out PORTC, r21		; Inversao das portas
-00000d b116                      	in r17, PINC
-00000e 9510                      	com r17				; r17 recebe bit da linha ligada
+00000d b947                      	out DDRC, r20		
+00000e b958                      	out PORTC, r21		; Inversao das portas
+00000f b116                      	in r17, PINC
+000010 9510                      	com r17				; r17 recebe bit da linha ligada
                                  
                                  	; Testar qual coluna esta ligada
-00000f fd04                      	sbrc r16, 4
-000010 940c 001a                 	jmp coluna4
-000012 fd05                      	sbrc r16, 5
-000013 940c 001d                 	jmp coluna5
-000015 fd06                      	sbrc r16, 6
-000016 940c 0020                 	jmp coluna6
+000011 fd04                      	sbrc r16, 4
+000012 940c 001c                 	jmp coluna4
+000014 fd05                      	sbrc r16, 5
+000015 940c 001f                 	jmp coluna5
+000017 fd06                      	sbrc r16, 6
+000018 940c 0022                 	jmp coluna6
                                  	; Nenhuma coluna ligada
-000018 940c 0007                 	jmp loop
+00001a 940c 0009                 	jmp loop
                                  
                                  coluna4:
-00001a e021                      	ldi r18, 0x01
-00001b 940c 0023                 	jmp testelinha
+00001c e021                      	ldi r18, 0x01
+00001d 940c 0025                 	jmp testelinha
                                  coluna5:
-00001d e022                      	ldi r18, 0x02
-00001e 940c 0023                 	jmp testelinha
+00001f e022                      	ldi r18, 0x02
+000020 940c 0025                 	jmp testelinha
                                  coluna6:
-000020 e024                      	ldi r18, 0x04
-000021 940c 0023                 	jmp testelinha
+000022 e024                      	ldi r18, 0x04
+000023 940c 0025                 	jmp testelinha
                                  
                                  testelinha:
-000023 fd10                      	sbrc r17, 0
-000024 940c 0033                 	jmp linha0
-000026 fd11                      	sbrc r17, 1
-000027 940c 0036                 	jmp linha1
-000029 fd12                      	sbrc r17, 2
-00002a 940c 0039                 	jmp linha2
-00002c fd13                      	sbrc r17, 3
-00002d 940c 003c                 	jmp linha3
-                                 	; Nao encontrou linha, imprimir erro
-00002f e312                      	ldi r17, '2'
-000030 b915                      	out PORTB, r17
-000031 940c 0007                 	jmp loop
+000025 fd10                      	sbrc r17, 0
+000026 940c 0033                 	jmp linha0
+000028 fd11                      	sbrc r17, 1
+000029 940c 0036                 	jmp linha1
+00002b fd12                      	sbrc r17, 2
+00002c 940c 0039                 	jmp linha2
+00002e fd13                      	sbrc r17, 3
+00002f 940c 003c                 	jmp linha3
+                                 
+000031 940c 0009                 	jmp loop		; Nao encontrou linha = erro. volta pro loop
                                  
                                  linha0:
 000033 e031                      	ldi r19, 0x01
@@ -1078,12 +1077,231 @@ AVRASM ver. 2.2.8  c:\users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho
 00003d 940c 003f                 	jmp fim
                                  
                                  fim:
+                                 	; Shift para gravar em r18 ambos os valores da coluna e da linha
 00003f 0f22                      	lsl r18
 000040 0f22                      	lsl r18
 000041 0f22                      	lsl r18
 000042 0f22                      	lsl r18
 000043 2b23                      	or r18, r19
-000044 b92b                      	out PORTD, r18
+                                 	; Mapa de entradas
+                                 	; 1= 0b 0001 0100 = 0d 20
+                                 	; 2= 0b 0010 0100 = 0d 36
+                                 	; 3= 0b 0100 0100 = 0d 68
+                                 	; 4= 0b 0001 0010 = 0d 18
+                                 	; 5= 0b 0010 0010 = 0d 34
+                                 	; 6= 0b 0100 0010 = 0d 66
+                                 	; 7= 0b 0001 0001 = 0d 17
+                                 	; 8= 0b 0010 0001 = 0d 33
+                                 	; 9= 0b 0100 0001 = 0d 65
+                                 	; 0= 0b 0001 1000 = 0d 40
+                                 	; .= 0b 0010 1000 = 0d 24
+                                 	; e= 0b 0100 1000 = 0d 72
+                                 
+000044 3124                      	cpi r18, 0b00010100			; tecla 1
+000045 f0c1                      	breq tecla1
+000046 3224                      	cpi r18, 0b00100100			; tecla 2
+000047 f0c9                      	breq tecla2
+000048 3424                      	cpi r18, 0b01000100			; tecla 3
+000049 f0d1                      	breq tecla3
+00004a 3122                      	cpi r18, 0b00010010			; tecla 4
+00004b f0d9                      	breq tecla4
+00004c 3222                      	cpi r18, 0b00100010			; tecla 5
+00004d f0e1                      	breq tecla5
+00004e 3422                      	cpi r18, 0b01000010			; tecla 6
+00004f f0e9                      	breq tecla6
+000050 3121                      	cpi r18, 0b00010001			; tecla 7
+000051 f0f1                      	breq tecla7
+000052 3221                      	cpi r18, 0b00100001			; tecla 8
+000053 f0f9                      	breq tecla8
+000054 3421                      	cpi r18, 0b01000001			; tecla 9
+000055 f101                      	breq tecla9
+000056 3228                      	cpi r18, 0b00101000			; tecla 0
+000057 f109                      	breq tecla0
+000058 3128                      	cpi r18, 0b00011000			; tecla .
+000059 f111                      	breq tecladot
+00005a 3428                      	cpi r18, 0b01001000			; tecla e
+00005b f119                      	breq teclae
+                                 
+00005c 940c 0009                 	jmp loop
+                                 
+                                 tecla1:
+00005e e061                      	ldi r22, 1
+00005f 940c 0082                 	jmp mult
+                                 tecla2:
+000061 e062                      	ldi r22, 2
+000062 940c 0082                 	jmp mult
+                                 tecla3:
+000064 e063                      	ldi r22, 3
+000065 940c 0082                 	jmp mult
+                                 tecla4:
+000067 e064                      	ldi r22, 4
+000068 940c 0082                 	jmp mult
+                                 tecla5:
+00006a e065                      	ldi r22, 5
+00006b 940c 0082                 	jmp mult
+                                 tecla6:
+00006d e066                      	ldi r22, 6
+00006e 940c 0082                 	jmp mult
+                                 tecla7:
+000070 e067                      	ldi r22, 7
+000071 940c 0082                 	jmp mult
+                                 tecla8:
+000073 e068                      	ldi r22, 8
+000074 940c 0082                 	jmp mult
+                                 tecla9:
+000076 e069                      	ldi r22, 9
+000077 940c 0082                 	jmp mult
+                                 tecla0:
+000079 e060                      	ldi r22, 0
+00007a 940c 0082                 	jmp mult
+                                 tecladot:
+00007c e060                      	ldi r22, 0
+00007d 940c 009f                 	jmp displaydot1
+                                 teclae:
+00007f e060                      	ldi r22, 0
+000080 940c 00a3                 	jmp displaydot2
+                                 
+                                 mult:
+                                 	;ldi r23, 4
+                                 	;mul r22, r23
+                                 	;mov r22, r0
+000082 0f66                      	lsl r22
+000083 0f66                      	lsl r22
+                                 	; r22 contem o digito multiplicado por 4 (matricula[0] +1)
+                                 	
+                                 displayit:
+                                 	; Conversao para display
+000084 2777                      	clr r23				; registrador para dezenas
+                                 testedezena:
+000085 306a                      	cpi r22, 10
+000086 f020                      	brlo skipdezena
+000087 506a                      	subi r22, 10
+000088 9573                      	inc r23
+000089 940c 0085                 	jmp testedezena
+                                 
+                                 skipdezena:
+                                 	; r23 (dezena) display para r25 em portD
+                                 	; r22 (unidade) display para r24 em portB
+                                 
+                                 	; Mapear para display de 7 segmentos
+                                 
+                                 testeportD:
+00008b 3071                      	cpi r23, 1
+00008c f0e9                      	breq display1d
+00008d 3072                      	cpi r23, 2
+00008e f0f1                      	breq display2d
+00008f 3073                      	cpi r23, 3
+000090 f0f9                      	breq display3d
+000091 3074                      	cpi r23, 4
+000092 f101                      	breq display4d
+000093 3075                      	cpi r23, 5
+000094 f109                      	breq display5d
+000095 3076                      	cpi r23, 6
+000096 f111                      	breq display6d
+000097 3077                      	cpi r23, 7
+000098 f119                      	breq display7d
+000099 3078                      	cpi r23, 8
+00009a f121                      	breq display8d
+00009b 3079                      	cpi r23, 9
+00009c f129                      	breq display9d
+00009d 3070                      	cpi r23, 0
+00009e f041                      	breq display0d
+                                 displaydot1:
+00009f e890                      	ldi r25, 0b10000000
+0000a0 e080                      	ldi r24, 0x00
+0000a1 940c 00f7                 	jmp print
+                                 displaydot2:
+0000a3 e880                      	ldi r24, 0b10000000
+0000a4 e090                      	ldi r25, 0x00
+0000a5 940c 00f7                 	jmp print
+                                 
+                                 display0d:
+0000a7 e39f                      	ldi r25, 0b00111111
+0000a8 940c 00c5                 	jmp testeportB
+                                 display1d:
+0000aa e096                      	ldi r25, 0b00000110
+0000ab 940c 00c5                 	jmp testeportB
+                                 display2d:
+0000ad e59b                      	ldi r25, 0b01011011
+0000ae 940c 00c5                 	jmp testeportB
+                                 display3d:
+0000b0 e49f                      	ldi r25, 0b01001111
+0000b1 940c 00c5                 	jmp testeportB
+                                 display4d:
+0000b3 e696                      	ldi r25, 0b01100110
+0000b4 940c 00c5                 	jmp testeportB
+                                 display5d:
+0000b6 e69d                      	ldi r25, 0b01101101
+0000b7 940c 00c5                 	jmp testeportB
+                                 display6d:
+0000b9 e79d                      	ldi r25, 0b01111101
+0000ba 940c 00c5                 	jmp testeportB
+                                 display7d:
+0000bc e097                      	ldi r25, 0b00000111
+0000bd 940c 00c5                 	jmp testeportB
+                                 display8d:
+0000bf e79f                      	ldi r25, 0b01111111
+0000c0 940c 00c5                 	jmp testeportB
+                                 display9d:
+0000c2 e69f                      	ldi r25, 0b01101111
+0000c3 940c 00c5                 	jmp testeportB
+                                 
+                                 testeportB:
+0000c5 3061                      	cpi r22, 1
+0000c6 f0a9                      	breq display1b
+0000c7 3062                      	cpi r22, 2
+0000c8 f0b1                      	breq display2b
+0000c9 3063                      	cpi r22, 3
+0000ca f0b9                      	breq display3b
+0000cb 3064                      	cpi r22, 4
+0000cc f0c1                      	breq display4b
+0000cd 3065                      	cpi r22, 5
+0000ce f0c9                      	breq display5b
+0000cf 3066                      	cpi r22, 6
+0000d0 f0d1                      	breq display6b
+0000d1 3067                      	cpi r22, 7
+0000d2 f0d9                      	breq display7b
+0000d3 3068                      	cpi r22, 8
+0000d4 f0e1                      	breq display8b
+0000d5 3069                      	cpi r22, 9
+0000d6 f0e9                      	breq display9b
+0000d7 3060                      	cpi r22, 0
+0000d8 f001                      	breq display0b
+                                 
+                                 display0b:
+0000d9 e38f                      	ldi r24, 0b00111111
+0000da 940c 00f7                 	jmp print
+                                 display1b:
+0000dc e086                      	ldi r24, 0b00000110
+0000dd 940c 00f7                 	jmp print
+                                 display2b:
+0000df e58b                      	ldi r24, 0b01011011
+0000e0 940c 00f7                 	jmp print
+                                 display3b:
+0000e2 e48f                      	ldi r24, 0b01001111
+0000e3 940c 00f7                 	jmp print
+                                 display4b:
+0000e5 e686                      	ldi r24, 0b01100110
+0000e6 940c 00f7                 	jmp print
+                                 display5b:
+0000e8 e68d                      	ldi r24, 0b01101101
+0000e9 940c 00f7                 	jmp print
+                                 display6b:
+0000eb e78d                      	ldi r24, 0b01111101
+0000ec 940c 00f7                 	jmp print
+                                 display7b:
+0000ee e087                      	ldi r24, 0b00000111
+0000ef 940c 00f7                 	jmp print
+                                 display8b:
+0000f1 e78f                      	ldi r24, 0b01111111
+0000f2 940c 00f7                 	jmp print
+                                 display9b:
+0000f4 e68f                      	ldi r24, 0b01101111
+0000f5 940c 00f7                 	jmp print
+                                 
+                                 print:
+0000f7 b99b                      	out PORTD, r25
+0000f8 b985                      	out PORTB, r24
 
 
 RESOURCE USE INFORMATION
@@ -1103,37 +1321,37 @@ counted separately from r26..r31 here.
 "ATmega328P" register use summary:
 x  :   0 y  :   0 z  :   0 r0 :   0 r1 :   0 r2 :   0 r3 :   0 r4 :   0 
 r5 :   0 r6 :   0 r7 :   0 r8 :   0 r9 :   0 r10:   0 r11:   0 r12:   0 
-r13:   0 r14:   0 r15:   0 r16:   8 r17:   8 r18:   9 r19:   5 r20:   4 
-r21:   4 r22:   0 r23:   0 r24:   0 r25:   0 r26:   0 r27:   0 r28:   0 
+r13:   0 r14:   0 r15:   0 r16:  10 r17:   6 r18:  20 r19:   5 r20:   4 
+r21:   4 r22:  26 r23:  12 r24:  13 r25:  13 r26:   0 r27:   0 r28:   0 
 r29:   0 r30:   0 r31:   0 
-Registers used: 6 out of 35 (17.1%)
+Registers used: 10 out of 35 (28.6%)
 
 "ATmega328P" instruction use summary:
 .lds  :   0 .sts  :   0 adc   :   0 add   :   0 adiw  :   0 and   :   0 
 andi  :   0 asr   :   0 bclr  :   0 bld   :   0 brbc  :   0 brbs  :   0 
-brcc  :   0 brcs  :   0 break :   0 breq  :   0 brge  :   0 brhc  :   0 
-brhs  :   0 brid  :   0 brie  :   0 brlo  :   0 brlt  :   0 brmi  :   0 
+brcc  :   0 brcs  :   0 break :   0 breq  :  32 brge  :   0 brhc  :   0 
+brhs  :   0 brid  :   0 brie  :   0 brlo  :   1 brlt  :   0 brmi  :   0 
 brne  :   0 brpl  :   0 brsh  :   0 brtc  :   0 brts  :   0 brvc  :   0 
 brvs  :   0 bset  :   0 bst   :   0 call  :   0 cbi   :   0 cbr   :   0 
-clc   :   0 clh   :   0 cli   :   0 cln   :   0 clr   :   0 cls   :   0 
+clc   :   0 clh   :   0 cli   :   0 cln   :   0 clr   :   1 cls   :   0 
 clt   :   0 clv   :   0 clz   :   0 com   :   2 cp    :   0 cpc   :   0 
-cpi   :   0 cpse  :   0 dec   :   0 eor   :   0 fmul  :   0 fmuls :   0 
-fmulsu:   0 icall :   0 ijmp  :   0 in    :   2 inc   :   0 jmp   :  17 
-ld    :   0 ldd   :   0 ldi   :  10 lds   :   0 lpm   :   0 lsl   :   4 
+cpi   :  33 cpse  :   0 dec   :   0 eor   :   0 fmul  :   0 fmuls :   0 
+fmulsu:   0 icall :   0 ijmp  :   0 in    :   2 inc   :   1 jmp   :  53 
+ld    :   0 ldd   :   0 ldi   :  46 lds   :   0 lpm   :   0 lsl   :   6 
 lsr   :   0 mov   :   0 movw  :   0 mul   :   0 muls  :   0 mulsu :   0 
-neg   :   0 nop   :   0 or    :   1 ori   :   0 out   :  10 pop   :   0 
+neg   :   0 nop   :   0 or    :   1 ori   :   0 out   :  11 pop   :   0 
 push  :   0 rcall :   0 ret   :   0 reti  :   0 rjmp  :   0 rol   :   0 
 ror   :   0 sbc   :   0 sbci  :   0 sbi   :   0 sbic  :   0 sbis  :   0 
 sbiw  :   0 sbr   :   0 sbrc  :   7 sbrs  :   0 sec   :   0 seh   :   0 
 sei   :   0 sen   :   0 ser   :   1 ses   :   0 set   :   0 sev   :   0 
 sez   :   0 sleep :   0 spm   :   0 st    :   0 std   :   0 sts   :   0 
-sub   :   0 subi  :   0 swap  :   0 tst   :   0 wdr   :   0 
-Instructions used: 9 out of 113 (8.0%)
+sub   :   0 subi  :   1 swap  :   0 tst   :   0 wdr   :   0 
+Instructions used: 15 out of 113 (13.3%)
 
 "ATmega328P" memory use summary [bytes]:
 Segment   Begin    End      Code   Data   Used    Size   Use%
 ---------------------------------------------------------------
-[.cseg] 0x000000 0x00008e    142      0    142   32768   0.4%
+[.cseg] 0x000000 0x0001f6    502      0    502   32768   1.5%
 [.dseg] 0x000100 0x000100      0      0      0    2048   0.0%
 [.eseg] 0x000000 0x000000      0      0      0    1024   0.0%
 
