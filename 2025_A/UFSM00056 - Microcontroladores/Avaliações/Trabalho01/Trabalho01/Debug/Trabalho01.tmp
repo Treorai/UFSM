@@ -1,0 +1,37 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\Debug\Trabalho01.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>Trabalho01.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>Trabalho01.map</FILE>
+  <FILE>Trabalho01.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <start><FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>18</LINE></start>
+  <loop><FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>31</LINE></loop>
+  <coluna4><FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>57</LINE></coluna4>
+  <coluna5><FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>60</LINE></coluna5>
+  <coluna6><FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>63</LINE></coluna6>
+  <testelinha><FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>67</LINE></testelinha>
+  <linha0><FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>81</LINE></linha0>
+  <linha1><FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>84</LINE></linha1>
+  <linha2><FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>87</LINE></linha2>
+  <linha3><FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>90</LINE></linha3>
+  <fim><FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho01\Trabalho01\main.asm</FILE><LINE>94</LINE></fim>
+ </LABELS>
+</ASSEMBLER_INFO>
