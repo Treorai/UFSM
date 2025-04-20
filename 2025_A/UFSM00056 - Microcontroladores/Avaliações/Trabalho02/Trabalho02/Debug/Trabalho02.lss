@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.8  C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho02\Trabalho02\main.asm Sun Apr 20 11:59:00 2025
+AVRASM ver. 2.2.8  C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho02\Trabalho02\main.asm Sun Apr 20 12:44:30 2025
 
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc'
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc'
@@ -1173,9 +1173,17 @@ AVRASM ver. 2.2.8  C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho02\Trabalho
 00007f 0f8e                      	add r24, r30
 000080 1f9f                      	adc r25, r31
                                  
+                                 	; Mapeamento b[0 .. 1000 0000 0100] 
+                                 	;         para b[0100 .. 1000 1011] d[4 .. 139]
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 print:
 000081 b985                      	out PORTB, r24		; escreve o valor alto em portB
 000082 b99b                      	out PORTD, r25		; escreve o valor baixo em portD
-                                 
 000083 cf84                      	rjmp loop
 
 

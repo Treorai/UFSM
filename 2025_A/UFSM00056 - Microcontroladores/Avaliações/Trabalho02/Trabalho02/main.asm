@@ -187,7 +187,15 @@ soma:
 	add r24, r30
 	adc r25, r31
 
+	; Mapeamento b[0 .. 1000 0000 0100] 
+	;         para b[0100 .. 1000 1011] d[4 .. 139]
+
+
+
+
+
+
+print:
 	out PORTB, r24		; escreve o valor alto em portB
 	out PORTD, r25		; escreve o valor baixo em portD
-
 	rjmp loop
