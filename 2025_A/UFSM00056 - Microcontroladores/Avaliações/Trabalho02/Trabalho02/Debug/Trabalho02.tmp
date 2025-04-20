@@ -24,10 +24,18 @@
  <LABELS>
   <start><FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho02\Trabalho02\main.asm</FILE><LINE>14</LINE></start>
   <loop><FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho02\Trabalho02\main.asm</FILE><LINE>28</LINE></loop>
-  <muxadc0><FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho02\Trabalho02\main.asm</FILE><LINE>30</LINE></muxadc0>
-  <muxadc1><FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho02\Trabalho02\main.asm</FILE><LINE>35</LINE></muxadc1>
-  <muxisset><FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho02\Trabalho02\main.asm</FILE><LINE>46</LINE></muxisset>
-  <muxadc2><FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho02\Trabalho02\main.asm</FILE><LINE>40</LINE></muxadc2>
-  <testa><FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho02\Trabalho02\main.asm</FILE><LINE>56</LINE></testa>
+  <muxadc0><FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho02\Trabalho02\main.asm</FILE><LINE>31</LINE></muxadc0>
+  <muxadc1><FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho02\Trabalho02\main.asm</FILE><LINE>37</LINE></muxadc1>
+  <muxisset><FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho02\Trabalho02\main.asm</FILE><LINE>57</LINE></muxisset>
+  <muxadc2><FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho02\Trabalho02\main.asm</FILE><LINE>43</LINE></muxadc2>
+  <testa><FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho02\Trabalho02\main.asm</FILE><LINE>63</LINE></testa>
+  <trio><FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho02\Trabalho02\main.asm</FILE><LINE>72</LINE></trio>
+  <salva0><FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho02\Trabalho02\main.asm</FILE><LINE>80</LINE></salva0>
+  <salva1><FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho02\Trabalho02\main.asm</FILE><LINE>88</LINE></salva1>
+  <salva2><FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho02\Trabalho02\main.asm</FILE><LINE>96</LINE></salva2>
+  <soma><FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho02\Trabalho02\main.asm</FILE><LINE>105</LINE></soma>
+  <divalto><FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho02\Trabalho02\main.asm</FILE><LINE>129</LINE></divalto>
+  <divbaixo><FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho02\Trabalho02\main.asm</FILE><LINE>136</LINE></divbaixo>
+  <fimdiv><FILE>c:\users\conta\Documents\Atmel Studio\7.0\Trabalho02\Trabalho02\main.asm</FILE><LINE>143</LINE></fimdiv>
  </LABELS>
 </ASSEMBLER_INFO>
