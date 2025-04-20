@@ -117,33 +117,77 @@ soma:
 	adc r29, r25
 
 	; [r29:r28] total da soma
-	; Temperatura vai de 4 ate 139 (na soma, 12 ate 417)
-	out portd, r29
-	out portb, r28
-	rjmp loop
 	
-	ldi r22, 0x03		; divisor 3
+	; DIVISAO POR APROXIMACAO
 	clr r24
 	clr r25				; resultado em [25:24]
+	
+	; somar as partes 1/4, 1/16, 1/64 e 1/128
+	; shifts			2, 4, 6 e 7
+	; divisao por 3 = 0.333 aproximadamente 0.336
+	
+	; original r29:r28
+	; destino  r25:r24
+	; calculo  r31:r30
+	
+	;.25
+	movw r30, r28
+	lsr r31
+	ror r30
+	lsr r31
+	ror r30
+	movw r24, r30	
 
-divalto:
-	cp r29, r22
-	brlt divbaixo		; nao consegue mais dividir
-	sub r29, r22
-	inc r25
-	rjmp divalto
+	;.3125
+	movw r30, r28
+	lsr r31
+	ror r30
+	lsr r31
+	ror r30
+	lsr r31
+	ror r30
+	lsr r31
+	ror r30
+	add r24, r30
+	adc r25, r31
 
-divbaixo:
-	cp r28, r22
-	brlt fimdiv
-	sub r28, r22
-	inc r24
-	rjmp divbaixo
+	;.328
+	movw r30, r28
+	lsr r31
+	ror r30
+	lsr r31
+	ror r30
+	lsr r31
+	ror r30
+	lsr r31
+	ror r30
+	lsr r31
+	ror r30
+	lsr r31
+	ror r30
+	add r24, r30
+	adc r25, r31
 
-fimdiv:
+	;.336
+	movw r30, r28
+	lsr r31
+	ror r30
+	lsr r31
+	ror r30
+	lsr r31
+	ror r30
+	lsr r31
+	ror r30
+	lsr r31
+	ror r30
+	lsr r31
+	ror r30
+	lsr r31
+	ror r30
+	add r24, r30
+	adc r25, r31
 
-	out PORTB, r25		; escreve o valor alto em portB
-	out PORTD, r24		; escreve o valor baixo em portD
+	out PORTB, r24		; escreve o valor alto em portB
+	out PORTD, r25		; escreve o valor baixo em portD
 
 	rjmp loop
-	;rjmp muxadc0

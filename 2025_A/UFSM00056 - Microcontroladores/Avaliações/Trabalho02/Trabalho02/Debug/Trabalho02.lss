@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.8  c:\users\conta\Documents\Atmel Studio\7.0\Trabalho02\Trabalho02\main.asm Sun Apr 20 00:14:42 2025
+AVRASM ver. 2.2.8  C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho02\Trabalho02\main.asm Sun Apr 20 11:59:00 2025
 
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc'
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc'
@@ -1103,36 +1103,80 @@ AVRASM ver. 2.2.8  c:\users\conta\Documents\Atmel Studio\7.0\Trabalho02\Trabalho
 00004d 1fd9                      	adc r29, r25
                                  
                                  	; [r29:r28] total da soma
-                                 	; Temperatura vai de 4 ate 139 (na soma, 12 ate 417)
-00004e b9db                      	out portd, r29
-00004f b9c5                      	out portb, r28
-000050 cfb7                      	rjmp loop
                                  	
-000051 e063                      	ldi r22, 0x03		; divisor 3
-000052 2788                      	clr r24
-000053 2799                      	clr r25				; resultado em [25:24]
+                                 	; DIVISAO POR APROXIMACAO
+00004e 2788                      	clr r24
+00004f 2799                      	clr r25				; resultado em [25:24]
+                                 	
+                                 	; somar as partes 1/4, 1/16, 1/64 e 1/128
+                                 	; shifts			2, 4, 6 e 7
+                                 	; divisao por 3 = 0.333 aproximadamente 0.336
+                                 	
+                                 	; original r29:r28
+                                 	; destino  r25:r24
+                                 	; calculo  r31:r30
+                                 	
+                                 	;.25
+000050 01fe                      	movw r30, r28
+000051 95f6                      	lsr r31
+000052 95e7                      	ror r30
+000053 95f6                      	lsr r31
+000054 95e7                      	ror r30
+000055 01cf                      	movw r24, r30	
                                  
-                                 divalto:
-000054 17d6                      	cp r29, r22
-000055 f01c                      	brlt divbaixo		; nao consegue mais dividir
-000056 1bd6                      	sub r29, r22
-000057 9593                      	inc r25
-000058 cffb                      	rjmp divalto
+                                 	;.3125
+000056 01fe                      	movw r30, r28
+000057 95f6                      	lsr r31
+000058 95e7                      	ror r30
+000059 95f6                      	lsr r31
+00005a 95e7                      	ror r30
+00005b 95f6                      	lsr r31
+00005c 95e7                      	ror r30
+00005d 95f6                      	lsr r31
+00005e 95e7                      	ror r30
+00005f 0f8e                      	add r24, r30
+000060 1f9f                      	adc r25, r31
                                  
-                                 divbaixo:
-000059 17c6                      	cp r28, r22
-00005a f01c                      	brlt fimdiv
-00005b 1bc6                      	sub r28, r22
-00005c 9583                      	inc r24
-00005d cffb                      	rjmp divbaixo
+                                 	;.328
+000061 01fe                      	movw r30, r28
+000062 95f6                      	lsr r31
+000063 95e7                      	ror r30
+000064 95f6                      	lsr r31
+000065 95e7                      	ror r30
+000066 95f6                      	lsr r31
+000067 95e7                      	ror r30
+000068 95f6                      	lsr r31
+000069 95e7                      	ror r30
+00006a 95f6                      	lsr r31
+00006b 95e7                      	ror r30
+00006c 95f6                      	lsr r31
+00006d 95e7                      	ror r30
+00006e 0f8e                      	add r24, r30
+00006f 1f9f                      	adc r25, r31
                                  
-                                 fimdiv:
+                                 	;.336
+000070 01fe                      	movw r30, r28
+000071 95f6                      	lsr r31
+000072 95e7                      	ror r30
+000073 95f6                      	lsr r31
+000074 95e7                      	ror r30
+000075 95f6                      	lsr r31
+000076 95e7                      	ror r30
+000077 95f6                      	lsr r31
+000078 95e7                      	ror r30
+000079 95f6                      	lsr r31
+00007a 95e7                      	ror r30
+00007b 95f6                      	lsr r31
+00007c 95e7                      	ror r30
+00007d 95f6                      	lsr r31
+00007e 95e7                      	ror r30
+00007f 0f8e                      	add r24, r30
+000080 1f9f                      	adc r25, r31
                                  
-00005e b995                      	out PORTB, r25		; escreve o valor alto em portB
-00005f b98b                      	out PORTD, r24		; escreve o valor baixo em portD
+000081 b985                      	out PORTB, r24		; escreve o valor alto em portB
+000082 b99b                      	out PORTD, r25		; escreve o valor baixo em portD
                                  
-000060 cfa7                      	rjmp loop
-                                 	;rjmp muxadc0
+000083 cf84                      	rjmp loop
 
 
 RESOURCE USE INFORMATION
@@ -1153,36 +1197,36 @@ counted separately from r26..r31 here.
 x  :   0 y  :   0 z  :   0 r0 :   0 r1 :   0 r2 :   0 r3 :   0 r4 :   0 
 r5 :   0 r6 :   0 r7 :   0 r8 :   0 r9 :   0 r10:   0 r11:   0 r12:   0 
 r13:   0 r14:   0 r15:   0 r16:   6 r17:  17 r18:   9 r19:   1 r20:   2 
-r21:   1 r22:   7 r23:   1 r24:   5 r25:   4 r26:   7 r27:   0 r28:   7 
-r29:   7 r30:   0 r31:   0 
-Registers used: 13 out of 35 (37.1%)
+r21:   1 r22:   2 r23:   1 r24:   8 r25:   6 r26:   7 r27:   0 r28:   8 
+r29:   4 r30:  27 r31:  22 
+Registers used: 15 out of 35 (42.9%)
 
 "ATmega328P" instruction use summary:
-.lds  :   0 .sts  :   0 adc   :   6 add   :   0 adiw  :   0 and   :   0 
+.lds  :   0 .sts  :   0 adc   :   9 add   :   3 adiw  :   0 and   :   0 
 andi  :   0 asr   :   0 bclr  :   0 bld   :   0 brbc  :   0 brbs  :   0 
 brcc  :   0 brcs  :   0 break :   0 breq  :   4 brge  :   0 brhc  :   0 
-brhs  :   0 brid  :   0 brie  :   0 brlo  :   0 brlt  :   2 brmi  :   0 
+brhs  :   0 brid  :   0 brie  :   0 brlo  :   0 brlt  :   0 brmi  :   0 
 brne  :   2 brpl  :   0 brsh  :   0 brtc  :   0 brts  :   0 brvc  :   0 
 brvs  :   0 bset  :   0 bst   :   0 call  :   0 cbi   :   0 cbr   :   0 
 clc   :   0 clh   :   0 cli   :   0 cln   :   0 clr   :   7 cls   :   0 
-clt   :   0 clv   :   0 clz   :   0 com   :   0 cp    :   2 cpc   :   0 
+clt   :   0 clv   :   0 clz   :   0 com   :   0 cp    :   0 cpc   :   0 
 cpi   :   6 cpse  :   0 dec   :   0 eor   :   0 fmul  :   0 fmuls :   0 
-fmulsu:   0 icall :   0 ijmp  :   0 in    :   0 inc   :   8 jmp   :   7 
-ld    :   0 ldd   :   0 ldi   :   6 lds   :   4 lpm   :   0 lsl   :   0 
-lsr   :   0 mov   :   0 movw  :   3 mul   :   0 muls  :   0 mulsu :   0 
-neg   :   0 nop   :   0 or    :   0 ori   :   1 out   :   7 pop   :   0 
-push  :   0 rcall :   0 ret   :   0 reti  :   0 rjmp  :   5 rol   :   0 
-ror   :   0 sbc   :   0 sbci  :   0 sbi   :   0 sbic  :   0 sbis  :   0 
+fmulsu:   0 icall :   0 ijmp  :   0 in    :   0 inc   :   6 jmp   :   7 
+ld    :   0 ldd   :   0 ldi   :   5 lds   :   4 lpm   :   0 lsl   :   0 
+lsr   :  19 mov   :   0 movw  :   8 mul   :   0 muls  :   0 mulsu :   0 
+neg   :   0 nop   :   0 or    :   0 ori   :   1 out   :   5 pop   :   0 
+push  :   0 rcall :   0 ret   :   0 reti  :   0 rjmp  :   2 rol   :   0 
+ror   :  19 sbc   :   0 sbci  :   0 sbi   :   0 sbic  :   0 sbis  :   0 
 sbiw  :   0 sbr   :   0 sbrc  :   1 sbrs  :   2 sec   :   0 seh   :   0 
 sei   :   0 sen   :   0 ser   :   1 ses   :   0 set   :   0 sev   :   0 
 sez   :   0 sleep :   0 spm   :   0 st    :   0 std   :   0 sts   :   5 
-sub   :   2 subi  :   0 swap  :   0 tst   :   0 wdr   :   0 
+sub   :   0 subi  :   0 swap  :   0 tst   :   0 wdr   :   0 
 Instructions used: 20 out of 113 (17.7%)
 
 "ATmega328P" memory use summary [bytes]:
 Segment   Begin    End      Code   Data   Used    Size   Use%
 ---------------------------------------------------------------
-[.cseg] 0x000000 0x0000c2    194      0    194   32768   0.6%
+[.cseg] 0x000000 0x000108    264      0    264   32768   0.8%
 [.dseg] 0x000100 0x000100      0      0      0    2048   0.0%
 [.eseg] 0x000000 0x000000      0      0      0    1024   0.0%
 

@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.8  c:\users\conta\Documents\Atmel Studio\7.0\Trabalho02\Trabalho02\main.asm Sun Apr 20 00:14:42 2025
+AVRASM ver. 2.2.8  C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho02\Trabalho02\main.asm Sun Apr 20 11:59:00 2025
 
 
 EQU  SIGNATURE_000 0000001e
@@ -707,6 +707,3 @@ CSEG salva0       00000032
 CSEG salva1       0000003a
 CSEG salva2       00000042
 CSEG soma         00000045
-CSEG divalto      00000054
-CSEG divbaixo     00000059
-CSEG fimdiv       0000005e

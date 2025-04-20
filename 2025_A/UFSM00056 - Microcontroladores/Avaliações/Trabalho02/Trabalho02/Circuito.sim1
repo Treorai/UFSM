@@ -30,17 +30,17 @@
 
 <item itemtype="Ground" CircId="Ground-103" mainComp="false" Show_id="false" Show_Val="false" Pos="-196,-160" rotation="0" hflip="1" vflip="1" label="Ground-103" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
 
-<item itemtype="Potentiometer" CircId="Potentiometer-105" mainComp="false" Show_id="false" Show_Val="false" Pos="-196,-196" rotation="90" hflip="1" vflip="1" label="Potentiometer-105" idLabPos="-16,-40" labelrot="0" valLabPos="4.4436,-40.6368" valLabRot="0" Resistance="1 kΩ" Value_Ohm="0 Ω" Slider="true" Scale="1" />
+<item itemtype="Potentiometer" CircId="Potentiometer-105" mainComp="false" Show_id="false" Show_Val="false" Pos="-196,-196" rotation="90" hflip="1" vflip="1" label="Potentiometer-105" idLabPos="-16,-40" labelrot="0" valLabPos="4.4436,-40.6368" valLabRot="0" Resistance="1 kΩ" Value_Ohm="178 Ω" Slider="true" Scale="1" />
 
 <item itemtype="Rail" CircId="Rail-106" mainComp="false" Show_id="false" Show_Val="false" Pos="-336,-220" rotation="0" hflip="1" vflip="1" label="Rail-106" idLabPos="-5,-10" labelrot="-90" valLabPos="-12,7.93254" valLabRot="-90" Voltage="5 V" />
 
 <item itemtype="Tunnel" CircId="Tunnel-107" mainComp="false" Show_id="false" Show_Val="false" Pos="-308,-220" rotation="0" hflip="-1" vflip="1" label="Tunnel-107" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="5v" IsBus="false" />
 
-<item itemtype="Potentiometer" CircId="Potentiometer-108" mainComp="false" Show_id="false" Show_Val="false" Pos="-144,-196" rotation="90" hflip="1" vflip="1" label="Potentiometer-108" idLabPos="-16,-40" labelrot="0" valLabPos="4.4436,-40.6368" valLabRot="0" Resistance="1 kΩ" Value_Ohm="0 Ω" Slider="true" Scale="1" />
+<item itemtype="Potentiometer" CircId="Potentiometer-108" mainComp="false" Show_id="false" Show_Val="false" Pos="-144,-196" rotation="90" hflip="1" vflip="1" label="Potentiometer-108" idLabPos="-16,-40" labelrot="0" valLabPos="4.4436,-40.6368" valLabRot="0" Resistance="1 kΩ" Value_Ohm="533 Ω" Slider="true" Scale="1" />
 
 <item itemtype="Ground" CircId="Ground-109" mainComp="false" Show_id="false" Show_Val="false" Pos="-144,-160" rotation="0" hflip="1" vflip="1" label="Ground-109" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
 
-<item itemtype="Potentiometer" CircId="Potentiometer-111" mainComp="false" Show_id="false" Show_Val="false" Pos="-92,-196" rotation="90" hflip="1" vflip="1" label="Potentiometer-111" idLabPos="-16,-40" labelrot="0" valLabPos="4.4436,-40.6368" valLabRot="0" Resistance="1 kΩ" Value_Ohm="0 Ω" Slider="true" Scale="1" />
+<item itemtype="Potentiometer" CircId="Potentiometer-111" mainComp="false" Show_id="false" Show_Val="false" Pos="-92,-196" rotation="90" hflip="1" vflip="1" label="Potentiometer-111" idLabPos="-16,-40" labelrot="0" valLabPos="4.4436,-40.6368" valLabRot="0" Resistance="1 kΩ" Value_Ohm="356 Ω" Slider="true" Scale="1" />
 
 <item itemtype="Ground" CircId="Ground-112" mainComp="false" Show_id="false" Show_Val="false" Pos="-92,-160" rotation="0" hflip="1" vflip="1" label="Ground-112" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
 
