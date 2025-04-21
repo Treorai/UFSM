@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.8  C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho02\Trabalho02\main.asm Sun Apr 20 12:44:30 2025
+AVRASM ver. 2.2.8  C:\Users\Watto\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Trabalhos\Trabalho02\Trabalho02\main.asm Mon Apr 21 20:07:24 2025
 
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc'
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc'
@@ -1033,26 +1033,19 @@ AVRASM ver. 2.2.8  C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho02\Trabalho
 00001c f011                      	breq muxisset
 00001d 940c 0008                 	jmp loop
                                  
-                                 ;	cpi r17, 0x02
-                                 ;	brne loop
-                                 ;	ldi r16, 0b01000100
-                                 ;	sts ADMUX, r16
-                                 ;	jmp muxisset
-                                 
-                                 
                                  muxisset:
                                  	; mudanca do mux
 00001f 9120 007a                 	lds r18, ADCSRA
-000021 6420                      	ori r18, 0b01000000	; liga o bit 6 e mantem os demais
-000022 9320 007a                 	sts ADCSRA, r18		; inicia a conversao
+000021 6420                      	ori r18, 0b01000000		; liga o bit 6 e mantem os demais
+000022 9320 007a                 	sts ADCSRA, r18			; inicia a conversao
                                  
                                  testa:
 000024 9120 007a                 	lds r18, ADCSRA
-000026 fd26                      	sbrc r18, 6			; se ADCSRA[6] == 0, espera terminar a conversao
+000026 fd26                      	sbrc r18, 6				; se ADCSRA[6] == 0, espera terminar a conversao
 000027 cffc                      	rjmp testa
                                  
-000028 9130 0079                 	lds r19, ADCH		; le parte alta da conversao
-00002a 9120 0078                 	lds r18, ADCL		; le parte baixa da conversao
+000028 9130 0079                 	lds r19, ADCH			; le parte alta da conversao
+00002a 9120 0078                 	lds r18, ADCL			; le parte baixa da conversao
                                  
                                  	; salva a word
                                  trio:
@@ -1106,7 +1099,7 @@ AVRASM ver. 2.2.8  C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho02\Trabalho
                                  	
                                  	; DIVISAO POR APROXIMACAO
 00004e 2788                      	clr r24
-00004f 2799                      	clr r25				; resultado em [25:24]
+00004f 2799                      	clr r25						; resultado em [25:24]
                                  	
                                  	; somar as partes 1/4, 1/16, 1/64 e 1/128
                                  	; shifts			2, 4, 6 e 7
@@ -1176,15 +1169,73 @@ AVRASM ver. 2.2.8  C:\Users\conta\Documents\Atmel Studio\7.0\Trabalho02\Trabalho
                                  	; Mapeamento b[0 .. 1000 0000 0100] 
                                  	;         para b[0100 .. 1000 1011] d[4 .. 139]
                                  
+                                 	; Funcao de reducao
+                                 	; y = ((x * 135) / 2052) + 4
+                                 	; y = ((x * 5 ) / 76 ) + 4
+                                 
+                                 	; multiplica r25:r24 por 5
+                                 	; (r25:r24 << 2) + r25:r24
+                                 
+                                 	; Livres:  [r31:r28]
+                                 	; Destino: [r25:r24]
+                                 
+000081 01ec                      	movw  r28, r24       ; copia r25:r24 para r29:r28
+                                 
+                                 	; shift para fazer x4
+000082 0fcc                      	lsl  r28
+000083 1fdd                      	rol  r29
+000084 0fcc                      	lsl  r28
+000085 1fdd                      	rol  r29
+                                 
+                                 	; soma com o original x5
+000086 0fc8                      	add  r28, r24
+000087 1fd9                      	adc  r29, r25
+                                 
+                                 	; max	0x 140f
+                                 	;		0b 0001 0100 0000 1111
                                  
                                  
+                                 	; 5x esta em [r29:r28]
+                                 	; divide por 38
                                  
+000088 2788                      	clr r24
+000089 2799                      	clr r25
+00008a 27ee                      	clr r30
+00008b e100                      	ldi r16, 16				; contador de bits
+00008c e2f6                      	ldi r31, 38				; divisor
                                  
+                                 div_loop:
+                                 	;desloca [r29:r28] para a esquerda, resto entra
+00008d 0fcc                      	lsl r28					; <<1
+00008e 1fdd                      	rol r29
+00008f 1fee                      	rol r30					; resto recebe bit deslocado
+                                 
+000090 17ef                      	cp r30, r31				; compara resto com divisor
+000091 f028                      	brlo no_sub
+000092 1bef                      	sub r30, r31			; subtrai divisor do resto
+                                 
+                                 	;ajusta quociente (desloca 1 para a esquerda + 1)
+000093 0f88                      	lsl r24
+000094 1f99                      	rol r25
+000095 6081                      	ori r24, 0x01			; coloca 1 no bit menos significativo
+000096 c002                      	rjmp next
+                                 
+                                 no_sub:
+000097 0f88                      	lsl r24					; desloca quociente sem somar 1
+000098 1f99                      	rol r25
+                                 
+                                 next:
+000099 950a                      	dec r16
+00009a f791                      	brne div_loop
+                                 
+                                 	; add 4
+00009b e004                      	ldi r16, 4
+00009c 0f80                      	add r24, r16
                                  
                                  print:
-000081 b985                      	out PORTB, r24		; escreve o valor alto em portB
-000082 b99b                      	out PORTD, r25		; escreve o valor baixo em portD
-000083 cf84                      	rjmp loop
+00009d b985                      	out PORTB, r24			; escreve o valor alto em portB
+00009e b99b                      	out PORTD, r25			; escreve o valor baixo em portD
+00009f cf68                      	rjmp loop
 
 
 RESOURCE USE INFORMATION
@@ -1204,37 +1255,37 @@ counted separately from r26..r31 here.
 "ATmega328P" register use summary:
 x  :   0 y  :   0 z  :   0 r0 :   0 r1 :   0 r2 :   0 r3 :   0 r4 :   0 
 r5 :   0 r6 :   0 r7 :   0 r8 :   0 r9 :   0 r10:   0 r11:   0 r12:   0 
-r13:   0 r14:   0 r15:   0 r16:   6 r17:  17 r18:   9 r19:   1 r20:   2 
-r21:   1 r22:   2 r23:   1 r24:   8 r25:   6 r26:   7 r27:   0 r28:   8 
-r29:   4 r30:  27 r31:  22 
+r13:   0 r14:   0 r15:   0 r16:  10 r17:  17 r18:   9 r19:   1 r20:   2 
+r21:   1 r22:   2 r23:   1 r24:  15 r25:  10 r26:   7 r27:   0 r28:  13 
+r29:   8 r30:  31 r31:  25 
 Registers used: 15 out of 35 (42.9%)
 
 "ATmega328P" instruction use summary:
-.lds  :   0 .sts  :   0 adc   :   9 add   :   3 adiw  :   0 and   :   0 
+.lds  :   0 .sts  :   0 adc   :  10 add   :   5 adiw  :   0 and   :   0 
 andi  :   0 asr   :   0 bclr  :   0 bld   :   0 brbc  :   0 brbs  :   0 
 brcc  :   0 brcs  :   0 break :   0 breq  :   4 brge  :   0 brhc  :   0 
-brhs  :   0 brid  :   0 brie  :   0 brlo  :   0 brlt  :   0 brmi  :   0 
-brne  :   2 brpl  :   0 brsh  :   0 brtc  :   0 brts  :   0 brvc  :   0 
+brhs  :   0 brid  :   0 brie  :   0 brlo  :   1 brlt  :   0 brmi  :   0 
+brne  :   3 brpl  :   0 brsh  :   0 brtc  :   0 brts  :   0 brvc  :   0 
 brvs  :   0 bset  :   0 bst   :   0 call  :   0 cbi   :   0 cbr   :   0 
-clc   :   0 clh   :   0 cli   :   0 cln   :   0 clr   :   7 cls   :   0 
-clt   :   0 clv   :   0 clz   :   0 com   :   0 cp    :   0 cpc   :   0 
-cpi   :   6 cpse  :   0 dec   :   0 eor   :   0 fmul  :   0 fmuls :   0 
+clc   :   0 clh   :   0 cli   :   0 cln   :   0 clr   :  10 cls   :   0 
+clt   :   0 clv   :   0 clz   :   0 com   :   0 cp    :   1 cpc   :   0 
+cpi   :   6 cpse  :   0 dec   :   1 eor   :   0 fmul  :   0 fmuls :   0 
 fmulsu:   0 icall :   0 ijmp  :   0 in    :   0 inc   :   6 jmp   :   7 
-ld    :   0 ldd   :   0 ldi   :   5 lds   :   4 lpm   :   0 lsl   :   0 
-lsr   :  19 mov   :   0 movw  :   8 mul   :   0 muls  :   0 mulsu :   0 
-neg   :   0 nop   :   0 or    :   0 ori   :   1 out   :   5 pop   :   0 
-push  :   0 rcall :   0 ret   :   0 reti  :   0 rjmp  :   2 rol   :   0 
+ld    :   0 ldd   :   0 ldi   :   8 lds   :   4 lpm   :   0 lsl   :   5 
+lsr   :  19 mov   :   0 movw  :   9 mul   :   0 muls  :   0 mulsu :   0 
+neg   :   0 nop   :   0 or    :   0 ori   :   2 out   :   5 pop   :   0 
+push  :   0 rcall :   0 ret   :   0 reti  :   0 rjmp  :   3 rol   :   6 
 ror   :  19 sbc   :   0 sbci  :   0 sbi   :   0 sbic  :   0 sbis  :   0 
 sbiw  :   0 sbr   :   0 sbrc  :   1 sbrs  :   2 sec   :   0 seh   :   0 
 sei   :   0 sen   :   0 ser   :   1 ses   :   0 set   :   0 sev   :   0 
 sez   :   0 sleep :   0 spm   :   0 st    :   0 std   :   0 sts   :   5 
-sub   :   0 subi  :   0 swap  :   0 tst   :   0 wdr   :   0 
-Instructions used: 20 out of 113 (17.7%)
+sub   :   1 subi  :   0 swap  :   0 tst   :   0 wdr   :   0 
+Instructions used: 26 out of 113 (23.0%)
 
 "ATmega328P" memory use summary [bytes]:
 Segment   Begin    End      Code   Data   Used    Size   Use%
 ---------------------------------------------------------------
-[.cseg] 0x000000 0x000108    264      0    264   32768   0.8%
+[.cseg] 0x000000 0x000140    320      0    320   32768   1.0%
 [.dseg] 0x000100 0x000100      0      0      0    2048   0.0%
 [.eseg] 0x000000 0x000000      0      0      0    1024   0.0%
 

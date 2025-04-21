@@ -47,26 +47,19 @@ muxadc2:
 	breq muxisset
 	jmp loop
 
-;	cpi r17, 0x02
-;	brne loop
-;	ldi r16, 0b01000100
-;	sts ADMUX, r16
-;	jmp muxisset
-
-
 muxisset:
 	; mudanca do mux
 	lds r18, ADCSRA
-	ori r18, 0b01000000	; liga o bit 6 e mantem os demais
-	sts ADCSRA, r18		; inicia a conversao
+	ori r18, 0b01000000		; liga o bit 6 e mantem os demais
+	sts ADCSRA, r18			; inicia a conversao
 
 testa:
 	lds r18, ADCSRA
-	sbrc r18, 6			; se ADCSRA[6] == 0, espera terminar a conversao
+	sbrc r18, 6				; se ADCSRA[6] == 0, espera terminar a conversao
 	rjmp testa
 
-	lds r19, ADCH		; le parte alta da conversao
-	lds r18, ADCL		; le parte baixa da conversao
+	lds r19, ADCH			; le parte alta da conversao
+	lds r18, ADCL			; le parte baixa da conversao
 
 	; salva a word
 trio:
@@ -120,7 +113,7 @@ soma:
 	
 	; DIVISAO POR APROXIMACAO
 	clr r24
-	clr r25				; resultado em [25:24]
+	clr r25						; resultado em [25:24]
 	
 	; somar as partes 1/4, 1/16, 1/64 e 1/128
 	; shifts			2, 4, 6 e 7
@@ -212,18 +205,48 @@ soma:
 	add  r28, r24
 	adc  r29, r25
 
+	; max	0x 140f
+	;		0b 0001 0100 0000 1111
+
+
 	; 5x esta em [r29:r28]
+	; divide por 38
 
-	; divide por 76
+	clr r24
+	clr r25
+	clr r30
+	ldi r16, 16				; contador de bits
+	ldi r31, 38				; divisor
 
+div_loop:
+	;desloca [r29:r28] para a esquerda, resto entra
+	lsl r28					; <<1
+	rol r29
+	rol r30					; resto recebe bit deslocado
 
+	cp r30, r31				; compara resto com divisor
+	brlo no_sub
+	sub r30, r31			; subtrai divisor do resto
+
+	;ajusta quociente (desloca 1 para a esquerda + 1)
+	lsl r24
+	rol r25
+	ori r24, 0x01			; coloca 1 no bit menos significativo
+	rjmp next
+
+no_sub:
+	lsl r24					; desloca quociente sem somar 1
+	rol r25
+
+next:
+	dec r16
+	brne div_loop
 
 	; add 4
-
-
-
+	ldi r16, 4
+	add r24, r16
 
 print:
-	out PORTB, r24		; escreve o valor alto em portB
-	out PORTD, r25		; escreve o valor baixo em portD
+	out PORTB, r24			; escreve o valor alto em portB
+	out PORTD, r25			; escreve o valor baixo em portD
 	rjmp loop
