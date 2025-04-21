@@ -190,7 +190,35 @@ soma:
 	; Mapeamento b[0 .. 1000 0000 0100] 
 	;         para b[0100 .. 1000 1011] d[4 .. 139]
 
+	; Funcao de reducao
+	; y = ((x * 135) / 2052) + 4
+	; y = ((x * 5 ) / 76 ) + 4
 
+	; multiplica r25:r24 por 5
+	; (r25:r24 << 2) + r25:r24
+
+	; Livres:  [r31:r28]
+	; Destino: [r25:r24]
+
+	movw  r28, r24       ; copia r25:r24 para r29:r28
+
+	; shift para fazer x4
+	lsl  r28
+	rol  r29
+	lsl  r28
+	rol  r29
+
+	; soma com o original x5
+	add  r28, r24
+	adc  r29, r25
+
+	; 5x esta em [r29:r28]
+
+	; divide por 76
+
+
+
+	; add 4
 
 
 
