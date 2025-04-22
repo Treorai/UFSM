@@ -1,0 +1,161 @@
+<circuit version="1.1.0-SR1" rev="2005" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Package" CircId="Package-343" mainComp="false" Show_id="false" Show_Val="false" Pos="-92,-568" rotation="0" hflip="1" vflip="1" label="wattodisp" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" boardPos="-1e+06,-1e+06" circPos="0,0" boardRot="-1e+06" circRot="0" boardHflip="1" boardVflip="1" SubcType="Board" Width="16" Height="11" Name="Package" Package_File="WDBus.package" Logic_Symbol="true" />
+
+<item itemtype="MCU" CircId="mega328-1" mainComp="false" Show_id="true" Show_Val="false" Pos="96,-372" rotation="0" hflip="1" vflip="1" label="mega328-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" boardPos="192,200" circPos="96,-372" boardRot="0" circRot="0" boardHflip="1" boardVflip="1" Frequency="16 MHz" Program="Conversor hex-dec/Debug/Conversor hex-dec.hex" Auto_Load="false" saveEepr="true" Logic_Symbol="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" Clk_Out="false" MainMcu="true" SerialMon="-1" />
+
+<item itemtype="Seven Segment" CircId="Seven Segment-224" mainComp="false" Show_id="false" Show_Val="false" Pos="380,-276" rotation="0" hflip="1" vflip="1" label="Seven Segment-224" idLabPos="20,-44" labelrot="0" valLabPos="-16,20" valLabRot="0" boardPos="104,52" circPos="380,-276" boardRot="0" circRot="0" boardHflip="1" boardVflip="1" Color="Green" NumDisplays="1" Vertical_Pins="false" CommonCathode="true" Threshold="2.4 V" MaxCurrent="20 mA" Resistance="1 Ω" />
+
+<item itemtype="Ground" CircId="Ground-225" mainComp="false" Show_id="false" Show_Val="false" Pos="408,-200" rotation="0" hflip="1" vflip="1" label="Ground-225" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" boardPos="504,372" circPos="408,-200" boardRot="0" circRot="0" boardHflip="1" boardVflip="1" />
+
+<item itemtype="BcdTo7S" CircId="BcdTo7S-226" mainComp="false" Show_id="false" Show_Val="false" Pos="316,-276" rotation="0" hflip="1" vflip="1" label="BcdTo7S-226" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" boardPos="412,296" circPos="316,-276" boardRot="0" circRot="0" boardHflip="1" boardVflip="1" Input_High_V="1.5 V" Input_Low_V="1.5 V" Input_Imped="1000 MΩ" Invert_Inputs="false" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 Ω" Inverted="false" Open_Collector="false" pd_n="1 _Gates" Tpd_ps="10 ns" Tr_ps="3 ns" Tf_ps="4 ns" />
+
+<item itemtype="BcdTo7S" CircId="BcdTo7S-356" mainComp="false" Show_id="false" Show_Val="false" Pos="316,-444" rotation="0" hflip="1" vflip="1" label="BcdTo7S-356" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" boardPos="412,128" circPos="316,-444" boardRot="0" circRot="0" boardHflip="1" boardVflip="1" Input_High_V="1.5 V" Input_Low_V="1.5 V" Input_Imped="1000 MΩ" Invert_Inputs="false" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 Ω" Inverted="false" Open_Collector="false" pd_n="1 _Gates" Tpd_ps="10 ns" Tr_ps="3 ns" Tf_ps="4 ns" />
+
+<item itemtype="Seven Segment" CircId="Seven Segment-357" mainComp="false" Show_id="false" Show_Val="false" Pos="380,-444" rotation="0" hflip="1" vflip="1" label="Seven Segment-357" idLabPos="20,-44" labelrot="0" valLabPos="-16,20" valLabRot="0" boardPos="40,52" circPos="380,-444" boardRot="0" circRot="0" boardHflip="1" boardVflip="1" Color="Green" NumDisplays="1" Vertical_Pins="false" CommonCathode="true" Threshold="2.4 V" MaxCurrent="20 mA" Resistance="1 Ω" />
+
+<item itemtype="BcdTo7S" CircId="BcdTo7S-359" mainComp="false" Show_id="false" Show_Val="false" Pos="316,-364" rotation="0" hflip="1" vflip="1" label="BcdTo7S-359" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" boardPos="412,208" circPos="316,-364" boardRot="0" circRot="0" boardHflip="1" boardVflip="1" Input_High_V="1.5 V" Input_Low_V="1.5 V" Input_Imped="1000 MΩ" Invert_Inputs="false" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 Ω" Inverted="false" Open_Collector="false" pd_n="1 _Gates" Tpd_ps="10 ns" Tr_ps="3 ns" Tf_ps="4 ns" />
+
+<item itemtype="Seven Segment" CircId="Seven Segment-360" mainComp="false" Show_id="false" Show_Val="false" Pos="380,-364" rotation="0" hflip="1" vflip="1" label="Seven Segment-360" idLabPos="20,-44" labelrot="0" valLabPos="-16,20" valLabRot="0" boardPos="72,52" circPos="380,-364" boardRot="0" circRot="0" boardHflip="1" boardVflip="1" Color="Green" NumDisplays="1" Vertical_Pins="false" CommonCathode="true" Threshold="2.4 V" MaxCurrent="20 mA" Resistance="1 Ω" />
+
+<item itemtype="Tunnel" CircId="Tunnel-436" mainComp="false" Show_id="false" Show_Val="false" Pos="372,-400" rotation="0" hflip="-1" vflip="1" label="Tunnel-436" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" boardPos="468,172" circPos="372,-400" boardRot="0" circRot="0" boardHflip="-1" boardVflip="1" Name="dl" IsBus="false" />
+
+<item itemtype="Tunnel" CircId="Tunnel-437" mainComp="false" Show_id="false" Show_Val="false" Pos="372,-316" rotation="0" hflip="-1" vflip="1" label="Tunnel-437" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" boardPos="468,256" circPos="372,-316" boardRot="0" circRot="0" boardHflip="-1" boardVflip="1" Name="dc" IsBus="false" />
+
+<item itemtype="Tunnel" CircId="Tunnel-438" mainComp="false" Show_id="false" Show_Val="false" Pos="372,-232" rotation="0" hflip="-1" vflip="1" label="Tunnel-438" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" boardPos="468,340" circPos="372,-232" boardRot="0" circRot="0" boardHflip="-1" boardVflip="1" Name="dr" IsBus="false" />
+
+<item itemtype="Tunnel" CircId="Tunnel-453" mainComp="false" Show_id="false" Show_Val="false" Pos="292,-484" rotation="0" hflip="1" vflip="1" label="Tunnel-453" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" boardPos="388,88" circPos="292,-484" boardRot="0" circRot="0" boardHflip="1" boardVflip="1" Name="enl" IsBus="false" />
+
+<item itemtype="Tunnel" CircId="Tunnel-454" mainComp="false" Show_id="false" Show_Val="false" Pos="292,-404" rotation="0" hflip="1" vflip="1" label="Tunnel-454" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" boardPos="388,168" circPos="292,-404" boardRot="0" circRot="0" boardHflip="1" boardVflip="1" Name="enc" IsBus="false" />
+
+<item itemtype="Tunnel" CircId="Tunnel-455" mainComp="false" Show_id="false" Show_Val="false" Pos="296,-316" rotation="0" hflip="1" vflip="1" label="Tunnel-455" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" boardPos="392,256" circPos="296,-316" boardRot="0" circRot="0" boardHflip="1" boardVflip="1" Name="enr" IsBus="false" />
+
+<item itemtype="TextComponent" CircId="TextComponent-456" mainComp="false" Show_id="false" Show_Val="false" Pos="-84,-600" rotation="0" hflip="1" vflip="1" label="TextComponent-456" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" boardPos="52,76" circPos="-84,-600" boardRot="0" circRot="0" boardHflip="1" boardVflip="1" Margin="0 _px" Border="0 _px" Color="#ffffdc" Opacity="0" Font="Helvetica [Cronyx]" Font_Color="#ffaa00" Font_Size="6 _px" Fixed_Width="true" Text="@treoraicomposer" />
+
+<item itemtype="TextComponent" CircId="TextComponent-457" mainComp="false" Show_id="false" Show_Val="false" Pos="-84,-620" rotation="0" hflip="1" vflip="1" label="TextComponent-457" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" boardPos="16,0" circPos="-84,-620" boardRot="0" circRot="0" boardHflip="1" boardVflip="1" Margin="0 _px" Border="0 _px" Color="#ff5500" Opacity="0" Font="Helvetica [Cronyx]" Font_Color="#ffaa00" Font_Size="8 _px" Fixed_Width="true" Text="8bit Decimal Display" />
+
+<item itemtype="Bus" CircId="Bus-458" mainComp="false" Show_id="false" Show_Val="false" Pos="156,-292" rotation="0" hflip="1" vflip="-1" label="Bus-458" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" boardPos="248,276" circPos="156,-292" boardRot="0" circRot="0" boardHflip="1" boardVflip="-1" Num_Bits="5 _bits" Start_Bit="1" />
+
+<item itemtype="Tunnel" CircId="Tunnel-459" mainComp="false" Show_id="false" Show_Val="false" Pos="156,-304" rotation="0" hflip="-1" vflip="1" label="Tunnel-459" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" boardPos="248,264" circPos="156,-304" boardRot="0" circRot="0" boardHflip="-1" boardVflip="1" Name="bus" IsBus="true" />
+
+<item itemtype="Bus" CircId="Bus-460" mainComp="false" Show_id="false" Show_Val="false" Pos="72,-292" rotation="0" hflip="-1" vflip="1" label="Bus-460" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" boardPos="164,276" circPos="72,-292" boardRot="0" circRot="0" boardHflip="-1" boardVflip="1" Num_Bits="2 _bits" Start_Bit="6" />
+
+<item itemtype="Tunnel" CircId="Tunnel-461" mainComp="false" Show_id="false" Show_Val="false" Pos="72,-308" rotation="0" hflip="1" vflip="1" label="Tunnel-461" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" boardPos="164,260" circPos="72,-308" boardRot="0" circRot="0" boardHflip="1" boardVflip="1" Name="bus" IsBus="true" />
+
+<item itemtype="Tunnel" CircId="Tunnel-462" mainComp="false" Show_id="false" Show_Val="false" Pos="72,-252" rotation="0" hflip="1" vflip="1" label="Tunnel-462" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" boardPos="164,316" circPos="72,-252" boardRot="0" circRot="0" boardHflip="1" boardVflip="1" Name="bus" IsBus="true" />
+
+<item itemtype="Bus" CircId="Bus-463" mainComp="false" Show_id="false" Show_Val="false" Pos="72,-260" rotation="0" hflip="-1" vflip="1" label="Bus-463" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" boardPos="164,308" circPos="72,-260" boardRot="0" circRot="0" boardHflip="-1" boardVflip="1" Num_Bits="1 _bits" Start_Bit="0" />
+
+<item itemtype="TextComponent" CircId="TextComponent-464" mainComp="false" Show_id="false" Show_Val="false" Pos="-68,-612" rotation="0" hflip="1" vflip="1" label="TextComponent-464" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" boardPos="52,8" circPos="-68,-612" boardRot="0" circRot="0" boardHflip="1" boardVflip="1" Margin="0 _px" Border="0 _px" Color="#ff5500" Opacity="0" Font="Helvetica [Cronyx]" Font_Color="#ffaa00" Font_Size="6 _px" Fixed_Width="true" Text="by Wagner Chitto" />
+
+<item itemtype="Node" CircId="Node-388" mainComp="false" boardPos="-1e+06,-1e+06" circPos="0,0" boardRot="-1e+06" circRot="0" boardHflip="1" boardVflip="1" Pos="408,-244" />
+
+<item itemtype="Node" CircId="Node-389" mainComp="false" boardPos="-1e+06,-1e+06" circPos="0,0" boardRot="-1e+06" circRot="0" boardHflip="1" boardVflip="1" Pos="408,-332" />
+
+<item itemtype="Connector" uid="Connector-625" startpinid="BcdTo7S-226-out4" endpinid="Seven Segment-224-pin_e" pointList="340,-268,356,-268" />
+
+<item itemtype="Connector" uid="Connector-624" startpinid="BcdTo7S-226-out1" endpinid="Seven Segment-224-pin_b" pointList="340,-292,356,-292" />
+
+<item itemtype="Connector" uid="Connector-622" startpinid="BcdTo7S-226-out3" endpinid="Seven Segment-224-pin_d" pointList="340,-276,356,-276" />
+
+<item itemtype="Connector" uid="Connector-621" startpinid="BcdTo7S-226-out2" endpinid="Seven Segment-224-pin_c" pointList="340,-284,356,-284" />
+
+<item itemtype="Connector" uid="Connector-620" startpinid="BcdTo7S-226-out5" endpinid="Seven Segment-224-pin_f" pointList="340,-260,356,-260" />
+
+<item itemtype="Connector" uid="Connector-619" startpinid="BcdTo7S-226-out0" endpinid="Seven Segment-224-pin_a" pointList="340,-300,356,-300" />
+
+<item itemtype="Connector" uid="Connector-618" startpinid="BcdTo7S-226-out6" endpinid="Seven Segment-224-pin_g" pointList="340,-252,356,-252" />
+
+<item itemtype="Connector" uid="Connector-959" startpinid="BcdTo7S-356-out4" endpinid="Seven Segment-357-pin_e" pointList="340,-436,356,-436" />
+
+<item itemtype="Connector" uid="Connector-960" startpinid="BcdTo7S-356-out6" endpinid="Seven Segment-357-pin_g" pointList="340,-420,356,-420" />
+
+<item itemtype="Connector" uid="Connector-961" startpinid="BcdTo7S-356-out0" endpinid="Seven Segment-357-pin_a" pointList="340,-468,356,-468" />
+
+<item itemtype="Connector" uid="Connector-962" startpinid="BcdTo7S-356-out1" endpinid="Seven Segment-357-pin_b" pointList="340,-460,356,-460" />
+
+<item itemtype="Connector" uid="Connector-964" startpinid="BcdTo7S-356-out3" endpinid="Seven Segment-357-pin_d" pointList="340,-444,356,-444" />
+
+<item itemtype="Connector" uid="Connector-965" startpinid="BcdTo7S-356-out2" endpinid="Seven Segment-357-pin_c" pointList="340,-452,356,-452" />
+
+<item itemtype="Connector" uid="Connector-966" startpinid="BcdTo7S-356-out5" endpinid="Seven Segment-357-pin_f" pointList="340,-428,356,-428" />
+
+<item itemtype="Connector" uid="Connector-967" startpinid="BcdTo7S-359-out4" endpinid="Seven Segment-360-pin_e" pointList="340,-356,356,-356" />
+
+<item itemtype="Connector" uid="Connector-968" startpinid="BcdTo7S-359-out6" endpinid="Seven Segment-360-pin_g" pointList="340,-340,356,-340" />
+
+<item itemtype="Connector" uid="Connector-969" startpinid="BcdTo7S-359-out0" endpinid="Seven Segment-360-pin_a" pointList="340,-388,356,-388" />
+
+<item itemtype="Connector" uid="Connector-970" startpinid="BcdTo7S-359-out1" endpinid="Seven Segment-360-pin_b" pointList="340,-380,356,-380" />
+
+<item itemtype="Connector" uid="Connector-972" startpinid="BcdTo7S-359-out3" endpinid="Seven Segment-360-pin_d" pointList="340,-364,356,-364" />
+
+<item itemtype="Connector" uid="Connector-973" startpinid="BcdTo7S-359-out2" endpinid="Seven Segment-360-pin_c" pointList="340,-372,356,-372" />
+
+<item itemtype="Connector" uid="Connector-974" startpinid="BcdTo7S-359-out5" endpinid="Seven Segment-360-pin_f" pointList="340,-348,356,-348" />
+
+<item itemtype="Connector" uid="Connector-1074" startpinid="mega328-1-PORTC1" endpinid="BcdTo7S-359-in1" pointList="136,-332,260,-332,260,-364,292,-364" />
+
+<item itemtype="Connector" uid="Connector-1075" startpinid="mega328-1-PORTC0" endpinid="BcdTo7S-359-in0" pointList="136,-324,268,-324,268,-372,292,-372" />
+
+<item itemtype="Connector" uid="Connector-1080" startpinid="Seven Segment-224-pin_commona" endpinid="Node-388-0" pointList="388,-244,408,-244" />
+
+<item itemtype="Connector" uid="Connector-1081" startpinid="Node-388-2" endpinid="Ground-225-Gnd" pointList="408,-244,408,-216" />
+
+<item itemtype="Connector" uid="Connector-1082" startpinid="Seven Segment-357-pin_commona" endpinid="Node-389-1" pointList="388,-412,408,-412,408,-332" />
+
+<item itemtype="Connector" uid="Connector-1083" startpinid="Seven Segment-360-pin_commona" endpinid="Node-389-0" pointList="388,-332,408,-332" />
+
+<item itemtype="Connector" uid="Connector-1084" startpinid="Node-389-2" endpinid="Node-388-1" pointList="408,-332,408,-244" />
+
+<item itemtype="Connector" uid="Connector-1235" startpinid="Seven Segment-357-pin_dot" endpinid="Tunnel-436-pin" pointList="372,-412,372,-400" />
+
+<item itemtype="Connector" uid="Connector-1236" startpinid="Seven Segment-360-pin_dot" endpinid="Tunnel-437-pin" pointList="372,-332,372,-316" />
+
+<item itemtype="Connector" uid="Connector-1237" startpinid="Seven Segment-224-pin_dot" endpinid="Tunnel-438-pin" pointList="372,-244,372,-232" />
+
+<item itemtype="Connector" uid="Connector-1290" startpinid="Tunnel-453-pin" endpinid="BcdTo7S-356-in4" pointList="292,-484,308,-484" />
+
+<item itemtype="Connector" uid="Connector-1291" startpinid="BcdTo7S-359-in4" endpinid="Tunnel-454-pin" pointList="308,-404,292,-404" />
+
+<item itemtype="Connector" uid="Connector-1292" startpinid="Tunnel-455-pin" endpinid="BcdTo7S-226-in4" pointList="296,-316,308,-316" />
+
+<item itemtype="Connector" uid="Connector-1374" startpinid="mega328-1-PORTD2" endpinid="BcdTo7S-226-in2" pointList="88,-340,60,-340,60,-412,204,-412,204,-268,292,-268" />
+
+<item itemtype="Connector" uid="Connector-1375" startpinid="mega328-1-PORTC2" endpinid="BcdTo7S-359-in2" pointList="136,-340,252,-340,252,-356,292,-356" />
+
+<item itemtype="Connector" uid="Connector-1376" startpinid="mega328-1-PORTD0" endpinid="BcdTo7S-226-in0" pointList="88,-356,76,-356,76,-396,188,-396,188,-284,292,-284" />
+
+<item itemtype="Connector" uid="Connector-1377" startpinid="mega328-1-PORTD6" endpinid="BcdTo7S-356-in0" pointList="88,-276,28,-276,28,-444,132,-444,132,-460,284,-460,284,-452,292,-452" />
+
+<item itemtype="Connector" uid="Connector-1378" startpinid="mega328-1-PORTD7" endpinid="BcdTo7S-356-in1" pointList="88,-268,20,-268,20,-452,276,-452,276,-444,292,-444" />
+
+<item itemtype="Connector" uid="Connector-1379" startpinid="mega328-1-PORTD1" endpinid="BcdTo7S-226-in1" pointList="88,-348,68,-348,68,-404,196,-404,196,-276,292,-276" />
+
+<item itemtype="Connector" uid="Connector-1380" startpinid="mega328-1-PORTD3" endpinid="BcdTo7S-226-in3" pointList="88,-332,52,-332,52,-420,212,-420,212,-260,292,-260" />
+
+<item itemtype="Connector" uid="Connector-1381" startpinid="mega328-1-PORTC3" endpinid="BcdTo7S-359-in3" pointList="136,-348,292,-348" />
+
+<item itemtype="Connector" uid="Connector-1382" startpinid="Bus-458-ePin5" endpinid="mega328-1-PORTB5" pointList="148,-292,136,-292" />
+
+<item itemtype="Connector" uid="Connector-1383" startpinid="Bus-458-ePin4" endpinid="mega328-1-PORTB4" pointList="148,-284,136,-284" />
+
+<item itemtype="Connector" uid="Connector-1384" startpinid="Bus-458-ePin3" endpinid="mega328-1-PORTB3" pointList="148,-276,136,-276" />
+
+<item itemtype="Connector" uid="Connector-1385" startpinid="Bus-458-ePin2" endpinid="mega328-1-PORTB2" pointList="148,-268,136,-268" />
+
+<item itemtype="Connector" uid="Connector-1386" startpinid="Bus-458-ePin1" endpinid="mega328-1-PORTB1" pointList="148,-260,136,-260" />
+
+<item itemtype="Connector" uid="Connector-1388" startpinid="Tunnel-459-pin" endpinid="Bus-458-ePin0" pointList="156,-304,156,-292" />
+
+<item itemtype="Connector" uid="Connector-1389" startpinid="Bus-460-ePin1" endpinid="mega328-1-PORTB6" pointList="80,-300,88,-300" />
+
+<item itemtype="Connector" uid="Connector-1390" startpinid="Bus-460-ePin2" endpinid="mega328-1-PORTB7" pointList="80,-292,88,-292" />
+
+<item itemtype="Connector" uid="Connector-1391" startpinid="Tunnel-461-pin" endpinid="Bus-460-busPinI" pointList="72,-308,72,-300" />
+
+<item itemtype="Connector" uid="Connector-1398" startpinid="Bus-463-ePin0" endpinid="Tunnel-462-pin" pointList="72,-260,72,-252" />
+
+<item itemtype="Connector" uid="Connector-1399" startpinid="Bus-463-ePin1" endpinid="mega328-1-PORTB0" pointList="80,-260,88,-260" />
+
+</circuit>
