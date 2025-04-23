@@ -5,6 +5,7 @@ Trabalhos realizados na diciplina PROJETO E ANÁLISE DE ALGORITMOS (UFSM00276) n
 ### Links
 
 - [Markdown Math Db](https://rpruim.github.io/s341/S19/from-class/MathinRmd.html)
+- [Extended TeX](https://pt.wikipedia.org/wiki/Ajuda:Guia_de_edi%C3%A7%C3%A3o/F%C3%B3rmulas_TeX)
 
 ### Bibliografia Básica
 
