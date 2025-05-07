@@ -65,3 +65,8 @@
 R.
     Então $2T(n-1) + 1 = 2^n -1$ para $n \ge 1$  
     $T(n) \in O(2^n)$
+
+## Método da Árvore
+
+Usando indução matemática, prove que:  
+$T(n) 2T(\frac{n}{2}+O(1) = (2n -1) \times O(1)$
