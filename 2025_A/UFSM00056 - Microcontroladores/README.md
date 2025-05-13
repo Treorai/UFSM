@@ -10,9 +10,20 @@ Trabalhos realizados na diciplina MICROCONTROLADORES (UFSM00056) no primeiro sem
 
 ## Arduino
 
+### Upload no Microship Studio para Arduino
+
+[Video Tutorial](https://www.youtube.com/watch?v=CzK6Tg6dq44)
+
 File > preferences > show verbose output during upload
 
 > e.g.: `"C:\Users\aluno\AppData\Local\Arduino15\packages\arduino\tools\avrdude\6.3.0-arduino17/bin/avrdude" "-CC:\Users\aluno\AppData\Local\Arduino15\packages\arduino\tools\avrdude\6.3.0-arduino17/etc/avrdude.conf" -v -V -patmega2560 -cwiring "-PCOM5" -b115200 -D "-Uflash:w:C:\Users\aluno\AppData\Local\Temp\arduino\sketches\CBC8622946D955A4775A9F6634C98CE1/toneMelody.ino.hex:i"
 `
 
-[Video Tutorial](https://www.youtube.com/watch?v=CzK6Tg6dq44)
+Mudar o Uflash
+`-Uflash:w:$(projectDir)Debug\$(TargetName).hex:i`
+
+No microship studio, Select profile > Advanced.
+Tools > External tools
+
+Comand: primeiro caminho
+Arguments: [args]
