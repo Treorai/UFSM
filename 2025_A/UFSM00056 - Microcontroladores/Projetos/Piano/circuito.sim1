@@ -1,20 +1,20 @@
 <circuit version="1.1.0-SR1" rev="2005" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
 
-<item itemtype="MCU" CircId="mega328-54" mainComp="false" Show_id="false" Show_Val="false" Pos="432,-100" rotation="0" hflip="1" vflip="1" label="mega328-54" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="0429-ed-0.hex" Auto_Load="false" saveEepr="true" Logic_Symbol="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" Clk_Out="false" MainMcu="true" SerialMon="-1" />
+<item itemtype="MCU" CircId="mega328-54" mainComp="false" Show_id="false" Show_Val="false" Pos="432,-100" rotation="0" hflip="1" vflip="1" label="mega328-54" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="../../../../../../Atmel Studio/7.0/Piano/Piano/Debug/Piano.hex" Auto_Load="false" saveEepr="true" Logic_Symbol="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" Clk_Out="false" MainMcu="false" SerialMon="-1" />
 
-<item itemtype="AudioOut" CircId="AudioOut-56" mainComp="false" Show_id="false" Show_Val="false" Pos="540,60" rotation="0" hflip="1" vflip="1" label="AudioOut-56" idLabPos="-20,-36" labelrot="0" valLabPos="-16,20" valLabRot="0" Buzzer="false" Impedance="8 Ω" Frequency="1 kHz" />
+<item itemtype="AudioOut" CircId="AudioOut-56" mainComp="false" Show_id="false" Show_Val="false" Pos="596,60" rotation="0" hflip="1" vflip="1" label="AudioOut-56" idLabPos="-20,-36" labelrot="0" valLabPos="-16,20" valLabRot="0" Buzzer="false" Impedance="8 Ω" Frequency="1 kHz" />
 
-<item itemtype="FreqMeter" CircId="FreqMeter-58" mainComp="false" Show_id="false" Show_Val="false" Pos="468,36" rotation="0" hflip="1" vflip="1" label="FreqMeter-58" idLabPos="-32,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Filter="0.1 V" />
+<item itemtype="FreqMeter" CircId="FreqMeter-58" mainComp="false" Show_id="false" Show_Val="false" Pos="464,92" rotation="0" hflip="1" vflip="1" label="FreqMeter-58" idLabPos="-32,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Filter="0.1 V" />
 
-<item itemtype="KeyPad" CircId="KeyPad-62" mainComp="false" Show_id="false" Show_Val="false" Pos="212,-80" rotation="0" hflip="1" vflip="1" label="KeyPad-62" idLabPos="-8,-16" labelrot="0" valLabPos="-16,20" valLabRot="0" Rows="5" Cols="8" Key_Labels="AWSEDFTGYHUJKOLPÇ awsedftgyhujkolpç ,.;/" />
+<item itemtype="KeyPad" CircId="KeyPad-62" mainComp="false" Show_id="false" Show_Val="false" Pos="144,-40" rotation="0" hflip="1" vflip="1" label="KeyPad-62" idLabPos="-8,-16" labelrot="0" valLabPos="-16,20" valLabRot="0" Rows="5" Cols="8" Key_Labels="AWSEDFTGYHUJKOLPÇ awsedftgyhujkolpçm,.;/" />
 
-<item itemtype="Bus" CircId="Bus-63" mainComp="false" Show_id="false" Show_Val="false" Pos="240,24" rotation="90" hflip="1" vflip="1" label="Bus-63" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Num_Bits="8 _bits" Start_Bit="0" />
+<item itemtype="Bus" CircId="Bus-63" mainComp="false" Show_id="false" Show_Val="false" Pos="172,64" rotation="90" hflip="1" vflip="1" label="Bus-63" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Num_Bits="8 _bits" Start_Bit="0" />
 
-<item itemtype="Bus" CircId="Bus-64" mainComp="false" Show_id="false" Show_Val="false" Pos="352,-24" rotation="0" hflip="1" vflip="1" label="Bus-64" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Num_Bits="5 _bits" Start_Bit="0" />
+<item itemtype="Bus" CircId="Bus-64" mainComp="false" Show_id="false" Show_Val="false" Pos="284,16" rotation="0" hflip="1" vflip="1" label="Bus-64" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Num_Bits="5 _bits" Start_Bit="0" />
 
-<item itemtype="Tunnel" CircId="Tunnel-65" mainComp="false" Show_id="false" Show_Val="false" Pos="236,36" rotation="0" hflip="-1" vflip="1" label="Tunnel-65" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="PAD-Columns" IsBus="true" />
+<item itemtype="Tunnel" CircId="Tunnel-65" mainComp="false" Show_id="false" Show_Val="false" Pos="168,76" rotation="0" hflip="-1" vflip="1" label="Tunnel-65" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="PAD-Columns" IsBus="true" />
 
-<item itemtype="Tunnel" CircId="Tunnel-66" mainComp="false" Show_id="false" Show_Val="false" Pos="364,-60" rotation="-90" hflip="-1" vflip="1" label="Tunnel-66" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="PAD-Rows" IsBus="true" />
+<item itemtype="Tunnel" CircId="Tunnel-66" mainComp="false" Show_id="false" Show_Val="false" Pos="296,-20" rotation="-90" hflip="-1" vflip="1" label="Tunnel-66" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="PAD-Rows" IsBus="true" />
 
 <item itemtype="Bus" CircId="Bus-67" mainComp="false" Show_id="false" Show_Val="false" Pos="412,-52" rotation="0" hflip="-1" vflip="1" label="Bus-67" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Num_Bits="5 _bits" Start_Bit="0" />
 
@@ -26,53 +26,65 @@
 
 <item itemtype="Tunnel" CircId="Tunnel-71" mainComp="false" Show_id="false" Show_Val="false" Pos="496,-88" rotation="-90" hflip="-1" vflip="1" label="Tunnel-71" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="PAD-Rows" IsBus="true" />
 
-<item itemtype="Subcircuit" CircId="chip222-73" mainComp="false" Show_id="true" Show_Val="false" Pos="292,-160" rotation="0" hflip="1" vflip="1" label="chip222-73" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1e+09 Ω" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 Ω" Tpd_ps="10 ns" Tr_ps="3 ns" Tf_ps="4 ns" Logic_Symbol="true" />
+<item itemtype="Subcircuit" CircId="chip222-73" mainComp="false" Show_id="true" Show_Val="false" Pos="288,-160" rotation="0" hflip="1" vflip="1" label="chip222-73" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1e+09 Ω" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 Ω" Tpd_ps="10 ns" Tr_ps="3 ns" Tf_ps="4 ns" Logic_Symbol="true" />
 
-<item itemtype="Clock" CircId="Clock-74" mainComp="false" Show_id="false" Show_Val="false" Pos="244,-156" rotation="0" hflip="1" vflip="1" label="Clock-74" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="true" Running="true" Voltage="5 V" Freq="440 Hz" Always_On="false" />
+<item itemtype="Clock" CircId="Clock-74" mainComp="false" Show_id="false" Show_Val="false" Pos="104,-152" rotation="0" hflip="1" vflip="1" label="Clock-74" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="false" Running="false" Voltage="5 V" Freq="440 Hz" Always_On="false" />
 
-<item itemtype="Oscope" CircId="Oscope-76" mainComp="false" Show_id="false" Show_Val="false" Pos="460,-200" rotation="0" hflip="1" vflip="1" label="Oscope-76" idLabPos="-90,-100" labelrot="0" valLabPos="-16,20" valLabRot="0" Basic_X="135 _px" Basic_Y="135 _px" BufferSize="600000" connectGnd="true" InputImped="10 MΩ" TimDiv="400000000" TimPos="0,0,0,0," VolDiv="1,0.499998,1,0.5," Tunnels=",,,," Trigger="4" Filter="0.1 V" AutoSC="3" Tracks="2" HideCh="false,false,false,false," VolPos="0,-2.49999,0,-2.5," />
+<item itemtype="Oscope" CircId="Oscope-76" mainComp="false" Show_id="false" Show_Val="false" Pos="460,-200" rotation="0" hflip="1" vflip="1" label="Oscope-76" idLabPos="-90,-100" labelrot="0" valLabPos="-16,20" valLabRot="0" Basic_X="135 _px" Basic_Y="135 _px" BufferSize="600000" connectGnd="true" InputImped="10 MΩ" TimDiv="72562358" TimPos="0,0,0,0," VolDiv="1,0.499998,1,0.0714308," Tunnels=",,,," Trigger="4" Filter="0.1 V" AutoSC="3" Tracks="2" HideCh="false,false,false,false," VolPos="0,-2.49999,0,-0.35744," />
 
-<item itemtype="Ground" CircId="Ground-80" mainComp="false" Show_id="false" Show_Val="false" Pos="448,64" rotation="90" hflip="1" vflip="1" label="Ground-80" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+<item itemtype="Ground" CircId="Ground-80" mainComp="false" Show_id="false" Show_Val="false" Pos="504,68" rotation="90" hflip="1" vflip="1" label="Ground-80" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
 
-<item itemtype="WaveGen" CircId="WaveGen-85" mainComp="false" Show_id="false" Show_Val="false" Pos="244,-132" rotation="0" hflip="1" vflip="1" label="WaveGen-85" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="true" Running="true" Wave_Type="Sine" Freq="1 kHz" Phase="0 _º" Steps="100 _Steps" Duty="50 _%" Always_On="false" Bipolar="false" Floating="false" Semi_Ampli="2.5 V" Mid_Volt="0 V" />
+<item itemtype="Switch" CircId="Switch-86" mainComp="false" Show_id="false" Show_Val="false" Pos="544,68" rotation="180" hflip="1" vflip="-1" label="Switch-86" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" DT="false" Poles="1" />
 
-<item itemtype="Switch" CircId="Switch-86" mainComp="false" Show_id="false" Show_Val="false" Pos="488,64" rotation="180" hflip="1" vflip="-1" label="Switch-86" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" DT="false" Poles="1" />
+<item itemtype="Or Gate" CircId="Or Gate-93" mainComp="false" Show_id="false" Show_Val="false" Pos="140,-120" rotation="0" hflip="1" vflip="1" label="Or Gate-93" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1000 MΩ" Invert_Inputs="false" Num_Inputs="2 _Inputs" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 Ω" initHigh="false" Inverted="false" Open_Collector="false" Tpd_ps="10 ns" Tr_ps="3 ns" Tf_ps="4 ns" />
 
-<item itemtype="Node" CircId="Node-78" mainComp="false" Pos="356,-136" />
+<item itemtype="Clock" CircId="Clock-94" mainComp="false" Show_id="false" Show_Val="false" Pos="104,-88" rotation="0" hflip="1" vflip="1" label="Clock-94" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="false" Running="false" Voltage="5 V" Freq="220 Hz" Always_On="false" />
 
-<item itemtype="Node" CircId="Node-81" mainComp="false" Pos="344,-72" />
+<item itemtype="Subcircuit" CircId="WDBus-95" mainComp="false" Show_id="true" Show_Val="false" Pos="560,-80" rotation="0" hflip="1" vflip="1" label="WDBus-95" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" />
 
-<item itemtype="Node" CircId="Node-83" mainComp="false" Pos="264,8" />
+<item itemtype="Tunnel" CircId="Tunnel-96" mainComp="false" Show_id="false" Show_Val="false" Pos="504,-24" rotation="-90" hflip="-1" vflip="1" label="Tunnel-96" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="PortB" IsBus="true" />
 
-<item itemtype="Node" CircId="Node-88" mainComp="false" Pos="424,36" />
+<item itemtype="Bus" CircId="Bus-97" mainComp="false" Show_id="false" Show_Val="false" Pos="492,-20" rotation="0" hflip="1" vflip="-1" label="Bus-97" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Num_Bits="5 _bits" Start_Bit="1" />
 
-<item itemtype="Node" CircId="Node-89" mainComp="false" Pos="424,52" />
+<item itemtype="Tunnel" CircId="Tunnel-98" mainComp="false" Show_id="false" Show_Val="false" Pos="548,-56" rotation="-90" hflip="-1" vflip="1" label="Tunnel-98" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="PortB" IsBus="true" />
 
-<item itemtype="Connector" uid="Connector-245" startpinid="Bus-63-ePin4" endpinid="KeyPad-62-Pin9" pointList="272,16,272,8,276,8" />
+<item itemtype="Bus" CircId="Bus-99" mainComp="false" Show_id="false" Show_Val="false" Pos="388,-20" rotation="0" hflip="-1" vflip="1" label="Bus-99" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Num_Bits="2 _bits" Start_Bit="6" />
 
-<item itemtype="Connector" uid="Connector-247" startpinid="Bus-63-ePin6" endpinid="KeyPad-62-Pin7" pointList="256,16,256,8,244,8" />
+<item itemtype="Tunnel" CircId="Tunnel-100" mainComp="false" Show_id="false" Show_Val="false" Pos="376,-28" rotation="-90" hflip="-1" vflip="1" label="Tunnel-100" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="PortB" IsBus="true" />
 
-<item itemtype="Connector" uid="Connector-248" startpinid="Bus-63-ePin3" endpinid="KeyPad-62-Pin10" pointList="280,16,280,8,292,8" />
+<item itemtype="Bus" CircId="Bus-101" mainComp="false" Show_id="false" Show_Val="false" Pos="412,12" rotation="0" hflip="-1" vflip="1" label="Bus-101" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Num_Bits="1 _bits" Start_Bit="0" />
 
-<item itemtype="Connector" uid="Connector-249" startpinid="Bus-63-ePin7" endpinid="KeyPad-62-Pin6" pointList="248,16,248,12,228,12,228,8" />
+<item itemtype="Node" CircId="Node-104" mainComp="false" Pos="244,-136" />
 
-<item itemtype="Connector" uid="Connector-250" startpinid="Bus-63-ePin2" endpinid="KeyPad-62-Pin11" pointList="288,16,288,12,308,12,308,8" />
+<item itemtype="Node" CircId="Node-105" mainComp="false" Pos="480,12" />
 
-<item itemtype="Connector" uid="Connector-251" startpinid="Bus-63-ePin1" endpinid="KeyPad-62-Pin12" pointList="296,16,324,16,324,8" />
+<item itemtype="Node" CircId="Node-106" mainComp="false" Pos="424,52" />
 
-<item itemtype="Connector" uid="Connector-252" startpinid="Bus-63-ePin8" endpinid="KeyPad-62-Pin5" pointList="240,16,212,16,212,8" />
+<item itemtype="Connector" uid="Connector-245" startpinid="Bus-63-ePin4" endpinid="KeyPad-62-Pin9" pointList="204,56,204,48,208,48" />
 
-<item itemtype="Connector" uid="Connector-253" startpinid="Bus-64-ePin3" endpinid="KeyPad-62-Pin2" pointList="344,-40,340,-40" />
+<item itemtype="Connector" uid="Connector-247" startpinid="Bus-63-ePin6" endpinid="KeyPad-62-Pin7" pointList="188,56,188,48,176,48" />
 
-<item itemtype="Connector" uid="Connector-254" startpinid="Bus-64-ePin2" endpinid="KeyPad-62-Pin1" pointList="344,-48,340,-48,340,-56" />
+<item itemtype="Connector" uid="Connector-248" startpinid="Bus-63-ePin3" endpinid="KeyPad-62-Pin10" pointList="212,56,212,48,224,48" />
 
-<item itemtype="Connector" uid="Connector-255" startpinid="Bus-64-ePin4" endpinid="KeyPad-62-Pin3" pointList="344,-32,340,-32,340,-24" />
+<item itemtype="Connector" uid="Connector-249" startpinid="Bus-63-ePin7" endpinid="KeyPad-62-Pin6" pointList="180,56,180,52,160,52,160,48" />
 
-<item itemtype="Connector" uid="Connector-256" startpinid="Bus-64-ePin5" endpinid="KeyPad-62-Pin4" pointList="344,-24,344,-8,340,-8" />
+<item itemtype="Connector" uid="Connector-250" startpinid="Bus-63-ePin2" endpinid="KeyPad-62-Pin11" pointList="220,56,220,52,240,52,240,48" />
 
-<item itemtype="Connector" uid="Connector-259" startpinid="Tunnel-66-pin" endpinid="Bus-64-busPinI" pointList="364,-60,352,-60,352,-56" />
+<item itemtype="Connector" uid="Connector-251" startpinid="Bus-63-ePin1" endpinid="KeyPad-62-Pin12" pointList="228,56,256,56,256,48" />
 
-<item itemtype="Connector" uid="Connector-261" startpinid="Tunnel-65-pin" endpinid="Bus-63-ePin0" pointList="236,36,236,24,240,24" />
+<item itemtype="Connector" uid="Connector-252" startpinid="Bus-63-ePin8" endpinid="KeyPad-62-Pin5" pointList="172,56,144,56,144,48" />
+
+<item itemtype="Connector" uid="Connector-253" startpinid="Bus-64-ePin3" endpinid="KeyPad-62-Pin2" pointList="276,0,272,0" />
+
+<item itemtype="Connector" uid="Connector-254" startpinid="Bus-64-ePin2" endpinid="KeyPad-62-Pin1" pointList="276,-8,272,-8,272,-16" />
+
+<item itemtype="Connector" uid="Connector-255" startpinid="Bus-64-ePin4" endpinid="KeyPad-62-Pin3" pointList="276,8,272,8,272,16" />
+
+<item itemtype="Connector" uid="Connector-256" startpinid="Bus-64-ePin5" endpinid="KeyPad-62-Pin4" pointList="276,16,276,32,272,32" />
+
+<item itemtype="Connector" uid="Connector-259" startpinid="Tunnel-66-pin" endpinid="Bus-64-busPinI" pointList="296,-20,284,-20,284,-16" />
+
+<item itemtype="Connector" uid="Connector-261" startpinid="Tunnel-65-pin" endpinid="Bus-63-ePin0" pointList="168,76,168,64,172,64" />
 
 <item itemtype="Connector" uid="Connector-262" startpinid="Bus-67-ePin1" endpinid="mega328-54-PORTD0" pointList="420,-84,424,-84" />
 
@@ -106,40 +118,58 @@
 
 <item itemtype="Connector" uid="Connector-285" startpinid="mega328-54-PORTC4" endpinid="Bus-70-ePin5" pointList="472,-84,476,-84" />
 
-<item itemtype="Connector" uid="Connector-289" startpinid="Clock-74-outnod" endpinid="chip222-73-ADJ" pointList="260,-156,284,-156,284,-152" />
+<item itemtype="Connector" uid="Connector-291" startpinid="chip222-73-Out" endpinid="Oscope-76-Pin2" pointList="328,-152,328,-184,372,-184" />
 
-<item itemtype="Connector" uid="Connector-291" startpinid="chip222-73-Out" endpinid="Oscope-76-Pin2" pointList="332,-152,332,-184,372,-184" />
+<item itemtype="Connector" uid="Connector-314" startpinid="AudioOut-56-rPin" endpinid="Switch-86-pinP0" pointList="580,60,560,60,560,68" />
 
-<item itemtype="Connector" uid="Connector-295" startpinid="chip222-73-PWM" endpinid="Node-78-0" pointList="332,-136,356,-136" />
+<item itemtype="Connector" uid="Connector-315" startpinid="Switch-86-switch0pinN" endpinid="Ground-80-Gnd" pointList="528,68,520,68" />
 
-<item itemtype="Connector" uid="Connector-296" startpinid="Node-78-2" endpinid="Oscope-76-Pin3" pointList="356,-136,356,-152,372,-152" />
+<item itemtype="Connector" uid="Connector-341" startpinid="Clock-74-outnod" endpinid="Or Gate-93-in0" pointList="120,-152,120,-124,124,-124" />
 
-<item itemtype="Connector" uid="Connector-300" startpinid="Node-81-1" endpinid="Oscope-76-Pin0" pointList="344,-72,344,-248,372,-248" />
+<item itemtype="Connector" uid="Connector-342" startpinid="Clock-94-outnod" endpinid="Or Gate-93-in1" pointList="120,-88,120,-116,124,-116" />
 
-<item itemtype="Connector" uid="Connector-301" startpinid="Bus-64-ePin1" endpinid="Node-81-0" pointList="344,-56,344,-72" />
+<item itemtype="Connector" uid="Connector-344" startpinid="Bus-63-ePin5" endpinid="KeyPad-62-Pin8" pointList="196,56,196,48,192,48" />
 
-<item itemtype="Connector" uid="Connector-302" startpinid="Node-81-2" endpinid="KeyPad-62-Pin0" pointList="344,-72,340,-72" />
+<item itemtype="Connector" uid="Connector-345" startpinid="Bus-64-ePin1" endpinid="KeyPad-62-Pin0" pointList="276,-16,276,-32,272,-32" />
 
-<item itemtype="Connector" uid="Connector-307" startpinid="Bus-63-ePin5" endpinid="Node-83-0" pointList="264,16,264,8" />
+<item itemtype="Connector" uid="Connector-346" startpinid="Tunnel-96-pin" endpinid="Bus-97-ePin0" pointList="504,-24,492,-24,492,-20" />
 
-<item itemtype="Connector" uid="Connector-308" startpinid="Node-83-2" endpinid="KeyPad-62-Pin8" pointList="264,8,260,8" />
+<item itemtype="Connector" uid="Connector-347" startpinid="Tunnel-98-pin" endpinid="WDBus-95-bus" pointList="548,-56,548,-60,560,-60" />
 
-<item itemtype="Connector" uid="Connector-312" startpinid="Node-83-1" endpinid="Oscope-76-Pin1" pointList="264,8,372,8,372,-216" />
+<item itemtype="Connector" uid="Connector-349" startpinid="Bus-97-ePin2" endpinid="mega328-54-PORTB2" pointList="484,4,472,4" />
 
-<item itemtype="Connector" uid="Connector-313" startpinid="WaveGen-85-outnod" endpinid="chip222-73-Cx" pointList="260,-132,284,-132,284,-136" />
+<item itemtype="Connector" uid="Connector-350" startpinid="Bus-97-ePin3" endpinid="mega328-54-PORTB3" pointList="484,-4,472,-4" />
 
-<item itemtype="Connector" uid="Connector-314" startpinid="AudioOut-56-rPin" endpinid="Switch-86-pinP0" pointList="524,60,504,60,504,64" />
+<item itemtype="Connector" uid="Connector-351" startpinid="Bus-97-ePin4" endpinid="mega328-54-PORTB4" pointList="484,-12,472,-12" />
 
-<item itemtype="Connector" uid="Connector-315" startpinid="Switch-86-switch0pinN" endpinid="Ground-80-Gnd" pointList="472,64,464,64" />
+<item itemtype="Connector" uid="Connector-352" startpinid="Bus-97-ePin5" endpinid="mega328-54-PORTB5" pointList="484,-20,472,-20" />
 
-<item itemtype="Connector" uid="Connector-322" startpinid="Node-88-1" endpinid="Node-89-1" pointList="424,36,424,52" />
+<item itemtype="Connector" uid="Connector-353" startpinid="Bus-99-ePin1" endpinid="mega328-54-PORTB6" pointList="396,-28,424,-28" />
 
-<item itemtype="Connector" uid="Connector-323" startpinid="FreqMeter-58-lPin" endpinid="Node-88-0" pointList="428,36,424,36" />
+<item itemtype="Connector" uid="Connector-354" startpinid="Bus-99-ePin2" endpinid="mega328-54-PORTB7" pointList="396,-20,424,-20" />
 
-<item itemtype="Connector" uid="Connector-324" startpinid="Node-88-2" endpinid="mega328-54-PORTB0" pointList="424,36,424,12" />
+<item itemtype="Connector" uid="Connector-355" startpinid="Tunnel-100-pin" endpinid="Bus-99-busPinI" pointList="376,-28,376,-40,388,-40,388,-28" />
 
-<item itemtype="Connector" uid="Connector-325" startpinid="Node-78-1" endpinid="Node-89-0" pointList="356,-136,356,-84,384,-84,384,52,424,52" />
+<item itemtype="Connector" uid="Connector-360" startpinid="Bus-99-ePin0" endpinid="Bus-101-ePin0" pointList="388,-20,388,12,412,12" />
 
-<item itemtype="Connector" uid="Connector-326" startpinid="Node-89-2" endpinid="AudioOut-56-lPin" pointList="424,52,524,52" />
+<item itemtype="Connector" uid="Connector-364" startpinid="Node-104-1" endpinid="chip222-73-ADJ" pointList="244,-136,244,-152,280,-152" />
+
+<item itemtype="Connector" uid="Connector-365" startpinid="Or Gate-93-out" endpinid="Node-104-0" pointList="156,-120,156,-136,244,-136" />
+
+<item itemtype="Connector" uid="Connector-366" startpinid="Node-104-2" endpinid="chip222-73-Cx" pointList="244,-136,280,-136" />
+
+<item itemtype="Connector" uid="Connector-368" startpinid="Bus-101-ePin1" endpinid="mega328-54-PORTB0" pointList="420,12,424,12" />
+
+<item itemtype="Connector" uid="Connector-369" startpinid="chip222-73-PWM" endpinid="Oscope-76-Pin3" pointList="328,-136,356,-136,356,-152,372,-152" />
+
+<item itemtype="Connector" uid="Connector-371" startpinid="Node-105-1" endpinid="Node-106-1" pointList="480,12,480,32,404,32,404,52,424,52" />
+
+<item itemtype="Connector" uid="Connector-372" startpinid="Bus-97-ePin1" endpinid="Node-105-0" pointList="484,12,480,12" />
+
+<item itemtype="Connector" uid="Connector-374" startpinid="FreqMeter-58-lPin" endpinid="Node-106-0" pointList="424,92,424,52" />
+
+<item itemtype="Connector" uid="Connector-375" startpinid="Node-106-2" endpinid="AudioOut-56-lPin" pointList="424,52,580,52" />
+
+<item itemtype="Connector" uid="Connector-376" startpinid="Node-105-2" endpinid="mega328-54-PORTB1" pointList="480,12,472,12" />
 
 </circuit>

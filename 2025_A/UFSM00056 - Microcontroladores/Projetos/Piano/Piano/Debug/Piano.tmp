@@ -1,0 +1,74 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\Debug\Piano.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>Piano.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>Piano.map</FILE>
+  <FILE>Piano.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <start><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>13</LINE></start>
+  <loop><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>36</LINE></loop>
+  <coluna0><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>86</LINE></coluna0>
+  <coluna1><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>97</LINE></coluna1>
+  <coluna2><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>108</LINE></coluna2>
+  <coluna3><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>119</LINE></coluna3>
+  <coluna4><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>130</LINE></coluna4>
+  <coluna5><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>141</LINE></coluna5>
+  <coluna6><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>152</LINE></coluna6>
+  <coluna7><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>163</LINE></coluna7>
+  <tecla_G><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>267</LINE></tecla_G>
+  <tecla_P><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>315</LINE></tecla_P>
+  <tecla_fh><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>359</LINE></tecla_fh>
+  <tecla_oh><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>407</LINE></tecla_oh>
+  <tecla_nula><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>432</LINE></tecla_nula>
+  <tecla_T><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>261</LINE></tecla_T>
+  <tecla_L><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>309</LINE></tecla_L>
+  <tecla_dh><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>353</LINE></tecla_dh>
+  <tecla_kh><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>401</LINE></tecla_kh>
+  <tecla_F><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>255</LINE></tecla_F>
+  <tecla_O><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>303</LINE></tecla_O>
+  <tecla_eh><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>347</LINE></tecla_eh>
+  <tecla_jh><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>395</LINE></tecla_jh>
+  <tecla_D><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>249</LINE></tecla_D>
+  <tecla_K><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>297</LINE></tecla_K>
+  <tecla_sh><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>341</LINE></tecla_sh>
+  <tecla_uh><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>389</LINE></tecla_uh>
+  <tecla_E><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>243</LINE></tecla_E>
+  <tecla_J><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>291</LINE></tecla_J>
+  <tecla_wh><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>335</LINE></tecla_wh>
+  <tecla_hh><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>383</LINE></tecla_hh>
+  <tecla_S><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>237</LINE></tecla_S>
+  <tecla_U><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>285</LINE></tecla_U>
+  <tecla_ah><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>329</LINE></tecla_ah>
+  <tecla_yh><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>377</LINE></tecla_yh>
+  <tecla_cch><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>425</LINE></tecla_cch>
+  <tecla_W><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>231</LINE></tecla_W>
+  <tecla_H><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>279</LINE></tecla_H>
+  <tecla_gh><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>371</LINE></tecla_gh>
+  <tecla_ph><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>419</LINE></tecla_ph>
+  <tecla_A><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>225</LINE></tecla_A>
+  <tecla_Y><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>273</LINE></tecla_Y>
+  <tecla_Cc><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>321</LINE></tecla_Cc>
+  <tecla_th><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>365</LINE></tecla_th>
+  <tecla_lh><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>413</LINE></tecla_lh>
+  <fim><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>175</LINE></fim>
+  <som><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>437</LINE></som>
+  <silencio><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>450</LINE></silencio>
+ </LABELS>
+</ASSEMBLER_INFO>
