@@ -5,10 +5,10 @@
 ; Author : watto
 ;
 ; Estudar um PWM com timer = 1
-; Modo = ctc. Conta até icr1 ( tabela 15-5 = 12 )
+; Modo = ctc. Conta atï¿½ icr1 ( tabela 15-5 = 12 )
 ; TCCR1A/B 
-; simulide não funciona :)
-
+; simulide nï¿½o funciona :)
+	
 .org 0x0016
 INT_A:
 	com r16
@@ -29,7 +29,7 @@ INT_A:
 ;--/config---
 
 	; carregar numero no ICR1 (hi:lo)
-	; contar até 1000 (0x03E8)
+	; contar atï¿½ 1000 (0x03E8)
 	;                    ||||
 	;                    hilo
 	ldi r17, 0xf3			; hi de 1000
@@ -39,7 +39,7 @@ INT_A:
 	
 	; pagina 49 interrupt vectors
 	; [err] usar org 001A interrupcao do overflow do timer 1 >> ERRADO
-	; é pra usar org 0016, interrupcao do comparador A
+	; ï¿½ pra usar org 0016, interrupcao do comparador A
 
 	;LDI r16, (1<< ICIE1)
 	ldi r16, 0b00100000

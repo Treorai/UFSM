@@ -173,41 +173,43 @@ coluna7:
 
 fim:
 ; Tabela de HZ
-;[A]		264hz C
-;[W]		280hz C#
-;[S]		296hz D
-;[E]		314hz D#
-;[D]		333hz E
-;[F]		352hz F
-;[T]		373hz F#
-;[G]		395hz G
-;[Y]		419hz G#
-;[H]		444hz A
-;[U]		470hz A#
-;[J]		498hz B
-;[K]		528hz C
-;[O]		559hz C#
-;[L]		592hz D
-;[P]		628hz D#
-;[Ç]		665hz E
 
-;[a]		1056hz C
-;[w]		1118hz C#
-;[s]		1185hz D
-;[e]		1256hz D#
-;[d]		1331hz E
-;[f]		1410hz F
-;[t]		1493hz F#
-;[g]		1582hz G
-;[y]		1676hz G#
-;[h]		1776hz A
-;[u]		1882hz A#
-;[j]		1994hz B
-;[k]		2112hz C
-;[o]		2237hz C#
-;[l]		2370hz D
-;[p]		2511hz D#
-;[ç]		2661hz E
+;TECLA		FREQ	NOTA	ICR1 em 16mhz
+;[A]		264hz	C		60606
+;[W]		280hz	C#		57142
+;[S]		296hz	D		54054
+;[E]		314hz	D#		50955
+;[D]		333hz	E		48048
+;[F]		352hz	F		45454
+;[T]		373hz	F#		42842
+;[G]		395hz	G		40506
+;[Y]		419hz	G#		38186
+;[H]		444hz	A		36036
+;[U]		470hz	A#		34042
+;[J]		498hz	B		32128
+;[K]		528hz	C		30303
+;[O]		559hz	C#		28623
+;[L]		592hz	D		27027
+;[P]		628hz	D#		25477
+;[Ç]		665hz	E		24060
+
+;[a]		1056hz	C		15151
+;[w]		1118hz	C#		14312
+;[s]		1185hz	D		13497
+;[e]		1256hz	D#		12738
+;[d]		1331hz	E		12020
+;[f]		1410hz	F		11347
+;[t]		1493hz	F#		10721
+;[g]		1582hz	G		10113
+;[y]		1676hz	G#		9540
+;[h]		1776hz	A		9009
+;[u]		1882hz	A#		8509
+;[j]		1994hz	B		8022
+;[k]		2112hz	C		7575
+;[o]		2237hz	C#		7153
+;[l]		2370hz	D		6751
+;[p]		2511hz	D#		6371
+;[ç]		2661hz	E		6014
 
 ;[ ]		0hz
 ;[m]		0hz
@@ -219,7 +221,7 @@ fim:
 	jmp loop
 
 
-; === NOTAS ===
+; NOTAS
 
 tecla_A:        ; 264 Hz (C)
 	ldi r24, low(60606)
@@ -406,14 +408,7 @@ som:
 	; Duty cycle 50%
 	lsr r25
 	ror r24
+
 	sts OCR1AL, r24
 	sts OCR1AH, r25
-	jmp loop
-
-
-silencio:
-	ldi r16, 0
-	sts TCCR1A, r16
-	sts TCCR1B, r16
-	cbi PORTB, PB1
 	jmp loop

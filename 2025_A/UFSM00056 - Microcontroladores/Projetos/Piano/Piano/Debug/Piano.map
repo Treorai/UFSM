@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.8  C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm Tue May 13 23:48:35 2025
+AVRASM ver. 2.2.8  C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm Wed May 14 00:16:31 2025
 
 
 EQU  SIGNATURE_000 0000001e
@@ -742,4 +742,3 @@ CSEG tecla_th     0000010a
 CSEG tecla_lh     0000012a
 CSEG fim          000000aa
 CSEG som          0000013a
-CSEG silencio     00000146

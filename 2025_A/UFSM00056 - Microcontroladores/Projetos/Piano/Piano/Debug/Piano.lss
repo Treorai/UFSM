@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.8  C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm Tue May 13 23:48:35 2025
+AVRASM ver. 2.2.8  C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm Wed May 14 00:16:31 2025
 
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc'
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc'
@@ -1159,41 +1159,43 @@ AVRASM ver. 2.2.8  C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.as
                                  
                                  fim:
                                  ; Tabela de HZ
-                                 ;[A]		264hz C
-                                 ;[W]		280hz C#
-                                 ;[S]		296hz D
-                                 ;[E]		314hz D#
-                                 ;[D]		333hz E
-                                 ;[F]		352hz F
-                                 ;[T]		373hz F#
-                                 ;[G]		395hz G
-                                 ;[Y]		419hz G#
-                                 ;[H]		444hz A
-                                 ;[U]		470hz A#
-                                 ;[J]		498hz B
-                                 ;[K]		528hz C
-                                 ;[O]		559hz C#
-                                 ;[L]		592hz D
-                                 ;[P]		628hz D#
-                                 ;[Ç]		665hz E
                                  
-                                 ;[a]		1056hz C
-                                 ;[w]		1118hz C#
-                                 ;[s]		1185hz D
-                                 ;[e]		1256hz D#
-                                 ;[d]		1331hz E
-                                 ;[f]		1410hz F
-                                 ;[t]		1493hz F#
-                                 ;[g]		1582hz G
-                                 ;[y]		1676hz G#
-                                 ;[h]		1776hz A
-                                 ;[u]		1882hz A#
-                                 ;[j]		1994hz B
-                                 ;[k]		2112hz C
-                                 ;[o]		2237hz C#
-                                 ;[l]		2370hz D
-                                 ;[p]		2511hz D#
-                                 ;[ç]		2661hz E
+                                 ;TECLA		FREQ	NOTA	ICR1 em 16mhz
+                                 ;[A]		264hz	C		60606
+                                 ;[W]		280hz	C#		57142
+                                 ;[S]		296hz	D		54054
+                                 ;[E]		314hz	D#		50955
+                                 ;[D]		333hz	E		48048
+                                 ;[F]		352hz	F		45454
+                                 ;[T]		373hz	F#		42842
+                                 ;[G]		395hz	G		40506
+                                 ;[Y]		419hz	G#		38186
+                                 ;[H]		444hz	A		36036
+                                 ;[U]		470hz	A#		34042
+                                 ;[J]		498hz	B		32128
+                                 ;[K]		528hz	C		30303
+                                 ;[O]		559hz	C#		28623
+                                 ;[L]		592hz	D		27027
+                                 ;[P]		628hz	D#		25477
+                                 ;[Ç]		665hz	E		24060
+                                 
+                                 ;[a]		1056hz	C		15151
+                                 ;[w]		1118hz	C#		14312
+                                 ;[s]		1185hz	D		13497
+                                 ;[e]		1256hz	D#		12738
+                                 ;[d]		1331hz	E		12020
+                                 ;[f]		1410hz	F		11347
+                                 ;[t]		1493hz	F#		10721
+                                 ;[g]		1582hz	G		10113
+                                 ;[y]		1676hz	G#		9540
+                                 ;[h]		1776hz	A		9009
+                                 ;[u]		1882hz	A#		8509
+                                 ;[j]		1994hz	B		8022
+                                 ;[k]		2112hz	C		7575
+                                 ;[o]		2237hz	C#		7153
+                                 ;[l]		2370hz	D		6751
+                                 ;[p]		2511hz	D#		6371
+                                 ;[ç]		2661hz	E		6014
                                  
                                  ;[ ]		0hz
                                  ;[m]		0hz
@@ -1205,7 +1207,7 @@ AVRASM ver. 2.2.8  C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.as
 0000aa 940c 000c                 	jmp loop
                                  
                                  
-                                 ; === NOTAS ===
+                                 ; NOTAS
                                  
                                  tecla_A:        ; 264 Hz (C)
 0000ac eb8e                      	ldi r24, low(60606)
@@ -1392,17 +1394,10 @@ AVRASM ver. 2.2.8  C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.as
                                  	; Duty cycle 50%
 00013e 9596                      	lsr r25
 00013f 9587                      	ror r24
+                                 
 000140 9380 0088                 	sts OCR1AL, r24
 000142 9390 0089                 	sts OCR1AH, r25
 000144 940c 000c                 	jmp loop
-                                 
-                                 
-                                 silencio:
-000146 e000                      	ldi r16, 0
-000147 9300 0080                 	sts TCCR1A, r16
-000149 9300 0081                 	sts TCCR1B, r16
-00014b 9829                      	cbi PORTB, PB1
-00014c 940c 000c                 	jmp loop
 
 
 RESOURCE USE INFORMATION
@@ -1422,7 +1417,7 @@ counted separately from r26..r31 here.
 "ATmega328P" register use summary:
 x  :   0 y  :   0 z  :   0 r0 :   0 r1 :   0 r2 :   0 r3 :   0 r4 :   0 
 r5 :   0 r6 :   0 r7 :   0 r8 :   0 r9 :   0 r10:   0 r11:   0 r12:   0 
-r13:   0 r14:   0 r15:   0 r16:  14 r17:   6 r18:  10 r19:  42 r20:   0 
+r13:   0 r14:   0 r15:   0 r16:  11 r17:   6 r18:  10 r19:  42 r20:   0 
 r21:   0 r22:   0 r23:   0 r24:  38 r25:  38 r26:   0 r27:   0 r28:   0 
 r29:   0 r30:   0 r31:   0 
 Registers used: 6 out of 35 (17.1%)
@@ -1433,26 +1428,26 @@ andi  :   0 asr   :   0 bclr  :   0 bld   :   0 brbc  :   0 brbs  :   0
 brcc  :   0 brcs  :   0 break :   0 breq  :   0 brge  :   0 brhc  :   0 
 brhs  :   0 brid  :   0 brie  :   0 brlo  :   0 brlt  :   0 brmi  :   0 
 brne  :   0 brpl  :   0 brsh  :   0 brtc  :   0 brts  :   0 brvc  :   0 
-brvs  :   0 bset  :   0 bst   :   0 call  :   0 cbi   :   1 cbr   :   0 
+brvs  :   0 bset  :   0 bst   :   0 call  :   0 cbi   :   0 cbr   :   0 
 clc   :   0 clh   :   0 cli   :   0 cln   :   0 clr   :   3 cls   :   0 
 clt   :   0 clv   :   0 clz   :   0 com   :   2 cp    :   0 cpc   :   0 
 cpi   :   0 cpse  :   0 dec   :   0 eor   :   0 fmul  :   0 fmuls :   0 
-fmulsu:   0 icall :   0 ijmp  :   0 in    :   2 inc   :   0 jmp   :  88 
-ld    :   0 ldd   :   0 ldi   :  71 lds   :   0 lpm   :   0 lsl   :   0 
+fmulsu:   0 icall :   0 ijmp  :   0 in    :   2 inc   :   0 jmp   :  87 
+ld    :   0 ldd   :   0 ldi   :  70 lds   :   0 lpm   :   0 lsl   :   0 
 lsr   :   1 mov   :   0 movw  :   0 mul   :   0 muls  :   0 mulsu :   0 
 neg   :   0 nop   :   0 or    :   0 ori   :   0 out   :  11 pop   :   0 
 push  :   0 rcall :   0 ret   :   0 reti  :   0 rjmp  :   0 rol   :   0 
 ror   :   1 sbc   :   0 sbci  :   0 sbi   :   1 sbic  :   0 sbis  :   0 
 sbiw  :   0 sbr   :   0 sbrc  :  48 sbrs  :   0 sec   :   0 seh   :   0 
 sei   :   0 sen   :   0 ser   :   1 ses   :   0 set   :   0 sev   :   0 
-sez   :   0 sleep :   0 spm   :   0 st    :   0 std   :   0 sts   :   8 
+sez   :   0 sleep :   0 spm   :   0 st    :   0 std   :   0 sts   :   6 
 sub   :   0 subi  :   0 swap  :   0 tst   :   0 wdr   :   0 
-Instructions used: 13 out of 113 (11.5%)
+Instructions used: 12 out of 113 (10.6%)
 
 "ATmega328P" memory use summary [bytes]:
 Segment   Begin    End      Code   Data   Used    Size   Use%
 ---------------------------------------------------------------
-[.cseg] 0x000000 0x00029c    668      0    668   32768   2.0%
+[.cseg] 0x000000 0x00028c    652      0    652   32768   2.0%
 [.dseg] 0x000100 0x000100      0      0      0    2048   0.0%
 [.eseg] 0x000000 0x000000      0      0      0    1024   0.0%
 
