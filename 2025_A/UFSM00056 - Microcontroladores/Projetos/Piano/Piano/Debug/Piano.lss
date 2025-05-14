@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.8  C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm Tue May 13 01:08:50 2025
+AVRASM ver. 2.2.8  C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm Tue May 13 23:48:35 2025
 
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc'
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc'
@@ -997,166 +997,165 @@ AVRASM ver. 2.2.8  C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.as
                                  .org 0x0000
                                  
                                  start:
-                                 	; === Configurar PWM no Timer1 ===
+                                 	; Configurar PWM no Timer1
 000000 e802                      	ldi r16, (1<<COM1A1) | (1<<WGM11)	; OC1A não-invertido, modo PWM
 000001 9300 0080                 	sts TCCR1A, r16
                                  
 000003 e109                      	ldi r16, (1<<WGM13) | (1<<WGM12) | (1<<CS10) ; modo PWM com ICR1 como TOP, prescaler = 1
 000004 9300 0081                 	sts TCCR1B, r16
                                  
-000006 9a21                      	sbi DDRB, PB1    ; Configurar PB1 (OC1A) como saída (buzzer)
+000006 9a21                      	sbi DDRB, PB1    ; Configurar PB1 (OC1A) como saída
                                  	
-                                 	
+                                 	; Configurar entradas
                                  	
 000007 ef0f                      	ser r16
 000008 2711                      	clr r17
-000009 b904                      	out DDRB, r16		; portB saida
+                                 	;out DDRB, r16		; portB saida
                                  
                                  	; primeiro colunas em low (portd = 0x00 = r17 = in)
                                  	;          linhas em high (portc = 0xff = r16 = out)
-00000a b907                      	out DDRC, r16
-00000b b91a                      	out DDRD, r17
+000009 b907                      	out DDRC, r16
+00000a b91a                      	out DDRD, r17
                                  	;out PORTC, r16		; liga pull up
-00000c b90b                      	out PORTD, r16		; liga pull up
+00000b b90b                      	out PORTD, r16		; liga pull up
                                  
                                  loop:
                                  
-00000d b985                      out PORTB, r24
                                  	; reset entradas apos o loop
-00000e b907                      	out DDRC, r16
-00000f b918                      	out PORTC, r17		; linhas low
+00000c b907                      	out DDRC, r16
+00000d b918                      	out PORTC, r17		; linhas low
                                  
-000010 b91a                      	out DDRD, r17
-000011 b90b                      	out PORTD, r16		; portd liga pull up
+00000e b91a                      	out DDRD, r17
+00000f b90b                      	out PORTD, r16		; portd liga pull up
                                  
                                  	; Quando um botao eh pressionado, a coluna vai para low
-000012 b129                      	in r18, PIND
-000013 9520                      	com r18				; r18 recebe bit da coluna ligada
+000010 b129                      	in r18, PIND
+000011 9520                      	com r18				; r18 recebe bit da coluna ligada
                                  
                                  
                                  	;cpi r18, 0x00
                                  	;breq loop			; nenhuma tecla = volta
                                  
-000014 b917                      	out DDRC, r17
-000015 b90a                      	out DDRD, r16
-000016 b908                      	out PORTC, r16		;portc liga pull up
-000017 b91b                      	out PORTD, r17
+000012 b917                      	out DDRC, r17
+000013 b90a                      	out DDRD, r16
+000014 b908                      	out PORTC, r16		;portc liga pull up
+000015 b91b                      	out PORTD, r17
                                  
-000018 b136                      	in r19, PINC
-000019 9530                      	com r19				; r19 recebe bit da linha ligada
+000016 b136                      	in r19, PINC
+000017 9530                      	com r19				; r19 recebe bit da linha ligada
                                  
                                  	;cpi r19, 0x00
                                  	;breq loop			; nenhuma ligada = volta
                                  
                                  	; Testar qual coluna esta ligada
-00001a fd20                      	sbrc r18, 0
-00001b 940c 0034                 	jmp coluna0
-00001d fd21                      	sbrc r18, 1
-00001e 940c 003e                 	jmp coluna1
-000020 fd22                      	sbrc r18, 2
-000021 940c 0048                 	jmp coluna2
-000023 fd23                      	sbrc r18, 3
-000024 940c 0052                 	jmp coluna3
-000026 fd24                      	sbrc r18, 4
-000027 940c 005c                 	jmp coluna4
-000029 fd25                      	sbrc r18, 5
-00002a 940c 0066                 	jmp coluna5
-00002c fd26                      	sbrc r18, 6
-00002d 940c 0070                 	jmp coluna6
-00002f fd27                      	sbrc r18, 7
-000030 940c 007a                 	jmp coluna7
+000018 fd20                      	sbrc r18, 0
+000019 940c 0032                 	jmp coluna0
+00001b fd21                      	sbrc r18, 1
+00001c 940c 0041                 	jmp coluna1
+00001e fd22                      	sbrc r18, 2
+00001f 940c 0050                 	jmp coluna2
+000021 fd23                      	sbrc r18, 3
+000022 940c 005f                 	jmp coluna3
+000024 fd24                      	sbrc r18, 4
+000025 940c 006e                 	jmp coluna4
+000027 fd25                      	sbrc r18, 5
+000028 940c 007d                 	jmp coluna5
+00002a fd26                      	sbrc r18, 6
+00002b 940c 008c                 	jmp coluna6
+00002d fd27                      	sbrc r18, 7
+00002e 940c 009b                 	jmp coluna7
                                  	; Nenhuma coluna ligada
-000032 940c 000d                 	jmp loop
+000030 940c 000c                 	jmp loop
                                  
                                  
                                  coluna0:
-000034 fd30                      	sbrc r19, 0
-000035 d06c                      	rcall tecla_G
-000036 fd31                      	sbrc r19, 1
-000037 d08a                      	rcall tecla_P
+000032 fd30                      	sbrc r19, 0
+000033 940c 00ca                 	jmp tecla_G
+000035 fd31                      	sbrc r19, 1
+000036 940c 00ea                 	jmp tecla_P
 000038 fd32                      	sbrc r19, 2
-000039 d0a4                      	rcall tecla_fh
-00003a fd33                      	sbrc r19, 3
-00003b d0c2                      	rcall tecla_oh
-00003c fd34                      	sbrc r19, 4
-00003d d0d0                      	rcall tecla_nula
+000039 940c 0106                 	jmp tecla_fh
+00003b fd33                      	sbrc r19, 3
+00003c 940c 0126                 	jmp tecla_oh
+00003e fd34                      	sbrc r19, 4
+00003f 940c 0136                 	jmp tecla_nula
                                  coluna1:
-00003e fd30                      	sbrc r19, 0
-00003f d05e                      	rcall tecla_T
-000040 fd31                      	sbrc r19, 1
-000041 d07c                      	rcall tecla_L
-000042 fd32                      	sbrc r19, 2
-000043 d096                      	rcall tecla_dh
-000044 fd33                      	sbrc r19, 3
-000045 d0b4                      	rcall tecla_kh
-000046 fd34                      	sbrc r19, 4
-000047 d0c6                      	rcall tecla_nula
+000041 fd30                      	sbrc r19, 0
+000042 940c 00c6                 	jmp tecla_T
+000044 fd31                      	sbrc r19, 1
+000045 940c 00e6                 	jmp tecla_L
+000047 fd32                      	sbrc r19, 2
+000048 940c 0102                 	jmp tecla_dh
+00004a fd33                      	sbrc r19, 3
+00004b 940c 0122                 	jmp tecla_kh
+00004d fd34                      	sbrc r19, 4
+00004e 940c 0136                 	jmp tecla_nula
                                  coluna2:
-000048 fd30                      	sbrc r19, 0
-000049 d050                      	rcall tecla_F
-00004a fd31                      	sbrc r19, 1
-00004b d06e                      	rcall tecla_O
-00004c fd32                      	sbrc r19, 2
-00004d d088                      	rcall tecla_eh
-00004e fd33                      	sbrc r19, 3
-00004f d0a6                      	rcall tecla_jh
-000050 fd34                      	sbrc r19, 4
-000051 d0bc                      	rcall tecla_nula
-                                 coluna3:
-000052 fd30                      	sbrc r19, 0
-000053 d042                      	rcall tecla_D
-000054 fd31                      	sbrc r19, 1
-000055 d060                      	rcall tecla_K
+000050 fd30                      	sbrc r19, 0
+000051 940c 00c2                 	jmp tecla_F
+000053 fd31                      	sbrc r19, 1
+000054 940c 00e2                 	jmp tecla_O
 000056 fd32                      	sbrc r19, 2
-000057 d07a                      	rcall tecla_sh
-000058 fd33                      	sbrc r19, 3
-000059 d098                      	rcall tecla_uh
-00005a fd34                      	sbrc r19, 4
-00005b d0b2                      	rcall tecla_nula
+000057 940c 00fe                 	jmp tecla_eh
+000059 fd33                      	sbrc r19, 3
+00005a 940c 011e                 	jmp tecla_jh
+00005c fd34                      	sbrc r19, 4
+00005d 940c 0136                 	jmp tecla_nula
+                                 coluna3:
+00005f fd30                      	sbrc r19, 0
+000060 940c 00be                 	jmp tecla_D
+000062 fd31                      	sbrc r19, 1
+000063 940c 00de                 	jmp tecla_K
+000065 fd32                      	sbrc r19, 2
+000066 940c 00fa                 	jmp tecla_sh
+000068 fd33                      	sbrc r19, 3
+000069 940c 011a                 	jmp tecla_uh
+00006b fd34                      	sbrc r19, 4
+00006c 940c 0136                 	jmp tecla_nula
                                  coluna4:
-00005c fd30                      	sbrc r19, 0
-00005d d034                      	rcall tecla_E
-00005e fd31                      	sbrc r19, 1
-00005f d052                      	rcall tecla_J
-000060 fd32                      	sbrc r19, 2
-000061 d06c                      	rcall tecla_wh
-000062 fd33                      	sbrc r19, 3
-000063 d08a                      	rcall tecla_hh
-000064 fd34                      	sbrc r19, 4
-000065 d0a8                      	rcall tecla_nula
-                                 coluna5:
-000066 fd30                      	sbrc r19, 0
-000067 d026                      	rcall tecla_S
-000068 fd31                      	sbrc r19, 1
-000069 d044                      	rcall tecla_U
-00006a fd32                      	sbrc r19, 2
-00006b d05e                      	rcall tecla_ah
-00006c fd33                      	sbrc r19, 3
-00006d d07c                      	rcall tecla_yh
-00006e fd34                      	sbrc r19, 4
-00006f d09a                      	rcall tecla_cch
-                                 coluna6:
-000070 fd30                      	sbrc r19, 0
-000071 d018                      	rcall tecla_W
-000072 fd31                      	sbrc r19, 1
-000073 d036                      	rcall tecla_H
+00006e fd30                      	sbrc r19, 0
+00006f 940c 00b8                 	jmp tecla_E
+000071 fd31                      	sbrc r19, 1
+000072 940c 00da                 	jmp tecla_J
 000074 fd32                      	sbrc r19, 2
-000075 d098                      	rcall tecla_nula
-000076 fd33                      	sbrc r19, 3
-000077 d06e                      	rcall tecla_gh
-000078 fd34                      	sbrc r19, 4
-000079 d08c                      	rcall tecla_ph
+000075 940c 00f6                 	jmp tecla_wh
+000077 fd33                      	sbrc r19, 3
+000078 940c 0116                 	jmp tecla_hh
+00007a fd34                      	sbrc r19, 4
+00007b 940c 0136                 	jmp tecla_nula
+                                 coluna5:
+00007d fd30                      	sbrc r19, 0
+00007e 940c 00b4                 	jmp tecla_S
+000080 fd31                      	sbrc r19, 1
+000081 940c 00d6                 	jmp tecla_U
+000083 fd32                      	sbrc r19, 2
+000084 940c 00f2                 	jmp tecla_ah
+000086 fd33                      	sbrc r19, 3
+000087 940c 0112                 	jmp tecla_yh
+000089 fd34                      	sbrc r19, 4
+00008a 940c 0132                 	jmp tecla_cch
+                                 coluna6:
+00008c fd30                      	sbrc r19, 0
+00008d 940c 00b0                 	jmp tecla_W
+00008f fd31                      	sbrc r19, 1
+000090 940c 00d2                 	jmp tecla_H
+000092 fd32                      	sbrc r19, 2
+000093 940c 0136                 	jmp tecla_nula
+000095 fd33                      	sbrc r19, 3
+000096 940c 010e                 	jmp tecla_gh
+000098 fd34                      	sbrc r19, 4
+000099 940c 012e                 	jmp tecla_ph
                                  coluna7:
-00007a fd30                      	sbrc r19, 0
-00007b d00a                      	rcall tecla_A
-00007c fd31                      	sbrc r19, 1
-00007d d028                      	rcall tecla_Y
-00007e fd32                      	sbrc r19, 2
-00007f d046                      	rcall tecla_Cc   ; Ç
-000080 fd33                      	sbrc r19, 3
-000081 d060                      	rcall tecla_th
-000082 fd34                      	sbrc r19, 4
-000083 d07e                      	rcall tecla_lh
+00009b fd30                      	sbrc r19, 0
+00009c 940c 00ac                 	jmp tecla_A
+00009e fd31                      	sbrc r19, 1
+00009f 940c 00ce                 	jmp tecla_Y
+0000a1 fd32                      	sbrc r19, 2
+0000a2 940c 00ee                 	jmp tecla_Cc   ; Ç
+0000a4 fd33                      	sbrc r19, 3
+0000a5 940c 010a                 	jmp tecla_th
+0000a7 fd34                      	sbrc r19, 4
+0000a8 940c 012a                 	jmp tecla_lh
                                  
                                  fim:
                                  ; Tabela de HZ
@@ -1203,242 +1202,207 @@ AVRASM ver. 2.2.8  C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.as
                                  ;[;]		0hz
                                  ;[/]		0hz
                                  
-000084 940c 000d                 	jmp loop
+0000aa 940c 000c                 	jmp loop
                                  
                                  
                                  ; === NOTAS ===
                                  
                                  tecla_A:        ; 264 Hz (C)
-000086 e987                      	ldi r24, low(7575)
-000087 e19d                      	ldi r25, high(7575)
-000088 d087                      	rcall som
-000089 9508                      	ret
+0000ac eb8e                      	ldi r24, low(60606)
+0000ad ee9c                      	ldi r25, high(60606)
+0000ae 940c 013a                 	jmp som
                                  
                                  tecla_W:        ; 280 Hz (C#)
-00008a ef86                      	ldi r24, low(6134)
-00008b e197                      	ldi r25, high(6134)
-00008c d083                      	rcall som
-00008d 9508                      	ret
+0000b0 e386                      	ldi r24, low(57142)
+0000b1 ed9f                      	ldi r25, high(57142)
+0000b2 940c 013a                 	jmp som
                                  
                                  tecla_S:        ; 296 Hz (D)
-00008e e587                      	ldi r24, low(5719)
-00008f e196                      	ldi r25, high(5719)
-000090 d07f                      	rcall som
-000091 9508                      	ret
+0000b4 e286                      	ldi r24, low(54054)
+0000b5 ed93                      	ldi r25, high(54054)
+0000b6 940c 013a                 	jmp som
                                  
                                  tecla_E:        ; 314 Hz (D#)
-000092 ec8c                      	ldi r24, low(5324)
-000093 e194                      	ldi r25, high(5324)
-000094 d07b                      	rcall som
-000095 9508                      	ret
+0000b8 e08b                      	ldi r24, low(50955)
+0000b9 ec97                      	ldi r25, high(50955)
+0000ba 940c 013a                 	jmp som
+0000bc 940c 000c                 	jmp loop
                                  
                                  tecla_D:        ; 333 Hz (E)
-000096 e887                      	ldi r24, low(4999)
-000097 e193                      	ldi r25, high(4999)
-000098 d077                      	rcall som
-000099 9508                      	ret
+0000be eb80                      	ldi r24, low(48048)
+0000bf eb9b                      	ldi r25, high(48048)
+0000c0 940c 013a                 	jmp som
                                  
                                  tecla_F:        ; 352 Hz (F)
-00009a e38d                      	ldi r24, low(4669)
-00009b e192                      	ldi r25, high(4669)
-00009c d073                      	rcall som
-00009d 9508                      	ret
+0000c2 e88e                      	ldi r24, low(45454)
+0000c3 eb91                      	ldi r25, high(45454)
+0000c4 940c 013a                 	jmp som
                                  
                                  tecla_T:        ; 373 Hz (F#)
-00009e e087                      	ldi r24, low(4359)
-00009f e191                      	ldi r25, high(4359)
-0000a0 d06f                      	rcall som
-0000a1 9508                      	ret
+0000c6 e58a                      	ldi r24, low(42842)
+0000c7 ea97                      	ldi r25, high(42842)
+0000c8 940c 013a                 	jmp som
                                  
                                  tecla_G:        ; 395 Hz (G)
-0000a2 ed89                      	ldi r24, low(4057)
-0000a3 e09f                      	ldi r25, high(4057)
-0000a4 d06b                      	rcall som
-0000a5 9508                      	ret
+0000ca e38a                      	ldi r24, low(40506)
+0000cb e99e                      	ldi r25, high(40506)
+0000cc 940c 013a                 	jmp som
                                  
                                  tecla_Y:        ; 419 Hz (G#)
-0000a6 e983                      	ldi r24, low(3731)
-0000a7 e09e                      	ldi r25, high(3731)
-0000a8 d067                      	rcall som
-0000a9 9508                      	ret
+0000ce e28a                      	ldi r24, low(38186)
+0000cf e995                      	ldi r25, high(38186)
+0000d0 940c 013a                 	jmp som
                                  
                                  tecla_H:        ; 444 Hz (A)
-0000aa ea8b                      	ldi r24, low(3499)
-0000ab e09d                      	ldi r25, high(3499)
-0000ac d063                      	rcall som
-0000ad 9508                      	ret
+0000d2 ec84                      	ldi r24, low(36036)
+0000d3 e89c                      	ldi r25, high(36036)
+0000d4 940c 013a                 	jmp som
                                  
                                  tecla_U:        ; 470 Hz (A#)
-0000ae eb81                      	ldi r24, low(3249)
-0000af e09c                      	ldi r25, high(3249)
-0000b0 d05f                      	rcall som
-0000b1 9508                      	ret
+0000d6 ef8a                      	ldi r24, low(34042)
+0000d7 e894                      	ldi r25, high(34042)
+0000d8 940c 013a                 	jmp som
                                  
                                  tecla_J:        ; 498 Hz (B)
-0000b2 ec81                      	ldi r24, low(3009)
-0000b3 e09b                      	ldi r25, high(3009)
-0000b4 d05b                      	rcall som
-0000b5 9508                      	ret
+0000da e880                      	ldi r24, low(32128)
+0000db e79d                      	ldi r25, high(32128)
+0000dc 940c 013a                 	jmp som
                                  
                                  tecla_K:        ; 528 Hz (C)
-0000b6 ed88                      	ldi r24, low(2776)
-0000b7 e09a                      	ldi r25, high(2776)
-0000b8 d057                      	rcall som
-0000b9 9508                      	ret
+0000de e58f                      	ldi r24, low(30303)
+0000df e796                      	ldi r25, high(30303)
+0000e0 940c 013a                 	jmp som
                                  
                                  tecla_O:        ; 559 Hz (C#)
-0000ba e083                      	ldi r24, low(2563)
-0000bb e09a                      	ldi r25, high(2563)
-0000bc d053                      	rcall som
-0000bd 9508                      	ret
+0000e2 ec8f                      	ldi r24, low(28623)
+0000e3 e69f                      	ldi r25, high(28623)
+0000e4 940c 013a                 	jmp som
                                  
                                  tecla_L:        ; 592 Hz (D)
-0000be e487                      	ldi r24, low(2375)
-0000bf e099                      	ldi r25, high(2375)
-0000c0 d04f                      	rcall som
-0000c1 9508                      	ret
+0000e6 e983                      	ldi r24, low(27027)
+0000e7 e699                      	ldi r25, high(27027)
+0000e8 940c 013a                 	jmp som
                                  
                                  tecla_P:        ; 628 Hz (D#)
-0000c2 e785                      	ldi r24, low(2165)
-0000c3 e098                      	ldi r25, high(2165)
-0000c4 d04b                      	rcall som
-0000c5 9508                      	ret
+0000ea e885                      	ldi r24, low(25477)
+0000eb e693                      	ldi r25, high(25477)
+0000ec 940c 013a                 	jmp som
                                  
                                  tecla_Cc:       ; 665 Hz (E)
-0000c6 ed88                      	ldi r24, low(2008)
-0000c7 e097                      	ldi r25, high(2008)
-0000c8 d047                      	rcall som
-0000c9 9508                      	ret
-                                 
-                                 ; === NOTAS AGUDAS ===
+0000ee ef8c                      	ldi r24, low(24060)
+0000ef e59d                      	ldi r25, high(24060)
+0000f0 940c 013a                 	jmp som
                                  
                                  tecla_ah:        ; 1056 Hz
-0000ca e685                      	ldi r24, low(1893)
-0000cb e097                      	ldi r25, high(1893)
-0000cc d043                      	rcall som
-0000cd 9508                      	ret
+0000f2 e28f                      	ldi r24, low(15151)
+0000f3 e39b                      	ldi r25, high(15151)
+0000f4 940c 013a                 	jmp som
                                  
                                  tecla_wh:        ; 1118 Hz
-0000ce ef83                      	ldi r24, low(1779)
-0000cf e096                      	ldi r25, high(1779)
-0000d0 d03f                      	rcall som
-0000d1 9508                      	ret
+0000f6 ee88                      	ldi r24, low(14312)
+0000f7 e397                      	ldi r25, high(14312)
+0000f8 940c 013a                 	jmp som
                                  
                                  tecla_sh:        ; 1185 Hz
-0000d2 e889                      	ldi r24, low(1673)
-0000d3 e096                      	ldi r25, high(1673)
-0000d4 d03b                      	rcall som
-0000d5 9508                      	ret
+0000fa eb89                      	ldi r24, low(13497)
+0000fb e394                      	ldi r25, high(13497)
+0000fc 940c 013a                 	jmp som
                                  
                                  tecla_eh:        ; 1256 Hz
-0000d6 e28c                      	ldi r24, low(1580)
-0000d7 e096                      	ldi r25, high(1580)
-0000d8 d037                      	rcall som
-0000d9 9508                      	ret
+0000fe ec82                      	ldi r24, low(12738)
+0000ff e391                      	ldi r25, high(12738)
+000100 940c 013a                 	jmp som
                                  
                                  tecla_dh:        ; 1331 Hz
-0000da ed82                      	ldi r24, low(1490)
-0000db e095                      	ldi r25, high(1490)
-0000dc d033                      	rcall som
-0000dd 9508                      	ret
+000102 ef84                      	ldi r24, low(12020)
+000103 e29e                      	ldi r25, high(12020)
+000104 940c 013a                 	jmp som
                                  
                                  tecla_fh:        ; 1410 Hz
-0000de e889                      	ldi r24, low(1417)
-0000df e095                      	ldi r25, high(1417)
-0000e0 d02f                      	rcall som
-0000e1 9508                      	ret
+000106 e583                      	ldi r24, low(11347)
+000107 e29c                      	ldi r25, high(11347)
+000108 940c 013a                 	jmp som
                                  
                                  tecla_th:        ; 1493 Hz
-0000e2 e38b                      	ldi r24, low(1339)
-0000e3 e095                      	ldi r25, high(1339)
-0000e4 d02b                      	rcall som
-0000e5 9508                      	ret
+00010a ee81                      	ldi r24, low(10721)
+00010b e299                      	ldi r25, high(10721)
+00010c 940c 013a                 	jmp som
                                  
                                  tecla_gh:        ; 1582 Hz
-0000e6 ee8b                      	ldi r24, low(1259)
-0000e7 e094                      	ldi r25, high(1259)
-0000e8 d027                      	rcall som
-0000e9 9508                      	ret
+00010e e881                      	ldi r24, low(10113)
+00010f e297                      	ldi r25, high(10113)
+000110 940c 013a                 	jmp som
                                  
                                  tecla_yh:        ; 1676 Hz
-0000ea e98c                      	ldi r24, low(1180)
-0000eb e094                      	ldi r25, high(1180)
-0000ec d023                      	rcall som
-0000ed 9508                      	ret
+000112 e484                      	ldi r24, low(9540)
+000113 e295                      	ldi r25, high(9540)
+000114 940c 013a                 	jmp som
                                  
                                  tecla_hh:        ; 1776 Hz
-0000ee e683                      	ldi r24, low(1123)
-0000ef e094                      	ldi r25, high(1123)
-0000f0 d01f                      	rcall som
-0000f1 9508                      	ret
+000116 e381                      	ldi r24, low(9009)
+000117 e293                      	ldi r25, high(9009)
+000118 940c 013a                 	jmp som
                                  
                                  tecla_uh:        ; 1882 Hz
-0000f2 e286                      	ldi r24, low(1062)
-0000f3 e094                      	ldi r25, high(1062)
-0000f4 d01b                      	rcall som
-0000f5 9508                      	ret
+00011a e38d                      	ldi r24, low(8509)
+00011b e291                      	ldi r25, high(8509)
+00011c 940c 013a                 	jmp som
                                  
                                  tecla_jh:        ; 1994 Hz
-0000f6 eb8d                      	ldi r24, low(957)
-0000f7 e093                      	ldi r25, high(957)
-0000f8 d017                      	rcall som
-0000f9 9508                      	ret
+00011e e586                      	ldi r24, low(8022)
+00011f e19f                      	ldi r25, high(8022)
+000120 940c 013a                 	jmp som
                                  
                                  tecla_kh:        ; 2112 Hz
-0000fa eb82                      	ldi r24, low(946)
-0000fb e093                      	ldi r25, high(946)
-0000fc d013                      	rcall som
-0000fd 9508                      	ret
+000122 e987                      	ldi r24, low(7575)
+000123 e19d                      	ldi r25, high(7575)
+000124 940c 013a                 	jmp som
                                  
                                  tecla_oh:        ; 2237 Hz
-0000fe e78c                      	ldi r24, low(892)
-0000ff e093                      	ldi r25, high(892)
-000100 d00f                      	rcall som
-000101 9508                      	ret
+000126 ef81                      	ldi r24, low(7153)
+000127 e19b                      	ldi r25, high(7153)
+000128 940c 013a                 	jmp som
                                  
                                  tecla_lh:        ; 2370 Hz
-000102 e48b                      	ldi r24, low(843)
-000103 e093                      	ldi r25, high(843)
-000104 d00b                      	rcall som
-000105 9508                      	ret
+00012a e58f                      	ldi r24, low(6751)
+00012b e19a                      	ldi r25, high(6751)
+00012c 940c 013a                 	jmp som
                                  
                                  tecla_ph:        ; 2511 Hz
-000106 e18b                      	ldi r24, low(795)
-000107 e093                      	ldi r25, high(795)
-000108 d007                      	rcall som
-000109 9508                      	ret
+00012e ee83                      	ldi r24, low(6371)
+00012f e198                      	ldi r25, high(6371)
+000130 940c 013a                 	jmp som
                                  
                                  tecla_cch:       ; 2661 Hz
-00010a ee8e                      	ldi r24, low(750)
-00010b e092                      	ldi r25, high(750)
-00010c d003                      	rcall som
-00010d 9508                      	ret
+000132 e78e                      	ldi r24, low(6014)
+000133 e197                      	ldi r25, high(6014)
+000134 940c 013a                 	jmp som
                                  
-                                 ; === TECLAS MUDAS ===
+                                 
                                  tecla_nula:
-00010e d00c                      	rcall silencio
-00010f 9508                      	ret
+000136 2788                      	clr r24
+000137 2799                      	clr r25
+000138 940c 013a                 	jmp som
                                  
                                  
                                  som:
-000110 9380 0086                 	sts ICR1L, r24
-000112 9390 0087                 	sts ICR1H, r25
+00013a 9380 0086                 	sts ICR1L, r24
+00013c 9390 0087                 	sts ICR1H, r25
                                  
                                  	; Duty cycle 50%
-000114 9596                      	lsr r25
-000115 9587                      	ror r24
-000116 9380 0088                 	sts OCR1AL, r24
-000118 9390 0089                 	sts OCR1AH, r25
-                                 
-00011a 9508                      	ret
+00013e 9596                      	lsr r25
+00013f 9587                      	ror r24
+000140 9380 0088                 	sts OCR1AL, r24
+000142 9390 0089                 	sts OCR1AH, r25
+000144 940c 000c                 	jmp loop
                                  
                                  
                                  silencio:
-00011b e000                      	ldi r16, 0
-00011c 9300 0080                 	sts TCCR1A, r16
-00011e 9300 0081                 	sts TCCR1B, r16
-000120 9829                      	cbi PORTB, PB1
-000121 9508                      	ret
+000146 e000                      	ldi r16, 0
+000147 9300 0080                 	sts TCCR1A, r16
+000149 9300 0081                 	sts TCCR1B, r16
+00014b 9829                      	cbi PORTB, PB1
+00014c 940c 000c                 	jmp loop
 
 
 RESOURCE USE INFORMATION
@@ -1458,8 +1422,8 @@ counted separately from r26..r31 here.
 "ATmega328P" register use summary:
 x  :   0 y  :   0 z  :   0 r0 :   0 r1 :   0 r2 :   0 r3 :   0 r4 :   0 
 r5 :   0 r6 :   0 r7 :   0 r8 :   0 r9 :   0 r10:   0 r11:   0 r12:   0 
-r13:   0 r14:   0 r15:   0 r16:  15 r17:   6 r18:  10 r19:  42 r20:   0 
-r21:   0 r22:   0 r23:   0 r24:  38 r25:  37 r26:   0 r27:   0 r28:   0 
+r13:   0 r14:   0 r15:   0 r16:  14 r17:   6 r18:  10 r19:  42 r20:   0 
+r21:   0 r22:   0 r23:   0 r24:  38 r25:  38 r26:   0 r27:   0 r28:   0 
 r29:   0 r30:   0 r31:   0 
 Registers used: 6 out of 35 (17.1%)
 
@@ -1470,25 +1434,25 @@ brcc  :   0 brcs  :   0 break :   0 breq  :   0 brge  :   0 brhc  :   0
 brhs  :   0 brid  :   0 brie  :   0 brlo  :   0 brlt  :   0 brmi  :   0 
 brne  :   0 brpl  :   0 brsh  :   0 brtc  :   0 brts  :   0 brvc  :   0 
 brvs  :   0 bset  :   0 bst   :   0 call  :   0 cbi   :   1 cbr   :   0 
-clc   :   0 clh   :   0 cli   :   0 cln   :   0 clr   :   1 cls   :   0 
+clc   :   0 clh   :   0 cli   :   0 cln   :   0 clr   :   3 cls   :   0 
 clt   :   0 clv   :   0 clz   :   0 com   :   2 cp    :   0 cpc   :   0 
 cpi   :   0 cpse  :   0 dec   :   0 eor   :   0 fmul  :   0 fmuls :   0 
-fmulsu:   0 icall :   0 ijmp  :   0 in    :   2 inc   :   0 jmp   :  10 
+fmulsu:   0 icall :   0 ijmp  :   0 in    :   2 inc   :   0 jmp   :  88 
 ld    :   0 ldd   :   0 ldi   :  71 lds   :   0 lpm   :   0 lsl   :   0 
 lsr   :   1 mov   :   0 movw  :   0 mul   :   0 muls  :   0 mulsu :   0 
-neg   :   0 nop   :   0 or    :   0 ori   :   0 out   :  13 pop   :   0 
-push  :   0 rcall :  75 ret   :  37 reti  :   0 rjmp  :   0 rol   :   0 
+neg   :   0 nop   :   0 or    :   0 ori   :   0 out   :  11 pop   :   0 
+push  :   0 rcall :   0 ret   :   0 reti  :   0 rjmp  :   0 rol   :   0 
 ror   :   1 sbc   :   0 sbci  :   0 sbi   :   1 sbic  :   0 sbis  :   0 
 sbiw  :   0 sbr   :   0 sbrc  :  48 sbrs  :   0 sec   :   0 seh   :   0 
 sei   :   0 sen   :   0 ser   :   1 ses   :   0 set   :   0 sev   :   0 
 sez   :   0 sleep :   0 spm   :   0 st    :   0 std   :   0 sts   :   8 
 sub   :   0 subi  :   0 swap  :   0 tst   :   0 wdr   :   0 
-Instructions used: 15 out of 113 (13.3%)
+Instructions used: 13 out of 113 (11.5%)
 
 "ATmega328P" memory use summary [bytes]:
 Segment   Begin    End      Code   Data   Used    Size   Use%
 ---------------------------------------------------------------
-[.cseg] 0x000000 0x000244    580      0    580   32768   1.8%
+[.cseg] 0x000000 0x00029c    668      0    668   32768   2.0%
 [.dseg] 0x000100 0x000100      0      0      0    2048   0.0%
 [.eseg] 0x000000 0x000000      0      0      0    1024   0.0%
 

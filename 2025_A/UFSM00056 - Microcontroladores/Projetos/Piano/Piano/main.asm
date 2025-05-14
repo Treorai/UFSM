@@ -11,20 +11,20 @@
 .org 0x0000
 
 start:
-	; === Configurar PWM no Timer1 ===
+	; Configurar PWM no Timer1
 	ldi r16, (1<<COM1A1) | (1<<WGM11)	; OC1A não-invertido, modo PWM
 	sts TCCR1A, r16
 
 	ldi r16, (1<<WGM13) | (1<<WGM12) | (1<<CS10) ; modo PWM com ICR1 como TOP, prescaler = 1
 	sts TCCR1B, r16
 
-	sbi DDRB, PB1    ; Configurar PB1 (OC1A) como saída (buzzer)
+	sbi DDRB, PB1    ; Configurar PB1 (OC1A) como saída
 	
-	
+	; Configurar entradas
 	
 	ser r16
 	clr r17
-	out DDRB, r16		; portB saida
+	;out DDRB, r16		; portB saida
 
 	; primeiro colunas em low (portd = 0x00 = r17 = in)
 	;          linhas em high (portc = 0xff = r16 = out)
@@ -35,7 +35,6 @@ start:
 
 loop:
 
-out PORTB, r24
 	; reset entradas apos o loop
 	out DDRC, r16
 	out PORTC, r17		; linhas low
@@ -85,92 +84,92 @@ out PORTB, r24
 
 coluna0:
 	sbrc r19, 0
-	rcall tecla_G
+	jmp tecla_G
 	sbrc r19, 1
-	rcall tecla_P
+	jmp tecla_P
 	sbrc r19, 2
-	rcall tecla_fh
+	jmp tecla_fh
 	sbrc r19, 3
-	rcall tecla_oh
+	jmp tecla_oh
 	sbrc r19, 4
-	rcall tecla_nula
+	jmp tecla_nula
 coluna1:
 	sbrc r19, 0
-	rcall tecla_T
+	jmp tecla_T
 	sbrc r19, 1
-	rcall tecla_L
+	jmp tecla_L
 	sbrc r19, 2
-	rcall tecla_dh
+	jmp tecla_dh
 	sbrc r19, 3
-	rcall tecla_kh
+	jmp tecla_kh
 	sbrc r19, 4
-	rcall tecla_nula
+	jmp tecla_nula
 coluna2:
 	sbrc r19, 0
-	rcall tecla_F
+	jmp tecla_F
 	sbrc r19, 1
-	rcall tecla_O
+	jmp tecla_O
 	sbrc r19, 2
-	rcall tecla_eh
+	jmp tecla_eh
 	sbrc r19, 3
-	rcall tecla_jh
+	jmp tecla_jh
 	sbrc r19, 4
-	rcall tecla_nula
+	jmp tecla_nula
 coluna3:
 	sbrc r19, 0
-	rcall tecla_D
+	jmp tecla_D
 	sbrc r19, 1
-	rcall tecla_K
+	jmp tecla_K
 	sbrc r19, 2
-	rcall tecla_sh
+	jmp tecla_sh
 	sbrc r19, 3
-	rcall tecla_uh
+	jmp tecla_uh
 	sbrc r19, 4
-	rcall tecla_nula
+	jmp tecla_nula
 coluna4:
 	sbrc r19, 0
-	rcall tecla_E
+	jmp tecla_E
 	sbrc r19, 1
-	rcall tecla_J
+	jmp tecla_J
 	sbrc r19, 2
-	rcall tecla_wh
+	jmp tecla_wh
 	sbrc r19, 3
-	rcall tecla_hh
+	jmp tecla_hh
 	sbrc r19, 4
-	rcall tecla_nula
+	jmp tecla_nula
 coluna5:
 	sbrc r19, 0
-	rcall tecla_S
+	jmp tecla_S
 	sbrc r19, 1
-	rcall tecla_U
+	jmp tecla_U
 	sbrc r19, 2
-	rcall tecla_ah
+	jmp tecla_ah
 	sbrc r19, 3
-	rcall tecla_yh
+	jmp tecla_yh
 	sbrc r19, 4
-	rcall tecla_cch
+	jmp tecla_cch
 coluna6:
 	sbrc r19, 0
-	rcall tecla_W
+	jmp tecla_W
 	sbrc r19, 1
-	rcall tecla_H
+	jmp tecla_H
 	sbrc r19, 2
-	rcall tecla_nula
+	jmp tecla_nula
 	sbrc r19, 3
-	rcall tecla_gh
+	jmp tecla_gh
 	sbrc r19, 4
-	rcall tecla_ph
+	jmp tecla_ph
 coluna7:
 	sbrc r19, 0
-	rcall tecla_A
+	jmp tecla_A
 	sbrc r19, 1
-	rcall tecla_Y
+	jmp tecla_Y
 	sbrc r19, 2
-	rcall tecla_Cc   ; Ç
+	jmp tecla_Cc   ; Ç
 	sbrc r19, 3
-	rcall tecla_th
+	jmp tecla_th
 	sbrc r19, 4
-	rcall tecla_lh
+	jmp tecla_lh
 
 fim:
 ; Tabela de HZ
@@ -223,215 +222,181 @@ fim:
 ; === NOTAS ===
 
 tecla_A:        ; 264 Hz (C)
-	ldi r24, low(7575)
-	ldi r25, high(7575)
-	rcall som
-	ret
+	ldi r24, low(60606)
+	ldi r25, high(60606)
+	jmp som
 
 tecla_W:        ; 280 Hz (C#)
-	ldi r24, low(6134)
-	ldi r25, high(6134)
-	rcall som
-	ret
+	ldi r24, low(57142)
+	ldi r25, high(57142)
+	jmp som
 
 tecla_S:        ; 296 Hz (D)
-	ldi r24, low(5719)
-	ldi r25, high(5719)
-	rcall som
-	ret
+	ldi r24, low(54054)
+	ldi r25, high(54054)
+	jmp som
 
 tecla_E:        ; 314 Hz (D#)
-	ldi r24, low(5324)
-	ldi r25, high(5324)
-	rcall som
-	ret
+	ldi r24, low(50955)
+	ldi r25, high(50955)
+	jmp som
+	jmp loop
 
 tecla_D:        ; 333 Hz (E)
-	ldi r24, low(4999)
-	ldi r25, high(4999)
-	rcall som
-	ret
+	ldi r24, low(48048)
+	ldi r25, high(48048)
+	jmp som
 
 tecla_F:        ; 352 Hz (F)
-	ldi r24, low(4669)
-	ldi r25, high(4669)
-	rcall som
-	ret
+	ldi r24, low(45454)
+	ldi r25, high(45454)
+	jmp som
 
 tecla_T:        ; 373 Hz (F#)
-	ldi r24, low(4359)
-	ldi r25, high(4359)
-	rcall som
-	ret
+	ldi r24, low(42842)
+	ldi r25, high(42842)
+	jmp som
 
 tecla_G:        ; 395 Hz (G)
-	ldi r24, low(4057)
-	ldi r25, high(4057)
-	rcall som
-	ret
+	ldi r24, low(40506)
+	ldi r25, high(40506)
+	jmp som
 
 tecla_Y:        ; 419 Hz (G#)
-	ldi r24, low(3731)
-	ldi r25, high(3731)
-	rcall som
-	ret
+	ldi r24, low(38186)
+	ldi r25, high(38186)
+	jmp som
 
 tecla_H:        ; 444 Hz (A)
-	ldi r24, low(3499)
-	ldi r25, high(3499)
-	rcall som
-	ret
+	ldi r24, low(36036)
+	ldi r25, high(36036)
+	jmp som
 
 tecla_U:        ; 470 Hz (A#)
-	ldi r24, low(3249)
-	ldi r25, high(3249)
-	rcall som
-	ret
+	ldi r24, low(34042)
+	ldi r25, high(34042)
+	jmp som
 
 tecla_J:        ; 498 Hz (B)
-	ldi r24, low(3009)
-	ldi r25, high(3009)
-	rcall som
-	ret
+	ldi r24, low(32128)
+	ldi r25, high(32128)
+	jmp som
 
 tecla_K:        ; 528 Hz (C)
-	ldi r24, low(2776)
-	ldi r25, high(2776)
-	rcall som
-	ret
+	ldi r24, low(30303)
+	ldi r25, high(30303)
+	jmp som
 
 tecla_O:        ; 559 Hz (C#)
-	ldi r24, low(2563)
-	ldi r25, high(2563)
-	rcall som
-	ret
+	ldi r24, low(28623)
+	ldi r25, high(28623)
+	jmp som
 
 tecla_L:        ; 592 Hz (D)
-	ldi r24, low(2375)
-	ldi r25, high(2375)
-	rcall som
-	ret
+	ldi r24, low(27027)
+	ldi r25, high(27027)
+	jmp som
 
 tecla_P:        ; 628 Hz (D#)
-	ldi r24, low(2165)
-	ldi r25, high(2165)
-	rcall som
-	ret
+	ldi r24, low(25477)
+	ldi r25, high(25477)
+	jmp som
 
 tecla_Cc:       ; 665 Hz (E)
-	ldi r24, low(2008)
-	ldi r25, high(2008)
-	rcall som
-	ret
-
-; === NOTAS AGUDAS ===
+	ldi r24, low(24060)
+	ldi r25, high(24060)
+	jmp som
 
 tecla_ah:        ; 1056 Hz
-	ldi r24, low(1893)
-	ldi r25, high(1893)
-	rcall som
-	ret
+	ldi r24, low(15151)
+	ldi r25, high(15151)
+	jmp som
 
 tecla_wh:        ; 1118 Hz
-	ldi r24, low(1779)
-	ldi r25, high(1779)
-	rcall som
-	ret
+	ldi r24, low(14312)
+	ldi r25, high(14312)
+	jmp som
 
 tecla_sh:        ; 1185 Hz
-	ldi r24, low(1673)
-	ldi r25, high(1673)
-	rcall som
-	ret
+	ldi r24, low(13497)
+	ldi r25, high(13497)
+	jmp som
 
 tecla_eh:        ; 1256 Hz
-	ldi r24, low(1580)
-	ldi r25, high(1580)
-	rcall som
-	ret
+	ldi r24, low(12738)
+	ldi r25, high(12738)
+	jmp som
 
 tecla_dh:        ; 1331 Hz
-	ldi r24, low(1490)
-	ldi r25, high(1490)
-	rcall som
-	ret
+	ldi r24, low(12020)
+	ldi r25, high(12020)
+	jmp som
 
 tecla_fh:        ; 1410 Hz
-	ldi r24, low(1417)
-	ldi r25, high(1417)
-	rcall som
-	ret
+	ldi r24, low(11347)
+	ldi r25, high(11347)
+	jmp som
 
 tecla_th:        ; 1493 Hz
-	ldi r24, low(1339)
-	ldi r25, high(1339)
-	rcall som
-	ret
+	ldi r24, low(10721)
+	ldi r25, high(10721)
+	jmp som
 
 tecla_gh:        ; 1582 Hz
-	ldi r24, low(1259)
-	ldi r25, high(1259)
-	rcall som
-	ret
+	ldi r24, low(10113)
+	ldi r25, high(10113)
+	jmp som
 
 tecla_yh:        ; 1676 Hz
-	ldi r24, low(1180)
-	ldi r25, high(1180)
-	rcall som
-	ret
+	ldi r24, low(9540)
+	ldi r25, high(9540)
+	jmp som
 
 tecla_hh:        ; 1776 Hz
-	ldi r24, low(1123)
-	ldi r25, high(1123)
-	rcall som
-	ret
+	ldi r24, low(9009)
+	ldi r25, high(9009)
+	jmp som
 
 tecla_uh:        ; 1882 Hz
-	ldi r24, low(1062)
-	ldi r25, high(1062)
-	rcall som
-	ret
+	ldi r24, low(8509)
+	ldi r25, high(8509)
+	jmp som
 
 tecla_jh:        ; 1994 Hz
-	ldi r24, low(957)
-	ldi r25, high(957)
-	rcall som
-	ret
+	ldi r24, low(8022)
+	ldi r25, high(8022)
+	jmp som
 
 tecla_kh:        ; 2112 Hz
-	ldi r24, low(946)
-	ldi r25, high(946)
-	rcall som
-	ret
+	ldi r24, low(7575)
+	ldi r25, high(7575)
+	jmp som
 
 tecla_oh:        ; 2237 Hz
-	ldi r24, low(892)
-	ldi r25, high(892)
-	rcall som
-	ret
+	ldi r24, low(7153)
+	ldi r25, high(7153)
+	jmp som
 
 tecla_lh:        ; 2370 Hz
-	ldi r24, low(843)
-	ldi r25, high(843)
-	rcall som
-	ret
+	ldi r24, low(6751)
+	ldi r25, high(6751)
+	jmp som
 
 tecla_ph:        ; 2511 Hz
-	ldi r24, low(795)
-	ldi r25, high(795)
-	rcall som
-	ret
+	ldi r24, low(6371)
+	ldi r25, high(6371)
+	jmp som
 
 tecla_cch:       ; 2661 Hz
-	ldi r24, low(750)
-	ldi r25, high(750)
-	rcall som
-	ret
+	ldi r24, low(6014)
+	ldi r25, high(6014)
+	jmp som
 
-; === TECLAS MUDAS ===
+
 tecla_nula:
-	rcall silencio
-	ret
+	clr r24
+	clr r25
+	jmp som
 
 
 som:
@@ -443,8 +408,7 @@ som:
 	ror r24
 	sts OCR1AL, r24
 	sts OCR1AH, r25
-
-	ret
+	jmp loop
 
 
 silencio:
@@ -452,4 +416,4 @@ silencio:
 	sts TCCR1A, r16
 	sts TCCR1B, r16
 	cbi PORTB, PB1
-	ret
+	jmp loop
