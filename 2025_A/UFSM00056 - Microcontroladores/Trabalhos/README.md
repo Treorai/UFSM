@@ -1,0 +1,3 @@
+# Já ouviu falar em "copia mas não faz igual"????????
+
+😠
