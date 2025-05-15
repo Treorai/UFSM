@@ -15,3 +15,4 @@ Prof. Gabriel Machado Lunardi
 ## Trabalho
 
 - Formato Keggle
+- Read Search CV
