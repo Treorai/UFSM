@@ -1,7 +1,6 @@
  oi
  
  filme mts [cenas] lindas 
- ![alt text](image.png)
 
 mas eu quero mostrar uma fazer [refletir]
  ![alt text](image-1.png)
