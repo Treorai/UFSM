@@ -11,3 +11,8 @@ Prof. Gabriel Machado Lunardi
   - Fonte confiável de analytics
 - [Kaggle](https://www.kaggle.com/)
 - [UCI](https://archive.ics.uci.edu/datasets)
+
+## Trabalho
+
+- Formato Keggle
+- Read Search CV

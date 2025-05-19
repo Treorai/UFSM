@@ -1,18 +1,18 @@
 <ASSEMBLER_INFO>
  <VERSION>2.2.8</VERSION>
  <DEVICE>"ATmega328P"</DEVICE>
- <WORKING_DIR>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\Debug</WORKING_DIR>
+ <WORKING_DIR>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\Debug</WORKING_DIR>
  <INCLUDE_PATH>
   <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc</DIR>
   <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
   <DIR></DIR>
  </INCLUDE_PATH>
- <SOURCE_FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</SOURCE_FILE>
+ <SOURCE_FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</SOURCE_FILE>
  <INCLUDED_FILES>
   <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc</FILE>
  </INCLUDED_FILES>
  <OBJECT_FILES>
-  <FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\Debug\Piano.obj</FILE>
+  <FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\Debug\Piano.obj</FILE>
  </OBJECT_FILES>
  <HEX_FILES>
   <FILE>Piano.hex</FILE>
@@ -22,52 +22,52 @@
   <FILE>Piano.lss</FILE>
  </OUTPUT_FILES>
  <LABELS>
-  <start><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>13</LINE></start>
-  <loop><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>36</LINE></loop>
-  <coluna0><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>85</LINE></coluna0>
-  <coluna1><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>96</LINE></coluna1>
-  <coluna2><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>107</LINE></coluna2>
-  <coluna3><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>118</LINE></coluna3>
-  <coluna4><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>129</LINE></coluna4>
-  <coluna5><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>140</LINE></coluna5>
-  <coluna6><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>151</LINE></coluna6>
-  <coluna7><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>162</LINE></coluna7>
-  <tecla_G><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>262</LINE></tecla_G>
-  <tecla_P><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>302</LINE></tecla_P>
-  <tecla_fh><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>337</LINE></tecla_fh>
-  <tecla_oh><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>377</LINE></tecla_oh>
-  <tecla_nula><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>398</LINE></tecla_nula>
-  <tecla_T><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>257</LINE></tecla_T>
-  <tecla_L><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>297</LINE></tecla_L>
-  <tecla_dh><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>332</LINE></tecla_dh>
-  <tecla_kh><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>372</LINE></tecla_kh>
-  <tecla_F><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>252</LINE></tecla_F>
-  <tecla_O><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>292</LINE></tecla_O>
-  <tecla_eh><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>327</LINE></tecla_eh>
-  <tecla_jh><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>367</LINE></tecla_jh>
-  <tecla_D><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>247</LINE></tecla_D>
-  <tecla_K><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>287</LINE></tecla_K>
-  <tecla_sh><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>322</LINE></tecla_sh>
-  <tecla_uh><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>362</LINE></tecla_uh>
-  <tecla_E><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>241</LINE></tecla_E>
-  <tecla_J><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>282</LINE></tecla_J>
-  <tecla_wh><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>317</LINE></tecla_wh>
-  <tecla_hh><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>357</LINE></tecla_hh>
-  <tecla_S><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>236</LINE></tecla_S>
-  <tecla_U><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>277</LINE></tecla_U>
-  <tecla_ah><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>312</LINE></tecla_ah>
-  <tecla_yh><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>352</LINE></tecla_yh>
-  <tecla_cch><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>392</LINE></tecla_cch>
-  <tecla_W><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>231</LINE></tecla_W>
-  <tecla_H><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>272</LINE></tecla_H>
-  <tecla_gh><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>347</LINE></tecla_gh>
-  <tecla_ph><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>387</LINE></tecla_ph>
-  <tecla_A><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>226</LINE></tecla_A>
-  <tecla_Y><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>267</LINE></tecla_Y>
-  <tecla_Cc><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>307</LINE></tecla_Cc>
-  <tecla_th><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>342</LINE></tecla_th>
-  <tecla_lh><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>382</LINE></tecla_lh>
-  <fim><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>174</LINE></fim>
-  <som><FILE>C:\Users\Watto\Documents\Atmel Studio\7.0\Piano\Piano\main.asm</FILE><LINE>404</LINE></som>
+  <start><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>13</LINE></start>
+  <loop><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>36</LINE></loop>
+  <coluna0><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>85</LINE></coluna0>
+  <coluna1><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>96</LINE></coluna1>
+  <coluna2><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>107</LINE></coluna2>
+  <coluna3><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>118</LINE></coluna3>
+  <coluna4><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>129</LINE></coluna4>
+  <coluna5><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>140</LINE></coluna5>
+  <coluna6><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>151</LINE></coluna6>
+  <coluna7><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>162</LINE></coluna7>
+  <tecla_G><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>262</LINE></tecla_G>
+  <tecla_P><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>302</LINE></tecla_P>
+  <tecla_fh><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>337</LINE></tecla_fh>
+  <tecla_oh><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>377</LINE></tecla_oh>
+  <tecla_nula><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>398</LINE></tecla_nula>
+  <tecla_T><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>257</LINE></tecla_T>
+  <tecla_L><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>297</LINE></tecla_L>
+  <tecla_dh><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>332</LINE></tecla_dh>
+  <tecla_kh><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>372</LINE></tecla_kh>
+  <tecla_F><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>252</LINE></tecla_F>
+  <tecla_O><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>292</LINE></tecla_O>
+  <tecla_eh><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>327</LINE></tecla_eh>
+  <tecla_jh><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>367</LINE></tecla_jh>
+  <tecla_D><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>247</LINE></tecla_D>
+  <tecla_K><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>287</LINE></tecla_K>
+  <tecla_sh><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>322</LINE></tecla_sh>
+  <tecla_uh><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>362</LINE></tecla_uh>
+  <tecla_E><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>241</LINE></tecla_E>
+  <tecla_J><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>282</LINE></tecla_J>
+  <tecla_wh><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>317</LINE></tecla_wh>
+  <tecla_hh><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>357</LINE></tecla_hh>
+  <tecla_S><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>236</LINE></tecla_S>
+  <tecla_U><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>277</LINE></tecla_U>
+  <tecla_ah><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>312</LINE></tecla_ah>
+  <tecla_yh><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>352</LINE></tecla_yh>
+  <tecla_cch><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>392</LINE></tecla_cch>
+  <tecla_W><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>231</LINE></tecla_W>
+  <tecla_H><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>272</LINE></tecla_H>
+  <tecla_gh><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>347</LINE></tecla_gh>
+  <tecla_ph><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>387</LINE></tecla_ph>
+  <tecla_A><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>226</LINE></tecla_A>
+  <tecla_Y><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>267</LINE></tecla_Y>
+  <tecla_Cc><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>307</LINE></tecla_Cc>
+  <tecla_th><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>342</LINE></tecla_th>
+  <tecla_lh><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>382</LINE></tecla_lh>
+  <fim><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>174</LINE></fim>
+  <som><FILE>C:\Users\conta\OneDrive\Documents\GitHub\UFSM\2025_A\UFSM00056 - Microcontroladores\Projetos\Piano\Piano\main.asm</FILE><LINE>404</LINE></som>
  </LABELS>
 </ASSEMBLER_INFO>
