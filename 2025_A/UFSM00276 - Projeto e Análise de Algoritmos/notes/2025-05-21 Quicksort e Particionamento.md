@@ -86,9 +86,3 @@ print(valores)
 ```
   
 </details>
-
-### Solução
-
-```c
-
-```
