@@ -32,7 +32,7 @@
   $T(n) = 2T(n-1)+1$  
   $T(n) = 2(2T(n-2)+1)+1$  
   $T(n) = 2^{2}T(n-2)+2+1$  
-  $T(n) = 2^{2}(2T(n-3)+1))+2+1$  
+  $T(n) = 2^{2}(2T(n-3)+1)+2+1$  
   $T(n) = 2^{3}T(n-3)+2^2+2+1$  
   $T(n) = 2^{3}(2T(n-4)+1)+2^2+2+1$  
   $T(n) = 2^{4}T(n-4)+2^3+2^2+2+1$  
@@ -69,24 +69,24 @@ R.
 ## Método da Árvore
 
 Usando indução matemática, prove que:  
-$T(n) 2T(\frac{n}{2}+O(1) = (2n -1) \times O(1)$
+$T(n) = 2T(\frac{n}{2})+O(1) = (2n -1) \times O(1)$
 
 ### Res.
 
-$T(n) = 2T(\frac{n}{2}+O(1) = 2n-1$ ❓
+$T(n) = 2T(\frac{n}{2})+O(1) = 2n-1$ ❓
 
 Caso base:  
 $T(1) = 1$  
 $T(1)=2(1)-1=1$ ✔️
 
 Caso indutivo:  
-$H.i. T(\frac{n}{2} = \frac{2n}{2}+1$  
-$T(n)=2T(\frac{n}{2}+1$
+$H.i. T(\frac{n}{2}) = \frac{2n}{2}+1$  
+$T(n)=2T(\frac{n}{2})+1$
 $T(n)=2[\frac{2n}{2}-1] +1$  
 $T(n)=\frac{4n}{2}-2+1$
 $T(n)=2n-1$ ✔️
 
 Conclusão:  
-$T(n) = 2T(\frac{n}{2}+O(1) = 2n-1$  
+$T(n) = 2T(\frac{n}{2})+O(1) = 2n-1$  
 $T(n) \in O(n)$
 
