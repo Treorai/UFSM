@@ -33,6 +33,10 @@ public class main{
                 array[j] = temp;
             }
         }
+        i++;
+        int temp = array[i];
+        array[i] = array[end];
+        array[end] = temp;
 
         return i;
     }
