@@ -12,6 +12,6 @@ Desenvolver o melhor **modelo preditivo** para **estimar o número de veículos 
 
 ## Links
 
-- [Enunciado]()
+- [Enunciado](./Enunciado.pdf)
 - [Dataset]()
 - [Competição Kaggle](https://www.kaggle.com/competitions)
