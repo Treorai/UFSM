@@ -5,9 +5,19 @@
 ### Problema do troco
 
 ```c
-int main(int troco){
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(int argc, char *argv[]) {
+  if (argc != 2) {
+    printf("Por favor, forneça um valor para o troco.\n");
+    return 1;
+  }
+  
+  int troco = atoi(argv[1]); // Converte o argumento para inteiro
   int incremento = 0;
-  int m50, m25, m10, m5, m1 = 0;
+  int m50=0, m25=0, m10=0, m5=0, m1=0;
+  
   while(incremento < troco){
     if(troco-incremento >= 50){
       m50 ++;
@@ -26,7 +36,9 @@ int main(int troco){
       incremento += 1;
     }
   }
-  printf("m50 = %i\nm25 = %i\nm10= %i\nm5 = %i\nm1 = %i\n", &m50, &m25, &m10, &m5, &m1);
+  printf("m50 = %i\nm25 = %i\nm10= %i\nm5 = %i\nm1 = %i\n", m50, m25, m10, m5, m1);
+
+	return troco;
 }
 ```
 
