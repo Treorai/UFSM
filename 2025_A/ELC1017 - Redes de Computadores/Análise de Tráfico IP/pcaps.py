@@ -6,8 +6,7 @@ import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 from scipy.stats import entropy
 
-capture = pyshark.FileCapture('teste_500.pcap', display_filter='ip')
-#capture = pyshark.FileCapture('202204130415.pcap', display_filter='ip')
+capture = pyshark.FileCapture('202204130415.pcap', display_filter='ip')
 
 # Pré processamento do pcap
 
@@ -34,6 +33,10 @@ top_ips = df['src_ip'].value_counts().head(10)
 print("\nTop 10 IPs mais ativos:")
 print(top_ips)
 
+## IPG
+df['ipg'] = df['timestamp'].diff()
+df.dropna(subset=['ipg'], inplace=True)
+
 ## IPG médio
 ipg_medio = df['timestamp'].diff().mean()
 print("\nIPG médio:")
@@ -45,7 +48,6 @@ print("\nDesvio padrão do IPG:")
 print(ipg_std)
 
 ## Entropia da distribuição de IPs de origem
-
 p = df['src_ip'].value_counts(normalize=True)
 ip_entropy = entropy(p)
 print("\nEntropia da distribuição de IPs de origem:")
@@ -62,6 +64,10 @@ print("\nVolume total de bytes transmitidos por IP:")
 print(bytes_por_ip)
 
 ## Volume total de trafego a cada 5 segundos
+df['time_bin'] = (df['timestamp'] - df['timestamp'].min()) // 5
+temporal_dist = df.groupby(['time_bin', 'src_ip']).size()
+print(temporal_dist)
+
 df['datetime'] = pd.to_datetime(df['timestamp'], unit='s')
 temporal_count = df.groupby(pd.Grouper(key='datetime', freq='1s')).size()
 temporal_bytes = df.groupby(pd.Grouper(key='datetime', freq='1s'))['length'].sum()
@@ -99,6 +105,16 @@ plt.savefig('heatmap_ips_mais_ativos.png')
 plt.show()
 plt.close()
 
+## Histograma dos ips
+top_ips.plot(kind='bar')
+plt.title("Top 10 IPs mais ativos (em pacotes)")
+plt.xlabel("IP")
+plt.ylabel("Pacotes Enviados")
+plt.xticks(rotation=45)
+plt.savefig('ips_ativos.png')
+plt.show()
+plt.close()
+
 ## Boxplot do IPG por IP
 sns.boxplot(data=df[df['src_ip'].isin(top_ips.index)], x='src_ip', y='ipg')
 plt.xticks(rotation=45)
@@ -108,7 +124,6 @@ plt.show()
 plt.close()
 
 ## Boxplot do trafego agregado ao longo do tempo
-
 plt.figure(figsize=(12, 5))
 plt.plot(temporal_bytes.index, temporal_bytes.values, marker='o', linestyle='-')
 
@@ -121,20 +136,7 @@ plt.savefig("trafego_5s_bytes.png")  # Salva a imagem
 plt.show()
 plt.close()
 
-
-
-## Histograma dos ips
-top_ips.plot(kind='bar')
-plt.title("Top 10 IPs mais ativos (em pacotes)")
-plt.xlabel("IP")
-plt.ylabel("Pacotes Enviados")
-plt.xticks(rotation=45)
-plt.savefig('ips_ativos.png')
-plt.show()
-plt.close()
-
 # Detecção de Anomalias
-
 unique_dests = df.groupby('src_ip')['dst_ip'].nunique()
 suspicious_ips = unique_dests[unique_dests > (unique_dests.mean() + 2 * unique_dests.std())]
 print("\nIPs suspeitos:")
