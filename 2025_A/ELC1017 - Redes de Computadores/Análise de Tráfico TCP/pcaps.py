@@ -1,5 +1,6 @@
 
 import pyshark
+import numpy as np
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -12,9 +13,7 @@ from collections import Counter
 import pyshark
 
 # Carregamento e filtragem TCP
-
 print("Carregando pacotes...")
-#packets = rdpcap('t90k.pcap')
 packets = rdpcap('202204130415.pcap')
 print("Pacotes carregados.")
 print("Filtrando TCP...")
@@ -22,14 +21,13 @@ tcp_packets = [pkt for pkt in packets if TCP in pkt]
 print("TCP filtrados.")
 
 # Agrupamento por conexão
-
 conns = defaultdict(list)
 for pkt in tcp_packets:
     if IP in pkt and TCP in pkt:
         key = tuple(sorted([(pkt[IP].src, pkt[TCP].sport), (pkt[IP].dst, pkt[TCP].dport)]))
         conns[key].append(pkt)
 
-# === RESULTADOS ===
+# RESULTADOS
 resultados = []
 
 for conn_key, pkts in conns.items():
@@ -93,7 +91,7 @@ for conn_key, pkts in conns.items():
         if times[i] - times[i-1] < 0.001:  # 1ms
             microbursts += 1
 
-    # Fluxos elefantes: > 100 MB
+    # Fluxos elefantes: ( > 100 MB)
     elefante = total_bytes > 100 * 1024 * 1024
 
     resultados.append({
@@ -109,15 +107,87 @@ for conn_key, pkts in conns.items():
         'elefante': elefante
     })
 
-# === EXPORTAR PARA CSV / PRINTAR ===
+# EXPORTAR PARA CSV
 df = pd.DataFrame(resultados)
 print(df)
 df.to_csv("metricas_tcp.csv", index=False)
 
 # Top aplicações acessadas
-
 dst_ports = [pkt[TCP].dport for pkt in tcp_packets if pkt.haslayer(TCP)]
 top_ports = Counter(dst_ports).most_common(10)
 print("Top 10 portas mais acessadas:")
 for port, count in top_ports:
     print(f"Porta {port} - {count} conexões")
+
+# GRÁFICOS SUGERIDOS
+print("Plotando Gráficos.")
+# Gráfico da curva da janela de congestionamento ao longo do tempo
+
+## (Adicionar coleta da janela de congestionamento por tempo)
+janela_cong = []
+for p in tcp_packets:
+    if TCP in p and p[TCP].window:
+        janela_cong.append({'tempo': p.time, 'window_size': p[TCP].window})
+
+df_janela = pd.DataFrame(janela_cong)
+
+# Conversão segura do tempo
+df_janela['tempo'] = df_janela['tempo'].astype(float)
+df_janela['tempo'] = pd.to_datetime(df_janela['tempo'], unit='s')
+
+# Gráfico
+plt.figure(figsize=(12, 5))
+plt.plot(df_janela['tempo'], df_janela['window_size'], lw=0.8)
+plt.title("Evolução da Janela de Congestionamento TCP ao longo do Tempo")
+plt.xlabel("Tempo")
+plt.ylabel("Window Size")
+plt.tight_layout()
+plt.savefig("janela_congestionamento.png")
+plt.show()
+
+
+# Gráfico de dispersão do RTT por conexão
+plt.figure(figsize=(10, 5))
+plt.scatter(range(len(df)), df['rtt_medio'])
+plt.title("RTT médio por conexão")
+plt.xlabel("Índice da conexão")
+plt.ylabel("RTT médio (s)")
+plt.grid(True)
+plt.tight_layout()
+plt.savefig("rtt_por_conexao.png")
+plt.show()
+
+# CDF do tempo de handshake
+handshakes = df['handshake_time'].dropna().sort_values()
+cdf = np.arange(len(handshakes)) / float(len(handshakes))
+
+plt.figure(figsize=(8, 4))
+plt.plot(handshakes, cdf, marker='.')
+plt.title("CDF do tempo de handshake (3-way)")
+plt.xlabel("Tempo de handshake (s)")
+plt.ylabel("CDF")
+plt.grid(True)
+plt.tight_layout()
+plt.savefig("cdf_handshake.png")
+plt.show()
+
+# Histograma da taxa de retransmissões
+plt.figure(figsize=(8, 4))
+plt.hist(df['retransmissoes'], bins=30, edgecolor='black')
+plt.title("Histograma das retransmissões por conexão")
+plt.xlabel("Número de retransmissões")
+plt.ylabel("Frequência")
+plt.tight_layout()
+plt.savefig("hist_retransmissoes.png")
+plt.show()
+
+# Comparação entre conexões curtas e longas
+df['tipo_conexao'] = df['duracao'].apply(lambda x: 'Curta' if x < 1 else 'Longa')
+plt.figure(figsize=(8, 5))
+sns.boxplot(x='tipo_conexao', y='throughput', data=df)
+plt.title("Comparação do Throughput entre Conexões Curtas e Longas")
+plt.ylabel("Throughput (bytes/s)")
+plt.xlabel("Tipo de conexão")
+plt.tight_layout()
+plt.savefig("comparacao_conexoes.png")
+plt.show()
