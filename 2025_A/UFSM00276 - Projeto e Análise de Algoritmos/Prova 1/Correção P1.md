@@ -1,4 +1,6 @@
-# 1.
+# Correção
+
+## 1
 
 ```cpp
 Conta(A, ini, fim, x)
@@ -34,16 +36,17 @@ Majoritario(A, ini, fim)
     retorne null
 ```
 
-$T(n) = 2T(\frac{2}{n} + cn$  
+$T(n) = 2T(\frac{2}{n}) + cn$  
 $T(n) = n^{log_b a} = n^{log_2 2} = n^1 = f(n)$  
 $T(n) \in O(n log(n) )$  
 
-# 2.
+## 2
 
 E < B < C < A < D
 
-# 3.
-```
+## 3
+
+```txt
 1: 1 atribuição  
 2: 1 atribuição  
 3: i = até n-1 (n iter)  
@@ -59,13 +62,13 @@ $T(n) = 2 + n \cdot 4 (n-1) + 1$
 $T(n) = 4n^2 - 4n + 3$  
 $T(n) \in O(n^2)$
 
-# 4
+## 4
 
 Alt. "A"
 
-# 5
+## 5
 
-$T(n) = 7T(\frac{n}{2} +cn^2$  
+$T(n) = 7T(\frac{n}{2}) +cn^2$  
   
 ...  
   

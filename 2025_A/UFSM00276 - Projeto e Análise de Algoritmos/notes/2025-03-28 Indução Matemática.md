@@ -2,7 +2,7 @@
 
 ## Indução Matemática
 
-### Exemplo Motivacional:  
+### Exemplo Motivacional  
 
 $1 = 1$  
 $1 + 3 = 4$  
@@ -13,7 +13,8 @@ Observamos que "A soma dos n primeiros números ímpares = $n^2$ "
 
 Caso base: é a prova que a propriedade vale (é verdadedeira) para o menor valor.  
 
-Passo Indutivo:  
+Passo Indutivo:
+
 - *Hipótese de indução*: assume-se que a propriedade é válida para um determinado valor $k$
 - *Tese*: provar que a propriedade é válida para $k+1$
 
@@ -66,7 +67,7 @@ $k = -1$
 
 $\frac{k(k+1)+2(k+1)}{2} = \frac{(k+1)((k+1)+1)}{2}$  
 $\frac{k(k+1)+2(k+1)}{2} = \frac{(k+1)(k+2)}{2}$  
-$\frac{k(k+1)+2k+2)}{2} = \frac{(k+1)(k+2)}{2}$  
+$\frac{k(k+1)+2(k+2)}{2} = \frac{(k+1)(k+2)}{2}$  
 $\frac{k^2+3k+2}{2} = \frac{k^2+3k+2}{2}$  
 
-Provado! :)
+Provado!
