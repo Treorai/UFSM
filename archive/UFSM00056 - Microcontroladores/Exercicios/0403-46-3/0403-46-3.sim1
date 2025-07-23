@@ -1,0 +1,41 @@
+<circuit version="1.1.0-SR1" rev="2005" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="MCU" CircId="mega328-1" mainComp="false" Show_id="false" Show_Val="false" Pos="-128,-92" rotation="0" hflip="1" vflip="1" label="mega328-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="../../../Documents/Atmel Studio/7.0/0403-46-3/0403-46-3/Debug/0403-46-3.hex" Auto_Load="false" saveEepr="true" Logic_Symbol="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" Clk_Out="false" MainMcu="true" SerialMon="-1" />
+
+<item itemtype="SwitchDip" CircId="SwitchDip-2" mainComp="false" Show_id="false" Show_Val="false" Pos="-260,-108" rotation="90" hflip="1" vflip="1" label="SwitchDip-2" idLabPos="-16,-44" labelrot="0" valLabPos="-16,20" valLabRot="0" Size="4" Exclusive="false" CommonPin="true" State="240" />
+
+<item itemtype="Ground" CircId="Ground-3" mainComp="false" Show_id="false" Show_Val="false" Pos="-236,-148" rotation="0" hflip="1" vflip="-1" label="Ground-3" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Seven Segment" CircId="Seven Segment-6" mainComp="false" Show_id="false" Show_Val="false" Pos="32,-144" rotation="0" hflip="1" vflip="1" label="Seven Segment-6" idLabPos="20,-44" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" NumDisplays="1" Vertical_Pins="false" CommonCathode="true" Threshold="2.4 V" MaxCurrent="20 mA" Resistance="1 Ω" />
+
+<item itemtype="Ground" CircId="Ground-7" mainComp="false" Show_id="false" Show_Val="false" Pos="40,-80" rotation="0" hflip="1" vflip="1" label="Ground-7" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Connector" uid="Connector-3" startpinid="SwitchDip-2-switch2-pinN" endpinid="mega328-1-PORTB2" pointList="-252,-92,-252,44,-76,44,-76,12,-88,12" />
+
+<item itemtype="Connector" uid="Connector-4" startpinid="SwitchDip-2-switch3-pinN" endpinid="mega328-1-PORTB3" pointList="-260,-92,-260,52,-68,52,-68,4,-88,4" />
+
+<item itemtype="Connector" uid="Connector-9" startpinid="SwitchDip-2-switch0-pinP" endpinid="Ground-3-Gnd" pointList="-236,-116,-236,-132" />
+
+<item itemtype="Connector" uid="Connector-21" startpinid="Seven Segment-6-pin_commona" endpinid="Ground-7-Gnd" pointList="40,-112,40,-96" />
+
+<item itemtype="Connector" uid="Connector-23" startpinid="mega328-1-PORTD1" endpinid="Seven Segment-6-pin_b" pointList="-136,-68,-152,-68,-152,-160,8,-160" />
+
+<item itemtype="Connector" uid="Connector-24" startpinid="mega328-1-PORTD2" endpinid="Seven Segment-6-pin_c" pointList="-136,-60,-156,-60,-156,-152,8,-152" />
+
+<item itemtype="Connector" uid="Connector-25" startpinid="mega328-1-PORTD3" endpinid="Seven Segment-6-pin_d" pointList="-136,-52,-160,-52,-160,-144,8,-144" />
+
+<item itemtype="Connector" uid="Connector-26" startpinid="mega328-1-PORTD4" endpinid="Seven Segment-6-pin_e" pointList="-136,-44,-164,-44,-164,-136,8,-136" />
+
+<item itemtype="Connector" uid="Connector-27" startpinid="mega328-1-PORTD5" endpinid="Seven Segment-6-pin_f" pointList="-136,-4,-168,-4,-168,-128,8,-128" />
+
+<item itemtype="Connector" uid="Connector-28" startpinid="mega328-1-PORTD6" endpinid="Seven Segment-6-pin_g" pointList="-136,4,-172,4,-172,-120,8,-120" />
+
+<item itemtype="Connector" uid="Connector-36" startpinid="SwitchDip-2-switch1-pinN" endpinid="mega328-1-PORTB1" pointList="-244,-92,-244,36,-84,36,-84,20,-88,20" />
+
+<item itemtype="Connector" uid="Connector-41" startpinid="SwitchDip-2-switch0-pinN" endpinid="mega328-1-PORTB0" pointList="-236,-92,-236,20,-136,20" />
+
+<item itemtype="Connector" uid="Connector-22" startpinid="Seven Segment-6-pin_a" endpinid="mega328-1-PORTD0" pointList="8,-168,-148,-168,-148,-76,-136,-76" />
+
+<item itemtype="Connector" uid="Connector-29" startpinid="mega328-1-PORTD7" endpinid="Seven Segment-6-pin_dot" pointList="-136,12,-180,12,-180,-112,24,-112" />
+
+</circuit>
