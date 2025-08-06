@@ -11,3 +11,4 @@
 ## Fórmulas
 
 - $V(t) = Vm \cdot Sin(w \cdot A)$
+- $T= \frac{2\pi}{w}$
