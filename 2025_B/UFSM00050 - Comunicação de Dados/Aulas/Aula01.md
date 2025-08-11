@@ -9,3 +9,9 @@ Tx (Transmissor) -> Sinal (S) -> Meio -> Sinal (S') +Ruído (N) + Interferência
 $SNR = \frac{S'}{N}$
 
 Sinais podem ser modelados/descritos
+
+equação enrrgia do sinal
+
+> quando ela não converge pra um balor 0< eg < infinito, a gente converte para a equação de baixo
+eq potencia do sinal
+
