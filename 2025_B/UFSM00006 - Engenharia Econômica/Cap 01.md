@@ -2,9 +2,7 @@
 
 ## Definição das grandezas
 
-### Valor presente / Capital / Principal
-
-$P$ [R$]
+### Valor presente / Capital / Principal ( $P$ ) [R$]
 
 ### Valor futuro / Montante ( $F$ ) [R$]
 
@@ -14,4 +12,9 @@ $P$ [R$]
 
 ### Taxa de juros ( $i$ ) [% a.p.]
 
+## Fórmulas
+
 $$i=\frac{J}{P}$$
+
+$$F=P+J$$
+
