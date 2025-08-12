@@ -2,19 +2,14 @@
 
 ## Definição das grandezas
 
-### Valor presente / Capital / Principal ( $P$ ) [R$]
-
-### Valor futuro / Montante ( $F$ ) [R$]
-
-### Tempo ( $n$ ) [a.p.: ao período]
-
-### Juros ( $J$ ) [R$]
-
-### Taxa de juros ( $i$ ) [% a.p.]
+- Valor presente / Capital / Principal ( $P$ ) [R$]
+- Valor futuro / Montante ( $F$ ) [R$]
+- Tempo ( $n$ ) [a.p.: ao período]
+- Juros ( $J$ ) [R$]
+- Taxa de juros ( $i$ ) [% a.p.]
 
 ## Fórmulas
 
-$$i=\frac{J}{P}$$
-
-$$F=P+J$$
+- $i=\frac{J}{P}$
+- $F=P+J$
 
