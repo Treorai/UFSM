@@ -15,3 +15,5 @@ equação enrrgia do sinal
 > quando ela não converge pra um balor 0< eg < infinito, a gente converte para a equação de baixo
 eq potencia do sinal
 
+$C=B \cdot log_2(1+SNR)$
+
