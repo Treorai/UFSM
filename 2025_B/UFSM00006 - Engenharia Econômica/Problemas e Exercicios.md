@@ -27,3 +27,21 @@
 13. a) R$1800 - R$1200 b) R$2886,16 - R$113,84 
 14. a) R$1000000 b) R$958828.87
 15. a) 40 meses b) 19 meses
+
+## Capítulo 2
+
+16. $\displaystyle i=\frac{0.12}{12}= 0.01 = 1\%$ a.m.
+17. $\displaystyle i_n = i\cdot k = 0.02 \cdot 12 = 0.24 = 24\%$ a.a. capitalizada mensalmente.
+18. $\displaystyle i_{eq} = (1+0.02)^{12}-1 = 26.82\%$ a.a.
+19. $\displaystyle i_{eq} = (1+0.06)^{\frac{1}{6}}-1 = 0.98\%$ a.m.
+20. $\displaystyle i_{eq}= (1+ \frac{0.06}{6})^{6}-1 = 6.152\%$ a.s.
+21.  $\displaystyle i_{eq}= (1+ \frac{0.03}{{\color{red}\frac{2}{3}}})^{4}-1 = 19.25\%$ a.s.
+22. $\displaystyle i_{eq}= (1+ \frac{0.06}{3})^{6}-1 = 12.616\%$ a.s.
+23. $\displaystyle i_{eq}= (1+ \frac{0.18}{2})^{\frac{1}{{\color{red}6}}}-1 = .\%$ a.s.
+24. $\displaystyle i_g = (1+\theta)\cdot (1+i) -1 = (1.05)\cdot(1.12)-1 = 0.176 = 17.6\%$ a.a.
+25. $i_g = (1-0.01)\cdot (1+0.10) -1 = 0.99\cdot 1.1 -1 = 0.089 = 8.9\%$ a.a.
+26. $\displaystyle \frac{1.12}{1.0859} = 3.14\%$ a.a.
+27. $7\%$ a.a.
+28. $10\%$ a.a.
+29. $C_{c} = (0.6\cdot0.12)+(0.4\cdot0.11)=0.072+0.044=0.116=11.6\%$ a.a.
+30. $C_c = (\frac{2}{3}\cdot 0.09)+(\frac{1}{3}\cdot0.15)= 0.06+0.05=0.11=11\%$ a.a.
