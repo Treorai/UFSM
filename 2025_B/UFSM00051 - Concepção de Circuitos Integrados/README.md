@@ -8,6 +8,8 @@ Quando uma tensão $Vg$ é aplicada sobre o transistor, o boro recebe um eletron
 
 ## Virtuoso
 
+[Virtuoso layout tutorial](https://www.youtube.com/watch?v=X-ke0KeekQE)
+
 ```sh
 ssh -X wagner.chitto@192.168.139.58
 cd wagner.chitto
