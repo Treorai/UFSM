@@ -112,3 +112,16 @@ $\displaystyle \nabla^2 \cdot V = \frac{1}{r^2} \cdot \frac{\partial}{\partial r
 
 
 \cdot \frac{\partial^2 V}{\partial \phi^2} + \frac{\partial^2 V}{\partial z^2}$
+
+
+
+supino na maquina
+
+pulley de frente
+agachas
+elevação lateral
+rosca simultanea
+triceps pulley
+flexora
+prancha
+

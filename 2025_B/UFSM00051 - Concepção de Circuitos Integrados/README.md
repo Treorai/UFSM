@@ -13,4 +13,13 @@ ssh -X wagner.chitto@192.168.139.58
 cd wagner.chitto
 virutoso&
 ```
+
 ## Simulador LT SPICE
+
+## nMos
+
+![nmos](./src/nmos.png)
+
+## pMos
+
+![pmos](./src/pmos.png)
