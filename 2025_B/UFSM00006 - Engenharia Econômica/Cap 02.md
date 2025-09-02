@@ -65,4 +65,5 @@ $\displaystyle \frac{1+i_g}{1+\theta}-1$
 
 $C_o = T_a-T_e$
 
->!! Se há custo, a escolhida FOI a menor
+> !! Se há custo, a escolhida FOI a menor
+

@@ -3,7 +3,6 @@
 ## Capítulo 1
 
 1. 
-
 |n|Simples|Composto
 |:-:|-:|-:|
 |0|20000.00|20000.00|
@@ -31,6 +30,7 @@
 ## Capítulo 2
 
 16. $\displaystyle i=\frac{0.12}{12}= 0.01 = 1\%$ a.m.
+
 17. $\displaystyle i_n = i\cdot k = 0.02 \cdot 12 = 0.24 = 24\%$ a.a. capitalizada mensalmente.
 18. $\displaystyle i_{eq} = (1+0.02)^{12}-1 = 26.82\%$ a.a.
 19. $\displaystyle i_{eq} = (1+0.06)^{\frac{1}{6}}-1 = 0.98\%$ a.m.
@@ -45,3 +45,20 @@
 28. $10\%$ a.a.
 29. $C_{c} = (0.6\cdot0.12)+(0.4\cdot0.11)=0.072+0.044=0.116=11.6\%$ a.a.
 30. $C_c = (\frac{2}{3}\cdot 0.09)+(\frac{1}{3}\cdot0.15)= 0.06+0.05=0.11=11\%$ a.a.
+
+## Capítulo 3
+
+31. $F=8000\cdot(1+0.015)^5=8618.27$
+
+32. $F=450000\cdot (1.038308287)^{24}= 1000000$
+33. $P=\displaystyle \frac{55000}{1.0085^4}=53169.72$
+34. $\displaystyle P=\frac{180000}{1.0085^{12}}=162615.40$
+35. $\displaystyle F_{24}=5000\cdot \frac{1.0073^{24}-1}{0.0073}=130634.58$  
+36. $\displaystyle F_n=290\cdot \frac{(1+0.003)^3-1}{0.003}=11007.21$; R: Sim.
+37. $\displaystyle U=\frac{97226.93\cdot 0.009}{(1+0.009)^{18}-1}=5000$
+38. $\displaystyle P=20000\cdot \frac{(1+0.07)^8-1}{0.07\cdot(1+0.07)^8}=119425.97$
+39. $\displaystyle P=528.38\cdot \frac{(1+0.016)^6-1}{0.016\cdot(1+0.016)^6}=3000.05$
+40. $\displaystyle U=110000\cdot \frac{0.0154\cdot(1+0.0154)^{36}}{(1+0.0154)^{36}-1}=4003.30$
+41. $\displaystyle U=8000000\cdot \frac{0.0127\cdot(1+0.0127)^{12}}{(1+0.0127)^{12}-1}=722972.80$
+42. $\displaystyle F= 900\cdot \frac{((1+0.013)^3-1)\cdot (1+0.013)}{0.013}=2770.81$
+43. $\displaystyle U'= 30000\cdot \frac{0.0205}{((1+0.0205)^3-1)\cdot (1+0.0205)}= 9600.95$
