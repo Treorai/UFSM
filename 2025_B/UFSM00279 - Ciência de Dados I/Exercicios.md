@@ -23,7 +23,11 @@ Transacao(<ins>Cod</ins>, Data, Valor)
 
 
 
+## Aula 10 - Slide 38
 
+Cliente(<ins>ClienteID</ins>, Nome)  
+Telefone(<ins>CodT</ins>, <ins>ClientID</ins>, Numero)  
+Compras(<ins>CodC</ins>, <ins>ClientID</ins>, Item, Preço)  
 
 
 

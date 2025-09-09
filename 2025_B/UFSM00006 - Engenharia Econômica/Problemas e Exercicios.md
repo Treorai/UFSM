@@ -62,3 +62,18 @@
 41. $\displaystyle U=8000000\cdot \frac{0.0127\cdot(1+0.0127)^{12}}{(1+0.0127)^{12}-1}=722972.80$
 42. $\displaystyle F= 900\cdot \frac{((1+0.013)^3-1)\cdot (1+0.013)}{0.013}=2770.81$
 43. $\displaystyle U'= 30000\cdot \frac{0.0205}{((1+0.0205)^3-1)\cdot (1+0.0205)}= 9600.95$
+44. $\displaystyle P=1442 \cdot \frac{(1.0095)^{18} -1}{i\cdot (1.0095)^{18-1}}= 23980.40$
+45. $\displaystyle U'= 36000 \cdot \frac{0.02\cdot (1.02)^{3-1}}{(1.02)^3 -1}=12238.40$  
+46. $\displaystyle U = 1000 \cdot 1.02=1020.00$
+47. $\displaystyle U' = \frac{1010}{1.01}=1000.00$ 
+48. $\displaystyle F=10000\cdot \left ( \frac{(1+0.14)^{\color{red}7}-1-{\color{red}7}\cdot 0.14}{0.14^2} \right)= 266 463.67$
+49. $\displaystyle P=200\cdot \left ( \frac{(1+0.08)^8-1}{0.08^2} - \frac{8}{0.08} \right) \cdot \left ( \frac{1}{(1+0.08)^8} \right)=3561.22$
+50. $\displaystyle U=50\cdot \left ( \frac{1}{0.07}-\frac{6}{0.07}\cdot \frac{0.07}{(1+0.07)^6 -1} \right)=115.16$
+51. $P= \displaystyle \frac{150000}{1.02} \cdot \frac{\left (\displaystyle \frac{1.02}{1.08} \right)^n\cdot\displaystyle\frac{1.02}{1.08}-\frac{1.02}{1.08}}{\displaystyle\frac{1.02}{1.08}-1}=\displaystyle \frac{150000}{1.02} \cdot \frac{\left (\displaystyle \frac{17}{18} \right)^4\cdot\displaystyle\frac{17}{18}-\frac{17}{18}}{\displaystyle\frac{17}{18}-1}=510950.12$
+52. $\displaystyle P= \frac{8000}{0.16}=50000$
+53. $\displaystyle P=\frac{4000}{(1+0.004)^6-1}=165007.76$
+54. $U=80000\cdot 0.005=400$
+55. $P_{final}=30000+4000\cdot 0.1= 70000$
+56. 
+57. 
+58. 

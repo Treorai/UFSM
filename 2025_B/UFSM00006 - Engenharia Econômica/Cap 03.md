@@ -84,18 +84,74 @@ $2883.13$
 
 ## P dado U' e U' dado P
 
+$\displaystyle P=U' \cdot \frac{(1+i)^n -1}{i\cdot (1+i)^{n-1}}$  
+
+$\displaystyle U'=P \cdot \frac{i\cdot (1+i)^{n-1}}{(1+i)^n -1}$  
+
+### Exemplo
+
+> O preço de compra de um equipamento industrial é de R$:50000.00. Um comprador propõe parcelar este valor em 5 vezes, iniciando o pagamento hoje. Se a taxa de juros da empresa vendedora é de 10% a.m. de quanto deve ser a prestação exigida?
+
+$\displaystyle U'=P \cdot \frac{i\cdot (1+i)^{n-1}}{(1+i)^n -1}$  
+
+$\displaystyle U'=50000 \cdot \frac{0,1\cdot (1,1)^{5-1}}{(1,1)^5 -1}$ 
+
+$\displaystyle U'=11990,79$  
+
 ## U dado U' e U' dado U
+
+$\displaystyle U = U' \cdot (1+i)$  
+
+$\displaystyle U' = \frac{U}{1+i}$  
 
 ## F dado G
 
+$$F=G\cdot \left ( \frac{(1+i)^n-1-n\cdot i}{i^2} \right)$$
+
+### Exemplo
+
+> Um determinado veículo a partir do 2º ano de uso tem seu custo de manutenção aumentado em 300 reais ao ano. Considerando que este veículo tem 8 anos de vida útil, calcule o valor futuro (no ano 8) dos custos de manutenção, para uma taxa de juros de 5% ao ano.
+
+$\displaystyle F=G\cdot \left ( \frac{(1+i)^n-1-n\cdot i}{i^2} \right)$
+
+$\displaystyle F=9294.95$  
+
 ## P dado G
+
+$$P=G\cdot \left ( \frac{(1+i)^n-1}{i^2} - \frac{n}{i} \right) \cdot \left ( \frac{1}{(1+i)^n} \right)$$
+
+### Exemplo
+
+> Um determinado veículo a partir do 2º ano de uso tem seu custo de manutenção aumentado em 300 reais ao ano. Considerando que este veículo tem 8 anos de vida útil, calcule o valor presente dos custos de manutenção, para uma taxa de juros de 5% ao ano.
+
+$\displaystyle P=G\cdot \left ( \frac{(1+i)^n-1}{i^2} - \frac{n}{i} \right) \cdot \left ( \frac{1}{(1+i)^n} \right)$
+
+$P=6290.99$
 
 ## U dado G
 
-## Gradientes Geinpetrucis
+$$U=G\cdot \left ( \frac{1}{i}-\frac{n}{i}\cdot \frac{i}{(1+i)^n -1} \right)$$
+
+## Gradientes Geométricos
+
+Se em uma série continua existir uma **variação contínua positiva em cada período** correspondente a uma porcentagem do primeiro valor, tal porcentagem é designada *$g$* e se chama **gradiente geométrico**.
+
+$$P= \frac{F_1}{1+g} \cdot \frac{\left (\displaystyle \frac{1+g}{1+i} \right)^n\cdot\displaystyle\frac{1+g}{1+i}-\frac{1+g}{1+i}}{\displaystyle\frac{1+g}{1+i}-1}$$
 
 ## Séries Perpétuas
 
+$$P= \frac{U}{i}$$
+
+$$U= P\cdot i$$
+
+### Exemplo
+
+> Quanto pode-se retirar a cada doze meses de um investimento que rende 10% a.a. de forma que ele permaneça com o mesmo valor do investimento inicial de 30000?
+
+$U=P \cdot i = 30000\cdot 0.1 = 3000$
+
 ## Séries Irregulares
+
+
 
 ## Tabelas Financeiras
