@@ -56,16 +56,16 @@ $\displaystyle U = U' \cdot (1+i)$
 
 $\displaystyle U' = \frac{U}{1+i}$  
 
-## F dado G
+## $G \mapsto F$
 
 $$F=G\cdot \left ( \frac{(1+i)^n-1-n\cdot i}{i^2} \right)$$
 
 
-## P dado G
+## $G \mapsto P$
 
 $$P=G\cdot \left ( \frac{(1+i)^n-1}{i^2} - \frac{n}{i} \right) \cdot \left ( \frac{1}{(1+i)^n} \right)$$
 
-## U dado G
+## $G \mapsto U$
 
 $$U=G\cdot \left ( \frac{1}{i}-\frac{n}{i}\cdot \frac{i}{(1+i)^n -1} \right)$$
 
