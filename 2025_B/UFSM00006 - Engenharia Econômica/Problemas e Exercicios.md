@@ -87,6 +87,53 @@
 
 ## Capítulo 4
 
-66. 
+66. [*Google Sheets*]
+67. [*Google Sheets*]
+68. [*Google Sheets*]
+69. [*Google Sheets*]
+70. [*Google Sheets*]
+71. [*Google Sheets*]
+72. [*Google Sheets*]
+73. [*Google Sheets*]
+74. [*Google Sheets*]
+75. [*Google Sheets*]
+76. [*Google Sheets*]
+77. [*Google Sheets*]
+78. [*Google Sheets*]
+79.  [*Google Sheets*]
+80. [*Google Sheets*]
+81. [*Google Sheets*]
+82. [*Google Sheets*]
+83. [*Google Sheets*]
+84. [*Google Sheets*]
+85. [*Google Sheets*]
 
-67. 
+## Capítulo 5
+
+80. 
+81. 
+82. 
+83. 
+84. 
+85. 
+86. 
+87. 
+88. 
+89. 
+90. 
+91. 
+92. 
+93. 
+94. 
+95. 
+96. 
+97. 
+98. 
+99. 
+100. 
+101. 
+102. 
+103. 
+104. 
+105. 
+106. 

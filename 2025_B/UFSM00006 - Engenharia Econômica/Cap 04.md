@@ -37,7 +37,11 @@ ${\color{red}\displaystyle P_t=SD_0 \cdot \left( \frac{1}{n}+i\cdot\frac{n-t+1}{
 
 ### Crescente
 
-
+$J_t=SD_{t-1}\cdot i$  
+$a_t=P_t-J_t$  
+$SD_t=SD_{t-1}-a_t$  
+$\displaystyle P_t= \frac{SD_0}{n} + (SD_0\cdot i)$  
+$P_n=SD_{n-1}+J_n$  
 
 ### Americano
 
