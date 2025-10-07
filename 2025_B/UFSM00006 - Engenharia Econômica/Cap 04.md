@@ -33,7 +33,10 @@ ${\color{red}\displaystyle P_t=SD_0 \cdot \left( \frac{1}{n}+i\cdot\frac{n-t+1}{
 
 ### Misto
 
-
+$J_t=SD_{t-1}\cdot i$  
+$a_t=p_t-J_t$  
+$SD_t=SD_{t-1}-a_t$  
+$\displaystyle p_t= \frac{SD0}{2}\cdot \left ( \left ( \frac{i\cdot (1+i)^n}{(1+i)^n-1} \right) + \left ( \frac{1}{n}+ i- \frac{i\cdot t- i}{n} \right) \right)$
 
 ### Crescente
 
@@ -46,21 +49,32 @@ $P_n=SD_{n-1}+J_n$
 ### Americano
 
 
+$J_t=SD_{t-1}\cdot i$  
+$a_t=P_t-J_t$  
+$SD_t=SD_{t-1}-a_t$  
+$P_t=SD_0\cdot i$  
+$P_n=SD_0 \cdot (1+i)$  
 
 ### Pagamento Único com juros postecipados
 
-
+$J_t=SD_{t-1}\cdot i$  
+$a_t=P_t-J_t$  
+$SD_t=SD_{t-1}-a_t$  
+$P_t=0$  
+$P_n=SD_0 \cdot (1+i)^n$ 
 
 ### Pagamento Único com juros antecipados
 
-
+$P_0=SD_0 \cdot (1+i)^n -SD_0$  
+$P_n=SD_0$  
 
 ### Sistema de Amortizações Variáveis
 
-
+$J_t=SD_{t-1}\cdot i$  
+$a_t=P_t-J_t$  
+$SD_t=SD_{t-1}-a_t$  
 
 ## Conclusões
-
 
 
 ## Correção Monetária de Financiamentos
