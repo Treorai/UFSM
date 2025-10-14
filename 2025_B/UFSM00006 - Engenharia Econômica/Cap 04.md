@@ -74,9 +74,6 @@ $J_t=SD_{t-1}\cdot i$
 $a_t=P_t-J_t$  
 $SD_t=SD_{t-1}-a_t$  
 
-## Conclusões
-
-
 ## Correção Monetária de Financiamentos
 
 
