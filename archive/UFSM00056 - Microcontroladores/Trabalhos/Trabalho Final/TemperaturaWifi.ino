@@ -2,12 +2,12 @@
 #include <HTTPClient.h>
 #include "DHTesp.h"
 
-#define DHTPIN 14       // Pino do sensor DHT11
-#define RELE_PIN 27     // Pino onde o relé está conectado
+#define DHTPIN 14
+#define RELE_PIN 13
 
-const char* ssid = "Ttmobilelan";         // Nome do Wi-Fi
-const char* password = "00441122";        // Senha do Wi-Fi
-const char* serverEndpoint = "http://192.168.23.59:3001/endpoint"; // IP do servidor Node.js
+const char* ssid = "Ttmobilelan";
+const char* password = "00441122";
+const char* serverEndpoint = "http://192.168.23.59:3001/monitor";
 
 DHTesp dht;
 
@@ -17,23 +17,24 @@ void setup() {
   // Inicializar sensor DHT11
   dht.setup(DHTPIN, DHTesp::DHT11);
 
-  // Inicializar pino do relé
+  // Inicializar pino do rele
   pinMode(RELE_PIN, OUTPUT);
-  digitalWrite(RELE_PIN, HIGH);  // HIGH geralmente significa "desligado" para relés de baixa ativação
+  digitalWrite(RELE_PIN, HIGH); // rele desligado
 
-  // Conectar ao Wi-Fi
+  // Conectar ao wifi
   WiFi.begin(ssid, password);
-  Serial.print("Conectando-se ao Wi-Fi");
+  Serial.print("Conectando-se ao wi-fi");
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);
     Serial.print(".");
   }
-  Serial.println("\nConectado!");
+  Serial.println("\nConectado.");
   Serial.print("Endereço IP local: ");
   Serial.println(WiFi.localIP());
 }
 
 void loop() {
+  // carregar dados do sensor para o programa
   TempAndHumidity data = dht.getTempAndHumidity();
 
   if (isnan(data.temperature) || isnan(data.humidity)) {
@@ -41,18 +42,21 @@ void loop() {
     return;
   }
 
+  // print data
   Serial.printf("Temperatura: %.2f °C\n", data.temperature);
   Serial.printf("Umidade: %.2f %%\n", data.humidity);
 
+  // enviar ao servidor
   sendToServer(data.temperature, data.humidity);
 
-  delay(10000); // Aguarda 10 segundos antes de enviar novamente
+  delay(1000); // Aguarda 10 segundos antes de enviar novamente
 }
 
 void sendToServer(float temperature, float humidity) {
   if (WiFi.status() == WL_CONNECTED) {
     HTTPClient http;
 
+    // montar o json
     String jsonData = "{";
     jsonData += "\"temperature\": " + String(temperature, 2) + ",";
     jsonData += "\"humidity\": " + String(humidity, 2);
@@ -77,6 +81,12 @@ void sendToServer(float temperature, float humidity) {
         Serial.println(">>> Tomada LIGADA pelo servidor.");
       } else {
         Serial.println(">>> Resposta sem campo 'tomada' válido.");
+      }
+
+      if (digitalRead(RELE_PIN) == HIGH) {
+        Serial.println("Relé está DESLIGADO (HIGH)");
+      } else {
+        Serial.println("Relé está LIGADO (LOW)");
       }
 
     } else {
