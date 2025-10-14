@@ -149,9 +149,3 @@ $$U= P\cdot i$$
 > Quanto pode-se retirar a cada doze meses de um investimento que rende 10% a.a. de forma que ele permaneça com o mesmo valor do investimento inicial de 30000?
 
 $U=P \cdot i = 30000\cdot 0.1 = 3000$
-
-## Séries Irregulares
-
-
-
-## Tabelas Financeiras

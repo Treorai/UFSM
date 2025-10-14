@@ -193,23 +193,23 @@
 ## Capítulo 5
 
 86. $VPL = 201561.09$
-87. 
-88. 
-89. 
+87. [*Google Sheets*]
+88. [*Google Sheets*]
+89. [*Google Sheets*]
 90. $CPL = 122690.01$
-91. * VUL
-92. 
-93. 
-94. 
-95. * CUL
-96. 
-97. 
-98. 
-99. 
-100. 
-101. 
-102. 
-103. 
-104. 
-105. 
-106. 
+91. [*Prova 2*]
+92. [*Google Sheets*]
+93. [*Google Sheets*]
+94. [*Google Sheets*]
+95. [*Prova 2*]
+96. [*Google Sheets*]
+97. [*Google Sheets*]
+98. [*Google Sheets*]
+99. [*Google Sheets*]
+100. [*Google Sheets*]
+101. [*Google Sheets*]
+102. [*Google Sheets*]
+103. [*Google Sheets*]
+104. [*Google Sheets*]
+105. [*Google Sheets*]
+106. [*Google Sheets*]

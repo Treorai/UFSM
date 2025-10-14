@@ -1,8 +1,5 @@
 # Simplificação do Gradiente Geométrico
 
-### Autor: Wagner S Chittó
-
-
 Dada a fórmula original:
 
 > $$P= \frac{F_1}{1+g} \times \frac{\left (\displaystyle \frac{1+g}{1+i} \right)^n\times\displaystyle \left (\frac{1+g}{1+i}\right)-\left (\frac{1+g}{1+i}\right)}{\displaystyle \left (\frac{1+g}{1+i}\right)-1}$$
