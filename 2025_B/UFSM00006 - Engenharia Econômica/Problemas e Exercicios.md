@@ -197,11 +197,11 @@
 88. [*Google Sheets*]
 89. [*Google Sheets*]
 90. $CPL = 122690.01$
-91. [*Prova 2*]
+91. [*Prova 2*] $8311.10$
 92. [*Google Sheets*]
 93. [*Google Sheets*]
 94. [*Google Sheets*]
-95. [*Prova 2*]
+95. [*Prova 2*] $5520.99$
 96. [*Google Sheets*]
 97. [*Google Sheets*]
 98. $TIR = 7.88\%$
