@@ -204,9 +204,9 @@
 95. [*Prova 2*]
 96. [*Google Sheets*]
 97. [*Google Sheets*]
-98. [*Google Sheets*]
+98. $TIR = 7.88\%$
 99. [*Google Sheets*]
-100. [*Google Sheets*]
+100. $IBC = 0.992$
 101. [*Google Sheets*]
 102. [*Google Sheets*]
 103. [*Google Sheets*]
