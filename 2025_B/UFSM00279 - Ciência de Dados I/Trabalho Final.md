@@ -1,5 +1,20 @@
 # Trabalho Final
 
+> Identificar os principais “microsserviços” ou componentes da aplicação (ex: “Serviço de
+Autenticação”, “Serviço de Catálogo”, “Serviço de Carrinho”).
+
+> Para cada componente, escolher a tecnologia de banco de dados (SQL, Redis, MongoDB,
+Neo4J, Firebase) que melhor se adequa à necessidade.
+
+> Justificar por que essa tecnologia foi escolhida, e por que as outras foram descartadas
+para aquele componente específico. (espera-se uma discussão aprofunda).
+
+> Apresentar um modelo de dados simplificado para, no mínimo, três componentes-chave
+(ex: o Diagrama ER para o SQL, um exemplo de documento JSON para o MongoDB, e a
+estrutura de nós/arestas para o Neo4J).
+
+## Grupo 3: Gabriel T, Eduardo S, João R, Wagner C.
+
 ## Tema 6: "AcademiaOnline" (Plataforma de E-Learning)
 
 ### Funcionalidades:
@@ -11,5 +26,6 @@
 
 ### PARTE: Gerenciamento de alunos e instrutores
 
-- Banco de dados relacional
-- 
+- Tecnologia de Banco de dados:  
+- Discussão: 
+- Modelo: 
