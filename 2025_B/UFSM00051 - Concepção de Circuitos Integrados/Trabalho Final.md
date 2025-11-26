@@ -20,3 +20,13 @@
 ## Tema
 
 Bloco de Controle do Cleopatra
+
+## TL notes
+
+- Somador 4 bits
+- Registrador
+
+https://www.youtube.com/watch?v=Mbz1SkNeG2o 4bit
+https://www.youtube.com/watch?v=mN0icmvyZyc using 1 bit
+
+https://fount.aucegypt.edu/cgi/viewcontent.cgi?article=1010&context=studenttxt
