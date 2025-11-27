@@ -101,8 +101,100 @@ Constraints, triggers, unique indexes e foreign keys são essenciais no gerencia
 
 ---
 
-## **Modelo de Dados (ER) – SQL**
+## **Modelo de Dados – SQL**
 
+Usuario (**IdUsuário**, login, senha, email, tipoUsuario, nome, cpf, dataNascimento, genero, telefone, endereco, dataCadastro, dataAtualizado)
+
+Aluno (**IdAluno**, objetivo, dataMatricula)
+    IdAluno referencia Usuario
+
+Instrutor (**IdInstrutor**, registroProfissional, especialidade)
+    IdInstrutor referencia Usuário
+
+Endereço (**IdEndereco**, IdUsuario, cep, logradouro, numero, complemento, bairro, cidade, estado)
+    IdUsuario referencia Usuario
+
+Plano (**IdPlano**, tituloPlano, precoMensal, descricao)
+
+Assinatura (**IdAssinatura**, IdAluno, IdPlano, ativo, dataInicio, dataFim)
+    IdAluno referencia Aluno
+    IdPlano referencia Plano
+
+## Diagrama de relações
+
+### Tabela Usuario
+
+| Campo          | Tipo                              | Restrições       |
+| -------------- | --------------------------------- | ---------------- |
+| IdUsuario      | SERIAL                            | PK               |
+| login          | VARCHAR(60)                       | NOT NULL, UNIQUE |
+| senha          | VARCHAR(255)                      | NOT NULL         |
+| email          | VARCHAR(120)                      | NOT NULL, UNIQUE |
+| tipoUsuario    | ENUM('aluno','instrutor','admin') | NOT NULL         |
+| nome           | VARCHAR(120)                      | NOT NULL         |
+| cpf            | VARCHAR(14)                       | UNIQUE           |
+| dataNascimento | DATE                              | NULL             |
+| genero         | ENUM('M','F','O','N')             | NULL             |
+| telefone       | VARCHAR(20)                       | NULL             |
+| endereco       | VARCHAR(255)                      | NULL             |
+| dataCadastro   | TIMESTAMP                         | DEFAULT now()    |
+| dataAtualizado | TIMESTAMP                         | DEFAULT now()    |
+
+---
+
+### Tabela Aluno
+
+| Campo         | Tipo         | Restrições                 |
+| ------------- | ------------ | -------------------------- |
+| IdAluno       | INT          | PK, FK → Usuario.IdUsuario |
+| objetivo      | VARCHAR(255) | NULL                       |
+| dataMatricula | DATE         | NOT NULL                   |
+
+### Tabela Instrutor
+
+| Campo                | Tipo         | Restrições                 |
+| -------------------- | ------------ | -------------------------- |
+| IdInstrutor          | INT          | PK, FK → Usuario.IdUsuario |
+| registroProfissional | VARCHAR(60)  | UNIQUE, NULL               |
+| especialidade        | VARCHAR(120) | NOT NULL                   |
+
+
+### Tabela Endereço
+
+| Campo       | Tipo         | Restrições             |
+| ----------- | ------------ | ---------------------- |
+| IdEndereco  | SERIAL       | PK                     |
+| IdUsuario   | INT          | FK → Usuario.IdUsuario |
+| cep         | VARCHAR(10)  | NULL                   |
+| logradouro  | VARCHAR(150) | NULL                   |
+| numero      | VARCHAR(20)  | NULL                   |
+| complemento | VARCHAR(80)  | NULL                   |
+| bairro      | VARCHAR(120) | NULL                   |
+| cidade      | VARCHAR(120) | NULL                   |
+| estado      | VARCHAR(60)  | NULL                   |
+
+### Tabela Plano
+
+| Campo       | Tipo          | Restrições |
+| ----------- | ------------- | ---------- |
+| IdPlano     | SERIAL        | PK         |
+| tituloPlano | VARCHAR(100)  | NOT NULL   |
+| precoMensal | NUMERIC(10,2) | NOT NULL   |
+| descricao   | TEXT          | NULL       |
+
+### Tabela Assinatura
+
+| Campo        | Tipo    | Restrições         |
+| ------------ | ------- | ------------------ |
+| IdAssinatura | SERIAL  | PK                 |
+| IdAluno      | INT     | FK → Aluno.IdAluno |
+| IdPlano      | INT     | FK → Plano.IdPlano |
+| ativo        | BOOLEAN | DEFAULT TRUE       |
+| dataInicio   | DATE    | NOT NULL           |
+| dataFim      | DATE    | NULL               |
+
+
+<!-- 
 A seguir um modelo simplificado adequado ao domínio:
 
 ```
@@ -165,6 +257,4 @@ CREATE TABLE instructors (
 );
 ```
 
----
-
-Se quiser, posso agora elaborar a parte 2 (“Catálogo de cursos”) ou expandir a discussão para incluir escalabilidade, replicação, particionamento ou outros níveis de profundidade.
+ -->
