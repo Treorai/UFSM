@@ -1,0 +1,18 @@
+#4                               
+MN: MN
+= D D
+= G G
+= S S
+= B B
+#4                               
+MP: MP
+= D D
+= G G
+= S S
+= B B
+#4                               
+inv_x1: inv_x1
+= Vin Vin
+= Vout Vout
+= vdd! vdd!
+= gnd! gnd!

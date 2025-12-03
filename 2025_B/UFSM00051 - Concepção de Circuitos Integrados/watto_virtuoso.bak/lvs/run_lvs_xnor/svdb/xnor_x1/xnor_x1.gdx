@@ -1,0 +1,18 @@
+#0                               
+MN: MN
+#0                               
+MP: MP
+#12                              
+xnor_x1: xnor_x1
+D XI13/MNM0 X29/X1/M0
+D XI13/MPM0 M1
+D XI12/MNM0 X28/X1/M0
+D XI12/MPM0 M0
+D MNM3 X21/M0
+D MNM2 X22/M0
+D MNM0 X23/M0
+D MNM1 X20/M0
+D MPM1 M3
+S MPM3 M5
+S MPM2 M4
+D MPM0 M2

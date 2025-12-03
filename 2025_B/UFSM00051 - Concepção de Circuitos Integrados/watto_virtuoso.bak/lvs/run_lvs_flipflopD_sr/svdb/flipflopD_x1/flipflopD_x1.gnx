@@ -1,0 +1,24 @@
+#4                               
+MP: MP
+= D D
+= G G
+= S S
+= B B
+#4                               
+MN: MN
+= D D
+= G G
+= S S
+= B B
+#10                              
+flipflopD_x1: flipflopD_x1
+= net3 6
+= net8 7
+= net1 5
+= net2 3
+= D D
+= Q Q
+= Qbar Qbar
+= clk clk
+= vdd! vdd!
+= gnd! gnd!

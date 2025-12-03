@@ -1,0 +1,20 @@
+#4                               
+MP: MP
+= D D
+= G G
+= S S
+= B B
+#4                               
+MN: MN
+= D D
+= G G
+= S S
+= B B
+#6                               
+nor_x1: nor_x1
+= A A
+= B B
+= S S
+= vdd! vdd!
+= gnd! gnd!
+= net6 3

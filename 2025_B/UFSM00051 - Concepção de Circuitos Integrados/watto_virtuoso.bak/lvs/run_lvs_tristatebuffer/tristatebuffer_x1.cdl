@@ -1,0 +1,55 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  watto
+* Top Cell Name: tristatebuffer_x1
+* View Name:     schematic
+* Netlisted on:  Nov 25 20:16:13 2025
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+*.GLOBAL gnd!
++        vdd!
+
+*.PIN gnd!
+*+    vdd!
+
+************************************************************************
+* Library Name: watto
+* Cell Name:    inv_x1
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT inv_x1 Vin Vout
+*.PININFO Vin:I Vout:O
+MNM0 Vout Vin gnd! gnd! g45n1svt m=1 l=45n w=120n
+MPM0 Vout Vin vdd! vdd! g45p1svt m=1 l=45n w=145n
+.ENDS
+
+************************************************************************
+* Library Name: watto
+* Cell Name:    tristatebuffer_x1
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT tristatebuffer_x1 en in out
+*.PININFO en:I in:I out:O
+XI4 en net3 / inv_x1
+MPM2 out net3 net14 vdd! g45p1svt m=1 l=45n w=145n
+MPM1 net14 net7 vdd! vdd! g45p1svt m=1 l=45n w=145n
+MPM0 net7 in vdd! vdd! g45p1svt m=1 l=45n w=145n
+MNM2 out en net22 gnd! g45n1svt m=1 l=45n w=120n
+MNM1 net22 net7 gnd! gnd! g45n1svt m=1 l=45n w=120n
+MNM0 net7 in gnd! gnd! g45n1svt m=1 l=45n w=120n
+.ENDS
+

@@ -1,0 +1,138 @@
+*
+*
+*
+*                       LINUX           Wed Nov 26 18:05:29 2025
+*
+*
+*
+*  PROGRAM  advgen
+*
+*  Name           : advgen - Quantus - (64-bit)
+*  Version        : 23.1.1-p051
+*  Build Date     : Thu Feb 15 21:11:17 PST 2024
+*
+*  HSPICE LIBRARY
+*
+* GLOBAL_TEMPERATURE 25
+*  OPERATING_TEMPERATURE 25
+*  QRC_TECH_DIR /home/tools/design_kits/cadence/GPDK045/gpdk045_v_6_0/qrc/typical 
+*
+*!LENGTH_UNITS METERS
+*
+*
+*
+
+*
+.SUBCKT nand_x1 A B S gnd! vdd!
+*
+*
+*  caps2d version: 10
+*
+*
+*       TRANSISTOR CARDS
+*
+*
+MMNM0	S#1	A#1	net9	gnd!	g45n1svt	L=4.5e-08
++ W=1.2e-07
++ AD=1.68e-14	AS=1.68e-14	PD=5.2e-07	PS=5.2e-07
++ fw=1.2e-07 sa=1.4e-07 sb=1.4e-07 sca=4.74923 scb=0.000663449 scc=4.92991e-07
+MMNM1	net9#2	B#1	gnd!#3	gnd!	g45n1svt	L=4.5e-08
++ W=1.2e-07
++ AD=1.68e-14	AS=1.68e-14	PD=5.2e-07	PS=5.2e-07
++ fw=1.2e-07 sa=1.4e-07 sb=1.4e-07 sca=4.74923 scb=0.000663449 scc=4.92991e-07
+MMPM1	vdd!#1	B#5	S#3	vdd!	g45p1svt	L=4.5e-08
++ W=1.45e-07
++ AD=2.03e-14	AS=2.03e-14	PD=5.7e-07	PS=5.7e-07
++ fw=1.45e-07 sa=1.4e-07 sb=1.4e-07 sca=33.2274 scb=0.0325337 scc=0.00341592
+MMPM0	S#5	A#4	vdd!#5	vdd!	g45p1svt	L=4.5e-08
++ W=1.45e-07
++ AD=2.03e-14	AS=2.03e-14	PD=5.7e-07	PS=5.7e-07
++ fw=1.45e-07 sa=1.4e-07 sb=1.4e-07 sca=33.2274 scb=0.0325337 scc=0.00341592
+*
+*
+*       RESISTOR AND CAP/DIODE CARDS
+*
+Rj1	A	A#5	0.504720	$metal2_conn	$W=1.55e-07
++ $X=0.26 $Y=1.025
+Rj2	B	B#7	0.506293	$metal2_conn	$W=1.55e-07
++ $X=0.26 $Y=0.785
+Rj3	S	S#6	0.504720	$metal2_conn	$W=1.55e-07
++ $X=1.41 $Y=0.965
+Rk1	A#5	A#3	45.001938	$metal1_conn	$W=1.635e-07
++ $X=0.26 $Y=1.025
+Rk2	B#7	B#3	45.002041	$metal1_conn	$W=1.55e-07
++ $X=0.26 $Y=0.785
+Rk3	B#6	B#4	90.210312	$metal1_conn	$W=1e-07
++ $X=0.785 $Y=0.9575
+Rk4	net9	net9#2	150.249573	$metal1_conn	$W=1.25e-07
++ $X=0.8025 $Y=0.53
+Rk5	S#1	S#2	75.313721	$metal1_conn	$W=9e-08
++ $X=1.255 $Y=0.7475
+Rk6	S#2	S#4	0.516295	$metal1_conn	$W=9e-08
++ $X=1.255 $Y=1.0425
+Rk7	S#4	S#5	62.202492	$metal1_conn	$W=1.55e-07
++ $X=0.8025 $Y=1.4675
+Rk8	S#2	S#6	0.087724	$metal1_conn	$W=1e-07
++ $X=1.3275 $Y=0.965
+Rk9	S#3	S#4	62.000000	$metal1_conn	$W=9e-08
++ $X=1.05 $Y=1.47
+Rk10	vdd!#1	vdd!#3	62.347271	$metal1_conn	$W=9e-08
++ $X=1.255 $Y=1.6225
+Rk11	vdd!#3	vdd!#4	0.113011	$metal1_conn	$W=2.55e-07
++ $X=0.446 $Y=1.8725
+Rk12	vdd!#4	vdd!	0.050100	$metal1_conn	$W=2.55e-07
++ $X=0.2355 $Y=1.8725
+Rk13	vdd!#4	vdd!#5	62.229763	$metal1_conn	$W=9e-08
++ $X=0.35 $Y=1.6225
+Rk16	gnd!#2	gnd!	0.050100	$metal1_conn	$W=2.55e-07
++ $X=0.2355 $Y=0.1275
+Rk17	gnd!#2	gnd!#3	75.229012	$metal1_conn	$W=9e-08
++ $X=0.35 $Y=0.3775
+Rl1	B#1	B#2	62.695068	$poly_conn	$W=3.9e-08
++ $X=0.4525 $Y=0.662
+Rl2	B#2	B#3	56.142502	$poly_conn	$W=3.9e-08
++ $X=0.3725 $Y=0.7575
+Rl3	B#2	B#4	118.383598	$poly_conn	$W=3.9e-08
++ $X=0.4525 $Y=0.8025
+Rl4	B#5	B#6	223.801224	$poly_conn	$W=3.9e-08
++ $X=1.1105 $Y=1.1175
+Rl5	A#1	A#2	410.337616	$poly_conn	$W=3.9e-08
++ $X=0.978 $Y=0.9625
+Rl6	A#2	A#3	52.702583	$poly_conn	$W=3.9e-08
++ $X=0.3725 $Y=1.0075
+Rl7	A#2	A#4	147.310455	$poly_conn	$W=3.9e-08
++ $X=0.4525 $Y=1.2125
+*
+*       CAPACITOR CARDS
+*
+*
+C1	A	gnd!	3.64803e-17	$X=0.257 $Y=1.034
+C2	B	gnd!	3.23979e-17	$X=0.257 $Y=0.8065
+C3	S	gnd!	2.22566e-17	$X=1.422 $Y=0.964
+C4	vdd!	gnd!	6.80445e-17	$X=0.483 $Y=1.693
+C5	net9	gnd!	5.47155e-17	$X=1 $Y=0.5295
+C6	B#5	gnd!	6.60831e-17	$X=1.152 $Y=1.3665
+C7	A#4	gnd!	4.32198e-17	$X=0.452 $Y=1.425
+C8	A#1	gnd!	9.47269e-17	$X=1.152 $Y=0.6765
+C9	B#1	gnd!	3.30946e-17	$X=0.452 $Y=0.515
+C10	B#6	gnd!	1.0781e-16	$X=0.8805 $Y=1.0845
+C11	B#4	gnd!	8.07042e-17	$X=0.7845 $Y=0.827
+C12	A#3	gnd!	2.87807e-17	$X=0.2545 $Y=1.024
+C13	B#3	gnd!	2.79038e-17	$X=0.2545 $Y=0.784
+C14	S#6	gnd!	1.7446e-17	$X=1.4095 $Y=0.964
+C15	A#5	gnd!	4.65853e-17	$X=0.257 $Y=1.034
+C16	B#7	gnd!	4.5706e-17	$X=0.257 $Y=0.8065
+C17	vdd!#1	gnd!	2.78732e-17	$X=1.2495 $Y=1.504
+C18	S#3	gnd!	6.89532e-17	$X=1.0545 $Y=1.4055
+C19	S#5	gnd!	5.21173e-17	$X=0.6035 $Y=1.4665
+C20	vdd!#5	gnd!	2.73013e-17	$X=0.3545 $Y=1.487
+C21	S#1	gnd!	4.6749e-17	$X=1.2495 $Y=0.5685
+C22	net9#2	gnd!	5.07821e-17	$X=0.6035 $Y=0.5295
+C23	S#2	gnd!	6.57479e-17	$X=1.152 $Y=1.119
+C24	vdd!#3	gnd!	5.43189e-17	$X=0.818 $Y=1.8575
+C25	B#2	gnd!	2.88382e-17	$X=0.452 $Y=0.7425
+C26	A#2	gnd!	1.16017e-16	$X=0.401 $Y=1.0065
+*
+*
+.ENDS nand_x1
+*

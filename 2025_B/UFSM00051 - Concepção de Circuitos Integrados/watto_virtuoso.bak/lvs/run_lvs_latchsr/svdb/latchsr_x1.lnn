@@ -1,0 +1,17 @@
+# SVDB: Layout Netlist Names (lnn)
+# SVDB: Layout Primary latchsr_x1
+% M1_PO_CDNS_764113596371 1
+% M1_PSUB_CDNS_764113596373 1
+% M1_NWELL_CDNS_764113596374 2
+% nmos1v_CDNS_764113596370 3
+% nmos1v_CDNS_764113596371 3
+% pmos1v_CDNS_764113596372 5
+% pmos1v_CDNS_764113596373 4
+% nmos1v_CDNS_764113596374 3
+% latchsr_x1 6
+1 Qbar
+2 Q
+3 gnd!
+4 vdd!
+5 Set
+6 Reset

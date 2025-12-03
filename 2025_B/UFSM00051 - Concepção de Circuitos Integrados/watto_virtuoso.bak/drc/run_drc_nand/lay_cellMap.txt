@@ -1,0 +1,1 @@
+watto nand_x1 layout nand_x1

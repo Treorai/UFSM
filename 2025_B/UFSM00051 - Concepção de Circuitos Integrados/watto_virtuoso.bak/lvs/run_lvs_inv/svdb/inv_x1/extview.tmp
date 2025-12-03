@@ -1,0 +1,86 @@
+*
+*
+*
+*                       LINUX           Mon Sep 22 18:13:11 2025
+*
+*
+*
+*  PROGRAM  advgen
+*
+*  Name           : advgen - Quantus - (64-bit)
+*  Version        : 23.1.1-p051
+*  Build Date     : Thu Feb 15 21:11:17 PST 2024
+*
+*  HSPICE LIBRARY
+*
+* GLOBAL_TEMPERATURE 25
+*  OPERATING_TEMPERATURE 25
+*  QRC_TECH_DIR /home/tools/design_kits/cadence/GPDK045/gpdk045_v_6_0/qrc/typical 
+*
+*!LENGTH_UNITS METERS
+*
+*
+*
+
+*
+.SUBCKT inv_x1 Vin Vout gnd! vdd!
+*
+*
+*  caps2d version: 10
+*
+*
+*       TRANSISTOR CARDS
+*
+*
+MMNM0	Vout#3	Vin#4	gnd!#3	gnd!	g45n1svt	L=4.5e-08
++ W=1.2e-07
++ AD=1.68e-14	AS=1.68e-14	PD=5.2e-07	PS=5.2e-07
++ fw=1.2e-07 sa=1.4e-07 sb=1.4e-07 sca=4.46017 scb=0.000436376 scc=1.63659e-07
+MMPM0	Vout#1	Vin#1	vdd!#3	vdd!	g45p1svt	L=4.5e-08
++ W=1.2e-07
++ AD=1.68e-14	AS=1.68e-14	PD=5.2e-07	PS=5.2e-07
++ fw=1.2e-07 sa=1.4e-07 sb=1.4e-07 sca=40.8411 scb=0.04888 scc=0.00327013
+*
+*
+*       RESISTOR AND CAP/DIODE CARDS
+*
+Rj1	Vin	Vin#5	0.536288	$metal2_conn	$W=1.15e-07
++ $X=0.1355 $Y=0.93
+Rj2	Vout	Vout#2	0.278471	$metal2_conn	$W=1.15e-07
++ $X=0.5545 $Y=0.93
+Rk1	Vin#5	Vin#3	22.534004	$metal1_conn	$W=2.15e-07
++ $X=0.2325 $Y=0.93
+Rk2	Vout#1	Vout#2	62.380951	$metal1_conn	$W=9e-08
++ $X=0.445 $Y=1.255
+Rk3	Vout#2	Vout#3	75.302704	$metal1_conn	$W=9e-08
++ $X=0.445 $Y=0.6425
+Rk4	vdd!	vdd!#2	0.003777	$metal1_conn	$W=2.55e-07
++ $X=0.335 $Y=1.8825
+Rk5	vdd!#2	vdd!#3	62.233734	$metal1_conn	$W=9e-08
++ $X=0.24 $Y=1.63
+Rk8	gnd!	gnd!#3	75.200600	$metal1_conn	$W=9e-08
++ $X=0.24 $Y=0.3475
+Rl1	Vin#1	Vin#2	182.858658	$poly_conn	$W=3.9e-08
++ $X=0.3425 $Y=1.2355
+Rl2	Vin#2	Vin#3	1.546955	$poly_conn	$W=2.34e-07
++ $X=0.319 $Y=0.925
+Rl3	Vin#2	Vin#4	142.474045	$poly_conn	$W=3.9e-08
++ $X=0.3425 $Y=0.6675
+*
+*       CAPACITOR CARDS
+*
+*
+C1	Vin	gnd!	2.79403e-17	$X=0.1995 $Y=0.929
+C2	vdd!	gnd!	6.55389e-17	$X=0.4075 $Y=1.6945
+C3	Vin#1	gnd!	4.42545e-17	$X=0.342 $Y=1.4395
+C4	Vin#4	gnd!	3.9705e-17	$X=0.342 $Y=0.488
+C5	Vin#3	gnd!	5.79529e-17	$X=0.342 $Y=0.9505
+C6	Vout#2	gnd!	1.14004e-16	$X=0.467 $Y=0.9335
+C7	Vin#5	gnd!	7.31662e-17	$X=0.2695 $Y=0.924
+C8	Vout#1	gnd!	4.5289e-17	$X=0.4395 $Y=1.4295
+C9	vdd!#3	gnd!	2.52533e-17	$X=0.2445 $Y=1.507
+C10	Vout#3	gnd!	4.35977e-17	$X=0.4395 $Y=0.509
+*
+*
+.ENDS inv_x1
+*

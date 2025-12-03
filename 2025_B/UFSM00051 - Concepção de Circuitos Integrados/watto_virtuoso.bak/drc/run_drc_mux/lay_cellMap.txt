@@ -1,0 +1,2 @@
+watto mux_x1 layout mux_x1
+watto inv_x1 layout inv_x1

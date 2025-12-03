@@ -1,0 +1,11 @@
+# Placement Hierarchy File (sph)
+# 
+# 
+# 
+% inv_x1 2
+MNM0 MN 4
+MPM0 MP 4
+% switch_x1 3
+MPM1 MP 4
+MNM0 MN 4
+XI2 inv_x1 2

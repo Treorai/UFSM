@@ -1,0 +1,9 @@
+pmos1v_CDNS_764113596372 nwell_conn,poly_conn,metal1_conn,cont_pdiff,psubstrate,pdiff_conn NULL
+pmos1v_CDNS_764113596373 nwell_conn,poly_conn,metal1_conn,cont_pdiff,psubstrate,pdiff_conn NULL
+nmos1v_CDNS_764113596370 ndiff_conn,poly_conn,_nmos1v,metal1_conn,psubstrate,cont_ndiff NULL
+nmos1v_CDNS_764113596371 ndiff_conn,poly_conn,_nmos1v,metal1_conn,psubstrate,cont_ndiff NULL
+nmos1v_CDNS_764113596374 ndiff_conn,poly_conn,_nmos1v,metal1_conn,psubstrate,cont_ndiff NULL
+latchsr_x1 nwell_conn,cont_poly,poly_conn,_pmos1v,metal1_conn,psubstrate ndiff_conn,ntap,ptap,_nmos1v,cont_pdiff,cont_ndiff,pdiff_conn
+M1_NWELL_CDNS_764113596374 ndiff_conn,ntap,nwell_conn,metal1_conn,psubstrate,cont_ndiff NULL
+M1_PSUB_CDNS_764113596373 ptap,metal1_conn,cont_pdiff,psubstrate,pdiff_conn NULL
+M1_PO_CDNS_764113596371 cont_poly,poly_conn,metal1_conn NULL

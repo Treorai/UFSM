@@ -1,0 +1,13 @@
+# Placement Hierarchy File (sph)
+# 
+# 
+# 
+% inv_x1 2
+MNM0 MN 4
+MPM0 MP 4
+% tristateinv_x1 3
+MNM1 MN 4
+MNM0 MN 4
+MPM1 MP 4
+MPM0 MP 4
+XI2 inv_x1 2

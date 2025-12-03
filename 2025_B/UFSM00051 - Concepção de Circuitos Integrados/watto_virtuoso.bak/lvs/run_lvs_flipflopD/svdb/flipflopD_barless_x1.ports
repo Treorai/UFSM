@@ -1,0 +1,7 @@
+# SVDB: Port Table (ports)
+# SVDB: Layout Primary flipflopD_barless_x1
+D 9 D 5090 1120 metal1_conn
+gnd! 1 gnd! 380 280 metal1_conn
+clk 4 clk 7810 2180 metal2_conn
+vdd! 2 vdd! 330 3800 metal1_conn
+Q 8 Q 7150 2350 metal2_conn

@@ -39,16 +39,18 @@ Passa a corrente S-D quando a entrada G tiver uma tensão positiva.
 
 ## Inversor
 
-![noms2](image.png)
+![invscheme](./src/inv_scheme.png)
 
 ## Layout
 
 > Default sizes
 
-![alt text](image-1.png)
+![alt text](./src/default_sizes.png)
+
+## Shortcuts
 
 1. $update components and nets
     - check create label as (x)label-[same as pin]
 2. shift+f -> show componnet
 3. ctrl+a -> $show selected incomplete nets
-4. [o] vias
+4. [o] -> vias

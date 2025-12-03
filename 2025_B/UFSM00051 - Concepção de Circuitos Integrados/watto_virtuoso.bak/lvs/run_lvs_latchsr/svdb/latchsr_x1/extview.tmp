@@ -1,0 +1,178 @@
+*
+*
+*
+*                       LINUX           Tue Nov 25 20:34:00 2025
+*
+*
+*
+*  PROGRAM  advgen
+*
+*  Name           : advgen - Quantus - (64-bit)
+*  Version        : 23.1.1-p051
+*  Build Date     : Thu Feb 15 21:11:17 PST 2024
+*
+*  HSPICE LIBRARY
+*
+* GLOBAL_TEMPERATURE 25
+*  OPERATING_TEMPERATURE 25
+*  QRC_TECH_DIR /home/tools/design_kits/cadence/GPDK045/gpdk045_v_6_0/qrc/typical 
+*
+*!LENGTH_UNITS METERS
+*
+*
+*
+
+*
+.SUBCKT latchsr_x1 Q Qbar Reset Set gnd! vdd!
+*
+*
+*  caps2d version: 10
+*
+*
+*       TRANSISTOR CARDS
+*
+*
+MMNM1	Qbar#7	Q#3	gnd!#10	gnd!	g45n1svt	L=4.5e-08
++ W=1.2e-07
++ AD=1.92e-14	AS=1.68e-14	PD=5.6e-07	PS=5.2e-07
++ fw=1.2e-07 sa=1.4e-07 sb=3.45e-07 sca=4.62022 scb=0.00055476 scc=3.11054e-07
+MMNM3	Q#5	Reset#1	gnd!#8	gnd!	g45n1svt	L=4.5e-08
++ W=1.2e-07
++ AD=1.68e-14	AS=1.68e-14	PD=5.2e-07	PS=5.2e-07
++ fw=1.2e-07 sa=1.4e-07 sb=1.4e-07 sca=4.62022 scb=0.00055476 scc=3.11054e-07
+MMNM2	Q#8	Qbar#4	gnd!#9	gnd!	g45n1svt	L=4.5e-08
++ W=1.2e-07
++ AD=1.68e-14	AS=1.68e-14	PD=5.2e-07	PS=5.2e-07
++ fw=1.2e-07 sa=1.4e-07 sb=1.4e-07 sca=4.62022 scb=0.00055476 scc=3.11054e-07
+MMNM0	Qbar#7	Set#4	gnd!#7	gnd!	g45n1svt	L=4.5e-08
++ W=1.2e-07
++ AD=1.92e-14	AS=1.68e-14	PD=5.6e-07	PS=5.2e-07
++ fw=1.2e-07 sa=1.4e-07 sb=3.45e-07 sca=4.62022 scb=0.00055476 scc=3.11054e-07
+MMPM0	net4	Set#1	vdd!#5	vdd!	g45p1svt	L=4.5e-08
++ W=1.45e-07
++ AD=8.7e-15	AS=2.03e-14	PD=4.1e-07	PS=5.7e-07
++ fw=1.45e-07 sa=1.4e-07 sb=2.45e-07 sca=28.2191 scb=0.0304148 scc=0.00223692
+MMPM1	Qbar#8	Q#1	net4	vdd!	g45p1svt	L=4.5e-08
++ W=1.45e-07
++ AD=2.03e-14	AS=8.7e-15	PD=5.7e-07	PS=4.1e-07
++ fw=1.45e-07 sa=2.45e-07 sb=1.4e-07 sca=26.326 scb=0.0271677 scc=0.00217105
+MMPM3	Q#9	Qbar#1	net12	vdd!	g45p1svt	L=4.5e-08
++ W=1.45e-07
++ AD=2.03e-14	AS=8.7e-15	PD=5.7e-07	PS=4.1e-07
++ fw=1.45e-07 sa=1.4e-07 sb=2.45e-07 sca=23.8155 scb=0.0247027 scc=0.0021592
+MMPM2	net12	Reset#3	vdd!#6	vdd!	g45p1svt	L=4.5e-08
++ W=1.45e-07
++ AD=8.7e-15	AS=2.03e-14	PD=4.1e-07	PS=5.7e-07
++ fw=1.45e-07 sa=2.45e-07 sb=1.4e-07 sca=23.9386 scb=0.0247294 scc=0.0021592
+*
+*
+*       RESISTOR AND CAP/DIODE CARDS
+*
+Rk1	Set#3	Set	15.084601	$metal1_conn	$W=9e-08
++ $X=0.26 $Y=0.985
+Rk2	Qbar#3	Qbar	22.500000	$metal1_conn	$W=1.2e-07
++ $X=0.76 $Y=1.145
+Rk3	Qbar	Qbar#6	0.082625	$metal1_conn	$W=1.25e-07
++ $X=0.706 $Y=1.145
+Rk4	Qbar#6	Qbar#7	75.628845	$metal1_conn	$W=8e-08
++ $X=0.435 $Y=0.835
+Rk5	Qbar#6	Qbar#8	62.206200	$metal1_conn	$W=1e-07
++ $X=0.64 $Y=1.3375
+Rk6	Reset	Reset#4	15.015065	$metal1_conn	$W=1.25e-07
++ $X=1.755 $Y=1.14
+Rk7	Q#5	Q#6	75.816315	$metal1_conn	$W=9e-08
++ $X=2.115 $Y=0.635
+Rk8	Q#6	Q	0.171784	$metal1_conn	$W=1e-07
++ $X=1.085 $Y=0.765
+Rk9	Q	Q#4	22.500000	$metal1_conn	$W=1.2e-07
++ $X=0.925 $Y=0.77
+Rk10	Q#6	Q#8	75.185829	$metal1_conn	$W=9e-08
++ $X=1.185 $Y=0.635
+Rk11	Q#6	Q#9	62.502514	$metal1_conn	$W=9e-08
++ $X=1.185 $Y=1.1325
+Rk13	gnd!#2	gnd!#3	0.129953	$metal1_conn	$W=2.55e-07
++ $X=1.65 $Y=0.1275
+Rk14	gnd!#3	gnd!#5	0.062469	$metal1_conn	$W=2.55e-07
++ $X=1.274 $Y=0.1275
+Rk15	gnd!#5	gnd!#6	0.125165	$metal1_conn	$W=2.55e-07
++ $X=0.881 $Y=0.1275
+Rk16	gnd!#6	gnd!	0.097579	$metal1_conn	$W=2.55e-07
++ $X=0.435 $Y=0.1275
+Rk17	gnd!	gnd!#7	75.248634	$metal1_conn	$W=9e-08
++ $X=0.23 $Y=0.365
+Rk18	gnd!#2	gnd!#8	75.210472	$metal1_conn	$W=9e-08
++ $X=1.91 $Y=0.365
+Rk19	gnd!#3	gnd!#9	75.210472	$metal1_conn	$W=9e-08
++ $X=1.39 $Y=0.365
+Rk20	gnd!#6	gnd!#10	75.210472	$metal1_conn	$W=9e-08
++ $X=0.64 $Y=0.365
+Rk23	vdd!#2	vdd!#4	0.088801	$metal1_conn	$W=2.55e-07
++ $X=1.3265 $Y=1.8725
+Rk24	vdd!#4	vdd!	0.166772	$metal1_conn	$W=2.55e-07
++ $X=0.784 $Y=1.8725
+Rk25	vdd!	vdd!#5	62.231216	$metal1_conn	$W=1e-07
++ $X=0.33 $Y=1.6375
+Rk26	vdd!#2	vdd!#6	62.202602	$metal1_conn	$W=1e-07
++ $X=1.495 $Y=1.6375
+Rl1	Set#1	Set#2	276.900970	$poly_conn	$W=3.9e-08
++ $X=0.4325 $Y=1.0855
+Rl2	Set#2	Set#3	24.889540	$poly_conn	$W=3.42e-07
++ $X=0.3325 $Y=0.7775
+Rl3	Set#2	Set#4	74.681496	$poly_conn	$W=3.9e-08
++ $X=0.3325 $Y=0.66
+Rl4	Q#1	Q#2	247.310440	$poly_conn	$W=3.9e-08
++ $X=0.5375 $Y=1.113
+Rl5	Q#2	Q#3	80.002762	$poly_conn	$W=3.9e-08
++ $X=0.5375 $Y=0.66
+Rl6	Q#2	Q#4	104.683556	$poly_conn	$W=3.9e-08
++ $X=0.6875 $Y=0.7775
+Rl7	Qbar#1	Qbar#2	91.541222	$poly_conn	$W=3.9e-08
++ $X=1.2875 $Y=1.3155
+Rl8	Qbar#2	Qbar#3	158.529709	$poly_conn	$W=3.9e-08
++ $X=1.0675 $Y=1.1825
+Rl9	Qbar#2	Qbar#4	235.772003	$poly_conn	$W=3.9e-08
++ $X=1.2875 $Y=0.8625
+Rl10	Reset#1	Reset#2	439.183777	$poly_conn
++ $W=3.9e-08	$X=1.6255 $Y=0.7625
+Rl11	Reset#2	Reset#3	108.848915	$poly_conn
++ $W=3.9e-08	$X=1.3925 $Y=1.2925
+Rl12	Reset#2	Reset#4	71.991249	$poly_conn
++ $W=3.9e-08	$X=1.5 $Y=1.1375
+*
+*       CAPACITOR CARDS
+*
+*
+C1	Q	gnd!	3.5253e-17	$X=0.924 $Y=0.7695
+C2	Qbar	gnd!	2.47866e-17	$X=0.7705 $Y=1.1445
+C3	Set	gnd!	3.45722e-17	$X=0.2595 $Y=1.0495
+C4	vdd!	gnd!	9.75857e-17	$X=0.6255 $Y=1.6845
+C5	Reset#3	gnd!	6.04734e-17	$X=1.3915 $Y=1.4805
+C6	Qbar#1	gnd!	5.67983e-17	$X=1.2865 $Y=1.4925
+C7	Q#1	gnd!	9.83081e-17	$X=0.537 $Y=1.391
+C8	Set#1	gnd!	9.56476e-17	$X=0.432 $Y=1.3775
+C9	Reset#1	gnd!	7.6597e-17	$X=2.0115 $Y=0.5645
+C10	Qbar#4	gnd!	7.68315e-17	$X=1.2865 $Y=0.603
+C11	Q#3	gnd!	3.80969e-17	$X=0.537 $Y=0.502
+C12	Set#4	gnd!	3.92152e-17	$X=0.332 $Y=0.502
+C13	Reset#4	gnd!	8.30392e-17	$X=1.754 $Y=1.1395
+C14	Q#4	gnd!	4.9535e-17	$X=0.924 $Y=0.7695
+C15	Qbar#3	gnd!	6.43015e-17	$X=0.7595 $Y=1.1445
+C16	Set#3	gnd!	1.29006e-16	$X=0.3205 $Y=0.823
+C17	vdd!#6	gnd!	2.60513e-17	$X=1.489 $Y=1.5135
+C18	Q#9	gnd!	6.56612e-17	$X=1.189 $Y=1.4235
+C19	Qbar#8	gnd!	3.93794e-17	$X=0.6345 $Y=1.475
+C20	vdd!#5	gnd!	2.80707e-17	$X=0.3345 $Y=1.528
+C21	Q#5	gnd!	8.9848e-17	$X=2.109 $Y=0.562
+C22	Q#8	gnd!	3.33979e-17	$X=1.189 $Y=0.522
+C23	Qbar#7	gnd!	7.70165e-17	$X=0.4345 $Y=0.59
+C24	Qbar#6	gnd!	7.51102e-17	$X=0.537 $Y=1.1645
+C25	Q#6	gnd!	1.05813e-16	$X=1.184 $Y=0.883
+C26	vdd!#2	gnd!	3.06908e-17	$X=1.9385 $Y=1.872
+C27	vdd!#4	gnd!	3.10925e-17	$X=1.0965 $Y=1.8605
+C28	Q#2	gnd!	8.16866e-17	$X=0.537 $Y=0.886
+C29	Qbar#2	gnd!	8.61324e-17	$X=1.2865 $Y=1.0885
+C30	Reset#2	gnd!	1.1317e-16	$X=1.3915 $Y=1.015
+*
+*
+.ENDS latchsr_x1
+*

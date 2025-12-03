@@ -1,0 +1,4 @@
+vdd!	metal1_0conn	2450	3750
+gnd!	metal1_0conn	1210	280
+in	metal2_0conn	230	1860
+out	metal2_0conn	2710	1860

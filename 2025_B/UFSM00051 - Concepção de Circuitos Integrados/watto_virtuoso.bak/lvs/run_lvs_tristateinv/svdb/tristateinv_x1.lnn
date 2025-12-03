@@ -1,0 +1,21 @@
+# SVDB: Layout Netlist Names (lnn)
+# SVDB: Layout Primary tristateinv_x1
+% M1_NWELL_CDNS_764110544154 1
+% M1_PSUB_CDNS_764110544155 1
+% nmos1v_CDNS_764110544150 4
+% nmos1v_CDNS_764110544151 3
+% pmos1v_CDNS_764110544152 4
+% inv_x1 4
+1 Vin
+2 Vout
+3 vdd!
+4 gnd!
+% pmos1v_CDNS_764110544153 5
+% pmos1v_CDNS_764110544154 4
+% nmos1v_CDNS_764110544155 3
+% tristateinv_x1 5
+1 vdd!
+2 gnd!
+3 Vout
+4 Vin
+6 en

@@ -1,0 +1,17 @@
+
+/home/tools/cadence/installs/PVS231/tools.lnx86/pvs/bin/64bit/edbToEcdb Output Summary
+========================================================================
+
+Delete EDB      : N
+EDB Library dir : 4_bit_full_adder_x1_1374479.db
+ECDB dir        : ./
+Top Cell        : 4_bit_full_adder_x1
+CDL netlist     : svdb/4_bit_full_adder_x1.net
+Layer map file  : svdb/4_bit_full_adder_x1.ecdbmap
+Text map file   : svdb/4_bit_full_adder_x1.ports
+Dependency map  : 4_bit_full_adder_x1.lmap.perc
+Lvs file        : svdb/4_bit_full_adder_x1.lvsfile
+Float net file  : .4_bit_full_adder_x1.info.softchk
+threads         : 32
+debug           : 0
+Source Library  : 4_bit_full_adder_x1_1374479

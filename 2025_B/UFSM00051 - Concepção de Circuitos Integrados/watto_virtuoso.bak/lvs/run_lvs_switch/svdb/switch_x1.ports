@@ -1,0 +1,7 @@
+# SVDB: Port Table (ports)
+# SVDB: Layout Primary switch_x1
+Vin 3 Vin 300 2290 metal2_conn
+vdd! 6 vdd! 2360 3630 metal1_conn
+Vout 4 Vout 2490 2210 metal2_conn
+gnd! 5 gnd! 2040 250 metal1_conn
+Ctrl 2 Ctrl 220 1860 metal2_conn

@@ -1,0 +1,17 @@
+case	"preserve"
+convertDot	"node"
+convertPin	"geometry"
+hierDepth	32
+labelCase	"preserve"
+labelDepth	32
+library	"watto"
+logFile	"/home/ufsm00051/wagner.chitto/wagner.chitto/run_drc_mux/PIPO1.LOG"
+maxVertices	2048
+pinAttNum	0
+runDir	"/home/ufsm00051/wagner.chitto/wagner.chitto/run_drc_mux"
+strmFile	"/home/ufsm00051/wagner.chitto/wagner.chitto/run_drc_mux/mux_x1.gds"
+strmVersion	5
+techLib	"gpdk045"
+topCell	"mux_x1"
+view	"layout"
+enableColoring

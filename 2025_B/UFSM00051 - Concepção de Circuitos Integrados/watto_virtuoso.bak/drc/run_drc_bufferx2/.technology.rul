@@ -1,0 +1,1 @@
+technology "gpdk045_pvs" -ruleSet "default" -techLib "/home/ufsm00051/wagner.chitto/wagner.chitto/pvtech.lib";

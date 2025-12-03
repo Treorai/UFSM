@@ -1,0 +1,15 @@
+( ( net
+( "vdd!" "vdd!" )
+( "gnd!" "gnd!" )
+ )
+( inst
+( "NM0" "MNM0" )
+( "NM3" "MNM3" )
+( "PM0" "MPM0" )
+( "NM2" "MNM2" )
+( "PM3" "MPM3" )
+( "PM2" "MPM2" )
+( "PM1" "MPM1" )
+( "NM1" "MNM1" )
+ )
+ )

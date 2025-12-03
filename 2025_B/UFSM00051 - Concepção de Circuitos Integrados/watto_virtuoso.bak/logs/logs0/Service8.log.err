@@ -1,0 +1,9 @@
+2025/11/24 17:12:04 INFO (/home/tools/cadence/installs/IC231/tools.lnx86/bin/cdnsEnvCheck): Rocky Linux release 8.10 (Green Obsidian) detected (set environment variable CDS_SKIP_OS_CHECK_ON_STARTUP=1 to suppress).
+2025/11/24 17:12:07 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2025/11/24 17:12:07 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+#cdsXvfb-run[176719] log: # Version: 06.64-s087
+#cdsXvfb-run[176719] log: # Called in /home/ufsm00051/wagner.chitto/wagner.chitto as: /home/tools/cadence/installs/IC231/share/bin/cdsXvfb-run -a -s -screen\ 0\ 1024x868x24 /home/tools/cadence/installs/IC231/tools.lnx86/dfII/bin/64bit/virtuoso -beanhost ecomp -beanport 11352 -beanbinlog '' -beanLogFile /home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/amps_Service8.log -mpssession virtuoso118335 -mpshost ecomp -davinciService DaVinciService_118335_1764013224 -scopedPid 118335 -axlSession fnxSession2 -axlServiceIdFlag 8 -uuid 3d56282c-bd0c-4fea-bcc4-c578c0c35558 -heartbeat /dev/shm/swift-heartbeat.7u6f4YNiBY -log /home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Service8.log -adeBrokerAddress ecomp:34059 -noautostart -nographE -lscs 000175E1894CBE06FF0966E38F1FFC06BC4D64FFD61DD265D93F798EEA7CFC06CC4D0A8CEC7E9F67D0227DAAD244CD35C87766E3A12FFC06BC4D0FC7330B4012D56900001E60 -interactive -offlineExprEval -upfrontMode -fenixMode explorer -heartbeatTimeout '' -lingerTimeout 300 -pointlifetime -1
+#cdsXvfb-run[176719] log: # Realpath: /home/tools/cadence/installs/IC231/share/bin/cdsXvfb-run
+#cdsXvfb-run: INFO: no Xvfb session log found.
+#cdsXvfb-run[176719] XAUTHORITY file: ecomp/unix:13  MIT-MAGIC-COOKIE-1  d75514490a76c28291f410b848dd7bcb
+#cdsXvfb-run[176719] XAUTHORITY file: ecomp/unix:900  MIT-MAGIC-COOKIE-1  1ed851cd70826767b5c65be2b94bc6b6

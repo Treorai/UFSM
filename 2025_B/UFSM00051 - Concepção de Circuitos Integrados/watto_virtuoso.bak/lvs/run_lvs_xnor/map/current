@@ -1,0 +1,17 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "xnor_x1"
+  repList "auCdl schematic"
+  stopList "auCdl"
+  globalList "gnd! vdd!"
+  hierDelim "."
+  netlistDir "/home/ufsm00051/wagner.chitto/wagner.chitto/run_lvs_xnor/"
+ )
+( model
+( "watto/inv_x1/schematic" "inv_x1" )
+( "watto/xnor_x1/schematic" "xnor_x1" )
+ )
+( "inv_x1" "ihnl/cds0/map" )
+( "xnor_x1" "ihnl/cds1/map" )
+ )

@@ -1,0 +1,71 @@
+********************************************************************************
+Product   : Virtuoso(R) XStream Out
+Program   : @(#)$CDS: strmout version IC23.1-64b 07/08/2025 22:22 (cpgbld17) $
+          : sub-version  IC23.1-64b.ISR15.37 
+Started at: 08-Sep-2025  17:58:34
+User Name : wagner.chitto
+Host Name : ecomp
+Directory : /home/ufsm00051/wagner.chitto/wagner.chitto
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+INFO (XSTRM-217): Reading the layer map file, /home/tools/design_kits/cadence/GPDK045/gpdk045_v_6_0/gpdk045/gpdk045.layermap
+WARNING (XSTRM-333): The '-enableColoring' option will be ignored during XStream Out. This is because there is no color entry in the layer map and the object map file.
+INFO (XSTRM-427): Based on current hardware configuration, running XStream Out translation in multi-threaded mode with 4 threads.
+INFO (XSTRM-162): You have not used the '-viaMap' option. If the OpenAccess design has native oaVia instances, use the '-viaMap' option for preserving oaVia instances in a XStream Out - XStream In round trip. Using the '-viaMap' option improves performance and VM usage of applications using the Streamed-In design.
+
+Summary of Options :
+library                                 watto
+strmFile                                /home/ufsm00051/wagner.chitto/wagner.chitto/run_drc_inv/inv_x1.gds
+topCell                                 inv_x1
+view                                    layout
+runDir                                  /home/ufsm00051/wagner.chitto/wagner.chitto/run_drc_inv
+logFile                                 /home/ufsm00051/wagner.chitto/wagner.chitto/run_drc_inv/PIPO1.LOG
+techLib                                 gpdk045
+hierDepth                               32
+maxVertices                             2048
+layerMap                                /home/tools/design_kits/cadence/GPDK045/gpdk045_v_6_0/gpdk045/gpdk045.layermap
+userSkillFile                           /home/ufsm00051/wagner.chitto/wagner.chitto/run_drc_inv/strmout.il
+labelDepth                              32
+case                                    Preserve
+convertDot                              node
+
+INFO (XSTRM-180): You have not used the '-objectMap' option. The design has instance(s) of at least one of following OpenAccess objects: oaBlockage, oaBoundary, oaRow, and oaMarker. Any information about these objects will not be translated into the generated stream file. Use the '-objectMap' option to translate/preserve these objects using XStream.
+INFO (XSTRM-223): 1. Translating stdVia gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_757365114270.
+INFO (XSTRM-223): 2. Translating stdVia gpdk045/M1_PSUB/layout as STRUCTURE M1_PSUB_CDNS_757365114271.
+INFO (XSTRM-223): 3. Translating stdVia gpdk045/M1_PO/layout as STRUCTURE M1_PO_CDNS_757365114272.
+INFO (XSTRM-223): 4. Translating stdVia gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_757365114273.
+INFO (XSTRM-223): 5. Translating stdVia gpdk045/M1_NWELL/layout as STRUCTURE M1_NWELL_CDNS_757365114274.
+INFO (XSTRM-223): 6. Translating cellview gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_757365114270.
+INFO (XSTRM-223): 7. Translating cellview gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_757365114271.
+INFO (XSTRM-223): 8. Translating cellview watto/inv_x1/layout as STRUCTURE inv_x1.
+
+Summary of Objects Translated:
+	Scalar Instances:                       2
+	Array Instances:                        0
+	Polygons:                               0
+	Paths:                                  0
+	Rectangles:                             64
+	Lines:                                  0
+	Arcs:                                   0
+	Donuts:                                 0
+	Dots:                                   0
+	Ellipses:                               0
+	Boundaries:                             0
+	Area Blockages:                         0
+	Layer Blockages:                        0
+	Area Halos:                             0
+	Markers:                                0
+	Rows:                                   0
+	Stitch:                                 0
+	Standard Vias                           5
+	Custom Vias:                            0
+	CdsGen Vias:                            0
+	Pathsegs:                               4
+	Text:                                   4
+	TextDisplay:                            0
+	Cells:                                  8
+
+Elapsed Time: 0.7s   User Time: 0.3s   CPU Time: 0.1s   Peak VM: 34640KB
+INFO (XSTRM-234): Translation completed. '0' error(s) and '1' warning(s) found.

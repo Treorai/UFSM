@@ -1,0 +1,17 @@
+
+/home/tools/cadence/installs/PVS231/tools.lnx86/pvs/bin/64bit/edbToEcdb Output Summary
+========================================================================
+
+Delete EDB      : N
+EDB Library dir : buffer_x1_3474878.db
+ECDB dir        : ./
+Top Cell        : buffer_x1
+CDL netlist     : svdb/buffer_x1.net
+Layer map file  : svdb/buffer_x1.ecdbmap
+Text map file   : svdb/buffer_x1.ports
+Dependency map  : buffer_x1.lmap.perc
+Lvs file        : svdb/buffer_x1.lvsfile
+Float net file  : .buffer_x1.info.softchk
+threads         : 32
+debug           : 0
+Source Library  : buffer_x1_3474878

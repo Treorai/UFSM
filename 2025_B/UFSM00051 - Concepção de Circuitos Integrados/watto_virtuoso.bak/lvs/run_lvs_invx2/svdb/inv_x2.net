@@ -1,0 +1,35 @@
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* CDL Netlist:                                              *
+*                                                           *
+* Cell Name  : inv_x2                                       *
+* Netlisted  : Mon Nov 24 17:19:17 2025                     *
+* PVS Version: 23.11-s036 Wed Jan 17 18:11:41 PST 2024      *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+*.LDD
+*.DEVTMPLT 0 MN(g45n1svt) _nmos1v ndiff_conn(D) poly_conn(G) ndiff_conn(S) psubstrate(B)
+*.DEVTMPLT 1 MP(g45p1svt) _pmos1v pdiff_conn(D) poly_conn(G) pdiff_conn(S) nwell_conn(B)
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: nmos1v_CDNS_764015552330                        *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt nmos1v_CDNS_764015552330 1 2 3
+** N=3 EP=3 FDC=1
+M0 2 3 1 1 g45n1svt L=4.5e-08 W=2.4e-07 AD=3.36e-14 AS=3.36e-14 PD=7.6e-07 PS=7.6e-07 fw=2.4e-07 sa=1.4e-07 sb=1.4e-07 sca=4.82293 scb=0.000845673 scc=1.19259e-06 $X=0 $Y=0 $dt=0
+.ends nmos1v_CDNS_764015552330
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: pmos1v_CDNS_764015552331                        *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt pmos1v_CDNS_764015552331 1 2 3 4
+** N=4 EP=4 FDC=1
+M0 2 3 1 1 g45p1svt L=4.5e-08 W=2.9e-07 AD=4.06e-14 AS=4.06e-14 PD=8.6e-07 PS=8.6e-07 fw=2.9e-07 sa=1.4e-07 sb=1.4e-07 sca=68.6209 scb=0.0512401 scc=0.00647961 $X=0 $Y=0 $dt=1
+.ends pmos1v_CDNS_764015552331
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: inv_x2                                          *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt inv_x2 Vin Vout gnd! vdd!
+** N=4 EP=4 FDC=2
+X0 gnd! Vout Vin nmos1v_CDNS_764015552330 $T=640 820 0 0 $X=220 $Y=620
+X1 vdd! Vout Vin gnd! pmos1v_CDNS_764015552331 $T=640 2580 0 0 $X=220 $Y=2380
+.ends inv_x2

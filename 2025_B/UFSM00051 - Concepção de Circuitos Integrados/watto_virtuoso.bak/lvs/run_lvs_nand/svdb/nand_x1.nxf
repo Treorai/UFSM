@@ -1,0 +1,20 @@
+# XXXX: Net Cross Reference (nxf) (File format 1)
+# XXXX: Layout Primary nand_x1
+# XXXX: End of header.
+% MP 4 MP 4 
+0 D 0 D
+0 G 0 G
+0 S 0 S
+0 B 0 B
+% MN 4 MN 4 
+0 D 0 D
+0 G 0 G
+0 S 0 S
+0 B 0 B
+% nand_x1 5 nand_x1 5 
+0 A 0 A
+0 B 0 B
+0 S 0 S
+0 vdd! 0 vdd!
+0 gnd! 0 gnd!
+0 6 0 net9

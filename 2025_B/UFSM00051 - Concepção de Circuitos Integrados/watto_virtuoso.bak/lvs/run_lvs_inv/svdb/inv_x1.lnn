@@ -1,0 +1,9 @@
+# SVDB: Layout Netlist Names (lnn)
+# SVDB: Layout Primary inv_x1
+% nmos1v_CDNS_762655034220 3
+% pmos1v_CDNS_762655034221 4
+% inv_x1 4
+1 gnd!
+2 Vout
+3 Vin
+4 vdd!

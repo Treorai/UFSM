@@ -1,0 +1,7 @@
+# SVDB: Port Table (ports)
+# SVDB: Layout Primary tristatebuffer_x1
+en 6 en 220 1820 metal2_conn
+vdd! 4 vdd! 2940 3690 metal1_conn
+in 1 in 1850 2290 metal1_conn
+gnd! 5 gnd! 650 170 metal1_conn
+out 8 out 4330 2240 metal1_conn

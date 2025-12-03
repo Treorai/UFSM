@@ -1,0 +1,10 @@
+#0                               
+MP: MP
+#0                               
+MN: MN
+#4                               
+nor_x1: nor_x1
+D MPM1 M0
+S MPM0 M1
+D MNM1 X2/M0
+D MNM0 X3/M0

@@ -1,0 +1,17 @@
+# Placement Hierarchy File (sph)
+# 
+# 
+# 
+% flipflopD_x1 4
+MPM5 MP 4
+MPM4 MP 4
+MPM6 MP 4
+MPM1 MP 4
+MPM0 MP 4
+MPM7 MP 4
+MNM5 MN 4
+MNM6 MN 4
+MNM2 MN 4
+MNM0 MN 4
+MNM7 MN 4
+MNM4 MN 4

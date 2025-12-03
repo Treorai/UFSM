@@ -1,0 +1,38 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  watto
+* Top Cell Name: inv_x2
+* View Name:     schematic
+* Netlisted on:  Nov 24 17:19:13 2025
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+*.GLOBAL vdd!
++        gnd!
+
+*.PIN vdd!
+*+    gnd!
+
+************************************************************************
+* Library Name: watto
+* Cell Name:    inv_x2
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT inv_x2 Vin Vout
+*.PININFO Vin:I Vout:O
+MNM0 Vout Vin gnd! gnd! g45n1svt m=1 l=45n w=240n
+MPM0 Vout Vin vdd! vdd! g45p1svt m=1 l=45n w=290n
+.ENDS
+

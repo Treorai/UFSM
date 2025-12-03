@@ -1,0 +1,10 @@
+CADENCE IHNL11140
+$model
+watto/nand_x1/schematic nand_x1
+$endmodel
+$net
+gnd! gnd!
+vdd! vdd!
+$endnet
+$param
+$endparam

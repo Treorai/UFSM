@@ -1,0 +1,48 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  watto
+* Top Cell Name: flipflopD_x1
+* View Name:     schematic
+* Netlisted on:  Nov 25 20:55:12 2025
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+*.GLOBAL vdd!
++        gnd!
+
+*.PIN vdd!
+*+    gnd!
+
+************************************************************************
+* Library Name: watto
+* Cell Name:    flipflopD_x1
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT flipflopD_x1 D Q Qbar clk
+*.PININFO D:I clk:I Q:O Qbar:O
+MPM5 Qbar net3 vdd! vdd! g45p1svt m=1 l=45n w=145n
+MPM4 Q Qbar vdd! vdd! g45p1svt m=1 l=45n w=145n
+MPM3 net3 clk net8 vdd! g45p1svt m=1 l=45n w=145n
+MPM2 net8 clk net1 vdd! g45p1svt m=1 l=45n w=145n
+MPM1 net8 net2 vdd! vdd! g45p1svt m=1 l=45n w=145n
+MPM0 net2 net1 vdd! vdd! g45p1svt m=1 l=45n w=145n
+MNM5 Q Qbar gnd! gnd! g45n1svt m=1 l=45n w=120n
+MNM3 net3 clk Q gnd! g45n1svt m=1 l=45n w=120n
+MNM2 net8 net2 gnd! gnd! g45n1svt m=1 l=45n w=120n
+MNM1 D clk net1 gnd! g45n1svt m=1 l=45n w=120n
+MNM0 net2 net1 gnd! gnd! g45n1svt m=1 l=45n w=120n
+MNM4 Qbar net3 gnd! gnd! g45n1svt m=1 l=45n w=120n
+.ENDS
+

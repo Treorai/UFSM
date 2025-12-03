@@ -1,0 +1,11 @@
+CADENCE IHNL11140
+$model
+watto/inv_x1/schematic inv_x1
+watto/mux_x1/schematic mux_x1
+$endmodel
+$net
+gnd! gnd!
+vdd! vdd!
+$endnet
+$param
+$endparam

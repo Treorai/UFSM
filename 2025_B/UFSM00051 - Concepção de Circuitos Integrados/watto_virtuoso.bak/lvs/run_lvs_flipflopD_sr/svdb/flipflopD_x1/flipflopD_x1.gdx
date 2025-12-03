@@ -1,0 +1,18 @@
+#0                               
+MP: MP
+#0                               
+MN: MN
+#12                              
+flipflopD_x1: flipflopD_x1
+D MPM5 X27/M0
+D MPM4 X24/M0
+D MPM3 X26/M0
+D MPM2 M1
+D MPM1 X25/M0
+D MPM0 M0
+D MNM5 X28/M0
+D MNM3 X21/M0
+D MNM2 X19/M0
+D MNM1 X20/M0
+D MNM0 X18/M0
+D MNM4 X29/M0

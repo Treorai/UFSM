@@ -1,0 +1,18 @@
+# XXXX: Instance Cross Reference (ixf) (File format 1)
+# XXXX: Layout Primary flipflopD_barless_x1
+# XXXX: End of header.
+% MP 4 MP 4
+% MN 4 MN 4
+% flipflopD_barless_x1 5 flipflopD_barless_x1 5
+0 X27/M0 0 MPM5  
+0 X24/M0 0 MPM4  
+0 X26/M0 0 MPM3  
+0 M1 0 MPM2  
+0 X25/M0 0 MPM1  
+0 M0 0 MPM0  
+0 X28/M0 0 MNM5  
+0 X21/M0 0 MNM3  
+0 X19/M0 0 MNM2  
+0 X20/M0 0 MNM1  
+0 X18/M0 0 MNM0  
+0 X29/M0 0 MNM4  

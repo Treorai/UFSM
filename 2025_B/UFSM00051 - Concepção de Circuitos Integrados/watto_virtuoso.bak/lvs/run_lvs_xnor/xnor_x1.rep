@@ -1,0 +1,28 @@
+			*****************************************************
+			**                                                 **
+			**                L V S  R E P O R T               **
+			**                                                 **
+			*****************************************************
+
+
+Report File Name         : xnor_x1.rep
+ERC Summary File         : xnor_x1.sum
+LVS Comparison Report    : xnor_x1.rep.cls
+LVS Softchk Report       : xnor_x1.softchk
+Layout Name              : /home/ufsm00051/wagner.chitto/wagner.chitto/run_lvs_xnor/xnor_x1.gds ("xnor_x1")
+User Name                : wagner.c
+Creation Time            : Tue Nov 25 17:06:38 2025
+Current directory        : /home/ufsm00051/wagner.chitto/wagner.chitto/run_lvs_xnor
+PVS Version              : 23.11-s036 Wed Jan 17 18:11:41 PST 2024
+
+
+			*****************************************************
+			**                                                 **
+			**            D E V E X T  R E P O R T             **
+			**                                                 **
+			*****************************************************
+
+
+    LVS_SOFTCHK psubstrate -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK nwell_conn -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK Nburied -TYPE CONTACT   Total Result        0 (       0)

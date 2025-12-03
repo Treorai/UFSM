@@ -1,0 +1,50 @@
+#--------------------------------------------------------------------------------------
+# OPTION COMMAND FILE created by Cadence Extraction Quantus UI Version 23.1.1-p051
+#--------------------------------------------------------------------------------------
+
+capacitance \
+	 -decoupling_factor 1.0 \
+	 -ground_net "gnd!"
+extract \
+	 -selection "all" \
+	 -type "rc_decoupled"
+extraction_setup \
+	 -array_vias_spacing auto \
+	 -split_via_by_unit_area false \
+	 -max_fracture_length infinite \
+	 -max_fracture_length_unit "MICRONS" \
+	 -max_via_array_size "auto" \
+	 -net_name_space "LAYOUT"
+filter_res \
+	 -merge_parallel_res false \
+	 -min_res 0.001
+input_db -type pvs \
+	 -design_cell_name "buffer_x2 layout watto" \
+	 -run_name "buffer_x2" \
+	 -directory_name "/home/ufsm00051/wagner.chitto/wagner.chitto/run_lvs_bufferx2/svdb" \
+	 -format "DFII"
+output_db -type extracted_view \
+	 -cap_component "pcapacitor" \
+	 -cap_property_name "c" \
+	 -enable_cellview_check false \
+	 -device_finger_delimiter "@" \
+	 -cdl_out_map_directory \
+		"/home/ufsm00051/wagner.chitto/wagner.chitto/run_lvs_bufferx2" \
+	 -include_cap_model "false" \
+	 -include_parasitic_cap_model "false" \
+	 -include_res_model "false" \
+	 -include_parasitic_res_model "comment" \
+	 -include_parasitic_res_width true \
+	 -res_component "presistor" \
+	 -res_property_name "r" \
+	 -view_name "av_extracted"
+output_setup \
+	 -directory_name "/home/ufsm00051/wagner.chitto/wagner.chitto/run_lvs_bufferx2/svdb" \
+	 -temporary_directory_name "buffer_x2"
+process_technology \
+	 -technology_corner \
+		"rcx_typical" \
+	 -technology_library_file "/home/ufsm00051/wagner.chitto/wagner.chitto/pvtech.lib" \
+	 -technology_name "gpdk045_pvs" \
+	 -temperature \
+		25.0

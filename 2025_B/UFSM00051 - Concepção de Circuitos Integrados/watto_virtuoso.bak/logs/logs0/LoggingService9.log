@@ -1,0 +1,10 @@
+[Logging Service: 9]
+[2025-12-01 18:11:18.046 -0300] [INFO] [cadence.virtuoso.ade.loggingservice] - HistoryRecorderManager init {"dbBasePath": "/home/ufsm00051/wagner.chitto/wagner.chitto/watto/test_flipflopD_ms_x1/maestro/results/maestro"}
+[2025-12-01 18:11:18.046 -0300] [INFO] [cadence.virtuoso.ade.loggingservice] - useGRPC grpc service... {"brokerAddress": "ecomp:44213", "serviceName": "DaVinciService_1201550_1764621406", "axlSession": "fnxSession3"}
+[2025-12-01 18:11:18.046 -0300] [PROCESS] [cadence.virtuoso.ade.loggingservice] - Logging Service has successfully started. Waiting for incoming messages ... {"hostname": "ecomp", "processid": 1261630, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/LoggingService9.log"}
+[2025-12-01 18:11:18.058 -0300] [INFO] [cadence.virtuoso.ade.loggingservice] - logging service gRPC started {"listening address": "ecomp:44107"}
+[2025-12-01 18:11:24.021 -0300] [ERROR] [cadence.virtuoso.ade.loggingservice] - ServiceDBAccessSqliteOp::evalSql failed {"reason": "UNIQUE constraint failed: location.point, location.test, location.tool", "sql": "INSERT INTO location (tool, file, point, test, line) VALUES ('unknown', '', '', '', '0');"}
+[2025-12-01 18:22:45.029 -0300] [INFO] [cadence.virtuoso.ade.loggingservice] - Got exit signal in processControlMessage. Will exit. {}
+[2025-12-01 18:22:46.029 -0300] [PROCESS] [cadence.virtuoso.ade.loggingservice] - Current memory used: 57.5469 MBytes, peak memory used: 57.5469 MBytes {"hostname": "ecomp", "processid": 1261630, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/LoggingService9.log"}
+[2025-12-01 18:22:46.029 -0300] [PROCESS] [cadence.virtuoso.ade.loggingservice] - Stopping Logging Service process. {"hostname": "ecomp", "processid": 1261630, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/LoggingService9.log"}
+[2025-12-01 18:22:46.029 -0300] [PROCESS] [cadence.virtuoso.ade.loggingservice] - Logging Service stop!!!! {"hostname": "ecomp", "processid": 1261630, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/LoggingService9.log"}

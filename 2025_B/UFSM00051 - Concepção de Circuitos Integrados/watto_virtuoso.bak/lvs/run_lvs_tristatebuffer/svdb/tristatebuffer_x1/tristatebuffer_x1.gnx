@@ -1,0 +1,23 @@
+#4                               
+MN: MN
+= D D
+= G G
+= S S
+= B B
+#4                               
+MP: MP
+= D D
+= G G
+= S S
+= B B
+#9                               
+tristatebuffer_x1: tristatebuffer_x1
+= net3 3
+= net7 2
+= en en
+= in in
+= out out
+= gnd! gnd!
+= vdd! vdd!
+= net14 7
+= net22 9

@@ -1,0 +1,27 @@
+INFO (CAPGEN-41199): 
+
+
+Techgen -trans results will be written to directory: /home/ufsm00051/wagner.chitto/wagner.chitto/run_lvs_flipflopD/svdb/flipflopD_x1
+
+INFO (CAPGEN-41737): Lvs connect layers Bondpad CapMetal Nburied ind10 ind11 ind_ct npn_emit pnp_emit are not mapped in layer_setup file
+
+INFO (CAPGEN-41809):  Lvs connect via bp_tap via10_cap via10_nocap ind_via_diva via10_nodev Via9 Via8 Via7 Via6 Via5 Via4 Via3 Via2 Via1 cont_poly cont_pdiff cont_ndiff ptap ntap nb_tap are not mapped in layer_setup file.
+
+WARNING (RCXSPIC-27297): cap_ground net cannot be set to gnd! as in the CCL because the name collides with a net name in lnn file.
+
+WARNING (AGDSEXT-30124): The <design>.props file is not available. The CCL option "input_db calibre/pvs/pegasus -device_properties_file <filename>" can be used to specify the .props file. 
+
+INFO (AGDSEXT-30016): 
+setting dbunit 5e-10 1 5e-10
+
+    Summary for watto/flipflopD_x1/av_extracted
+    
+    instance count totals:
+    
+        lib              cell             view                    total
+        analogLib        pcapacitor       symbol                     67
+        analogLib        presistor        symbol                     68
+        gpdk045          nmos1v           ivpcell                     6
+        gpdk045          pmos1v           ivpcell                     6
+    
+    Extracted view creation has completed.

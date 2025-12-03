@@ -1,0 +1,17 @@
+( ( net
+( "vdd!" "vdd!" )
+( "gnd!" "gnd!" )
+ )
+( inst
+( "NM0" "MNM0" )
+( "NM3" "MNM3" )
+( "I8" "XI8" )
+( "PM0" "MPM0" )
+( "NM2" "MNM2" )
+( "PM3" "MPM3" )
+( "PM2" "MPM2" )
+( "PM1" "MPM1" )
+( "I7" "XI7" )
+( "NM1" "MNM1" )
+ )
+ )

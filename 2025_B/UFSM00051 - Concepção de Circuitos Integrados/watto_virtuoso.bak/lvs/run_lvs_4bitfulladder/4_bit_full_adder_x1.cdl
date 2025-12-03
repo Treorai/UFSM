@@ -1,0 +1,75 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  watto
+* Top Cell Name: 4_bit_full_adder_x1
+* View Name:     schematic
+* Netlisted on:  Dec  1 23:41:34 2025
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+*.GLOBAL vdd!
++        gnd!
+
+*.PIN vdd!
+*+    gnd!
+
+************************************************************************
+* Library Name: watto
+* Cell Name:    nand_x1
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT nand_x1 A B S
+*.PININFO A:I B:I S:O
+MPM1 vdd! B S vdd! g45p1svt m=1 l=45n w=145n
+MPM0 S A vdd! vdd! g45p1svt m=1 l=45n w=145n
+MNM1 net9 B gnd! gnd! g45n1svt m=1 l=45n w=120n
+MNM0 S A net9 gnd! g45n1svt m=1 l=45n w=120n
+.ENDS
+
+************************************************************************
+* Library Name: watto
+* Cell Name:    1_bit_full_adder_x1
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT 1_bit_full_adder_x1 A B CarryIn CarryOut S
+*.PININFO A:I B:I CarryIn:I CarryOut:O S:O
+XI8 net15 net3 CarryOut / nand_x1
+XI7 net18 net21 S / nand_x1
+XI6 net15 CarryIn net21 / nand_x1
+XI5 net12 net15 net18 / nand_x1
+XI4 net12 CarryIn net15 / nand_x1
+XI3 net6 net9 net12 / nand_x1
+XI2 net3 B net9 / nand_x1
+XI1 A net3 net6 / nand_x1
+XI0 A B net3 / nand_x1
+.ENDS
+
+************************************************************************
+* Library Name: watto
+* Cell Name:    4_bit_full_adder_x1
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT 4_bit_full_adder_x1 A0 A1 A2 A3 B0 B1 B2 B3 CarryIn CarryOut S0 S1 S2 
++ S3
+*.PININFO A0:I A1:I A2:I A3:I B0:I B1:I B2:I B3:I CarryIn:I CarryOut:O S0:O 
+*.PININFO S1:O S2:O S3:O
+XI3 A3 B3 net11 CarryOut S3 / 1_bit_full_adder_x1
+XI2 A2 B2 net6 net11 S2 / 1_bit_full_adder_x1
+XI1 A1 B1 net1 net6 S1 / 1_bit_full_adder_x1
+XI0 A0 B0 CarryIn net1 S0 / 1_bit_full_adder_x1
+.ENDS
+

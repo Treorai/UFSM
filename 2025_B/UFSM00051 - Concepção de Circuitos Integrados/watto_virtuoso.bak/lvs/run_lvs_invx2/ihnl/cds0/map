@@ -1,0 +1,9 @@
+( ( net
+( "vdd!" "vdd!" )
+( "gnd!" "gnd!" )
+ )
+( inst
+( "NM0" "MNM0" )
+( "PM0" "MPM0" )
+ )
+ )

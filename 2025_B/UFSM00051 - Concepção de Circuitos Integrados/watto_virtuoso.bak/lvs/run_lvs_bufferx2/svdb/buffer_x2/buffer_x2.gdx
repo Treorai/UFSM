@@ -1,0 +1,10 @@
+#0                               
+MN: MN
+#0                               
+MP: MP
+#4                               
+buffer_x2: buffer_x2
+D XI2/MNM0 X0/X0/M0
+D XI2/MPM0 M0
+D XI3/MNM0 X1/X0/M0
+D XI3/MPM0 M1

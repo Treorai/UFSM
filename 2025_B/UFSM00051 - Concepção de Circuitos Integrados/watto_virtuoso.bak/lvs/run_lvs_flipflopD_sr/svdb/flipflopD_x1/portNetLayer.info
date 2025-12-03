@@ -1,0 +1,6 @@
+D	metal1_0conn	5090	1120
+gnd!	metal1_0conn	380	280
+clk	metal2_0conn	7810	2180
+Qbar	metal1_0conn	6340	1760
+vdd!	metal1_0conn	330	3800
+Q	metal2_0conn	7150	2350

@@ -1,0 +1,25 @@
+#4                               
+MN: MN
+= D D
+= G G
+= S S
+= B B
+#4                               
+MP: MP
+= D D
+= G G
+= S S
+= B B
+#11                              
+mux_x1: mux_x1
+= net15 6
+= net3 2
+= A A
+= B B
+= S S
+= Sel Sel
+= gnd! gnd!
+= vdd! vdd!
+= net24 9
+= net20 11
+= net11 8

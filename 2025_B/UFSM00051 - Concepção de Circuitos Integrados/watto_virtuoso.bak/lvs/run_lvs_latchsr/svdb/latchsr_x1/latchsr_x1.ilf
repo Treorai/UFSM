@@ -1,0 +1,14 @@
+text_metal1_0conn
+psubstrate
+_0pmos1v
+_0nmos1v
+cont_0poly
+metal1_0conn
+nwell_0conn
+pdiff_0conn
+cont_0pdiff
+poly_0conn
+ndiff_0conn
+cont_0ndiff
+ntap
+ptap
