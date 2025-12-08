@@ -1,0 +1,2 @@
+watto 1_bit_full_adder_x1 layout 1_bit_full_adder_x1
+watto nand_x1 layout nand_x1

@@ -1,0 +1,53 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  watto
+* Top Cell Name: tristateinv_x1
+* View Name:     schematic
+* Netlisted on:  Nov 25 19:42:24 2025
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+*.GLOBAL vdd!
++        gnd!
+
+*.PIN vdd!
+*+    gnd!
+
+************************************************************************
+* Library Name: watto
+* Cell Name:    inv_x1
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT inv_x1 Vin Vout
+*.PININFO Vin:I Vout:O
+MNM0 Vout Vin gnd! gnd! g45n1svt m=1 l=45n w=120n
+MPM0 Vout Vin vdd! vdd! g45p1svt m=1 l=45n w=145n
+.ENDS
+
+************************************************************************
+* Library Name: watto
+* Cell Name:    tristateinv_x1
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT tristateinv_x1 Vin Vout en
+*.PININFO Vin:I en:I Vout:O
+MNM1 net4 en gnd! gnd! g45n1svt m=1 l=45n w=120n
+MNM0 Vout Vin net4 gnd! g45n1svt m=1 l=45n w=120n
+MPM1 Vout Vin net5 vdd! g45p1svt m=1 l=45n w=145n
+MPM0 net5 net1 vdd! vdd! g45p1svt m=1 l=45n w=145n
+XI2 en net1 / inv_x1
+.ENDS
+

@@ -1,0 +1,5 @@
+Vout	metal2_0conn	2870	1980
+en	metal2_0conn	220	1860
+Vin	metal2_0conn	1600	2000
+vdd!	metal1_0conn	1710	3730
+gnd!	metal1_0conn	1580	260

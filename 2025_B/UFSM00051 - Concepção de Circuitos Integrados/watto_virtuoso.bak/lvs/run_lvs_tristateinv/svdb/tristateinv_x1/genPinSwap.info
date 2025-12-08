@@ -1,0 +1,6 @@
+model g45n1svt
+netlist_model g45n1svt
+S D
+model g45p1svt
+netlist_model g45p1svt
+S D

@@ -1,0 +1,31 @@
+;| version 1
+text text_metal1_0conn attach metal1_0conn
+connect Bondpad metal11_0conn by bp_0tap
+connect ind11 metal11_0conn
+connect metal11_0conn CapMetal by via10_0cap
+connect metal11_0conn metal10_0conn by via10_0nocap
+connect ind11 ind10 by ind_0via_0diva
+connect metal11_0conn metal10_0conn by via10_0nodev
+connect ind_0ct ind10
+connect ind10 metal10_0conn
+connect metal10_0conn metal9_0conn by Via9
+connect metal9_0conn metal8_0conn by Via8
+connect metal8_0conn metal7_0conn by Via7
+connect metal7_0conn metal6_0conn by Via6
+connect metal6_0conn metal5_0conn by Via5
+connect metal5_0conn metal4_0conn by Via4
+connect metal4_0conn metal3_0conn by Via3
+connect metal3_0conn metal2_0conn by Via2
+connect metal2_0conn metal1_0conn by Via1
+connect metal1_0conn poly_0conn by cont_0poly
+connect metal1_0conn pdiff_0conn by cont_0pdiff
+connect metal1_0conn npn_0emit by cont_0ndiff
+connect metal1_0conn ndiff_0conn by cont_0ndiff
+connect metal1_0conn pnp_0emit by cont_0pdiff
+sconnect pdiff_0conn psubstrate by ptap
+sconnect ndiff_0conn nwell_0conn by ntap
+sconnect nwell_0conn Nburied by nb_0tap
+model = mos[g45n1svt],g45n1svt
+element mos[g45n1svt] _0nmos1v poly_0conn ndiff_0conn psubstrate
+model = mos[g45p1svt],g45p1svt
+element mos[g45p1svt] _0pmos1v poly_0conn pdiff_0conn nwell_0conn

@@ -1,0 +1,3 @@
+inv_x2 metal2_conn,metal1_conn,cont_ndiff,psubstrate,ndiff_conn,cont_poly,poly_conn,cont_pdiff,ptap,pdiff_conn,Via1,nwell_conn,ntap _nmos1v,_pmos1v
+pmos1v_CDNS_764015552331 metal1_conn,psubstrate,poly_conn,cont_pdiff,pdiff_conn,_pmos1v,nwell_conn NULL
+nmos1v_CDNS_764015552330 metal1_conn,cont_ndiff,psubstrate,ndiff_conn,poly_conn,_nmos1v NULL

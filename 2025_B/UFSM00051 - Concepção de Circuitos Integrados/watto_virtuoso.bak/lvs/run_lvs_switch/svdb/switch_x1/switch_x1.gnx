@@ -1,0 +1,20 @@
+#4                               
+MP: MP
+= D D
+= G G
+= S S
+= B B
+#4                               
+MN: MN
+= D D
+= G G
+= S S
+= B B
+#6                               
+switch_x1: switch_x1
+= net3 1
+= Ctrl Ctrl
+= Vin Vin
+= Vout Vout
+= gnd! gnd!
+= vdd! vdd!

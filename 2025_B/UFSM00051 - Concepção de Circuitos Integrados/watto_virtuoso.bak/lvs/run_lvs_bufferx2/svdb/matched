@@ -1,0 +1,34 @@
+##############################################################################################################
+#####  
+#####                                         PVS LVS COMPARISON
+#####  
+#####  Version                       :   23.11-s036
+#####  NVN Run Start                 :   Tue Nov 25 18:37:29 2025
+#####  ERC Summary File              :   buffer_x2.sum
+#####  Extraction Report File        :   buffer_x2.rep
+#####  Comparison Report File        :   buffer_x2.rep.cls
+#####  Top Cell                      :   buffer_x2  <vs>  buffer_x2
+#####  
+#####  Run Result                    :   MATCH
+#####  
+#####  Run Summary                   :   [INFO]  ERC Results: Empty
+#####                                :   [INFO]  Extraction Clean
+#####  
+#####  Layout Design                 :   watto buffer_x2 layout
+#####  Schematic File                :   /home/ufsm00051/wagner.chitto/wagner.chitto/run_lvs_bufferx2/buffer_x2.cdl (cdl)
+#####  Rules File                    :   /home/ufsm00051/wagner.chitto/wagner.chitto/run_lvs_bufferx2/.technology.rul
+#####  Pin Swap File                 :   buffer_x2.rep.cps
+#####  
+#####  Extraction CPU Time           :   0h 0m 0s - (0s)
+#####  Extraction Exec Time          :   0h 0m 1s - (1s)
+#####  Extraction Peak Memory Usage  :   31.00MB
+#####  NVN CPU Time                  :   0h 0m 0s - (0s)                 
+#####  NVN Exec Time                 :   0h 0m 1s - (1s)                 
+#####  NVN Peak Memory Usage         :   259.78MB
+#####  LVS Total CPU Time            :   0h 0m 0s - (0s)                 
+#####  LVS Total Exec Time           :   0h 0m 2s - (2s)                 
+#####  LVS Total Peak Memory Usage   :   259.78MB
+#####  
+##############################################################################################################
+
+

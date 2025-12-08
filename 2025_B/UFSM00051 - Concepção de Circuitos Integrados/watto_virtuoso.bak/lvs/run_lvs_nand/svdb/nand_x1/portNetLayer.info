@@ -1,0 +1,5 @@
+S	metal2_0conn	2830	1960
+B	metal2_0conn	530	1610
+gnd!	metal1_0conn	300	160
+A	metal2_0conn	510	2080
+vdd!	metal1_0conn	300	3770

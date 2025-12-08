@@ -1,0 +1,14 @@
+#0                               
+MN: MN
+#0                               
+MP: MP
+#8                               
+tristatebuffer_x1: tristatebuffer_x1
+D XI4/MNM0 X7/X2/M0
+D XI4/MPM0 X7/M0
+D MNM2 X10/M0
+D MNM1 X11/M0
+D MNM0 X5/M0
+D MPM2 X9/M0
+D MPM1 X8/M0
+D MPM0 M0

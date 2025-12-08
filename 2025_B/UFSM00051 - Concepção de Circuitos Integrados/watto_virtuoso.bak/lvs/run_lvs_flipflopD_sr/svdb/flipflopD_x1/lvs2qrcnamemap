@@ -1,0 +1,12 @@
+_pmos1v _0pmos1v 0
+_nmos1v _0nmos1v 0
+cont_poly cont_0poly 0
+metal1_conn metal1_0conn 0
+metal2_conn metal2_0conn 0
+metal3_conn metal3_0conn 0
+nwell_conn nwell_0conn 0
+pdiff_conn pdiff_0conn 0
+cont_pdiff cont_0pdiff 0
+poly_conn poly_0conn 0
+ndiff_conn ndiff_0conn 0
+cont_ndiff cont_0ndiff 0

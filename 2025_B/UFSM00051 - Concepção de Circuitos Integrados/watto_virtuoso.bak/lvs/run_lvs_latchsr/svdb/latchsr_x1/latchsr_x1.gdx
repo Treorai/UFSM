@@ -1,0 +1,14 @@
+#0                               
+MP: MP
+#0                               
+MN: MN
+#8                               
+latchsr_x1: latchsr_x1
+S MPM3 M2
+S MPM2 M3
+D MPM1 M1
+D MPM0 M0
+D MNM3 X6/M0
+D MNM2 X5/M0
+D MNM1 X11/M0
+D MNM0 X4/M0

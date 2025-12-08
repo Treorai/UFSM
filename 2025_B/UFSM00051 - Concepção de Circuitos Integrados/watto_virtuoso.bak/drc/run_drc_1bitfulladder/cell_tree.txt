@@ -1,0 +1,5 @@
+1_bit_full_adder_x1
+
+1_bit_full_adder_x1
+	nand_x1
+

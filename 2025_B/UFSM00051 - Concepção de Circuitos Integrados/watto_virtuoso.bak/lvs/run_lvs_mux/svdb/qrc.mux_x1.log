@@ -1,0 +1,194 @@
+
+
+  Cadence Quantus Extraction - 64-bit Parasitic Extractor - Version
+23.1.1-p051 Thu Feb 15 21:25:45 PST 2024
+---------------------------------------------------------------------------------------------------------------
+                                  Copyright 2024 Cadence Design Systems,
+Inc.
+
+
+
+INFO (EXTQRCXLOG-128) : Quantus command line:
+ Started at: 2025-Nov-25 18:51:14 (2025-Nov-25 21:51:14 GMT)
+ Executable:
+/home/tools/cadence/installs/QUANTUS231/tools.lnx86/extraction/bin/64bit/qrc
+ Options:     -log_file
+/home/ufsm00051/wagner.chitto/wagner.chitto/run_lvs_mux/svdb/qrc.mux_x1.log
+-cmd
+/home/ufsm00051/wagner.chitto/wagner.chitto/run_lvs_mux/svdb/qrc.mux_x1.ccl
+ Current working directory: /home/ufsm00051/wagner.chitto/wagner.chitto
+
+
+INFO (EXTQRCXLOG-103) : The Command File Options for the current Quantus run are as follows:
+
+capacitance \
+	 -decoupling_factor 1.0 \
+	 -ground_net "gnd!"
+extract \
+	 -selection "all" \
+	 -type "rc_decoupled"
+extraction_setup \
+	 -array_vias_spacing "auto" \
+	 -max_fracture_length infinite \
+	 -max_fracture_length_unit "MICRONS" \
+	 -max_via_array_size \
+		"auto" \
+	 -net_name_space "LAYOUT" \
+	 -split_via_by_unit_area false
+filter_res \
+	 -merge_parallel_res false \
+	 -min_res 0.001
+input_db -type pvs \
+	 -design_cell_name "mux_x1 layout watto" \
+	 -directory_name "/home/ufsm00051/wagner.chitto/wagner.chitto/run_lvs_mux/svdb" \
+	 -format "DFII" \
+	 -run_name "mux_x1"
+log_file \
+	 -file_name "/home/ufsm00051/wagner.chitto/wagner.chitto/run_lvs_mux/svdb/qrc.mux_x1.log"
+output_db -type extracted_view \
+	 -cap_component "pcapacitor" \
+	 -cap_property_name "c" \
+	 -cdl_out_map_directory \
+		"/home/ufsm00051/wagner.chitto/wagner.chitto/run_lvs_mux" \
+	 -device_finger_delimiter "@" \
+	 -enable_cellview_check false \
+	 -include_cap_model "false" \
+	 -include_parasitic_cap_model "false" \
+	 -include_parasitic_res_model "comment" \
+	 -include_parasitic_res_width true \
+	 -include_res_model "false" \
+	 -res_component "presistor" \
+	 -res_property_name "r" \
+	 -transfer_net_expression true \
+	 -view_name "av_extracted"
+output_setup \
+	 -directory_name "/home/ufsm00051/wagner.chitto/wagner.chitto/run_lvs_mux/svdb" \
+	 -temporary_directory_name "mux_x1"
+process_technology \
+	 -technology_corner \
+		"rcx_typical" \
+	 -technology_library_file "/home/ufsm00051/wagner.chitto/wagner.chitto/pvtech.lib" \
+	 -technology_name "gpdk045_pvs" \
+	 -temperature \
+		"25.0"
+
+
+
+-------------------------------------------------------------------------------------
+Tue Nov 25 18:51:16 2025: BEGIN INPUT stage
+-------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+Tue Nov 25 18:51:16 2025: DONE INPUT stage
+-------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+INPUT stage summary:
+-------------------------------------------------------------------------------------
+ Number of CPUs requested:		1
+ Techfile(s):
+    /home/tools/design_kits/cadence/GPDK045/gpdk045_v_6_0/qrc/typical/qrcTechFile; process name: GPDK45_typical
+
+ License(s) used:	QTS300 (x1)
+
+ Techgen compilation option(s):
+    -techdir /home/tools/design_kits/cadence/GPDK045/gpdk045_v_6_0/qrc/typical -inc /home/ufsm00051/wagner.chitto/wagner.chitto/run_lvs_mux/svdb/mux_x1/mux_x1.ilf -lvs /home/ufsm00051/wagner.chitto/wagner.chitto/run_lvs_mux/svdb/mux_x1/mux_x1.xcn -lvsvia -p2lvs /home/tools/design_kits/cadence/GPDK045/gpdk045_v_6_0/qrc/typical/qrcTechFile -reseqn -sw3d -p poly_conn,allGate,Oxide -canonical_res_caps -length_units meters -exclude_gate_res -cap_ground_layer psubstrate /home/ufsm00051/wagner.chitto/wagner.chitto/run_lvs_mux/svdb/mux_x1
+
+ Input files:
+    /home/ufsm00051/wagner.chitto/wagner.chitto/run_lvs_mux/svdb/mux_x1.agf
+    /home/ufsm00051/wagner.chitto/wagner.chitto/run_lvs_mux/svdb/mux_x1.devtab
+    /home/ufsm00051/wagner.chitto/wagner.chitto/run_lvs_mux/svdb/mux_x1.gds.map
+    /home/ufsm00051/wagner.chitto/wagner.chitto/run_lvs_mux/svdb/mux_x1.ixf
+    /home/ufsm00051/wagner.chitto/wagner.chitto/run_lvs_mux/svdb/mux_x1.lph
+    /home/ufsm00051/wagner.chitto/wagner.chitto/run_lvs_mux/svdb/mux_x1.lvsfile
+    /home/ufsm00051/wagner.chitto/wagner.chitto/run_lvs_mux/svdb/mux_x1.nxf
+    /home/ufsm00051/wagner.chitto/wagner.chitto/run_lvs_mux/svdb/mux_x1.ports
+    /home/ufsm00051/wagner.chitto/wagner.chitto/run_lvs_mux/svdb/mux_x1.sph
+    /home/ufsm00051/wagner.chitto/wagner.chitto/run_lvs_mux/svdb/mux_x1_pin_xy.spi
+
+ Design data:
+    global nets:                  0
+
+ Peak memory:	98 MB
+
+ Messages:
+    INFO (CAPGEN-41199): 
+    
+    
+    Techgen -trans results will be written to directory: /home/ufsm00051/wagner.chitto/wagner.chitto/run_lvs_mux/svdb/mux_x1
+    
+    INFO (CAPGEN-41737): Lvs connect layers Bondpad CapMetal Nburied ind10 ind11 ind_ct npn_emit pnp_emit are not mapped in layer_setup file
+    
+    INFO (CAPGEN-41809):  Lvs connect via bp_tap via10_cap via10_nocap ind_via_diva via10_nodev Via9 Via8 Via7 Via6 Via5 Via4 Via3 Via2 Via1 cont_poly cont_pdiff cont_ndiff ptap ntap nb_tap are not mapped in layer_setup file.
+    
+    WARNING (RCXSPIC-27297): cap_ground net cannot be set to gnd! as in the CCL because the name collides with a net name in lnn file.
+    
+    WARNING (AGDSEXT-30124): The <design>.props file is not available. The CCL option "input_db calibre/pvs/pegasus -device_properties_file <filename>" can be used to specify the .props file. 
+    
+    INFO (AGDSEXT-30016): 
+    setting dbunit 5e-10 1 5e-10
+    
+-------------------------------------------------------------------------------------
+Tue Nov 25 18:51:16 2025: BEGIN EXTRACTION stage
+-------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+Tue Nov 25 18:51:22 2025: DONE EXTRACTION stage
+-------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+EXTRACTION stage summary:
+-------------------------------------------------------------------------------------
+ Design data:
+    LVS nets:                     11
+    signal nets:                  11
+    floating nets:                0
+    ground net name:              gnd!
+
+ Peak memory:	98 MB
+
+-------------------------------------------------------------------------------------
+Tue Nov 25 18:51:22 2025: BEGIN OUTPUT stage
+-------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+Tue Nov 25 18:51:24 2025: DONE OUTPUT stage
+-------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+OUTPUT stage summary:
+-------------------------------------------------------------------------------------
+ Reduction statistics:
+    Dangling Rs removed:          7
+    Merged Parallel Rs:           0
+    Rs shorted by min_res option: 0
+    Merged Parallel Self Caps:    0
+    CCs filtered by minC option:  0
+    Shorted Incomplete Nets:      0
+ Output statistics:
+    R: 52
+    C: 50
+    L: 0
+
+ Peak memory:	98 MB
+
+    Summary for watto/mux_x1/av_extracted
+    
+    instance count totals:
+    
+        lib              cell             view                    total
+        analogLib        pcapacitor       symbol                     50
+        analogLib        presistor        symbol                     52
+        gpdk045          nmos1v           ivpcell                     6
+        gpdk045          pmos1v           ivpcell                     6
+    
+    Extracted view creation has completed.
+-------------------------------------------------------------------------------------
+
+INFO (LBRCXM-920): Host name and peak memory report
+ Host Name:                    ecomp
+ Peak memory used:             98 MB (sampled at 15s intervals)
+
+INFO (LBRCXM-702): Run ended: Tue Nov 25 18:51:26 2025
+
+
+INFO (LBRCXM-805): Quantus run took:  7s user, 2s sys, 12s elapsed
+
+
+INFO (LBRCXM-708): *****  Quantus terminated normally  *****
+
+

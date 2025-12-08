@@ -1,0 +1,68 @@
+# This PVS File Index Registry was created automatically
+# Do not attempt to modify this file as any change may lead
+# to PVS Debug Environment malfunction.
+# 
+"Run Directory" internal none /home/ufsm00051/wagner.chitto/wagner.chitto/run_drc_inv
+"Current Directory" internal none /home/ufsm00051/wagner.chitto/wagner.chitto
+"Cadence Directory" internal none /home/ufsm00051/wagner.chitto/wagner.chitto/.cadence/
+"Job Signature" internal none IPVS_1757365113_3431945
+"PVS Job Mode" internal none drc
+"GUI Flow" internal none virtuoso6
+"GUI Preset" internal none /home/ufsm00051/wagner.chitto/wagner.chitto/run_drc_inv/.preset.autosave
+"Technology Name" internal none "gpdk045_pvs"
+"Technology RuleSet" internal none "default"
+"Technology Mapping File" internal none /home/ufsm00051/wagner.chitto/wagner.chitto/pvtech.lib
+"Technology Rule File" internal none /home/ufsm00051/wagner.chitto/wagner.chitto/run_drc_inv/.technology.rul
+"PVS Version" internal none 23.11-s036
+"Binary Name" internal none pvsgui
+"PVS Build Date" internal none "Wed Jan 17 18:11:41 PST 2024"
+"PVS Job Time" internal none 1757365113
+"DFII version" internal none IC23.1.0
+"Run Directory" internal none /home/ufsm00051/wagner.chitto/wagner.chitto/run_drc_inv
+"PVS Job Mode" internal none drc
+"Rule File" input text /home/ufsm00051/wagner.chitto/wagner.chitto/run_drc_inv/.technology.rul
+"Cell Tree" output text /home/ufsm00051/wagner.chitto/wagner.chitto/run_drc_inv/cell_tree.txt
+"Layout Scale" internal none 0.0005
+"Layout TechLib" internal none gpdk045
+"Layout Library Name" internal none watto
+"Layout Cell Name" internal none inv_x1
+"Layout View Name" internal none layout
+"Layout ConvertPin" internal text geometry
+"Layout HierDepth" internal none 32
+"Layout MaxVertices" internal none 2048
+"Layout Top Cell" internal none inv_x1
+"Layout GDSII" input none /home/ufsm00051/wagner.chitto/wagner.chitto/run_drc_inv/inv_x1.gds
+"Intermediate GDSII File" output none /home/ufsm00051/wagner.chitto/wagner.chitto/run_drc_inv/inv_x1.gds
+"Intermediate GDSII File creation Errors" output none /home/ufsm00051/wagner.chitto/wagner.chitto/run_drc_inv/PIPO1.LOG
+"Intermediate OASIS File creation Errors" output none /home/ufsm00051/wagner.chitto/wagner.chitto/run_drc_inv/PIPO1.LOG
+"Enable Coloring" input none yes
+"Layout ReplaceBusBitChar" input none nil
+"Layout NoConvertHalfWidthPath" input none nil
+"Layout FlattenPCells" input none nil
+"Job Signature" internal none IPVS_1757365113_3431945
+"Do not check rules files before run" internal none ENABLED
+"Control File" input text /home/ufsm00051/wagner.chitto/wagner.chitto/run_drc_inv/pvsdrcctl
+"PVS Job Log" log text /home/ufsm00051/wagner.chitto/wagner.chitto/run_drc_inv/pvsuidrc.log
+"PIPO Setup File I" internal text  /home/ufsm00051/wagner.chitto/wagner.chitto/run_drc_inv/pipo1.setup
+"PIPO Log I" log text  /home/ufsm00051/wagner.chitto/wagner.chitto/run_drc_inv/PIPO1.LOG
+"PIPO Output I" internal text  /home/ufsm00051/wagner.chitto/wagner.chitto/run_drc_inv/PIPO1.OUT
+"Input Layout" input none OA: watto inv_x1 layout
+"Output Layout Cellmap I" internal text /home/ufsm00051/wagner.chitto/wagner.chitto/run_drc_inv/lay_cellMap.txt
+"PVS Version" internal none 23.11-s036
+"Binary Name" internal none pvsvirt
+"PVS Build Date" internal none "Wed Jan 17 18:11:41 PST 2024"
+"PVS Job Time" internal none 1757365114
+"Cell Tree" output text /home/ufsm00051/wagner.chitto/wagner.chitto/run_drc_inv/cell_tree.txt
+"PVS Job Mode" internal none drc
+"Rule File" input text /home/ufsm00051/wagner.chitto/wagner.chitto/run_drc_inv/.technology.rul
+"Layout GDSII" input none /home/ufsm00051/wagner.chitto/wagner.chitto/run_drc_inv/inv_x1.gds
+"DRC Summary" output text /home/ufsm00051/wagner.chitto/wagner.chitto/run_drc_inv/inv_x1.sum
+"ASCII DRC Report Database" output rdb /home/ufsm00051/wagner.chitto/wagner.chitto/run_drc_inv/inv_x1.drc_errors.ascii
+"Run Directory" internal none /home/ufsm00051/wagner.chitto/wagner.chitto/run_drc_inv/
+"UI Data" internal none ENABLED
+"PVS Mode Info" internal none PJFHEAHOJDDOCFDLGMCNAEEOPFELOECD
+"Report MaxResults" internal none 1000
+"PVS Version" internal none 23.11-s036
+"Binary Name" internal none pvs
+"PVS Build Date" internal none "Wed Jan 17 18:11:41 PST 2024"
+"PVS Job Time" internal none 1757365114

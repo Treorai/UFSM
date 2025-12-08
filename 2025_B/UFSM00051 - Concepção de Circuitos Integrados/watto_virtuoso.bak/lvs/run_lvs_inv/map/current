@@ -1,0 +1,15 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "inv_x1"
+  repList "auCdl schematic"
+  stopList "auCdl"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  netlistDir "/home/ufsm00051/wagner.chitto/wagner.chitto/run_lvs_inv/"
+ )
+( model
+( "watto/inv_x1/schematic" "inv_x1" )
+ )
+( "inv_x1" "ihnl/cds0/map" )
+ )

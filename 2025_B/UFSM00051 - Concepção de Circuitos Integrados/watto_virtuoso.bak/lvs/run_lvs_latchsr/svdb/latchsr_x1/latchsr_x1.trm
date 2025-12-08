@@ -1,0 +1,3 @@
+;| version 1
+element mos[g45n1svt] _0nmos1v ndiff_0conn[D] poly_0conn[G] ndiff_0conn[S] psubstrate[B]
+element mos[g45p1svt] _0pmos1v pdiff_0conn[D] poly_0conn[G] pdiff_0conn[S] nwell_0conn[B]

@@ -1,0 +1,197 @@
+*
+*
+*
+*                       LINUX           Tue Nov 25 20:17:01 2025
+*
+*
+*
+*  PROGRAM  advgen
+*
+*  Name           : advgen - Quantus - (64-bit)
+*  Version        : 23.1.1-p051
+*  Build Date     : Thu Feb 15 21:11:17 PST 2024
+*
+*  HSPICE LIBRARY
+*
+* GLOBAL_TEMPERATURE 25
+*  OPERATING_TEMPERATURE 25
+*  QRC_TECH_DIR /home/tools/design_kits/cadence/GPDK045/gpdk045_v_6_0/qrc/typical 
+*
+*!LENGTH_UNITS METERS
+*
+*
+*
+
+*
+.SUBCKT tristatebuffer_x1 en gnd! in out vdd!
+*
+*
+*  caps2d version: 10
+*
+*
+*       TRANSISTOR CARDS
+*
+*
+MMNM1	net22	net7#3	gnd!#9	gnd!	g45n1svt	L=4.5e-08
++ W=1.2e-07
++ AD=7.2e-15	AS=1.68e-14	PD=3.6e-07	PS=5.2e-07
++ fw=1.2e-07 sa=1.4e-07 sb=2.45e-07 sca=4.46017 scb=0.000436376 scc=1.63659e-07
+MMNM2	out#3	en#6	net22	gnd!	g45n1svt	L=4.5e-08
++ W=1.2e-07
++ AD=1.68e-14	AS=7.2e-15	PD=5.2e-07	PS=3.6e-07
++ fw=1.2e-07 sa=2.45e-07 sb=1.4e-07 sca=4.46017 scb=0.000436376 scc=1.63659e-07
+MXI4/MNM0	net3#5	en#4	gnd!#8	gnd!	g45n1svt	L=4.5e-08
++ W=1.2e-07
++ AD=1.68e-14	AS=1.68e-14	PD=5.2e-07	PS=5.2e-07
++ fw=1.2e-07 sa=1.4e-07 sb=1.4e-07 sca=4.46017 scb=0.000436376 scc=1.63659e-07
+MMNM0	net7#8	in#4	gnd!#10	gnd!	g45n1svt	L=4.5e-08
++ W=1.2e-07
++ AD=1.68e-14	AS=1.68e-14	PD=5.2e-07	PS=5.2e-07
++ fw=1.2e-07 sa=1.4e-07 sb=1.4e-07 sca=4.46017 scb=0.000436376 scc=1.63659e-07
+MMPM2	out#1	net3	net14	vdd!	g45p1svt	L=4.5e-08
++ W=1.45e-07
++ AD=2.03e-14	AS=8.7e-15	PD=5.7e-07	PS=4.1e-07
++ fw=1.45e-07 sa=2.45e-07 sb=1.4e-07 sca=27.3953 scb=0.0274124 scc=0.00251189
+MMPM1	net14	net7	vdd!#9	vdd!	g45p1svt	L=4.5e-08
++ W=1.45e-07
++ AD=8.7e-15	AS=2.03e-14	PD=4.1e-07	PS=5.7e-07
++ fw=1.45e-07 sa=1.4e-07 sb=2.45e-07 sca=26.5414 scb=0.0263556 scc=0.002507
+MXI4/MPM0	net3#3	en#1	vdd!#8	vdd!	g45p1svt	L=4.5e-08
++ W=1.45e-07
++ AD=2.03e-14	AS=2.03e-14	PD=5.7e-07	PS=5.7e-07
++ fw=1.45e-07 sa=1.4e-07 sb=1.4e-07 sca=31.4202 scb=0.0358526 scc=0.00253079
+MMPM0	net7#9	in#1	vdd!#10	vdd!	g45p1svt	L=4.5e-08
++ W=1.45e-07
++ AD=2.03e-14	AS=2.03e-14	PD=5.7e-07	PS=5.7e-07
++ fw=1.45e-07 sa=1.4e-07 sb=1.4e-07 sca=24.5515 scb=0.0251693 scc=0.00232652
+*
+*
+*       RESISTOR AND CAP/DIODE CARDS
+*
+Rj1	net3#4	net3#7	1.122614	$metal2_conn	$W=1.15e-07
++ $X=1.025 $Y=0.94
+Rj2	en#10	en	1.180105	$metal2_conn	$W=1e-07
++ $X=2.175 $Y=0.6125
+Rj3	en	en#7	0.535497	$metal2_conn	$W=1.3e-07
++ $X=0.11 $Y=0.91
+Rk1	en#7	en#3	22.534004	$metal1_conn	$W=2.15e-07
++ $X=0.2325 $Y=0.93
+Rk2	net3#3	net3#4	62.408440	$metal1_conn	$W=9e-08
++ $X=0.445 $Y=1.2275
+Rk3	net3#4	net3#5	75.318092	$metal1_conn	$W=9e-08
++ $X=0.445 $Y=0.6775
+Rk4	in	in#3	15.002523	$metal1_conn	$W=1.25e-07
++ $X=0.93 $Y=1.15
+Rk5	net7#2	net7#6	22.777279	$metal1_conn	$W=8.5e-08
++ $X=1.3925 $Y=1.12
+Rk6	net7#6	net7#7	0.318907	$metal1_conn	$W=9.15e-08
++ $X=1.225 $Y=0.93
+Rk7	net7#7	net7#8	75.188721	$metal1_conn	$W=9e-08
++ $X=1.225 $Y=0.575
+Rk8	net7#6	net7#9	62.276375	$metal1_conn	$W=9e-08
++ $X=1.225 $Y=1.3075
+Rk9	net7#7	net7#4	15.075953	$metal1_conn	$W=1.25e-07
++ $X=1.255 $Y=0.71
+Rk10	net3#2	net3#7	15.013086	$metal1_conn	$W=1.45e-07
++ $X=1.63 $Y=0.95
+Rk11	out#1	out#2	62.264278	$metal1_conn	$W=9e-08
++ $X=1.925 $Y=1.305
+Rk12	out#2	out#3	75.478996	$metal1_conn	$W=9e-08
++ $X=1.925 $Y=0.795
+Rk13	out#2	out	0.146128	$metal1_conn	$W=1e-07
++ $X=2.035 $Y=1.12
+Rk14	en#5	en#10	15.002097	$metal1_conn	$W=3e-07
++ $X=2.175 $Y=0.545
+Rk16	vdd!#2	vdd!#4	0.031248	$metal1_conn	$W=2.55e-07
++ $X=1.5615 $Y=1.8725
+Rk17	vdd!#4	vdd!	0.005036	$metal1_conn	$W=2.55e-07
++ $X=1.49 $Y=1.85
+Rk18	vdd!	vdd!#5	0.113088	$metal1_conn	$W=2.55e-07
++ $X=1.246 $Y=1.8725
+Rk19	vdd!#5	vdd!#7	0.172265	$metal1_conn	$W=2.55e-07
++ $X=0.6865 $Y=1.8725
+Rk20	vdd!#7	vdd!#8	62.224285	$metal1_conn	$W=9e-08
++ $X=0.24 $Y=1.6375
+Rk21	vdd!#2	vdd!#9	62.211201	$metal1_conn	$W=1e-07
++ $X=1.615 $Y=1.6325
+Rk22	vdd!#5	vdd!#10	62.213093	$metal1_conn	$W=9e-08
++ $X=1.02 $Y=1.635
+Rk26	gnd!#2	gnd!#4	0.026212	$metal1_conn	$W=2.55e-07
++ $X=1.5715 $Y=0.1275
+Rk27	gnd!#4	gnd!#5	0.123161	$metal1_conn	$W=2.55e-07
++ $X=1.256 $Y=0.1275
+Rk28	gnd!#5	gnd!#7	0.171005	$metal1_conn	$W=2.55e-07
++ $X=0.689 $Y=0.1275
+Rk29	gnd!#7	gnd!	0.003777	$metal1_conn	$W=2.55e-07
++ $X=0.34 $Y=0.132
+Rk30	gnd!	gnd!#8	75.200600	$metal1_conn	$W=9e-08
++ $X=0.24 $Y=0.3475
+Rk31	gnd!#2	gnd!#9	75.183983	$metal1_conn	$W=1e-07
++ $X=1.615 $Y=0.3475
+Rk32	gnd!#5	gnd!#10	75.188522	$metal1_conn	$W=9e-08
++ $X=1.02 $Y=0.3475
+Rl1	en#1	en#2	182.858658	$poly_conn	$W=3.9e-08
++ $X=0.3425 $Y=1.2355
+Rl2	en#2	en#3	1.546955	$poly_conn	$W=2.34e-07
++ $X=0.319 $Y=0.925
+Rl3	en#2	en#4	142.474045	$poly_conn	$W=3.9e-08
++ $X=0.3425 $Y=0.6675
+Rl4	in#1	in#2	98.879593	$poly_conn	$W=3.9e-08
++ $X=1.1225 $Y=1.3155
+Rl5	in#2	in#3	3.118306	$poly_conn	$W=1.14e-07
++ $X=1.099 $Y=1.15
+Rl6	in#2	in#4	233.494980	$poly_conn	$W=3.9e-08
++ $X=1.1225 $Y=0.81
+Rl7	net7	net7#2	99.059135	$poly_conn	$W=3.9e-08
++ $X=1.7175 $Y=1.293
+Rl8	net7#3	net7#4	119.207954	$poly_conn	$W=3.9e-08
++ $X=1.7175 $Y=0.667
+Rl9	net3	net3#2	173.291229	$poly_conn	$W=3.9e-08
++ $X=1.8225 $Y=1.207
+Rl10	en#5	en#6	184.810303	$poly_conn	$W=3.9e-08
++ $X=1.985 $Y=0.7125
+*
+*       CAPACITOR CARDS
+*
+*
+C1	en	gnd!	1.32682e-16	$X=0.1095 $Y=0.8095
+C2	in	gnd!	6.17293e-17	$X=0.9295 $Y=1.1495
+C3	out	gnd!	3.24627e-17	$X=2.164 $Y=1.1195
+C4	vdd!	gnd!	1.4414e-16	$X=1.367 $Y=1.7215
+C5	net7	gnd!	5.8678e-17	$X=1.7165 $Y=1.476
+C6	net3	gnd!	7.3037e-17	$X=1.8215 $Y=1.433
+C7	net22	gnd!	5.80577e-19	$X=1.769 $Y=0.4695
+C8	in#1	gnd!	4.35549e-17	$X=1.1215 $Y=1.49
+C9	en#1	gnd!	4.72657e-17	$X=0.342 $Y=1.4525
+C10	en#6	gnd!	8.03586e-17	$X=1.8215 $Y=0.522
+C11	net7#3	gnd!	5.80951e-17	$X=1.7165 $Y=0.4875
+C12	in#4	gnd!	7.15191e-17	$X=1.1215 $Y=0.5595
+C13	en#4	gnd!	4.11058e-17	$X=0.342 $Y=0.488
+C14	en#5	gnd!	5.63563e-17	$X=2.174 $Y=0.5545
+C15	net3#2	gnd!	2.39138e-16	$X=1.629 $Y=0.9445
+C16	net7#2	gnd!	1.58838e-16	$X=1.581 $Y=1.1195
+C17	net7#4	gnd!	1.65725e-16	$X=1.519 $Y=0.708
+C18	in#3	gnd!	9.51044e-17	$X=1.1215 $Y=1.0625
+C19	en#3	gnd!	5.98941e-17	$X=0.342 $Y=0.951
+C20	en#10	gnd!	2.04995e-16	$X=1.8985 $Y=0.617
+C21	net3#7	gnd!	1.08207e-16	$X=1.1965 $Y=0.9395
+C22	net3#4	gnd!	1.57245e-16	$X=0.623 $Y=0.946
+C23	en#7	gnd!	6.82855e-17	$X=0.2695 $Y=0.9245
+C24	out#1	gnd!	4.4109e-17	$X=1.919 $Y=1.4595
+C25	vdd!#9	gnd!	3.9198e-17	$X=1.619 $Y=1.505
+C26	net7#9	gnd!	4.49358e-17	$X=1.219 $Y=1.4635
+C27	vdd!#10	gnd!	3.43504e-17	$X=1.024 $Y=1.5095
+C28	net3#3	gnd!	5.0249e-17	$X=0.4395 $Y=1.4445
+C29	vdd!#8	gnd!	2.79747e-17	$X=0.2445 $Y=1.516
+C30	out#3	gnd!	8.32984e-17	$X=1.919 $Y=0.5355
+C31	net7#8	gnd!	3.57176e-17	$X=1.219 $Y=0.4805
+C32	net3#5	gnd!	5.02275e-17	$X=0.4395 $Y=0.5095
+C33	net7#6	gnd!	6.29814e-17	$X=1.224 $Y=1.118
+C34	out#2	gnd!	7.51511e-17	$X=1.924 $Y=1.05
+C35	vdd!#2	gnd!	1.08964e-17	$X=2.2105 $Y=1.872
+C36	vdd!#5	gnd!	2.80446e-17	$X=1.019 $Y=1.8175
+C37	vdd!#7	gnd!	2.94497e-17	$X=0.406 $Y=1.8605
+*
+*
+.ENDS tristatebuffer_x1
+*

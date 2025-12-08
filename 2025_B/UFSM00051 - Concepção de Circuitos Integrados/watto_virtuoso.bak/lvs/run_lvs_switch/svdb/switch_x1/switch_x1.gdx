@@ -1,0 +1,10 @@
+#0                               
+MP: MP
+#0                               
+MN: MN
+#4                               
+switch_x1: switch_x1
+D XI2/MNM0 X8/X2/M0
+D XI2/MPM0 X8/M0
+D MNM0 X7/M0
+D MPM1 M0

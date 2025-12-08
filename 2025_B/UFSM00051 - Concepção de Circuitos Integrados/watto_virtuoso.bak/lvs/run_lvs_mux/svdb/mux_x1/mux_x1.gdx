@@ -1,0 +1,18 @@
+#0                               
+MN: MN
+#0                               
+MP: MP
+#12                              
+mux_x1: mux_x1
+D XI7/MNM0 X8/X1/M0
+D XI7/MPM0 M2
+D XI8/MNM0 X7/X1/M0
+D XI8/MPM0 M1
+D MNM3 X12/M0
+D MNM2 M0
+D MNM1 X10/M0
+D MNM0 X11/M0
+D MPM3 X13/M0
+S MPM0 X15/M0
+S MPM2 X14/M0
+D MPM1 X9/M0

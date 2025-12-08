@@ -1,0 +1,10 @@
+CADENCE IHNL11140
+$model
+watto/latchsr_x1/schematic latchsr_x1
+$endmodel
+$net
+gnd! gnd!
+vdd! vdd!
+$endnet
+$param
+$endparam

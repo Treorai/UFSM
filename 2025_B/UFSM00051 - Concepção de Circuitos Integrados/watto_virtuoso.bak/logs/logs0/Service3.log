@@ -1,0 +1,126 @@
+\# Program start time:     UTC 2025.08.27 01:12:05.785
+\# Local time: GMT-03:00 (UTC-03:00) 2025.08.26 22:12:05.785
+\o Program:		@(#)$CDS: Virtuoso Studio version IC23.1-64b 07/08/2025 22:36 (cpgbld17) $
+\o Hierarchy:		/home/tools/cadence/installs/IC231/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC23.1-64b.ISR15.37  (64-bit addresses)
+\# Command line:	/home/tools/cadence/installs/IC231/tools.lnx86/dfII/bin/64bit/virtuoso -beanhost ecomp -beanport 11419 -beanbinlog  -beanLogFile /home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/amps_Service3.log -mpssession virtuoso512829 -mpshost ecomp -davinciService DaVinciService_512829_1756256796 -scopedPid 512829 -axlSession fnxSession1 -axlServiceIdFlag 3 -uuid 4d13ebd7-a7cd-48d9-a6d8-468a3746cf54 -heartbeat /dev/shm/swift-heartbeat.KpqwGT7Lkg -log /home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Service3.log -adeBrokerAddress ecomp:42619 -noautostart -nographE -lscs 000175E1894CBE06FF0966E38F1FFC06BC4D64FFD61DD265D93F798EEA7CFC06CC4D0A8CEC7E9F67D0227DAAD245CD34C87766E3A12FFC06BC4D0E4DD47DA764D4E300001E9B -interactive -offlineExprEval -upfrontMode -fenixMode explorer -heartbeatTimeout  -lingerTimeout 300 -pointlifetime -1
+\# Host name (type):	ecomp (x86_64)
+\# Operating system:	Linux 4.18.0-553.63.1.el8_10.x86_64 #1 SMP Thu Jul 24 11:45:38 UTC 2025
+\# Linux /etc/issue:	\S
+\# Linux /etc/issue:	Kernel \r on an \m
+\# X display name (WxH):	:1465 (1024x868)
+\# Available geometry:			TL(0:0) BR(1023:867)
+\# X server:			The X.Org Foundation
+\# Depth of Visual (Root):	24 (24)
+\# Number of Planes Used:	24
+\# X version:		11.0 (vendor release 12011000)
+\# X resource pool:	base 0x400000, mask 0x1fffff (2097151), shift 0
+\# 			current id 0x0, current max 0x1ffffa (2097146)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        762 MB
+\# Available memory:	     22,699 MB
+\# System memory:	     27,355 MB
+\# Maximum memory size:	     26,777 MB
+\# Max mem available:	     22,882 MB
+\# Initial memory used:	        184 MB
+\#        process size:	      1,717 MB
+\# Thread usage limits (effective/default):	maxthreads 95011/95011 maxload 16.00/16.00
+\# Qt version:		5.15.9
+\# Window Manager:	other
+\# User Name:		wagner.chitto
+\o Working Directory:	ecomp:/home/ufsm00051/wagner.chitto/wagner.chitto
+\# Process Id:		534661
+\o 
+\o COPYRIGHT (C) 1992-2025  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2025  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading im.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading pvsui.cxt
+\o Loading wireEdit.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading layers.cxt 
+\o Loading drv.cxt 
+\o Loading ams.cxt 
+\o Loading oasis.cxt 
+\o Loading dal.cxt 
+\o Loading awv.cxt 
+\o Loading socket.cxt 
+\o Loading analog.cxt 
+\o Loading par.cxt 
+\o Loading asimenv.cxt 
+\o Loading alvs.cxt 
+\o Loading caa.cxt 
+\o Loading amps.cxt 
+\o Loading adexlCore.cxt 
+\# Memory report: using         306 MB, process size 1,882 MB at UTC 2025.08.27 01:12:08.376
+\o Loading adexl.cxt 
+\o *Info*    Exporting services from client ... 
+\o 
+\o Loading adexlDM.cxt 
+\o Loading cpf.cxt 
+\o Loading cli.cxt 
+\o Loading lp.cxt 
+\o Loading sipLayout.cxt 
+\o Loading viva.cxt 
+\o Loading diagCenter.cxt 
+\o INFO (ELI-00333) License program mode is LSCS.
+\# [22:12:05.454497] Configured Lic search path (23.02-s006): 27001@200.132.35.25
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso512829, host=ecomp). Connection mode is LSCS. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
+\o INFO (ELI-00304) The registration of the child 534661 within 90 seconds is being processed...
+\o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
+\o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
+\p > 
+\o Loading le.cxt 
+\w *WARNING* could not load font "-*-courier-medium-r-*-*-12-*", using font "fixed"
+\w *WARNING* could not load font "-*-helvetica-medium-r-*-*-12-*", using font "fixed"
+\w *WARNING* Font name -*-helvetica-medium-r-*-*-12-* is invalid 
+\w *WARNING* Font name -*-helvetica-medium-r-*-*-12-* is invalid 
+\w *WARNING* Font name -*-helvetica-medium-r-*-*-12-* is invalid 
+\o Loading tilp.cxt 
+\o Loading validator.cxt 
+\o Loading vrf.cxt 
+\o Loading multiTechPlugin.cxt 
+\o Loading exportDie.cxt 
+\# Loading perfDiag...
+\# (PerfDiag): Set GDB path to environment variable 'gdbPath' (gdb).
+\# The Health Monitor tool is installed. You can access it from CIW - Tools - Diagnostic Center or use the shell command 'cdsPerfDiag -p 534661' to open it when Virtuoso freezes.
+\# (PerfDiag): Use backtrace from GLIBC.
+\i _axlRunServices()
+\# [22:12:10.109761] Periodic Lic check successful
+\# [22:12:10.109784] Feature usage summary:
+\o Loading simui.cxt 
+\o [2025-08-26 22:12:10.147 -0300] [PROCESS] [cadence.virtuoso.ade.services] - Netlist Service has successfully started. Waiting for incoming messages ... {"jobid": "3", "hostname": "ecomp", "processid": 534661, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Service3.log"}
+\# Memory report: using         447 MB, process size 2,421 MB at UTC 2025.08.27 01:12:11.189
+\# Available memory:         22,697 MB at UTC 2025.08.27 01:12:18.202
+\# Memory report: Maximum memory size now 23,145 MB at UTC 2025.08.27 01:12:18.202
+\# Thread usage report: 11 active threads, active load 1.40 at UTC 2025.08.27 01:12:18.203
+\o [2025-08-26 22:14:26.368 -0300] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Netlist Service process exits. {"jobid": "3", "hostname": "ecomp", "processid": 534661, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Service3.log"}
+\o 
+\o Loading vdsil.cxt 
+\o *Info*    Received signal SIGTERM.
+\o 
+\o 
+\# Lic Summary:
+\# [22:14:28.310384] Cdslmd servers:27001@200.132.35.25
+\# [22:14:28.310416] Feature usage summary:
+\# Memory report: on exit            447 MB, process size 2,421 MB at UTC 2025.08.27 01:14:28.310
+\# Memory report: peak usage         447 MB, process size 2,421 MB

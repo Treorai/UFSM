@@ -1,0 +1,58 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  watto
+* Top Cell Name: mux_x1
+* View Name:     schematic
+* Netlisted on:  Nov 25 18:50:44 2025
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+*.GLOBAL gnd!
++        vdd!
+
+*.PIN gnd!
+*+    vdd!
+
+************************************************************************
+* Library Name: watto
+* Cell Name:    inv_x1
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT inv_x1 Vin Vout
+*.PININFO Vin:I Vout:O
+MNM0 Vout Vin gnd! gnd! g45n1svt m=1 l=45n w=120n
+MPM0 Vout Vin vdd! vdd! g45p1svt m=1 l=45n w=145n
+.ENDS
+
+************************************************************************
+* Library Name: watto
+* Cell Name:    mux_x1
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT mux_x1 A B S Sel
+*.PININFO A:I B:I Sel:I S:O
+XI7 net15 S / inv_x1
+XI8 Sel net3 / inv_x1
+MPM3 net15 Sel net11 vdd! g45p1svt m=1 l=45n w=145n
+MPM0 net11 A vdd! vdd! g45p1svt m=1 l=45n w=145n
+MPM2 net15 B net11 vdd! g45p1svt m=1 l=45n w=145n
+MPM1 net11 net3 vdd! vdd! g45p1svt m=1 l=45n w=145n
+MNM3 net24 Sel gnd! gnd! g45n1svt m=1 l=45n w=120n
+MNM2 net20 net3 gnd! gnd! g45n1svt m=1 l=45n w=120n
+MNM1 net15 B net24 gnd! g45n1svt m=1 l=45n w=120n
+MNM0 net15 A net20 gnd! g45n1svt m=1 l=45n w=120n
+.ENDS
+

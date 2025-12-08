@@ -1,0 +1,116 @@
+\# Program start time:     UTC 2025.11.24 20:51:52.968
+\# Local time: GMT-02:00 (UTC-03:00) 2025.11.24 17:51:52.968
+\o Program:		@(#)$CDS: Virtuoso Studio version IC23.1-64b 07/08/2025 22:36 (cpgbld17) $
+\o Hierarchy:		/home/tools/cadence/installs/IC231/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC23.1-64b.ISR15.37  (64-bit addresses)
+\# Command line:	/home/tools/cadence/installs/IC231/tools.lnx86/dfII/bin/64bit/virtuoso -beanhost ecomp -beanport 11352 -beanbinlog  -beanLogFile /home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/amps_Service17.log -mpssession virtuoso118335 -mpshost ecomp -davinciService DaVinciService_118335_1764013224 -scopedPid 118335 -axlSession fnxSession6 -axlServiceIdFlag 17 -uuid ef37d93e-e892-40ae-b907-f5b373e0bf28 -heartbeat /dev/shm/swift-heartbeat.JrRv8lRp7s -log /home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Service17.log -adeBrokerAddress ecomp:34059 -noautostart -nographE -lscs 000175E1894CBE06FF0966E38F1FFC06BC4D64FFD61DD265D93F798EEA7CFC06CC4D0A8CEC7E9F67D0227DAAD244CD35C87766E3A12FFC06BC4D0FC74A783961D56900001E78 -interactive -offlineExprEval -upfrontMode -fenixMode explorer -heartbeatTimeout  -lingerTimeout 300 -pointlifetime -1
+\# Host name (type):	ecomp (x86_64)
+\# Operating system:	Linux 4.18.0-553.74.1.el8_10.x86_64 #1 SMP Sun Sep 14 12:57:27 UTC 2025
+\# Linux /etc/issue:	\S
+\# Linux /etc/issue:	Kernel \r on an \m
+\# X display name (WxH):	:4653 (1024x868)
+\# Available geometry:			TL(0:0) BR(1023:867)
+\# X server:			The X.Org Foundation
+\# Depth of Visual (Root):	24 (24)
+\# Number of Planes Used:	24
+\# X version:		11.0 (vendor release 12011000)
+\# X resource pool:	base 0x400000, mask 0x1fffff (2097151), shift 0
+\# 			current id 0x0, current max 0x1ffffa (2097146)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        745 MB
+\# Available memory:	     29,441 MB
+\# System memory:	     35,309 MB
+\# Maximum memory size:	     34,747 MB
+\# Max mem available:	     29,624 MB
+\# Initial memory used:	        184 MB
+\#        process size:	      1,717 MB
+\# Thread usage limits (effective/default):	maxthreads 126793/126793 maxload 4.00/4.00
+\# Qt version:		5.15.9
+\# Window Manager:	other
+\# User Name:		wagner.chitto
+\o Working Directory:	ecomp:/home/ufsm00051/wagner.chitto/wagner.chitto
+\# Process Id:		218885
+\o 
+\o COPYRIGHT (C) 1992-2025  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2025  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading im.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading pvsui.cxt
+\o Loading wireEdit.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading layers.cxt 
+\o Loading drv.cxt 
+\o Loading ams.cxt 
+\o Loading oasis.cxt 
+\o Loading dal.cxt 
+\o Loading awv.cxt 
+\o Loading socket.cxt 
+\o Loading analog.cxt 
+\o Loading par.cxt 
+\o Loading asimenv.cxt 
+\o Loading alvs.cxt 
+\o Loading caa.cxt 
+\o Loading amps.cxt 
+\o Loading adexlCore.cxt 
+\o Loading adexl.cxt 
+\o *Info*    Exporting services from client ... 
+\o 
+\o Loading adexlDM.cxt 
+\o Loading cpf.cxt 
+\o Loading cli.cxt 
+\o Loading lp.cxt 
+\o Loading sipLayout.cxt 
+\o Loading viva.cxt 
+\o Loading diagCenter.cxt 
+\o INFO (ELI-00333) License program mode is LSCS.
+\# [17:51:52.454569] Configured Lic search path (23.02-s006): 27001@200.132.35.25
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso118335, host=ecomp). Connection mode is LSCS. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
+\o INFO (ELI-00304) The registration of the child 218885 within 90 seconds is being processed...
+\o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
+\o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
+\# Memory report: using         354 MB, process size 1,944 MB at UTC 2025.11.24 20:51:55.327
+\p > 
+\o Loading le.cxt 
+\o Loading tilp.cxt 
+\o Loading validator.cxt 
+\o Loading vrf.cxt 
+\o Loading multiTechPlugin.cxt 
+\o Loading exportDie.cxt 
+\# Loading perfDiag...
+\# (PerfDiag): Set GDB path to environment variable 'gdbPath' (gdb).
+\# The Health Monitor tool is installed. You can access it from CIW - Tools - Diagnostic Center or use the shell command 'cdsPerfDiag -p 218885' to open it when Virtuoso freezes.
+\# (PerfDiag): Use backtrace from GLIBC.
+\i _axlRunServices()
+\# [17:51:55.110499] Periodic Lic check successful
+\# [17:51:55.634784] Feature usage summary:
+\o Loading simui.cxt 
+\o [2025-11-24 17:51:55.657 -0300] [PROCESS] [cadence.virtuoso.ade.services] - Netlist Service has successfully started. Waiting for incoming messages ... {"jobid": "17", "hostname": "ecomp", "processid": 218885, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Service17.log"}
+\# Available memory:         29,439 MB at UTC 2025.11.24 20:52:03.706
+\# Memory report: Maximum memory size now 29,886 MB at UTC 2025.11.24 20:52:03.706
+\# Thread usage report: 7 active threads, active load 1.40 at UTC 2025.11.24 20:52:03.706
+\o [2025-11-24 17:56:56.057 -0300] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Netlist Service process exits. {"jobid": "17", "hostname": "ecomp", "processid": 218885, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Service17.log"}
+\o Loading vdsil.cxt 
+\# Lic Summary:
+\# [17:56:57.066498] Cdslmd servers:27001@200.132.35.25
+\# [17:56:57.066504] Feature usage summary:
+\# Memory report: on exit            439 MB, process size 2,413 MB at UTC 2025.11.24 20:56:57.066
+\# Memory report: peak usage         447 MB, process size 2,421 MB

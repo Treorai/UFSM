@@ -1,0 +1,20 @@
+Gds_Map 2000
+Layers:
+0 0 15 Nov 25 20:16:17 2025
+psubstrate 14 0
+_pmos1v 28 0
+_nmos1v 47 0
+cont_poly 48 0
+metal1_conn 50 0
+metal2_conn 51 0
+nwell_conn 61 0
+pdiff_conn 62 0
+cont_pdiff 63 0
+poly_conn 64 0
+ndiff_conn 65 0
+cont_ndiff 66 0
+Via1 70 0
+ntap 120 0
+ptap 122 0
+END OF RESPONSE
+0 0 0 Nov 25 20:16:17 2025

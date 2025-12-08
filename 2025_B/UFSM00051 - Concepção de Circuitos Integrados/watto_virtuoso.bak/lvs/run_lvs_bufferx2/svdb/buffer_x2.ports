@@ -1,0 +1,6 @@
+# SVDB: Port Table (ports)
+# SVDB: Layout Primary buffer_x2
+vdd! 3 vdd! 2450 3750 metal1_conn
+gnd! 4 gnd! 1210 280 metal1_conn
+in 1 in 230 1860 metal2_conn
+out 5 out 2710 1860 metal2_conn

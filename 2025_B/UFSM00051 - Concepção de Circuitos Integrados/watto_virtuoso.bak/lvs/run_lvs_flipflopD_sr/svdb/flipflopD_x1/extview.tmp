@@ -1,0 +1,297 @@
+*
+*
+*
+*                       LINUX           Tue Nov 25 20:55:55 2025
+*
+*
+*
+*  PROGRAM  advgen
+*
+*  Name           : advgen - Quantus - (64-bit)
+*  Version        : 23.1.1-p051
+*  Build Date     : Thu Feb 15 21:11:17 PST 2024
+*
+*  HSPICE LIBRARY
+*
+* GLOBAL_TEMPERATURE 25
+*  OPERATING_TEMPERATURE 25
+*  QRC_TECH_DIR /home/tools/design_kits/cadence/GPDK045/gpdk045_v_6_0/qrc/typical 
+*
+*!LENGTH_UNITS METERS
+*
+*
+*
+
+*
+.SUBCKT flipflopD_x1 D Q Qbar clk gnd! vdd!
+*
+*
+*  caps2d version: 10
+*
+*
+*       TRANSISTOR CARDS
+*
+*
+MMNM4	Qbar#6	net3#4	gnd!#7	gnd!	g45n1svt	L=4.5e-08
++ W=1.2e-07
++ AD=1.68e-14	AS=1.92e-14	PD=5.2e-07	PS=5.6e-07
++ fw=1.2e-07 sa=3.45e-07 sb=1.4e-07 sca=4.92313 scb=0.000827672 scc=8.57018e-07
+MMNM5	Q#3	Qbar#3	gnd!#7	gnd!	g45n1svt	L=4.5e-08
++ W=1.2e-07
++ AD=1.68e-14	AS=1.92e-14	PD=5.2e-07	PS=5.6e-07
++ fw=1.2e-07 sa=3.45e-07 sb=1.4e-07 sca=4.92313 scb=0.000827672 scc=8.57018e-07
+MMNM3	net3#9	clk#7	Q#1	gnd!	g45n1svt	L=4.5e-08
++ W=1.2e-07
++ AD=1.68e-14	AS=1.68e-14	PD=5.2e-07	PS=5.2e-07
++ fw=1.2e-07 sa=1.4e-07 sb=1.4e-07 sca=4.92313 scb=0.000827672 scc=8.57018e-07
+MMNM1	D#1	clk#5	net1#8	gnd!	g45n1svt	L=4.5e-08
++ W=1.2e-07
++ AD=1.68e-14	AS=1.68e-14	PD=5.2e-07	PS=5.2e-07
++ fw=1.2e-07 sa=1.4e-07 sb=1.4e-07 sca=4.92313 scb=0.000827672 scc=8.57018e-07
+MMNM2	net8#4	net2#4	gnd!#8	gnd!	g45n1svt	L=4.5e-08
++ W=1.2e-07
++ AD=1.68e-14	AS=1.68e-14	PD=5.2e-07	PS=5.2e-07
++ fw=1.2e-07 sa=1.4e-07 sb=1.4e-07 sca=4.92313 scb=0.000827672 scc=8.57018e-07
+MMNM0	net2#7	net1#3	gnd!#9	gnd!	g45n1svt	L=4.5e-08
++ W=1.2e-07
++ AD=1.68e-14	AS=1.68e-14	PD=5.2e-07	PS=5.2e-07
++ fw=1.2e-07 sa=1.4e-07 sb=1.4e-07 sca=4.92313 scb=0.000827672 scc=8.57018e-07
+MMPM5	Qbar#7	net3	vdd!#7	vdd!	g45p1svt	L=4.5e-08
++ W=1.45e-07
++ AD=2.03e-14	AS=2.32e-14	PD=5.7e-07	PS=6.1e-07
++ fw=1.45e-07 sa=3.45e-07 sb=1.4e-07 sca=22.508 scb=0.0238066 scc=0.00185903
+MMPM3	net3#6	clk#4	net8	vdd!	g45p1svt	L=4.5e-08
++ W=1.45e-07
++ AD=2.03e-14	AS=2.32e-14	PD=5.7e-07	PS=6.1e-07
++ fw=1.45e-07 sa=3.45e-07 sb=1.4e-07 sca=22.508 scb=0.0238066 scc=0.00185903
+MMPM1	net8	net2	vdd!#8	vdd!	g45p1svt	L=4.5e-08
++ W=1.45e-07
++ AD=2.32e-14	AS=2.03e-14	PD=6.1e-07	PS=5.7e-07
++ fw=1.45e-07 sa=1.4e-07 sb=3.45e-07 sca=22.508 scb=0.0238066 scc=0.00185903
+MMPM4	Q#5	Qbar#1	vdd!#7	vdd!	g45p1svt	L=4.5e-08
++ W=1.45e-07
++ AD=2.03e-14	AS=2.32e-14	PD=5.7e-07	PS=6.1e-07
++ fw=1.45e-07 sa=3.45e-07 sb=1.4e-07 sca=22.508 scb=0.0238066 scc=0.00185903
+MMPM0	net2#8	net1	vdd!#9	vdd!	g45p1svt	L=4.5e-08
++ W=1.45e-07
++ AD=2.03e-14	AS=2.03e-14	PD=5.7e-07	PS=5.7e-07
++ fw=1.45e-07 sa=1.4e-07 sb=1.4e-07 sca=28.4097 scb=0.0321484 scc=0.00204568
+MMPM2	net8#6	clk#6	net1#7	vdd!	g45p1svt	L=4.5e-08
++ W=1.45e-07
++ AD=2.03e-14	AS=2.03e-14	PD=5.7e-07	PS=5.7e-07
++ fw=1.45e-07 sa=1.4e-07 sb=1.4e-07 sca=22.508 scb=0.0238066 scc=0.00185903
+*
+*
+*       RESISTOR AND CAP/DIODE CARDS
+*
+Ri1	net8#8	net8#9	1.681188	$metal3_conn	$W=1e-07
++ $X=1.165 $Y=0.975
+Ri2	clk#16	clk#13	1.205643	$metal3_conn	$W=1e-07
++ $X=3.815 $Y=1.0275
+Rj1	net8#3	net8#8	0.276228	$metal2_conn	$W=1.3e-07
++ $X=1.235 $Y=1.075
+Rj2	net1#10	net1#6	0.887410	$metal2_conn	$W=1e-07
++ $X=1.705 $Y=0.7025
+Rj3	net8#9	net8#5	0.500000	$metal2_conn	$W=2e-07
++ $X=2.385 $Y=0.88
+Rj4	clk#13	clk#9	0.260824	$metal2_conn	$W=2.7e-07
++ $X=2.605 $Y=0.88
+Rj5	Q	Q#6	0.206009	$metal2_conn	$W=1.3e-07
++ $X=3.47 $Y=1.175
+Rj6	net3#10	net3#8	1.339788	$metal2_conn	$W=1e-07
++ $X=3.4675 $Y=0.795
+Rj7	net3#8	net3#5	0.710101	$metal2_conn	$W=1e-07
++ $X=2.14 $Y=1.205
+Rj8	clk#12	clk#16	0.250000	$metal2_conn	$W=2.1e-07
++ $X=3.965 $Y=1.105
+Rj9	clk#16	clk	0.022481	$metal2_conn	$W=1.3e-07
++ $X=3.965 $Y=1.105
+Rk1	net2#3	net2#6	45.045639	$metal1_conn	$W=1e-07
++ $X=0.53 $Y=1.19
+Rk2	net2#6	net2#7	75.453392	$metal1_conn	$W=9e-08
++ $X=0.485 $Y=0.875
+Rk3	net2#6	net2#8	62.234077	$metal1_conn	$W=9e-08
++ $X=0.485 $Y=1.35
+Rk4	net1#4	net1#6	15.000000	$metal1_conn	$W=3e-07
++ $X=0.83 $Y=0.795
+Rk5	net8	net8#2	62.353107	$metal1_conn	$W=8e-08
++ $X=1.375 $Y=1.31
+Rk6	net8#2	net8#3	0.053642	$metal1_conn	$W=1.3e-07
++ $X=1.345 $Y=1.075
+Rk7	net8#2	net8#4	75.376984	$metal1_conn	$W=9e-08
++ $X=1.375 $Y=0.8
+Rk8	net3#5	net3#6	62.266209	$metal1_conn	$W=9e-08
++ $X=1.58 $Y=1.3625
+Rk9	net1#7	net1#9	62.715424	$metal1_conn	$W=9e-08
++ $X=2.11 $Y=1.05
+Rk10	net1#9	net1#10	0.188531	$metal1_conn	$W=1.25e-07
++ $X=1.9225 $Y=0.56
+Rk11	net1#8	net1#9	75.000000	$metal1_conn	$W=9e-08
++ $X=2.11 $Y=0.56
+Rk12	net8#5	net8#6	62.499935	$metal1_conn	$W=8e-08
++ $X=2.315 $Y=1.2125
+Rk13	clk#9	clk#1	45.003025	$metal1_conn	$W=1e-07
++ $X=2.575 $Y=0.88
+Rk14	D	D#1	75.115959	$metal1_conn	$W=1.25e-07
++ $X=2.4595 $Y=0.56
+Rk15	net3#3	net3#8	15.250000	$metal1_conn	$W=1.3e-07
++ $X=2.62 $Y=1.18
+Rk16	Qbar#2	Qbar	15.096598	$metal1_conn	$W=8.5e-08
++ $X=3.19 $Y=0.955
+Rk17	Qbar	Qbar#5	0.169640	$metal1_conn	$W=1e-07
++ $X=3.03 $Y=0.86
+Rk18	Qbar#5	Qbar#6	75.219353	$metal1_conn	$W=9e-08
++ $X=2.91 $Y=0.71
+Rk19	Qbar#5	Qbar#7	62.469048	$metal1_conn	$W=9e-08
++ $X=2.91 $Y=1.185
+Rk20	Q#1	Q#2	75.544243	$metal1_conn	$W=9e-08
++ $X=3.815 $Y=0.71
+Rk21	Q#2	Q#3	75.219353	$metal1_conn	$W=9e-08
++ $X=3.32 $Y=0.71
+Rk22	Q#2	Q#4	0.273928	$metal1_conn	$W=8.5e-08
++ $X=3.32 $Y=1
+Rk23	Q#4	Q#5	62.255814	$metal1_conn	$W=9e-08
++ $X=3.32 $Y=1.36
+Rk24	Q#4	Q#6	0.058496	$metal1_conn	$W=1.3e-07
++ $X=3.3775 $Y=1.175
+Rk25	net3#9	net3#10	75.188522	$metal1_conn	$W=9e-08
++ $X=4.02 $Y=0.6725
+Rk26	clk#8	clk#12	22.500000	$metal1_conn	$W=1.8e-07
++ $X=3.965 $Y=1.105
+Rk28	vdd!#2	vdd!#4	0.242607	$metal1_conn	$W=2.55e-07
++ $X=2.6415 $Y=1.8725
+Rk29	vdd!#4	vdd!#5	0.246381	$metal1_conn	$W=2.55e-07
++ $X=1.651 $Y=1.8725
+Rk30	vdd!#5	vdd!#6	0.223505	$metal1_conn	$W=2.55e-07
++ $X=0.725 $Y=1.8725
+Rk31	vdd!#6	vdd!	0.028711	$metal1_conn	$W=2.55e-07
++ $X=0.208 $Y=1.8725
+Rk32	vdd!#2	vdd!#7	62.209190	$metal1_conn	$W=8e-08
++ $X=3.115 $Y=1.6425
+Rk33	vdd!#5	vdd!#8	62.202587	$metal1_conn	$W=9e-08
++ $X=1.17 $Y=1.6425
+Rk34	vdd!#6	vdd!#9	62.202587	$metal1_conn	$W=9e-08
++ $X=0.28 $Y=1.6425
+Rk37	gnd!#2	gnd!#4	0.241348	$metal1_conn	$W=2.55e-07
++ $X=2.644 $Y=0.1275
+Rk38	gnd!#4	gnd!#5	0.247639	$metal1_conn	$W=2.55e-07
++ $X=1.6535 $Y=0.1275
+Rk39	gnd!#5	gnd!#6	0.223505	$metal1_conn	$W=2.55e-07
++ $X=0.725 $Y=0.1275
+Rk40	gnd!#6	gnd!	0.022419	$metal1_conn	$W=2.55e-07
++ $X=0.2205 $Y=0.1275
+Rk41	gnd!#2	gnd!#7	75.255058	$metal1_conn	$W=8e-08
++ $X=3.115 $Y=0.3925
+Rk42	gnd!#5	gnd!#8	75.249390	$metal1_conn	$W=9e-08
++ $X=1.17 $Y=0.3925
+Rk43	gnd!#6	gnd!#9	75.249390	$metal1_conn	$W=9e-08
++ $X=0.28 $Y=0.3925
+Rl1	net1	net1#2	241.541229	$poly_conn	$W=3.9e-08
++ $X=0.3825 $Y=1.1305
+Rl2	net1#2	net1#3	68.464302	$poly_conn	$W=3.9e-08
++ $X=0.3825 $Y=0.7
+Rl3	net1#2	net1#4	104.683556	$poly_conn	$W=3.9e-08
++ $X=0.5325 $Y=0.8025
+Rl4	net2	net2#2	91.541222	$poly_conn	$W=3.9e-08
++ $X=1.2725 $Y=1.3255
+Rl5	net2#2	net2#3	245.815262	$poly_conn	$W=3.9e-08
++ $X=0.9425 $Y=1.1925
+Rl6	net2#2	net2#4	218.464294	$poly_conn	$W=3.9e-08
++ $X=1.2725 $Y=0.895
+Rl7	clk#1	clk#2	118.145096	$poly_conn	$W=3.9e-08
++ $X=2.38 $Y=0.8725
+Rl8	clk#2	clk#3	94.620911	$poly_conn	$W=3.9e-08
++ $X=2.2125 $Y=1
+Rl9	clk#3	clk#4	385.041229	$poly_conn	$W=3.9e-08
++ $X=1.845 $Y=1.1275
+Rl10	clk#2	clk#5	95.387375	$poly_conn	$W=3.9e-08
++ $X=2.2125 $Y=0.735
+Rl11	clk#3	clk#6	116.541229	$poly_conn	$W=3.9e-08
++ $X=2.2125 $Y=1.2925
+Rl12	net3	net3#2	89.618149	$poly_conn	$W=3.9e-08
++ $X=3.0125 $Y=1.328
+Rl13	net3#2	net3#3	83.529709	$poly_conn	$W=3.9e-08
++ $X=2.89 $Y=1.1975
+Rl14	net3#2	net3#4	220.387375	$poly_conn	$W=3.9e-08
++ $X=3.0125 $Y=0.8975
+Rl15	Qbar#1	Qbar#2	104.537926	$poly_conn	$W=3.9e-08
++ $X=3.2175 $Y=1.308
+Rl16	Qbar#2	Qbar#3	91.076385	$poly_conn	$W=3.9e-08
++ $X=3.2175 $Y=0.725
+Rl17	clk#7	clk#8	169.173599	$poly_conn	$W=3.9e-08
++ $X=3.9175 $Y=0.837
+*
+*       CAPACITOR CARDS
+*
+*
+C1	D	gnd!	4.46249e-17	$X=2.5365 $Y=0.5595
+C2	Q	gnd!	4.75448e-17	$X=3.469 $Y=1.1745
+C3	Qbar	gnd!	4.31737e-17	$X=3.139 $Y=0.8795
+C4	vdd!	gnd!	1.91616e-16	$X=1.063 $Y=1.6725
+C5	net2	gnd!	4.17958e-17	$X=1.272 $Y=1.5025
+C6	net1	gnd!	6.75858e-17	$X=0.382 $Y=1.405
+C7	net3	gnd!	4.68709e-17	$X=3.0115 $Y=1.5035
+C8	net8	gnd!	5.59478e-17	$X=1.3745 $Y=1.476
+C9	Qbar#1	gnd!	4.55139e-17	$X=3.2165 $Y=1.4935
+C10	clk#6	gnd!	4.32671e-17	$X=2.2115 $Y=1.4855
+C11	clk#4	gnd!	9.77129e-17	$X=1.477 $Y=1.392
+C12	clk#7	gnd!	4.56245e-17	$X=3.9165 $Y=0.6175
+C13	Qbar#3	gnd!	4.32958e-17	$X=3.2165 $Y=0.5645
+C14	net3#4	gnd!	7.14831e-17	$X=3.0115 $Y=0.648
+C15	clk#5	gnd!	3.86532e-17	$X=2.2115 $Y=0.567
+C16	net2#4	gnd!	6.03365e-17	$X=1.272 $Y=0.647
+C17	net1#3	gnd!	3.49684e-17	$X=0.382 $Y=0.5495
+C18	clk#8	gnd!	5.28142e-17	$X=3.9165 $Y=1.0005
+C19	Qbar#2	gnd!	1.28668e-16	$X=3.2025 $Y=1.0405
+C20	net3#3	gnd!	6.18546e-17	$X=2.619 $Y=1.1795
+C21	clk#1	gnd!	4.81622e-17	$X=2.574 $Y=0.8745
+C22	net1#4	gnd!	5.92683e-17	$X=0.8295 $Y=0.7945
+C23	net2#3	gnd!	7.0789e-17	$X=0.684 $Y=1.1905
+C24	clk#16	gnd!	6.97815e-17	$X=3.814 $Y=1.052
+C25	clk#13	gnd!	6.87275e-17	$X=2.9515 $Y=0.9745
+C26	net8#9	gnd!	9.34975e-17	$X=2.2065 $Y=0.877
+C27	net8#8	gnd!	4.48655e-17	$X=1.459 $Y=0.8745
+C28	clk#12	gnd!	7.49298e-17	$X=3.964 $Y=1.1045
+C29	net3#10	gnd!	1.49456e-16	$X=3.8145 $Y=0.786
+C30	Q#6	gnd!	3.26608e-17	$X=3.5125 $Y=1.1745
+C31	net3#8	gnd!	2.42756e-16	$X=2.71 $Y=1.1795
+C32	clk#9	gnd!	1.37161e-16	$X=2.589 $Y=0.8795
+C33	net8#5	gnd!	1.02144e-16	$X=2.314 $Y=1.0125
+C34	net3#5	gnd!	1.29513e-16	$X=1.7605 $Y=1.221
+C35	net1#10	gnd!	1.27543e-16	$X=1.5945 $Y=0.702
+C36	net8#3	gnd!	6.31653e-17	$X=1.234 $Y=1.0745
+C37	net1#6	gnd!	1.01053e-16	$X=0.8295 $Y=0.7945
+C38	Q#5	gnd!	4.1298e-17	$X=3.314 $Y=1.488
+C39	vdd!#7	gnd!	4.60865e-17	$X=3.114 $Y=1.5225
+C40	Qbar#7	gnd!	6.95652e-17	$X=2.914 $Y=1.4445
+C41	net8#6	gnd!	6.89134e-17	$X=2.309 $Y=1.451
+C42	net1#7	gnd!	1.01106e-16	$X=2.114 $Y=1.411
+C43	net3#6	gnd!	3.93951e-17	$X=1.574 $Y=1.4885
+C44	vdd!#8	gnd!	3.63416e-17	$X=1.1745 $Y=1.5225
+C45	net2#8	gnd!	3.81236e-17	$X=0.4795 $Y=1.4855
+C46	vdd!#9	gnd!	2.09392e-17	$X=0.2845 $Y=1.5225
+C47	net3#9	gnd!	3.26504e-17	$X=4.014 $Y=0.572
+C48	Q#1	gnd!	7.3743e-17	$X=3.819 $Y=0.627
+C49	Q#3	gnd!	3.38934e-17	$X=3.314 $Y=0.582
+C50	Qbar#6	gnd!	4.3637e-17	$X=2.914 $Y=0.582
+C51	D#1	gnd!	4.6735e-17	$X=2.3375 $Y=0.5595
+C52	net1#8	gnd!	9.30147e-17	$X=2.114 $Y=0.667
+C53	net8#4	gnd!	6.64846e-17	$X=1.3695 $Y=0.6045
+C54	net2#7	gnd!	7.31776e-17	$X=0.4795 $Y=0.623
+C55	net2#6	gnd!	3.5582e-17	$X=0.4845 $Y=1.112
+C56	net8#2	gnd!	7.2032e-17	$X=1.3745 $Y=1.055
+C57	Qbar#5	gnd!	6.37588e-17	$X=2.909 $Y=0.947
+C58	Q#2	gnd!	7.54056e-17	$X=3.5175 $Y=0.8595
+C59	Q#4	gnd!	5.74735e-17	$X=3.319 $Y=1.179
+C60	vdd!#2	gnd!	9.0107e-17	$X=3.561 $Y=1.847
+C61	vdd!#4	gnd!	6.9263e-17	$X=2.147 $Y=1.8605
+C62	vdd!#5	gnd!	5.77341e-17	$X=1.1695 $Y=1.821
+C63	net1#2	gnd!	5.09901e-17	$X=0.382 $Y=0.915
+C64	net2#2	gnd!	8.26315e-17	$X=1.272 $Y=1.11
+C65	clk#2	gnd!	3.24027e-17	$X=2.2115 $Y=0.867
+C66	clk#3	gnd!	7.53056e-17	$X=1.9455 $Y=1.127
+C67	net3#2	gnd!	5.6577e-17	$X=3.0115 $Y=1.1125
+*
+*
+.ENDS flipflopD_x1
+*

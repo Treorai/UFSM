@@ -1,0 +1,25 @@
+#4                               
+MN: MN
+= D D
+= G G
+= S S
+= B B
+#4                               
+MP: MP
+= D D
+= G G
+= S S
+= B B
+#11                              
+xnor_x1: xnor_x1
+= net14 4
+= net22 1
+= A A
+= B B
+= S S
+= gnd! gnd!
+= vdd! vdd!
+= net25 8
+= net24 5
+= net4 10
+= net9 11

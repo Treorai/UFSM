@@ -1,0 +1,5 @@
+CADENCE IHNL11143
+
+watto nand_x1 schematic cds0
+watto 1_bit_full_adder_x1 schematic cds1
+watto 4_bit_full_adder_x1 schematic cds2

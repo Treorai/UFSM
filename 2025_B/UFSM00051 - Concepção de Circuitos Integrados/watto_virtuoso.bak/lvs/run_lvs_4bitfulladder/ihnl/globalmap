@@ -1,0 +1,12 @@
+CADENCE IHNL11140
+$model
+watto/nand_x1/schematic nand_x1
+watto/1_bit_full_adder_x1/schematic 1_bit_full_adder_x1
+watto/4_bit_full_adder_x1/schematic 4_bit_full_adder_x1
+$endmodel
+$net
+gnd! gnd!
+vdd! vdd!
+$endnet
+$param
+$endparam

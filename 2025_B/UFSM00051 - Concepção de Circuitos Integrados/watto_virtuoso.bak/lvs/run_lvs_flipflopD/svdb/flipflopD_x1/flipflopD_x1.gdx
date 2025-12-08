@@ -1,0 +1,18 @@
+#0                               
+MP: MP
+#0                               
+MN: MN
+#12                              
+flipflopD_x1: flipflopD_x1
+D MPM5 X15/M0
+D MPM4 M7
+D MPM6 X16/M0
+D MPM1 M6
+D MPM0 X14/M0
+D MPM7 X13/M0
+S MNM5 M4
+S MNM6 M3
+D MNM2 M2
+D MNM0 M0
+D MNM7 M5
+D MNM4 M1

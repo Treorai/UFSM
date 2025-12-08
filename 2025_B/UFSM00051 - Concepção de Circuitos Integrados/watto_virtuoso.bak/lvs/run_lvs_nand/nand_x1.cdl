@@ -1,0 +1,40 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  watto
+* Top Cell Name: nand_x1
+* View Name:     schematic
+* Netlisted on:  Nov 26 18:03:23 2025
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+*.GLOBAL vdd!
++        gnd!
+
+*.PIN vdd!
+*+    gnd!
+
+************************************************************************
+* Library Name: watto
+* Cell Name:    nand_x1
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT nand_x1 A B S
+*.PININFO A:I B:I S:O
+MPM1 vdd! B S vdd! g45p1svt m=1 l=45n w=145n
+MPM0 S A vdd! vdd! g45p1svt m=1 l=45n w=145n
+MNM1 net9 B gnd! gnd! g45n1svt m=1 l=45n w=120n
+MNM0 S A net9 gnd! g45n1svt m=1 l=45n w=120n
+.ENDS
+

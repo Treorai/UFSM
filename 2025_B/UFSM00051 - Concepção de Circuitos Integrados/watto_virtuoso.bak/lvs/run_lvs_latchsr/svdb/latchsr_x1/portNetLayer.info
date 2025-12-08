@@ -1,0 +1,6 @@
+gnd!	metal1_0conn	500	260
+Reset	metal1_0conn	3570	2270
+Qbar	metal1_0conn	1520	2290
+vdd!	metal1_0conn	950	3740
+Q	metal1_0conn	1850	1540
+Set	metal1_0conn	520	2110

@@ -1,0 +1,10 @@
+# XXXX: Instance Cross Reference (ixf) (File format 1)
+# XXXX: Layout Primary switch_x1
+# XXXX: End of header.
+% MP 4 MP 4
+% MN 4 MN 4
+% switch_x1 5 switch_x1 5
+0 X8/X2/M0 0 XI2/MNM0  
+0 X8/M0 0 XI2/MPM0  
+0 X7/M0 0 MNM0  
+0 M0 0 MPM1  

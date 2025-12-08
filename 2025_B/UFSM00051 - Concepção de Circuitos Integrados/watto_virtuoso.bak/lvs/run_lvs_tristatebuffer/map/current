@@ -1,0 +1,17 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "tristatebuffer_x1"
+  repList "auCdl schematic"
+  stopList "auCdl"
+  globalList "gnd! vdd!"
+  hierDelim "."
+  netlistDir "/home/ufsm00051/wagner.chitto/wagner.chitto/run_lvs_tristatebuffer/"
+ )
+( model
+( "watto/tristatebuffer_x1/schematic" "tristatebuffer_x1" )
+( "watto/inv_x1/schematic" "inv_x1" )
+ )
+( "inv_x1" "ihnl/cds0/map" )
+( "tristatebuffer_x1" "ihnl/cds1/map" )
+ )

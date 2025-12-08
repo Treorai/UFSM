@@ -1,0 +1,22 @@
+# XXXX: Net Cross Reference (nxf) (File format 1)
+# XXXX: Layout Primary latchsr_x1
+# XXXX: End of header.
+% MP 4 MP 4 
+0 D 0 D
+0 G 0 G
+0 S 0 S
+0 B 0 B
+% MN 4 MN 4 
+0 D 0 D
+0 G 0 G
+0 S 0 S
+0 B 0 B
+% latchsr_x1 6 latchsr_x1 6 
+0 Q 0 Q
+0 Qbar 0 Qbar
+0 Reset 0 Reset
+0 Set 0 Set
+0 vdd! 0 vdd!
+0 gnd! 0 gnd!
+0 8 0 net12
+0 7 0 net4

@@ -1,0 +1,9 @@
+[Logging Service: 19]
+[2025-11-25 18:43:02.964 -0300] [INFO] [cadence.virtuoso.ade.loggingservice] - HistoryRecorderManager init {"dbBasePath": "/home/ufsm00051/wagner.chitto/wagner.chitto/watto/test_buffer_x2/maestro/results/maestro"}
+[2025-11-25 18:43:02.964 -0300] [INFO] [cadence.virtuoso.ade.loggingservice] - useGRPC grpc service... {"brokerAddress": "ecomp:42365", "serviceName": "DaVinciService_577661_1764101552", "axlSession": "fnxSession6"}
+[2025-11-25 18:43:02.964 -0300] [PROCESS] [cadence.virtuoso.ade.loggingservice] - Logging Service has successfully started. Waiting for incoming messages ... {"hostname": "ecomp", "processid": 624625, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/LoggingService19.log"}
+[2025-11-25 18:43:02.975 -0300] [INFO] [cadence.virtuoso.ade.loggingservice] - logging service gRPC started {"listening address": "ecomp:35441"}
+[2025-11-25 18:48:31.395 -0300] [INFO] [cadence.virtuoso.ade.loggingservice] - Got exit signal in processControlMessage. Will exit. {}
+[2025-11-25 18:48:32.396 -0300] [PROCESS] [cadence.virtuoso.ade.loggingservice] - Current memory used: 60.3086 MBytes, peak memory used: 60.3086 MBytes {"hostname": "ecomp", "processid": 624625, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/LoggingService19.log"}
+[2025-11-25 18:48:32.396 -0300] [PROCESS] [cadence.virtuoso.ade.loggingservice] - Stopping Logging Service process. {"hostname": "ecomp", "processid": 624625, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/LoggingService19.log"}
+[2025-11-25 18:48:32.396 -0300] [PROCESS] [cadence.virtuoso.ade.loggingservice] - Logging Service stop!!!! {"hostname": "ecomp", "processid": 624625, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/LoggingService19.log"}

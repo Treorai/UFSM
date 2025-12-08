@@ -1,0 +1,22 @@
+#4                               
+MN: MN
+= D D
+= G G
+= S S
+= B B
+#4                               
+MP: MP
+= D D
+= G G
+= S S
+= B B
+#8                               
+tristateinv_x1: tristateinv_x1
+= net1 7
+= Vin Vin
+= Vout Vout
+= en en
+= vdd! vdd!
+= gnd! gnd!
+= net4 5
+= net5 8

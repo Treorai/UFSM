@@ -1,0 +1,24 @@
+# XXXX: Net Cross Reference (nxf) (File format 1)
+# XXXX: Layout Primary flipflopD_barless_x1
+# XXXX: End of header.
+% MP 4 MP 4 
+0 D 0 D
+0 G 0 G
+0 S 0 S
+0 B 0 B
+% MN 4 MN 4 
+0 D 0 D
+0 G 0 G
+0 S 0 S
+0 B 0 B
+% flipflopD_barless_x1 5 flipflopD_barless_x1 5 
+0 10 0 net4
+0 6 0 net3
+0 7 0 net8
+0 5 0 net1
+0 3 0 net2
+0 D 0 D
+0 Q 0 Q
+0 clk 0 clk
+0 vdd! 0 vdd!
+0 gnd! 0 gnd!

@@ -1,0 +1,13 @@
+# Placement Hierarchy File (lph)
+# 
+# 
+# 
+% pmos1v_CDNS_764191003191 5
+M0 MP 4
+% nmos1v_CDNS_764191003190 4
+M0 MN 4
+% nand_x1 5
+X9 nmos1v_CDNS_764191003190 4
+X10 nmos1v_CDNS_764191003190 4
+X11 pmos1v_CDNS_764191003191 5
+X12 pmos1v_CDNS_764191003191 5

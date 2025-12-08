@@ -1,0 +1,536 @@
+[Simulation Monitor: 6]
+[2025-11-24 16:59:00.301 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Started the simulation monitor process {"hostname": "ecomp", "processid": 155869, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "simulation monitor command line": "/home/tools/cadence/installs/IC231/tools.lnx86/dfII/bin/64bit/spectreMonitor --davinciService DaVinciService_118335_1764013224 --axlsession fnxSession1 -lscs 00010590E36CFC06BC4D64FFD61DD265D93F798EEA7CFC06CC4D0A8CEC7E9F67D0227DAAD244CD35C87766E3A12FFC06BC4D0FC7361C4505D56900001AA6 -beanhost ecomp -beanport 11352 -beanLogFile /home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/amps_Job6.log -beanbinlog  --domain 0 --interactive yes --netlistOpt no --useMultiPointEvaluation yes --exprEvalShowJobStderr yes --evalSimParallel no --maxSims 0 --historyName ExplorerRun.0 --historyUUID  --exprEvaluator vds --mcMapping mc1.mapping --checkLogStatusInterval 0 --checkSimulatorLogTimeout 1200 --exprEvalMaxTries 3 --maxNFSSyncWait 60 -adeBrokerAddress ecomp:34059 --statdbType h5v2 --fromADE true --virtuosoBinary virtuoso --guiDisplay localhost:13.0 --globalStatus 60 --evaluateMultiMC yes --evalOnSimFail SkipFailedAnalyses --numRetriesOnError 1 --fenixMode explorer --lingertimeout 300 -ahdlLockTimeout 60 --sdbLib watto --sdbCell test_nand_x1 --sdbView maestro --heartBeatFileDir /dev/shm --id 6 --uuid 6ba2aab9-b7b1-4059-8021-f5de20255048 --log /home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log "}
+[2025-11-24 16:59:00.301 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Started the simulation monitor process {"hostname": "ecomp", "processid": 155869, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "current directory": "/home/ufsm00051/wagner.chitto/wagner.chitto"}
+[2025-11-24 16:59:00.301 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulation Monitor has successfully started up. Trying to set up communication channels to other components ... {"hostname": "ecomp", "processid": 155869, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log"}
+[2025-11-24 16:59:00.302 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Communication channels have been successfully set up. Start processing events ... {"hostname": "ecomp", "processid": 155869, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log"}
+[2025-11-24 16:59:00.302 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Considering to start history {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log"}
+[2025-11-24 16:59:00.305 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - HostInfo:
+Host name (type):	ecomp (x86_64)
+Operating system:	Linux 4.18.0-553.74.1.el8_10.x86_64 #1 SMP Sun Sep 14 12:57:27 UTC 2025 {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "nodename": "ecomp", "domainname": "(none)", "machine": "x86_64", "sysname": "Linux", "release": "4.18.0-553.74.1.el8_10.x86_64", "version": "#1 SMP Sun Sep 14 12:57:27 UTC 2025"}
+[2025-11-24 16:59:00.305 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - UsageInfo:
+pid=155869
+totalPhysicalMemory=31.020386GB,Used=19.146309GB,totalVirtualMemory=34.481319GB,Used=19.146309GB
+Cpu: Cores=4, Load average:3.860000,3.320000,2.320000 {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "pid": "155869", "totalPhysicalMemory": "31.020386", "physicalMemoryUsed": "19.146309", "totalVirtualMemory": "34.481319", "virtualMemoryUsed": "19.146309", "cpuCores": "4", "processes": "2578", "loadAverage1": "3.860000", "loadAverage5": "3.320000", "loadAverage15": "2.320000", "loadAverage1Percent": "0.965000"}
+[2025-11-24 16:59:00.305 -0300] [EVENT] [cadence.virtuoso.ade.simulationMonitor] - NewPoint {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "event": "NewPoint", "EventSource": "Simulation Monitor", "HistoryName": "ExplorerRun.0", "logFile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "logFileSize": "24", "category": "simulation"}
+[2025-11-24 16:59:00.612 -0300] [EVENT] [cadence.virtuoso.ade.simulationMonitor] - NewPoint {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "event": "NewPoint", "EventSource": "spectre", "HistoryName": "ExplorerRun.0", "logFile": "/home/ufsm00051/wagner.chitto/simulation/watto/test_nand_x1/maestro/results/maestro/ExplorerRun.0/1/watto_test_nand_x1_1/psf/spectre.out", "logFileSize": "-1", "category": "simulation"}
+[2025-11-24 16:59:00.986 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulator launched {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "simid": "1", "event": "launch", "category": "simulation"}
+[2025-11-24 16:59:00.988 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Expression evaluator launched {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log"}
+[2025-11-24 16:59:01.210 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Started Simulation {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "event": "start", "category": "simulation"}
+[2025-11-24 16:59:02.211 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 186 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 16:59:02.212 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 200 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 16:59:02.212 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 202 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 16:59:02.212 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during initial setup.
+    Multithreading is disabled due to the size of the design being too small. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 16:59:02.212 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] -               nodes 9 {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 16:59:02.212 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during initial setup.
+    Protected devices exist and are not included in the circuit inventory.
+    APS enabled. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 16:59:02.716 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 205 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 16:59:02.717 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] -    -   (APS) Multi-threading. The recommended number of threads is 1, consider adding +mt=1 on command line. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 16:59:02.717 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during IC analysis, during transient analysis `tran'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I3.net9) = 58.7674 mV
+        Use the `gmin_check' option to eliminate or expand this report. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 16:59:02.717 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during transient analysis `tran'.
+    Multithreading is disabled due to the size of the design being too small. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 16:59:02.717 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at time = 55.9193 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V2:p. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 16:59:02.717 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at time = 60.9597 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V2:p. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 16:59:02.717 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at time = 66 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V2:p. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 16:59:02.717 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at time = 116.589 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I3.net9. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 16:59:02.717 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at time = 117.148 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I3.net9.
+        Further occurrences of this notice will be suppressed. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 16:59:02.717 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during transient analysis `tran'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 16:59:02.717 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Intrinsic tran analysis time:    CPU = 37.224 ms, elapsed = 209.658 ms. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 16:59:02.717 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Total time required for tran analysis `tran': CPU = 38.847 ms, elapsed = 211.287 ms, util. = 18.4%. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 16:59:02.717 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 211 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 16:59:02.717 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre.
+    18 notices suppressed. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 16:59:03.218 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during DC analysis `dcOp'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I3.net9) = 58.7674 mV
+        Use the `gmin_check' option to eliminate or expand this report. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 16:59:03.218 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Total time required for dc analysis `dcOp': CPU = 2.299 ms, elapsed = 66.797 ms, util. = 3.44%. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 16:59:03.218 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 211 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 16:59:03.218 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at dc = 0 V during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I3.net9) = 58.7674 mV
+        Use the `gmin_check' option to eliminate or expand this report. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 16:59:03.218 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at dc = 20 mV during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I3.net9) = 30.8139 mV
+        Use the `gmin_check' option to eliminate or expand this report. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 16:59:03.218 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at dc = 40 mV during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I3.net9) = 14.3466 mV
+        Use the `gmin_check' option to eliminate or expand this report. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 16:59:03.218 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at dc = 60 mV during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I3.net9) = 7.20495 mV
+        Use the `gmin_check' option to eliminate or expand this report. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 16:59:03.218 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at dc = 80 mV during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        Further occurrences of this notice will be suppressed.
+        dV(I3.net9) = 3.9567 mV
+        Further occurrences of this notice will be suppressed.
+        Use the `gmin_check' option to eliminate or expand this report.
+        Further occurrences of this notice will be suppressed. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 16:59:03.218 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at dc = 1 V during DC analysis `dc'.
+    The value of parameter 'dc' has been reset to the original value 0. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 16:59:03.218 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Total time required for dc analysis `dc': CPU = 7.39 ms, elapsed = 47.956 ms, util. = 15.4%. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 16:59:03.218 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 211 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 16:59:03.218 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre.
+    15 notices suppressed. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 16:59:03.718 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Time used: CPU = 636 ms, elapsed = 1.99 s, util. = 32%. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 16:59:03.719 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Time spent in licensing: elapsed = 65.1 ms. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 16:59:03.719 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak memory used = 213 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 16:59:03.719 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulation started at: 4:59:01 PM, Mon Nov 24, 2025, ended at: 4:59:03 PM, Mon Nov 24, 2025, with elapsed time (wall clock): 1.99 s. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 16:59:03.719 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - spectre completes with 0 errors, 0 warnings, and 21 notices. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 16:59:03.719 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Finished simulating for one point {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "simid": "1", "event": "finish", "category": "simulation"}
+[2025-11-24 16:59:03.719 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulator exited {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "exitStatus": "0"}
+[2025-11-24 16:59:03.719 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Finished Simulation {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "simid": "1", "event": "finish", "category": "obsolete"}
+[2025-11-24 16:59:06.224 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Point Finished {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "event": "finish", "category": "sim-eval"}
+[2025-11-24 17:02:20.961 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - SimulationMonitor has terminated the vds process '156007', reason: 'Force to stop the expression evalutor process because of new run' {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:02:20.961 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - HostInfo:
+Host name (type):	ecomp (x86_64)
+Operating system:	Linux 4.18.0-553.74.1.el8_10.x86_64 #1 SMP Sun Sep 14 12:57:27 UTC 2025 {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "nodename": "ecomp", "domainname": "(none)", "machine": "x86_64", "sysname": "Linux", "release": "4.18.0-553.74.1.el8_10.x86_64", "version": "#1 SMP Sun Sep 14 12:57:27 UTC 2025"}
+[2025-11-24 17:02:20.961 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - UsageInfo:
+pid=155869
+totalPhysicalMemory=31.020386GB,Used=18.780910GB,totalVirtualMemory=34.481319GB,Used=18.780910GB
+Cpu: Cores=4, Load average:4.420000,3.470000,2.560000 {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "pid": "155869", "totalPhysicalMemory": "31.020386", "physicalMemoryUsed": "18.780910", "totalVirtualMemory": "34.481319", "virtualMemoryUsed": "18.780910", "cpuCores": "4", "processes": "2492", "loadAverage1": "4.420000", "loadAverage5": "3.470000", "loadAverage15": "2.560000", "loadAverage1Percent": "1.105000"}
+[2025-11-24 17:02:20.961 -0300] [EVENT] [cadence.virtuoso.ade.simulationMonitor] - NewPoint {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "event": "NewPoint", "EventSource": "Simulation Monitor", "HistoryName": "ExplorerRun.0", "logFile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "logFileSize": "20636", "category": "simulation"}
+[2025-11-24 17:02:21.062 -0300] [EVENT] [cadence.virtuoso.ade.simulationMonitor] - NewPoint {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "event": "NewPoint", "EventSource": "spectre", "HistoryName": "ExplorerRun.0", "logFile": "/home/ufsm00051/wagner.chitto/simulation/watto/test_nand_x1/maestro/results/maestro/ExplorerRun.0/1/watto_test_nand_x1_1/psf/spectre.out", "logFileSize": "-1", "category": "simulation"}
+[2025-11-24 17:02:21.167 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulator launched {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "simid": "2", "event": "launch", "category": "simulation"}
+[2025-11-24 17:02:21.169 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Expression evaluator launched {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log"}
+[2025-11-24 17:02:21.276 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Started Simulation {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "event": "start", "category": "simulation"}
+[2025-11-24 17:02:22.277 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 188 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:02:22.277 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 200 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:02:22.277 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 202 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:02:22.277 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during initial setup.
+    Multithreading is disabled due to the size of the design being too small. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:02:22.277 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] -               nodes 9 {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:02:22.277 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during initial setup.
+    Protected devices exist and are not included in the circuit inventory.
+    APS enabled. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:02:23.778 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 205 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:02:23.778 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] -    -   (APS) Multi-threading. The recommended number of threads is 1, consider adding +mt=1 on command line. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:02:23.778 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during IC analysis, during transient analysis `tran'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I3.net9) = 58.7674 mV
+        Use the `gmin_check' option to eliminate or expand this report. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:02:23.778 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during transient analysis `tran'.
+    Multithreading is disabled due to the size of the design being too small. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:02:23.778 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at time = 55.9193 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V2:p. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:02:23.778 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at time = 60.9597 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V2:p. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:02:23.778 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at time = 66 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V2:p. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:02:23.778 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at time = 116.589 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I3.net9. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:02:23.778 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at time = 117.148 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I3.net9.
+        Further occurrences of this notice will be suppressed. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:02:23.778 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during transient analysis `tran'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:02:23.778 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Intrinsic tran analysis time:    CPU = 34.495 ms, elapsed = 350.835 ms. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:02:24.279 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Total time required for tran analysis `tran': CPU = 37.436 ms, elapsed = 353.794 ms, util. = 10.6%. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:02:24.279 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 211 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:02:24.279 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre.
+    18 notices suppressed. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:02:24.279 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during DC analysis `dcOp'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I3.net9) = 58.7674 mV
+        Use the `gmin_check' option to eliminate or expand this report. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:02:24.279 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Total time required for dc analysis `dcOp': CPU = 2.127 ms, elapsed = 32.4938 ms, util. = 6.55%. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:02:24.279 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 211 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:02:24.279 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at vcm = 0 during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I3.net9) = 58.7674 mV
+        Use the `gmin_check' option to eliminate or expand this report. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:02:24.279 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at vcm = 20e-03 during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I3.net9) = 26.8102 mV
+        Use the `gmin_check' option to eliminate or expand this report. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:02:24.279 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at vcm = 40e-03 during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I3.net9) = 12.2264 mV
+        Use the `gmin_check' option to eliminate or expand this report. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:02:24.279 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at vcm = 60e-03 during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I3.net9) = 6.0458 mV
+        Use the `gmin_check' option to eliminate or expand this report. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:02:24.279 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at vcm = 80e-03 during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        Further occurrences of this notice will be suppressed.
+        dV(I3.net9) = 3.14611 mV
+        Further occurrences of this notice will be suppressed.
+        Use the `gmin_check' option to eliminate or expand this report.
+        Further occurrences of this notice will be suppressed. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:02:24.279 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at vcm = 1 during DC analysis `dc'.
+    The value of parameter 'vcm' has been reset to the original value 0. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:02:24.279 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Total time required for dc analysis `dc': CPU = 13.912 ms, elapsed = 45.0611 ms, util. = 30.9%. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:02:24.279 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 211 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:02:24.279 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre.
+    7 notices suppressed. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:02:24.780 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Time used: CPU = 596 ms, elapsed = 2.9 s, util. = 20.5%. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:02:24.780 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Time spent in licensing: elapsed = 57.6 ms. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:02:24.780 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak memory used = 213 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:02:24.780 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulation started at: 5:02:21 PM, Mon Nov 24, 2025, ended at: 5:02:24 PM, Mon Nov 24, 2025, with elapsed time (wall clock): 2.9 s. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:02:24.780 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - spectre completes with 0 errors, 0 warnings, and 21 notices. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:02:24.780 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Finished simulating for one point {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "simid": "2", "event": "finish", "category": "simulation"}
+[2025-11-24 17:02:24.780 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulator exited {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "exitStatus": "0"}
+[2025-11-24 17:02:24.780 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Finished Simulation {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "simid": "2", "event": "finish", "category": "obsolete"}
+[2025-11-24 17:02:25.781 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Point Finished {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "event": "finish", "category": "sim-eval"}
+[2025-11-24 17:04:01.770 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - SimulationMonitor has terminated the vds process '161527', reason: 'Force to stop the expression evalutor process because of new run' {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:04:01.771 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - HostInfo:
+Host name (type):	ecomp (x86_64)
+Operating system:	Linux 4.18.0-553.74.1.el8_10.x86_64 #1 SMP Sun Sep 14 12:57:27 UTC 2025 {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "nodename": "ecomp", "domainname": "(none)", "machine": "x86_64", "sysname": "Linux", "release": "4.18.0-553.74.1.el8_10.x86_64", "version": "#1 SMP Sun Sep 14 12:57:27 UTC 2025"}
+[2025-11-24 17:04:01.771 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - UsageInfo:
+pid=155869
+totalPhysicalMemory=31.020386GB,Used=18.584961GB,totalVirtualMemory=34.481319GB,Used=18.584961GB
+Cpu: Cores=4, Load average:2.850000,3.080000,2.500000 {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "pid": "155869", "totalPhysicalMemory": "31.020386", "physicalMemoryUsed": "18.584961", "totalVirtualMemory": "34.481319", "virtualMemoryUsed": "18.584961", "cpuCores": "4", "processes": "2484", "loadAverage1": "2.850000", "loadAverage5": "3.080000", "loadAverage15": "2.500000", "loadAverage1Percent": "0.712500"}
+[2025-11-24 17:04:01.772 -0300] [EVENT] [cadence.virtuoso.ade.simulationMonitor] - NewPoint {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "event": "NewPoint", "EventSource": "Simulation Monitor", "HistoryName": "ExplorerRun.0", "logFile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "logFileSize": "37187", "category": "simulation"}
+[2025-11-24 17:04:01.873 -0300] [EVENT] [cadence.virtuoso.ade.simulationMonitor] - NewPoint {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "event": "NewPoint", "EventSource": "spectre", "HistoryName": "ExplorerRun.0", "logFile": "/home/ufsm00051/wagner.chitto/simulation/watto/test_nand_x1/maestro/results/maestro/ExplorerRun.0/1/watto_test_nand_x1_1/psf/spectre.out", "logFileSize": "-1", "category": "simulation"}
+[2025-11-24 17:04:01.984 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulator launched {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "simid": "3", "event": "launch", "category": "simulation"}
+[2025-11-24 17:04:01.989 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Expression evaluator launched {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log"}
+[2025-11-24 17:04:02.155 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Started Simulation {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "event": "start", "category": "simulation"}
+[2025-11-24 17:04:03.162 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 191 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:04:03.162 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 203 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:04:03.162 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 205 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:04:03.162 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during initial setup.
+    Multithreading is disabled due to the size of the design being too small. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:04:03.162 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] -               nodes 9 {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:04:03.162 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during initial setup.
+    Protected devices exist and are not included in the circuit inventory.
+    APS enabled. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:04:03.666 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 208 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:04:03.666 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] -    -   (APS) Multi-threading. The recommended number of threads is 1, consider adding +mt=1 on command line. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:04:03.666 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during IC analysis, during transient analysis `tran'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I3.net9) = 58.7674 mV
+        Use the `gmin_check' option to eliminate or expand this report. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:04:03.666 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during transient analysis `tran'.
+    Multithreading is disabled due to the size of the design being too small. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:04:03.666 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at time = 55.9193 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V2:p. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:04:03.666 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at time = 60.9597 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V2:p. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:04:03.666 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at time = 66 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V2:p. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:04:03.666 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at time = 116.589 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I3.net9. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:04:03.666 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at time = 117.148 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I3.net9.
+        Further occurrences of this notice will be suppressed. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:04:03.666 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during transient analysis `tran'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:04:03.666 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Intrinsic tran analysis time:    CPU = 37.534 ms, elapsed = 108.992 ms. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:04:03.666 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Total time required for tran analysis `tran': CPU = 40.297 ms, elapsed = 111.774 ms, util. = 36.1%. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:04:03.666 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 214 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:04:03.666 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre.
+    18 notices suppressed. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:04:03.667 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Total time required for dc analysis `dcOp': CPU = 3.563 ms, elapsed = 43.8249 ms, util. = 8.13%. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:04:03.667 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 214 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:04:03.667 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at vcm = 1 during DC analysis `dc'.
+    The value of parameter 'vcm' has been reset to the original value 0. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:04:03.667 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Total time required for dc analysis `dc': CPU = 10.187 ms, elapsed = 69.387 ms, util. = 14.7%. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:04:03.667 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 214 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:04:04.167 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Time used: CPU = 679 ms, elapsed = 1.49 s, util. = 45.4%. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:04:04.167 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Time spent in licensing: elapsed = 231 ms, percentage of total = 15.5%. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:04:04.168 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak memory used = 216 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:04:04.168 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulation started at: 5:04:02 PM, Mon Nov 24, 2025, ended at: 5:04:03 PM, Mon Nov 24, 2025, with elapsed time (wall clock): 1.49 s. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:04:04.168 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - spectre completes with 0 errors, 0 warnings, and 14 notices. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:04:04.168 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Finished simulating for one point {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "simid": "3", "event": "finish", "category": "simulation"}
+[2025-11-24 17:04:04.168 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulator exited {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "exitStatus": "0"}
+[2025-11-24 17:04:04.168 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Finished Simulation {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "simid": "3", "event": "finish", "category": "obsolete"}
+[2025-11-24 17:04:06.169 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Point Finished {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "event": "finish", "category": "sim-eval"}
+[2025-11-24 17:06:12.918 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - SimulationMonitor has terminated the vds process '163367', reason: 'Force to stop the expression evalutor process because of new run' {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:06:12.918 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - HostInfo:
+Host name (type):	ecomp (x86_64)
+Operating system:	Linux 4.18.0-553.74.1.el8_10.x86_64 #1 SMP Sun Sep 14 12:57:27 UTC 2025 {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "nodename": "ecomp", "domainname": "(none)", "machine": "x86_64", "sysname": "Linux", "release": "4.18.0-553.74.1.el8_10.x86_64", "version": "#1 SMP Sun Sep 14 12:57:27 UTC 2025"}
+[2025-11-24 17:06:12.918 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - UsageInfo:
+pid=155869
+totalPhysicalMemory=31.020386GB,Used=19.789619GB,totalVirtualMemory=34.481319GB,Used=19.789619GB
+Cpu: Cores=4, Load average:3.430000,3.230000,2.640000 {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "pid": "155869", "totalPhysicalMemory": "31.020386", "physicalMemoryUsed": "19.789619", "totalVirtualMemory": "34.481319", "virtualMemoryUsed": "19.789619", "cpuCores": "4", "processes": "2644", "loadAverage1": "3.430000", "loadAverage5": "3.230000", "loadAverage15": "2.640000", "loadAverage1Percent": "0.857500"}
+[2025-11-24 17:06:12.919 -0300] [EVENT] [cadence.virtuoso.ade.simulationMonitor] - NewPoint {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "event": "NewPoint", "EventSource": "Simulation Monitor", "HistoryName": "ExplorerRun.0", "logFile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "logFileSize": "50835", "category": "simulation"}
+[2025-11-24 17:06:13.020 -0300] [EVENT] [cadence.virtuoso.ade.simulationMonitor] - NewPoint {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "event": "NewPoint", "EventSource": "spectre", "HistoryName": "ExplorerRun.0", "logFile": "/home/ufsm00051/wagner.chitto/simulation/watto/test_nand_x1/maestro/results/maestro/ExplorerRun.0/1/watto_test_nand_x1_1/psf/spectre.out", "logFileSize": "-1", "category": "simulation"}
+[2025-11-24 17:06:13.118 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulator launched {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "simid": "4", "event": "launch", "category": "simulation"}
+[2025-11-24 17:06:13.119 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Expression evaluator launched {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log"}
+[2025-11-24 17:06:13.249 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Started Simulation {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "event": "start", "category": "simulation"}
+[2025-11-24 17:06:14.254 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 187 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:06:14.254 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 199 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:06:14.254 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 201 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:06:14.254 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during initial setup.
+    Multithreading is disabled due to the size of the design being too small. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:06:14.254 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] -               nodes 9 {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:06:14.254 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during initial setup.
+    Protected devices exist and are not included in the circuit inventory.
+    APS enabled. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:06:14.254 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 204 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:06:14.254 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] -    -   (APS) Multi-threading. The recommended number of threads is 1, consider adding +mt=1 on command line. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:06:14.254 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during IC analysis, during transient analysis `tran'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I3.net9) = 58.7674 mV
+        Use the `gmin_check' option to eliminate or expand this report. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:06:14.254 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during transient analysis `tran'.
+    Multithreading is disabled due to the size of the design being too small. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:06:14.755 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at time = 55.9193 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V2:p. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:06:14.755 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at time = 60.9597 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V2:p. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:06:14.755 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at time = 66 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V2:p. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:06:14.755 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at time = 116.589 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I3.net9. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:06:14.755 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at time = 117.148 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I3.net9.
+        Further occurrences of this notice will be suppressed. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:06:14.755 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during transient analysis `tran'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:06:14.755 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Intrinsic tran analysis time:    CPU = 36.437 ms, elapsed = 133.796 ms. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:06:14.755 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Total time required for tran analysis `tran': CPU = 38.18 ms, elapsed = 135.545 ms, util. = 28.2%. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:06:14.755 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 211 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:06:14.755 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre.
+    18 notices suppressed. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:06:14.755 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during DC analysis `dcOp'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I3.net9) = -12.0903 mV
+        Use the `gmin_check' option to eliminate or expand this report. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:06:14.755 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Total time required for dc analysis `dcOp': CPU = 3.554 ms, elapsed = 55.0172 ms, util. = 6.46%. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:06:14.755 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 211 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:06:14.755 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at vcm = 0 during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I3.net9) = -12.0903 mV
+        Use the `gmin_check' option to eliminate or expand this report. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:06:14.756 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at vcm = 20e-03 during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I3.net9) = -8.74925 mV
+        Use the `gmin_check' option to eliminate or expand this report. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:06:14.756 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at vcm = 40e-03 during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I3.net9) = -5.80487 mV
+        Use the `gmin_check' option to eliminate or expand this report. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:06:14.756 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at vcm = 60e-03 during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I3.net9) = -3.58854 mV
+        Use the `gmin_check' option to eliminate or expand this report. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:06:14.756 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at vcm = 80e-03 during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        Further occurrences of this notice will be suppressed.
+        dV(I3.net9) = -2.11151 mV
+        Further occurrences of this notice will be suppressed.
+        Use the `gmin_check' option to eliminate or expand this report.
+        Further occurrences of this notice will be suppressed. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:06:14.756 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at vcm = 1 during DC analysis `dc'.
+    The value of parameter 'vcm' has been reset to the original value 0. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:06:14.756 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Total time required for dc analysis `dc': CPU = 9.981 ms, elapsed = 50.4301 ms, util. = 19.8%. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:06:14.756 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 211 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:06:14.756 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre.
+    1 notice suppressed. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:06:15.256 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Time used: CPU = 728 ms, elapsed = 1.6 s, util. = 45.5%. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:06:15.256 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Time spent in licensing: elapsed = 33.3 ms. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:06:15.256 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak memory used = 213 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:06:15.257 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulation started at: 5:06:13 PM, Mon Nov 24, 2025, ended at: 5:06:14 PM, Mon Nov 24, 2025, with elapsed time (wall clock): 1.6 s. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:06:15.257 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - spectre completes with 0 errors, 0 warnings, and 21 notices. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:06:15.257 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Finished simulating for one point {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "simid": "4", "event": "finish", "category": "simulation"}
+[2025-11-24 17:06:15.257 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulator exited {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "exitStatus": "0"}
+[2025-11-24 17:06:15.257 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Finished Simulation {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "simid": "4", "event": "finish", "category": "obsolete"}
+[2025-11-24 17:06:18.270 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Point Finished {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "event": "finish", "category": "sim-eval"}
+[2025-11-24 17:10:19.718 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - SimulationMonitor has terminated the vds process '167584', reason: 'Force to stop the expression evalutor process because of new run' {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:10:19.718 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - HostInfo:
+Host name (type):	ecomp (x86_64)
+Operating system:	Linux 4.18.0-553.74.1.el8_10.x86_64 #1 SMP Sun Sep 14 12:57:27 UTC 2025 {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "nodename": "ecomp", "domainname": "(none)", "machine": "x86_64", "sysname": "Linux", "release": "4.18.0-553.74.1.el8_10.x86_64", "version": "#1 SMP Sun Sep 14 12:57:27 UTC 2025"}
+[2025-11-24 17:10:19.718 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - UsageInfo:
+pid=155869
+totalPhysicalMemory=31.020386GB,Used=19.877716GB,totalVirtualMemory=34.481319GB,Used=19.877716GB
+Cpu: Cores=4, Load average:3.190000,3.130000,2.720000 {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "pid": "155869", "totalPhysicalMemory": "31.020386", "physicalMemoryUsed": "19.877716", "totalVirtualMemory": "34.481319", "virtualMemoryUsed": "19.877716", "cpuCores": "4", "processes": "2628", "loadAverage1": "3.190000", "loadAverage5": "3.130000", "loadAverage15": "2.720000", "loadAverage1Percent": "0.797500"}
+[2025-11-24 17:10:19.719 -0300] [EVENT] [cadence.virtuoso.ade.simulationMonitor] - NewPoint {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "event": "NewPoint", "EventSource": "Simulation Monitor", "HistoryName": "ExplorerRun.0", "logFile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "logFileSize": "67390", "category": "simulation"}
+[2025-11-24 17:10:19.820 -0300] [EVENT] [cadence.virtuoso.ade.simulationMonitor] - NewPoint {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "event": "NewPoint", "EventSource": "spectre", "HistoryName": "ExplorerRun.0", "logFile": "/home/ufsm00051/wagner.chitto/simulation/watto/test_nand_x1/maestro/results/maestro/ExplorerRun.0/1/watto_test_nand_x1_1/psf/spectre.out", "logFileSize": "-1", "category": "simulation"}
+[2025-11-24 17:10:19.921 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulator launched {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "simid": "5", "event": "launch", "category": "simulation"}
+[2025-11-24 17:10:19.924 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Expression evaluator launched {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log"}
+[2025-11-24 17:10:20.045 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Started Simulation {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "event": "start", "category": "simulation"}
+[2025-11-24 17:10:21.045 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 188 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:10:21.045 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 201 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:10:21.045 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 202 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:10:21.045 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during initial setup.
+    Multithreading is disabled due to the size of the design being too small. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:10:21.046 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] -               nodes 9 {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:10:21.046 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during initial setup.
+    Protected devices exist and are not included in the circuit inventory.
+    APS enabled. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:10:21.046 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 205 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:10:21.046 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] -    -   (APS) Multi-threading. The recommended number of threads is 1, consider adding +mt=1 on command line. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:10:21.046 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during IC analysis, during transient analysis `tran'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I3.net9) = 58.7674 mV
+        Use the `gmin_check' option to eliminate or expand this report. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:10:21.046 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during transient analysis `tran'.
+    Multithreading is disabled due to the size of the design being too small. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:10:21.547 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at time = 55.9193 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V2:p. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:10:21.547 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at time = 60.9597 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V2:p. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:10:21.547 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at time = 66 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V2:p. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:10:21.547 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at time = 116.589 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I3.net9. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:10:21.547 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at time = 117.148 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I3.net9.
+        Further occurrences of this notice will be suppressed. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:10:21.548 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during transient analysis `tran'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:10:21.548 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Intrinsic tran analysis time:    CPU = 33.913 ms, elapsed = 118.295 ms. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:10:21.548 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Total time required for tran analysis `tran': CPU = 35.459 ms, elapsed = 119.847 ms, util. = 29.6%. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:10:21.548 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 211 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:10:21.548 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre.
+    18 notices suppressed. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:10:21.548 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during DC analysis `dcOp'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I3.net9) = -12.0903 mV
+        Use the `gmin_check' option to eliminate or expand this report. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:10:21.548 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Total time required for dc analysis `dcOp': CPU = 4.097 ms, elapsed = 55.429 ms, util. = 7.39%. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:10:21.548 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 212 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:10:21.548 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at vcm = 0 during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I3.net9) = -12.0903 mV
+        Use the `gmin_check' option to eliminate or expand this report. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:10:21.548 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at vcm = 20e-03 during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I3.net9) = -8.74925 mV
+        Use the `gmin_check' option to eliminate or expand this report. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:10:21.548 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at vcm = 40e-03 during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I3.net9) = -5.80487 mV
+        Use the `gmin_check' option to eliminate or expand this report. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:10:21.548 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at vcm = 60e-03 during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I3.net9) = -3.58854 mV
+        Use the `gmin_check' option to eliminate or expand this report. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:10:21.548 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at vcm = 80e-03 during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        Further occurrences of this notice will be suppressed.
+        dV(I3.net9) = -2.11151 mV
+        Further occurrences of this notice will be suppressed.
+        Use the `gmin_check' option to eliminate or expand this report.
+        Further occurrences of this notice will be suppressed. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:10:21.548 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at vcm = 1 during DC analysis `dc'.
+    The value of parameter 'vcm' has been reset to the original value 0. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:10:21.548 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Total time required for dc analysis `dc': CPU = 10.658 ms, elapsed = 52.2869 ms, util. = 20.4%. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:10:21.548 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 212 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:10:21.548 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre.
+    1 notice suppressed. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:10:22.050 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Time used: CPU = 619 ms, elapsed = 1.71 s, util. = 36.1%. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:10:22.050 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Time spent in licensing: elapsed = 430 ms, percentage of total = 25.1%. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:10:22.050 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak memory used = 213 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:10:22.050 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulation started at: 5:10:20 PM, Mon Nov 24, 2025, ended at: 5:10:21 PM, Mon Nov 24, 2025, with elapsed time (wall clock): 1.71 s. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:10:22.050 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - spectre completes with 0 errors, 0 warnings, and 21 notices. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:10:22.050 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Finished simulating for one point {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "simid": "5", "event": "finish", "category": "simulation"}
+[2025-11-24 17:10:22.050 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulator exited {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "exitStatus": "0"}
+[2025-11-24 17:10:22.050 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Finished Simulation {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "simid": "5", "event": "finish", "category": "obsolete"}
+[2025-11-24 17:10:24.053 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Point Finished {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "event": "finish", "category": "sim-eval"}
+[2025-11-24 17:11:01.409 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - SimulationMonitor has terminated the vds process '173862', reason: 'Force to stop the expression evalutor process because of new run' {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:11:01.409 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - HostInfo:
+Host name (type):	ecomp (x86_64)
+Operating system:	Linux 4.18.0-553.74.1.el8_10.x86_64 #1 SMP Sun Sep 14 12:57:27 UTC 2025 {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "nodename": "ecomp", "domainname": "(none)", "machine": "x86_64", "sysname": "Linux", "release": "4.18.0-553.74.1.el8_10.x86_64", "version": "#1 SMP Sun Sep 14 12:57:27 UTC 2025"}
+[2025-11-24 17:11:01.409 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - UsageInfo:
+pid=155869
+totalPhysicalMemory=31.020386GB,Used=20.184650GB,totalVirtualMemory=34.481319GB,Used=20.184650GB
+Cpu: Cores=4, Load average:3.130000,3.110000,2.730000 {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "pid": "155869", "totalPhysicalMemory": "31.020386", "physicalMemoryUsed": "20.184650", "totalVirtualMemory": "34.481319", "virtualMemoryUsed": "20.184650", "cpuCores": "4", "processes": "2645", "loadAverage1": "3.130000", "loadAverage5": "3.110000", "loadAverage15": "2.730000", "loadAverage1Percent": "0.782500"}
+[2025-11-24 17:11:01.410 -0300] [EVENT] [cadence.virtuoso.ade.simulationMonitor] - NewPoint {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "event": "NewPoint", "EventSource": "Simulation Monitor", "HistoryName": "ExplorerRun.0", "logFile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "logFileSize": "82215", "category": "simulation"}
+[2025-11-24 17:11:01.519 -0300] [EVENT] [cadence.virtuoso.ade.simulationMonitor] - NewPoint {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "event": "NewPoint", "EventSource": "spectre", "HistoryName": "ExplorerRun.0", "logFile": "/home/ufsm00051/wagner.chitto/simulation/watto/test_nand_x1/maestro/results/maestro/ExplorerRun.0/1/watto_test_nand_x1_1/psf/spectre.out", "logFileSize": "-1", "category": "simulation"}
+[2025-11-24 17:11:01.670 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulator launched {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "simid": "6", "event": "launch", "category": "simulation"}
+[2025-11-24 17:11:01.673 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Expression evaluator launched {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log"}
+[2025-11-24 17:11:01.881 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Started Simulation {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "event": "start", "category": "simulation"}
+[2025-11-24 17:11:03.389 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 187 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:11:03.389 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 200 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:11:03.389 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 201 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:11:03.389 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during initial setup.
+    Multithreading is disabled due to the size of the design being too small. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:11:03.389 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] -               nodes 9 {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:11:03.389 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during initial setup.
+    Protected devices exist and are not included in the circuit inventory.
+    APS enabled. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:11:03.389 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 203 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:11:03.389 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] -    -   (APS) Multi-threading. The recommended number of threads is 1, consider adding +mt=1 on command line. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:11:03.389 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during IC analysis, during transient analysis `tran'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I3.net9) = 58.7674 mV
+        Use the `gmin_check' option to eliminate or expand this report. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:11:03.389 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during transient analysis `tran'.
+    Multithreading is disabled due to the size of the design being too small. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:11:03.389 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at time = 55.9193 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V2:p. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:11:03.389 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at time = 60.9597 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V2:p. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:11:03.389 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at time = 66 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V2:p. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:11:03.390 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at time = 116.589 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I3.net9. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:11:03.390 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at time = 117.148 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I3.net9.
+        Further occurrences of this notice will be suppressed. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:11:03.390 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during transient analysis `tran'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:11:03.390 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Intrinsic tran analysis time:    CPU = 38.974 ms, elapsed = 112.843 ms. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:11:03.390 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Total time required for tran analysis `tran': CPU = 41.467 ms, elapsed = 115.548 ms, util. = 35.9%. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:11:03.390 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 211 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:11:03.390 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre.
+    18 notices suppressed. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:11:03.890 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during DC analysis `dcOp'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I3.net9) = -12.0903 mV
+        Use the `gmin_check' option to eliminate or expand this report. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:11:03.890 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Total time required for dc analysis `dcOp': CPU = 3.804 ms, elapsed = 29.6931 ms, util. = 12.8%. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:11:03.890 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 211 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:11:03.890 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at vcm = 0 during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I3.net9) = -12.0903 mV
+        Use the `gmin_check' option to eliminate or expand this report. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:11:03.890 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at vcm = 20e-03 during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I3.net9) = -8.74925 mV
+        Use the `gmin_check' option to eliminate or expand this report. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:11:03.890 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at vcm = 40e-03 during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I3.net9) = -5.80487 mV
+        Use the `gmin_check' option to eliminate or expand this report. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:11:03.890 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at vcm = 60e-03 during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I3.net9) = -3.58854 mV
+        Use the `gmin_check' option to eliminate or expand this report. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:11:03.890 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at vcm = 80e-03 during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        Further occurrences of this notice will be suppressed.
+        dV(I3.net9) = -2.11151 mV
+        Further occurrences of this notice will be suppressed.
+        Use the `gmin_check' option to eliminate or expand this report.
+        Further occurrences of this notice will be suppressed. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:11:03.890 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at vcm = 1 during DC analysis `dc'.
+    The value of parameter 'vcm' has been reset to the original value 0. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:11:03.890 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Total time required for dc analysis `dc': CPU = 10.56 ms, elapsed = 39.0408 ms, util. = 27%. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:11:03.891 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 211 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:11:03.891 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre.
+    1 notice suppressed. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:11:04.401 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Time used: CPU = 705 ms, elapsed = 1.9 s, util. = 37.1%. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:11:04.401 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Time spent in licensing: elapsed = 653 ms, percentage of total = 34.4%. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:11:04.401 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak memory used = 213 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:11:04.401 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulation started at: 5:11:02 PM, Mon Nov 24, 2025, ended at: 5:11:03 PM, Mon Nov 24, 2025, with elapsed time (wall clock): 1.9 s. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:11:04.402 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - spectre completes with 0 errors, 0 warnings, and 21 notices. {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}
+[2025-11-24 17:11:04.402 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Finished simulating for one point {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "simid": "6", "event": "finish", "category": "simulation"}
+[2025-11-24 17:11:04.402 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulator exited {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "exitStatus": "0"}
+[2025-11-24 17:11:04.402 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Finished Simulation {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "simid": "6", "event": "finish", "category": "obsolete"}
+[2025-11-24 17:11:06.911 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Point Finished {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "event": "finish", "category": "sim-eval"}
+[2025-11-24 17:11:41.695 -0300] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - get signal Terminated<15> from user:wagner.chitto, which pid:155856:/home/tools/cadence/installs/IC231/tools/bin/64bit/cdsServIpc {"hostname": "ecomp", "processid": 155869, "history": "ExplorerRun.0", "testname": "watto_test_nand_x1_1", "cornername": "Nominal", "point": 1, "logfile": "/home/ufsm00051/wagner.chitto/wagner.chitto/logs_wagner.chitto/logs0/Job6.log", "signal": "15", "signalName": "Terminated", "which": "/home/tools/cadence/installs/IC231/tools/bin/64bit/cdsServIpc", "pid": "155856", "user": "wagner.chitto", "uid": "1028"}
+[2025-11-24 17:11:41.695 -0300] [INFO] [cadence.virtuoso.ade.simulationMonitor] - SimulationMonitor has terminated the  process '175238', reason: 'simulationMonitor is handling signal 15' {"history": "ExplorerRun.0", "point": 1, "testname": "watto_test_nand_x1_1", "cornername": "Nominal"}

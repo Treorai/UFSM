@@ -1,0 +1,298 @@
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.04s.
+device        g45n1svt  M          _nmos1v          nmos1v  ivpcell     gpdk045  D G S B
+Loading gpdk045/libInit.il ...
+	Loading gpdk045/loadCxt.ile ... done!
+	Loading context 'gpdk045' from library 'gpdk045' ... done!
+	Loading context 'pdkUtils' from library 'gpdk045' ... done!
+	Loading gpdk045/gpdk045_customFilter.il ... done!
+	Loading gpdk045/libInitCustomExit.il ... 
+	Loading Environment Settings ...
+	Loading gpdk045/gpdk045_PDKRegistrations.il ... done!
+
+  *************************************************************           
+  *              Cadence Design Systems, Inc.                 *           
+  *                                                           *           
+  *                    Generic 45nm PDK                       *           
+  *                        (gpdk045)                          *           
+  *                                                           *           
+  *************************************************************           
+	
+
+	VERSION: 6.0 (09-September-2019)
+
+done!
+Loaded gpdk045/libInit.il successfully!
+device        g45n1hvt  M      _nmos1v_hvt      nmos1v_hvt  ivpcell     gpdk045  D G S B
+device        g45n1lvt  M      _nmos1v_lvt      nmos1v_lvt  ivpcell     gpdk045  D G S B
+device        g45n1nvt  M  _nmos_12_native      nmos1v_nat  ivpcell     gpdk045  D G S B
+device        g45n2svt  M         _nmos_25          nmos2v  ivpcell     gpdk045  D G S B
+device        g45n2nvt  M  _nmos_25_native      nmos2v_nat  ivpcell     gpdk045  D G S B
+device        g45ncap1  M       _nmoscap1v       nmoscap1v  ivpcell     gpdk045  D G S B
+device        g45ncap2  M       _nmoscap2v       nmoscap2v  ivpcell     gpdk045  D G S B
+device        g45p1svt  M          _pmos1v          pmos1v  ivpcell     gpdk045  D G S B
+device        g45p1hvt  M      _pmos1v_hvt      pmos1v_hvt  ivpcell     gpdk045  D G S B
+device        g45p1lvt  M      _pmos1v_lvt      pmos1v_lvt  ivpcell     gpdk045  D G S B
+device        g45p2svt  M          _pmos2v          pmos2v  ivpcell     gpdk045  D G S B
+device        g45pcap1  M       _pmoscap1v       pmoscap1v  ivpcell     gpdk045  D G S B
+device        g45pcap2  M       _pmoscap2v       pmoscap2v  ivpcell     gpdk045  D G S B
+device          g45rm1  R           _resm1           resm1  ivpcell     gpdk045  PLUS MINUS
+device          g45rm2  R           _resm2           resm2  ivpcell     gpdk045  PLUS MINUS
+device          g45rm3  R           _resm3           resm3  ivpcell     gpdk045  PLUS MINUS
+device          g45rm4  R           _resm4           resm4  ivpcell     gpdk045  PLUS MINUS
+device          g45rm5  R           _resm5           resm5  ivpcell     gpdk045  PLUS MINUS
+device          g45rm6  R           _resm6           resm6  ivpcell     gpdk045  PLUS MINUS
+device          g45rm7  R           _resm7           resm7  ivpcell     gpdk045  PLUS MINUS
+device          g45rm8  R           _resm8           resm8  ivpcell     gpdk045  PLUS MINUS
+device          g45rm9  R           _resm9           resm9  ivpcell     gpdk045  PLUS MINUS
+device         g45rm10  R          _resm10          resm10  ivpcell     gpdk045  PLUS MINUS
+device         g45rm11  R          _resm11          resm11  ivpcell     gpdk045  PLUS MINUS
+device         g45rsnd  R       _ressndiff       ressndiff  ivpcell     gpdk045  PLUS MINUS B
+device        g45rnsnd  R      _resnsndiff      resnsndiff  ivpcell     gpdk045  PLUS MINUS B
+device         g45rsnp  R       _ressnpoly       ressnpoly  ivpcell     gpdk045  PLUS MINUS B
+device         g45rsnp  R    _ressnpoly_nw       ressnpoly  ivpcell     gpdk045  PLUS MINUS B
+device        g45rnsnp  R      _resnsnpoly      resnsnpoly  ivpcell     gpdk045  PLUS MINUS B
+device        g45rnsnp  R   _resnsnpoly_nw      resnsnpoly  ivpcell     gpdk045  PLUS MINUS B
+device         g45rspd  R       _resspdiff       resspdiff  ivpcell     gpdk045  PLUS MINUS B
+device        g45rnspd  R      _resnspdiff      resnspdiff  ivpcell     gpdk045  PLUS MINUS B
+device         g45rspp  R       _ressppoly       ressppoly  ivpcell     gpdk045  PLUS MINUS B
+device         g45rspp  R    _ressppoly_nw       ressppoly  ivpcell     gpdk045  PLUS MINUS B
+device        g45rnspp  R      _resnsppoly      resnsppoly  ivpcell     gpdk045  PLUS MINUS B
+device        g45rnspp  R   _resnsppoly_nw      resnsppoly  ivpcell     gpdk045  PLUS MINUS B
+device         g45rnws  R        _resnwsti        resnwsti  ivpcell     gpdk045  PLUS MINUS B
+device         g45rnwo  R      _resnwoxide      resnwoxide  ivpcell     gpdk045  PLUS MINUS B
+device       g45nd1svt  D            _ndio            ndio  ivpcell     gpdk045  PLUS MINUS
+device       g45nd1lvt  D        _ndio_lvt        ndio_lvt  ivpcell     gpdk045  PLUS MINUS
+device       g45nd1hvt  D        _ndio_hvt        ndio_hvt  ivpcell     gpdk045  PLUS MINUS
+device       g45nd1nvt  D        _ndio_nvt        ndio_nvt  ivpcell     gpdk045  PLUS MINUS
+device       g45nd2svt  D         _ndio_2v         ndio_2v  ivpcell     gpdk045  PLUS MINUS
+device       g45nd2nvt  D     _ndio_2v_nvt     ndio_2v_nvt  ivpcell     gpdk045  PLUS MINUS
+device       g45pd1svt  D            _pdio            pdio  ivpcell     gpdk045  PLUS MINUS
+device       g45pd1lvt  D        _pdio_lvt        pdio_lvt  ivpcell     gpdk045  PLUS MINUS
+device       g45pd1hvt  D        _pdio_hvt        pdio_hvt  ivpcell     gpdk045  PLUS MINUS
+device       g45pd2svt  D         _pdio_2v         pdio_2v  ivpcell     gpdk045  PLUS MINUS
+device        g45vpnp2  Q           _vpnp2           vpnp2  ivpcell     gpdk045  C B E
+device        g45vpnp5  Q           _vpnp5           vpnp5  ivpcell     gpdk045  C B E
+device       g45vpnp10  Q          _vpnp10          vpnp10  ivpcell     gpdk045  C B E
+device        g45vnpn2  Q            _npn2            npn2  ivpcell     gpdk045  C B E
+device        g45vnpn5  Q            _npn5            npn5  ivpcell     gpdk045  C B E
+device       g45vnpn10  Q           _npn10           npn10  ivpcell     gpdk045  C B E
+device         g45cmim  C          _mimcap          mimcap  ivpcell     gpdk045  PLUS MINUS B
+device         g45inda  X           _ind_a           ind_a  ivpcell     gpdk045  PLUS MINUS B
+device         g45inds  X           _ind_s           ind_s  ivpcell     gpdk045  PLUS MINUS B
+Loading CDLOUT map files for /home/ufsm00051/wagner.chitto/wagner.chitto/run_lvs_inv
+
+Creating extracted view for inv_x1
+
+Save recognition layer _nmos1v
+Layer _nmos1v has 1 shapes.
+Save recognition layer _nmos1v_hvt
+Layer _nmos1v_hvt has 0 shapes.
+Save recognition layer _nmos1v_lvt
+Layer _nmos1v_lvt has 0 shapes.
+Save recognition layer _nmos_12_native
+Layer _nmos_12_native has 0 shapes.
+Save recognition layer _nmos_25
+Layer _nmos_25 has 0 shapes.
+Save recognition layer _nmos_25_native
+Layer _nmos_25_native has 0 shapes.
+Save recognition layer _nmoscap1v
+Layer _nmoscap1v has 0 shapes.
+Save recognition layer _nmoscap2v
+Layer _nmoscap2v has 0 shapes.
+Save recognition layer _pmos1v
+Layer _pmos1v has 1 shapes.
+Save recognition layer _pmos1v_hvt
+Layer _pmos1v_hvt has 0 shapes.
+Save recognition layer _pmos1v_lvt
+Layer _pmos1v_lvt has 0 shapes.
+Save recognition layer _pmos2v
+Layer _pmos2v has 0 shapes.
+Save recognition layer _pmoscap1v
+Layer _pmoscap1v has 0 shapes.
+Save recognition layer _pmoscap2v
+Layer _pmoscap2v has 0 shapes.
+Save recognition layer _resm1
+Layer _resm1 has 0 shapes.
+Save recognition layer _resm2
+Layer _resm2 has 0 shapes.
+Save recognition layer _resm3
+Layer _resm3 has 0 shapes.
+Save recognition layer _resm4
+Layer _resm4 has 0 shapes.
+Save recognition layer _resm5
+Layer _resm5 has 0 shapes.
+Save recognition layer _resm6
+Layer _resm6 has 0 shapes.
+Save recognition layer _resm7
+Layer _resm7 has 0 shapes.
+Save recognition layer _resm8
+Layer _resm8 has 0 shapes.
+Save recognition layer _resm9
+Layer _resm9 has 0 shapes.
+Save recognition layer _resm10
+Layer _resm10 has 0 shapes.
+Save recognition layer _resm11
+Layer _resm11 has 0 shapes.
+Save recognition layer _ressndiff
+Layer _ressndiff has 0 shapes.
+Save recognition layer _resnsndiff
+Layer _resnsndiff has 0 shapes.
+Save recognition layer _ressnpoly
+Layer _ressnpoly has 0 shapes.
+Save recognition layer _ressnpoly_nw
+Layer _ressnpoly_nw has 0 shapes.
+Save recognition layer _resnsnpoly
+Layer _resnsnpoly has 0 shapes.
+Save recognition layer _resnsnpoly_nw
+Layer _resnsnpoly_nw has 0 shapes.
+Save recognition layer _resspdiff
+Layer _resspdiff has 0 shapes.
+Save recognition layer _resnspdiff
+Layer _resnspdiff has 0 shapes.
+Save recognition layer _ressppoly
+Layer _ressppoly has 0 shapes.
+Save recognition layer _ressppoly_nw
+Layer _ressppoly_nw has 0 shapes.
+Save recognition layer _resnsppoly
+Layer _resnsppoly has 0 shapes.
+Save recognition layer _resnsppoly_nw
+Layer _resnsppoly_nw has 0 shapes.
+Save recognition layer _resnwsti
+Layer _resnwsti has 0 shapes.
+Save recognition layer _resnwoxide
+Layer _resnwoxide has 0 shapes.
+Save recognition layer _ndio
+Layer _ndio has 0 shapes.
+Save recognition layer _ndio_lvt
+Layer _ndio_lvt has 0 shapes.
+Save recognition layer _ndio_hvt
+Layer _ndio_hvt has 0 shapes.
+Save recognition layer _ndio_nvt
+Layer _ndio_nvt has 0 shapes.
+Save recognition layer _ndio_2v
+Layer _ndio_2v has 0 shapes.
+Save recognition layer _ndio_2v_nvt
+Layer _ndio_2v_nvt has 0 shapes.
+Save recognition layer _pdio
+Layer _pdio has 0 shapes.
+Save recognition layer _pdio_lvt
+Layer _pdio_lvt has 0 shapes.
+Save recognition layer _pdio_hvt
+Layer _pdio_hvt has 0 shapes.
+Save recognition layer _pdio_2v
+Layer _pdio_2v has 0 shapes.
+Save recognition layer _vpnp2
+Layer _vpnp2 has 0 shapes.
+Save recognition layer _vpnp5
+Layer _vpnp5 has 0 shapes.
+Save recognition layer _vpnp10
+Layer _vpnp10 has 0 shapes.
+Save recognition layer _npn2
+Layer _npn2 has 0 shapes.
+Save recognition layer _npn5
+Layer _npn5 has 0 shapes.
+Save recognition layer _npn10
+Layer _npn10 has 0 shapes.
+Save recognition layer _mimcap
+Layer _mimcap has 0 shapes.
+Save recognition layer _ind_a
+Layer _ind_a has 0 shapes.
+Save recognition layer _ind_s
+Layer _ind_s has 0 shapes.
+Copying layer Bondpad
+Layer Bondpad has 0 shapes.
+Copying layer ind11
+Layer ind11 has 0 shapes.
+Copying layer CapMetal
+Layer CapMetal has 0 shapes.
+Copying layer via10_cap
+Layer via10_cap has 0 shapes.
+Copying layer metal10_conn
+Layer metal10_conn has 0 shapes.
+Copying layer via10_nocap
+Layer via10_nocap has 0 shapes.
+Copying layer ind10
+Layer ind10 has 0 shapes.
+Copying layer ind_via_diva
+Layer ind_via_diva has 0 shapes.
+Copying layer via10_nodev
+Layer via10_nodev has 0 shapes.
+Copying layer ind_ct
+Layer ind_ct has 0 shapes.
+Copying layer metal9_conn
+Layer metal9_conn has 0 shapes.
+Copying layer Via9
+Layer Via9 has 0 shapes.
+Copying layer metal8_conn
+Layer metal8_conn has 0 shapes.
+Copying layer Via8
+Layer Via8 has 0 shapes.
+Copying layer metal7_conn
+Layer metal7_conn has 0 shapes.
+Copying layer Via7
+Layer Via7 has 0 shapes.
+Copying layer metal6_conn
+Layer metal6_conn has 0 shapes.
+Copying layer Via6
+Layer Via6 has 0 shapes.
+Copying layer metal5_conn
+Layer metal5_conn has 0 shapes.
+Copying layer Via5
+Layer Via5 has 0 shapes.
+Copying layer metal4_conn
+Layer metal4_conn has 0 shapes.
+Copying layer Via4
+Layer Via4 has 0 shapes.
+Copying layer metal3_conn
+Layer metal3_conn has 0 shapes.
+Copying layer Via3
+Layer Via3 has 0 shapes.
+Copying layer metal2_conn
+Layer metal2_conn has 2 shapes.
+Copying layer Via2
+Layer Via2 has 0 shapes.
+Copying layer metal1_conn
+Layer metal1_conn has 8 shapes.
+Copying layer Via1
+Layer Via1 has 3 shapes.
+Copying layer poly_conn
+Layer poly_conn has 3 shapes.
+Copying layer cont_poly
+Layer cont_poly has 2 shapes.
+Copying layer pdiff_conn
+Layer pdiff_conn has 3 shapes.
+Copying layer pdiff_conn
+Layer pdiff_conn has 3 shapes.
+Copying layer cont_pdiff
+Layer cont_pdiff has 6 shapes.
+Copying layer npn_emit
+Layer npn_emit has 0 shapes.
+Copying layer cont_ndiff
+Layer cont_ndiff has 6 shapes.
+Copying layer ndiff_conn
+Layer ndiff_conn has 3 shapes.
+Copying layer ndiff_conn
+Layer ndiff_conn has 3 shapes.
+Copying layer pnp_emit
+Layer pnp_emit has 0 shapes.
+Copying layer psubstrate
+Layer psubstrate has 1 shapes.
+Copying layer nwell_conn
+Layer nwell_conn has 1 shapes.
+Copying layer Nburied
+Layer Nburied has 0 shapes.
+Copying layer nb_tap
+Layer nb_tap has 0 shapes.
+
+
+Summary for watto/inv_x1/av_extracted
+
+instance count totals:
+
+    lib              cell             view                    total
+    analogLib        pcapacitor       symbol                     10
+    analogLib        presistor        symbol                     11
+    gpdk045          nmos1v           ivpcell                     1
+    gpdk045          pmos1v           ivpcell                     1
+
+Extracted view creation has completed.

@@ -1,0 +1,28 @@
+			*****************************************************
+			**                                                 **
+			**                L V S  R E P O R T               **
+			**                                                 **
+			*****************************************************
+
+
+Report File Name         : buffer_x2.rep
+ERC Summary File         : buffer_x2.sum
+LVS Comparison Report    : buffer_x2.rep.cls
+LVS Softchk Report       : buffer_x2.softchk
+Layout Name              : /home/ufsm00051/wagner.chitto/wagner.chitto/run_lvs_bufferx2/buffer_x2.gds ("buffer_x2")
+User Name                : wagner.c
+Creation Time            : Tue Nov 25 18:37:27 2025
+Current directory        : /home/ufsm00051/wagner.chitto/wagner.chitto/run_lvs_bufferx2
+PVS Version              : 23.11-s036 Wed Jan 17 18:11:41 PST 2024
+
+
+			*****************************************************
+			**                                                 **
+			**            D E V E X T  R E P O R T             **
+			**                                                 **
+			*****************************************************
+
+
+    LVS_SOFTCHK psubstrate -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK nwell_conn -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK Nburied -TYPE CONTACT   Total Result        0 (       0)

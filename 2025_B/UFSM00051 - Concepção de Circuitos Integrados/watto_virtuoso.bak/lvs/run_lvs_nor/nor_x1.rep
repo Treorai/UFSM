@@ -1,0 +1,28 @@
+			*****************************************************
+			**                                                 **
+			**                L V S  R E P O R T               **
+			**                                                 **
+			*****************************************************
+
+
+Report File Name         : nor_x1.rep
+ERC Summary File         : nor_x1.sum
+LVS Comparison Report    : nor_x1.rep.cls
+LVS Softchk Report       : nor_x1.softchk
+Layout Name              : /home/ufsm00051/wagner.chitto/wagner.chitto/run_lvs_nor/nor_x1.gds ("nor_x1")
+User Name                : wagner.c
+Creation Time            : Wed Nov 26 23:24:36 2025
+Current directory        : /home/ufsm00051/wagner.chitto/wagner.chitto/run_lvs_nor
+PVS Version              : 23.11-s036 Wed Jan 17 18:11:41 PST 2024
+
+
+			*****************************************************
+			**                                                 **
+			**            D E V E X T  R E P O R T             **
+			**                                                 **
+			*****************************************************
+
+
+    LVS_SOFTCHK psubstrate -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK nwell_conn -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK Nburied -TYPE CONTACT   Total Result        0 (       0)

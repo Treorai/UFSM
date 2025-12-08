@@ -1,0 +1,75 @@
+********************************************************************************
+Product   : Virtuoso(R) XStream Out
+Program   : @(#)$CDS: strmout version IC23.1-64b 07/08/2025 22:22 (cpgbld17) $
+          : sub-version  IC23.1-64b.ISR15.37 
+Started at: 25-Nov-2025  20:33:16
+User Name : wagner.chitto
+Host Name : ecomp
+Directory : /home/ufsm00051/wagner.chitto/wagner.chitto
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+WARNING (XSTRM-20): Output Stream file '/home/ufsm00051/wagner.chitto/wagner.chitto/run_lvs_latchsr/latchsr_x1.gds' already exists. It will be overwritten.
+INFO (XSTRM-217): Reading the layer map file, /home/tools/design_kits/cadence/GPDK045/gpdk045_v_6_0/gpdk045/gpdk045.layermap
+WARNING (XSTRM-333): The '-enableColoring' option will be ignored during XStream Out. This is because there is no color entry in the layer map and the object map file.
+INFO (XSTRM-427): Based on current hardware configuration, running XStream Out translation in multi-threaded mode with 2 threads.
+INFO (XSTRM-162): You have not used the '-viaMap' option. If the OpenAccess design has native oaVia instances, use the '-viaMap' option for preserving oaVia instances in a XStream Out - XStream In round trip. Using the '-viaMap' option improves performance and VM usage of applications using the Streamed-In design.
+
+Summary of Options :
+library                                 watto
+strmFile                                /home/ufsm00051/wagner.chitto/wagner.chitto/run_lvs_latchsr/latchsr_x1.gds
+topCell                                 latchsr_x1
+view                                    layout
+runDir                                  /home/ufsm00051/wagner.chitto/wagner.chitto/run_lvs_latchsr
+logFile                                 /home/ufsm00051/wagner.chitto/wagner.chitto/run_lvs_latchsr/PIPO1.LOG
+techLib                                 gpdk045
+hierDepth                               32
+maxVertices                             2048
+layerMap                                /home/tools/design_kits/cadence/GPDK045/gpdk045_v_6_0/gpdk045/gpdk045.layermap
+userSkillFile                           /home/ufsm00051/wagner.chitto/wagner.chitto/run_lvs_latchsr/strmout.il
+labelDepth                              32
+case                                    Preserve
+convertDot                              node
+
+INFO (XSTRM-180): You have not used the '-objectMap' option. The design has instance(s) of at least one of following OpenAccess objects: oaBlockage, oaBoundary, oaRow, and oaMarker. Any information about these objects will not be translated into the generated stream file. Use the '-objectMap' option to translate/preserve these objects using XStream.
+INFO (XSTRM-223): 1. Translating stdVia gpdk045/M1_PO/layout as STRUCTURE M1_PO_CDNS_764113596370.
+INFO (XSTRM-223): 2. Translating stdVia gpdk045/M1_PO/layout as STRUCTURE M1_PO_CDNS_764113596371.
+INFO (XSTRM-223): 3. Translating stdVia gpdk045/M1_PO/layout as STRUCTURE M1_PO_CDNS_764113596372.
+INFO (XSTRM-223): 4. Translating stdVia gpdk045/M1_PSUB/layout as STRUCTURE M1_PSUB_CDNS_764113596373.
+INFO (XSTRM-223): 5. Translating stdVia gpdk045/M1_NWELL/layout as STRUCTURE M1_NWELL_CDNS_764113596374.
+INFO (XSTRM-223): 6. Translating cellview gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_764113596370.
+INFO (XSTRM-223): 7. Translating cellview gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_764113596371.
+INFO (XSTRM-223): 8. Translating cellview gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_764113596372.
+INFO (XSTRM-223): 9. Translating cellview gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_764113596373.
+INFO (XSTRM-223): 10. Translating cellview gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_764113596374.
+INFO (XSTRM-223): 11. Translating cellview watto/latchsr_x1/layout as STRUCTURE latchsr_x1.
+
+Summary of Objects Translated:
+	Scalar Instances:                       8
+	Array Instances:                        0
+	Polygons:                               0
+	Paths:                                  0
+	Rectangles:                             114
+	Lines:                                  0
+	Arcs:                                   0
+	Donuts:                                 0
+	Dots:                                   0
+	Ellipses:                               0
+	Boundaries:                             0
+	Area Blockages:                         0
+	Layer Blockages:                        0
+	Area Halos:                             0
+	Markers:                                0
+	Rows:                                   0
+	Stitch:                                 0
+	Standard Vias                           6
+	Custom Vias:                            0
+	CdsGen Vias:                            0
+	Pathsegs:                               29
+	Text:                                   6
+	TextDisplay:                            0
+	Cells:                                  11
+
+Elapsed Time: 0.2s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 16216KB
+INFO (XSTRM-234): Translation completed. '0' error(s) and '2' warning(s) found.

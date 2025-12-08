@@ -1,0 +1,60 @@
+Device_Table 2000
+0 0 1 Wed Nov 26 23:24:36 2025
+2
+Device Entry 0
+0 0 27 Wed Nov 26 23:24:36 2025
+_nmos1v
+MOS
+MN
+g45n1svt
+(null)
+g45n1svt
+4
+G poly_conn 0
+S ndiff_conn 1
+D ndiff_conn 1
+B psubstrate 0
+2
+_nmos1v_sti
+_nmos1v_wpe
+12
+fw
+w
+l
+ad
+as
+pd
+ps
+sa
+sb
+sca
+scb
+scc
+Device Entry 1
+0 0 26 Wed Nov 26 23:24:36 2025
+_pmos1v
+MOS
+MP
+g45p1svt
+(null)
+g45p1svt
+4
+G poly_conn 0
+S pdiff_conn 1
+D pdiff_conn 1
+B nwell_conn 0
+1
+pactive
+12
+fw
+w
+l
+ad
+as
+pd
+ps
+sa
+sb
+sca
+scb
+scc

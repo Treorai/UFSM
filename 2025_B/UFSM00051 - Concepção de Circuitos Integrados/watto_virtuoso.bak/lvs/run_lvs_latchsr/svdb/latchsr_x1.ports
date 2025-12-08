@@ -1,0 +1,8 @@
+# SVDB: Port Table (ports)
+# SVDB: Layout Primary latchsr_x1
+gnd! 3 gnd! 500 260 metal1_conn
+Reset 6 Reset 3570 2270 metal1_conn
+Qbar 1 Qbar 1520 2290 metal1_conn
+vdd! 4 vdd! 950 3740 metal1_conn
+Q 2 Q 1850 1540 metal1_conn
+Set 5 Set 520 2110 metal1_conn

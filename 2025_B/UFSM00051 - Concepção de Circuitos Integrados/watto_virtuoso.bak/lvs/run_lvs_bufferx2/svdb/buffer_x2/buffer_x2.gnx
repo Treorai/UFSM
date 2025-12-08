@@ -1,0 +1,19 @@
+#4                               
+MN: MN
+= D D
+= G G
+= S S
+= B B
+#4                               
+MP: MP
+= D D
+= G G
+= S S
+= B B
+#5                               
+buffer_x2: buffer_x2
+= net2 2
+= in in
+= out out
+= vdd! vdd!
+= gnd! gnd!
