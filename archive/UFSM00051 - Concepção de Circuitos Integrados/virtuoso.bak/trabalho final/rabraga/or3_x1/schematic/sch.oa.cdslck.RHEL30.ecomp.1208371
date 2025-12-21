@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      rafael.braga
+HostName                       ecomp
+ProcessIdentifier              1208371
+ProcessCreationTime_UTC        1764620813
+ProcessCreationTime_Readable   Mon Dec  1 17:26:53 2025 -03
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/ufsm00051/rafael.braga/rabraga/rabraga/or3_x1/schematic/sch.oa.cdslck
+TimeEditLocked                 Mon Dec  1 17:34:46 2025 -03

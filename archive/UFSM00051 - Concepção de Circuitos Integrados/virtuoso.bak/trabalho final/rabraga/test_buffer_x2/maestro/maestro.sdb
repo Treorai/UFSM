@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<setupdb version="7">maestro
+	<active>Active Setup
+		<jobcontrolmode>LSCS</jobcontrolmode>
+		<corners>
+			<corner enabled="1">_default</corner>
+		</corners>
+		<sharedvarinfo></sharedvarinfo>
+		<overwritehistory>0</overwritehistory>
+		<tests>
+			<test>rabraga_test_buffer_x2_1
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>test_buffer_x2</value>
+					</option>
+					<option>lib
+						<value>rabraga</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>config</value>
+					</option>
+					<option>state
+						<value>active</value>
+					</option>
+				</tooloptions>
+				<outputs>
+					<output>/a
+						<evalType>point</evalType>
+					</output>
+					<output>/Vout
+						<evalType>point</evalType>
+					</output>
+					<output>/Vout_ext
+						<evalType>point</evalType>
+					</output>
+				</outputs>
+			</test>
+		</tests>
+		<extensions>
+			<extension>Parasitics
+				<callback>_parSetupDBExtensionCB</callback>
+				<iconvalue></iconvalue>
+				<icontype></icontype>
+			</extension>
+		</extensions>
+		<currentmode>Single Run, Sweeps and Corners</currentmode>
+		<checksasserts netlist="0">
+			<test netlist="0" netlistscope="all">rabraga_test_buffer_x2_1</test>
+		</checksasserts>
+		<plottingoptions>
+			<plottingoption>waveformtemplate
+				<value>(None)</value>
+			</plottingoption>
+		</plottingoptions>
+		<exploreroptions>
+			<exploreroption>waveformtemplate
+				<value>(None)</value>
+			</exploreroption>
+		</exploreroptions>
+	</active>
+	<history>History</history>
+</setupdb>
