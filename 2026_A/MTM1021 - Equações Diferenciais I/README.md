@@ -1,1 +1,0 @@
-# UFSMxxxx - Equações Diferenciais I
