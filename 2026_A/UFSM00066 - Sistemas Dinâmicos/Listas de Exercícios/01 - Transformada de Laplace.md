@@ -12,6 +12,15 @@ b) $f(t) = \begin{cases}
 \cos(t), & t \geq \frac{\pi}{2}
 \end{cases}$
 
+$$f(t)=u(t- \frac{\pi}{2} cos(t)$$
+
+onde $u(t-a)$ é a func degrau
+
+$$cos(t)=cos((t-\frac{\pi}{2})+\frac{\pi}{2}$$
+
+
+
+
 c) $f(t) = e^{-t} \sin(t)$
 
 d) $f(t) = e^{3t^2}$
