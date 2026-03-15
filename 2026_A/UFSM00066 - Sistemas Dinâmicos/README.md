@@ -21,3 +21,11 @@
 - [Extended TeX](https://pt.wikipedia.org/wiki/Ajuda:Guia_de_edi%C3%A7%C3%A3o/F%C3%B3rmulas_TeX)
 - [GitHub Flavored Markdown](https://github.github.com/gfm/)
 - [Basic Writing and Formatting Syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+
+## Tabelas
+
+![transtable](assets/transtable.png)
+
+## Infográfico
+
+![infografico](assets/infografico.png)
