@@ -10,3 +10,8 @@ $V_m=1V (2V_{pp})$
 $f_s=100kHz$  
 $L=1mH$  
 $R=1k\ohm$
+
+### Resistor shunt
+
+- Resistor para medição. Emprego para medir a corrente $I_s = V_{sh}/R_{sh}$
+- $R_{sh}=10\ohm$
