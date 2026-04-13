@@ -1,0 +1,22 @@
+Circuit: * C:\Users\aluno\Desktop\Simulacao1.asc
+
+.OP point found by inspection.
+
+Date: Mon Apr 13 09:15:58 2026
+Total elapsed time: 0.070 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 16040
+traniter = 16040
+tranpoints = 8021
+accept = 8021
+rejected = 0
+matrix size = 4
+fillins = 0
+solver = Normal
+Avg thread counts: 1.0/1.1/1.1/1.0
+Matrix Compiler1: 136 bytes object code size  0.2/0.1/[0.1]
+Matrix Compiler2: 242 bytes object code size  0.1/0.1/[0.1]
+
