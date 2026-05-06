@@ -1,0 +1,220 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage{xcolor}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+
+\title{Resumo de Equações Diferenciais}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Classificação das Equações Diferenciais}
+\begin{itemize}
+    \item \textbf{Ordem} $\to$ Maior derivada presente
+    \item \textbf{Grau} $\to$ expoente da maior derivada na forma normal
+    \item \textbf{Linearidade} $\to$ Uma ED é \textbf{linear} se $y$ e derivadas aparecem em potência 1, sem produtos entre si.
+\end{itemize}
+
+Forma geral linear de ordem $n$:
+\[
+a_n(x)y^{(n)}+a_{n-1}(x)y^{(n-1)}+\dots+a_1(x)y'+a_0(x)y=g(x)
+\]
+
+\section*{Equações de Primeira Ordem}
+
+\subsection*{Separáveis (não lineares)}
+Forma:
+\[
+\frac{dy}{dt}=g(t)h(y) \quad \to \quad \frac{dy}{h(y)}=g(t)\,dt
+\]
+
+Solução:
+\[
+\ln|y|= \int g(t)\,dt + c
+\]
+\[
+\textcolor{purple}{y(t)=c\cdot e^{\int g(t)\,dt}}
+\]
+
+\subsection*{Lineares}
+Forma:
+\[
+y'+a(t)y=b(t)
+\]
+
+\textbf{Fator integrante:}
+\[
+\textcolor{blue}{\mu(t)=e^{\int a(t)\,dt}}
+\]
+
+Solução:
+\[
+\textcolor{purple}{y\mu=\int \mu\, b(t)\,dt + C}
+\]
+
+\subsection*{Exatas}
+Forma:
+\[
+M(x,y)+N(x,y)\,y'=0
+\]
+
+Verificar:
+\[
+\textcolor{blue}{\frac{\partial M}{\partial y}=\frac{\partial N}{\partial x}}
+\]
+
+Se sim, é exata. Existe função $\psi(x,y)$ tal que:
+\[
+d\psi = M\,dx+N\,dy
+\]
+
+Solução:
+\[
+\textcolor{purple}{\psi(x,y)=C}
+\]
+
+Resolução:
+\[
+N(x,y) = \frac{\partial}{\partial y} \int M(x,y)\,dx + \frac{\partial}{\partial y} C(y)
+\]
+
+\section*{Equações de Segunda Ordem}
+Forma geral:
+\[
+y''+a\,y'+b\,y=f(x)
+\]
+
+\subsection*{Solução Homogênea}
+\[
+y''+a\,y'+b\,y=0
+\]
+
+Equação característica:
+\[
+\textcolor{blue}{r^2+a\,r+b=0}
+\]
+
+\begin{itemize}
+    \item \textbf{Raízes reais diferentes:}
+    \[
+    \textcolor{purple}{y(t)=c_1e^{r_1t}+c_2e^{r_2t}}
+    \]
+    \item \textbf{Raízes reais iguais:}
+    \[
+    \textcolor{purple}{y(t)=(c_1+c_2t)e^{rt}}
+    \]
+    \item \textbf{Raízes Complexas:} $r_{1,2}=\lambda \pm \mu i$
+    \[
+    \textcolor{purple}{y(t)=e^{\lambda t}(c_1\cos \mu t + c_2\sin \mu t)}
+    \]
+\end{itemize}
+
+\subsection*{Solução Não-homogênea}
+Forma:
+\[
+y(t) = Y_h(t) + Y_P(t)
+\]
+
+\subsubsection*{Método dos Coeficientes Indeterminados}
+\[
+a\,y''+b\,y'+c\,y=g(t)
+\]
+
+\paragraph{Tabela de Hipóteses}
+\begin{center}
+\begin{tabular}{c|c}
+$g(t)$ & $Y(t)$ \\ \hline
+$k$ & $A$ \\
+$e^{at}$ & $Ae^{at}$ \\
+$t e^{at}$ & $(At+B)e^{at}$ \\
+$\sin \beta t$ ou $\cos \beta t$ & $A\cos \beta t + B\sin \beta t$ \\
+$t^n$ (polinômio) & polinômio mesmo grau $n$
+\end{tabular}
+\end{center}
+
+Se repetir termo da homogênea: multiplicar por $t$.
+
+\subsubsection*{Método da Variação de Parâmetros}
+Para:
+\[
+y''+p(t)y'+q(t)y=g(t)
+\]
+
+Se $y_1,y_2$ são soluções homogêneas:
+\[
+\textcolor{blue}{Y_p=u_1y_1+u_2y_2}
+\]
+onde
+\[
+\textcolor{blue}{u_1'=\frac{-g(t) \cdot y_2}{W}}, \qquad 
+\textcolor{blue}{u_2'=\frac{g(t) \cdot y_1}{W}}
+\]
+Wronskiano:
+\[
+W=y_1y_2'-y_2y_1'
+\]
+
+Solução:
+\[
+\textcolor{purple}{Y_p =\int\frac{-g(t) \cdot y_2}{W}\,dt \cdot y_1 +\int\frac{g(t) \cdot y_1}{W}\,dt \cdot y_2}
+\]
+
+\section*{Oscilador Harmônico}
+Modelo:
+\[
+m x'' + c x' + k x = F(t)
+\]
+onde:
+\begin{itemize}
+    \item $m$ $\to$ massa
+    \item $c$ $\to$ amortecimento
+    \item $k$ $\to$ mola
+    \item $F(t)$ $\to$ força externa
+\end{itemize}
+
+\subsection*{Caso Livre sem amortecimento}
+\[
+m x''+k x=0 \quad\Rightarrow\quad x''+\omega^2 x=0,\qquad \omega=\sqrt{\frac{k}{m}}
+\]
+Solução:
+\[
+x=C_1\cos(\omega t)+C_2\sin(\omega t)
+\]
+
+\subsection*{Caso Amortecido}
+\[
+m x''+c x'+k x=0
+\]
+Equação característica:
+\[
+m r^2+c r+k=0 \quad\Rightarrow\quad r_{1,2}=\frac{-c \pm \sqrt{c^2-4km}}{2m}
+\]
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Caso} & $\Delta$ & $x(t)$ & \textbf{Comportamento} \\
+\hline
+Superamortecido & $c^2>4mk$ & $x(t)=Ae^{r_1t}+Be^{r_2t}$ & Queda exponencial sem oscilar \\
+\hline
+Criticamente amortecido & $c^2=4mk$ & $x(t)=Ae^{\frac{-c}{2m}t}+t B e^{\frac{-c}{2m}t}$ & Queda após pico sem oscilar \\
+\hline
+Subamortecido & $c^2<4mk$ & $\begin{array}{l}
+x(t)=e^{\frac{-c}{2m}t}\Bigl(A\cos\bigl(\frac{\sqrt{4km-c^2}}{2m}t\bigr)\\[2mm]
+\quad + B\sin\bigl(\frac{\sqrt{4km-c^2}}{2m}t\bigr)\Bigr)
+\end{array}$ & Oscila com amplitude decrescente. \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection*{Ressonância}
+\[
+m x''+c x'+k x=F_0\cos(\omega t)
+\]
+Ocorre quando frequência externa = natural.
+
+\end{document}

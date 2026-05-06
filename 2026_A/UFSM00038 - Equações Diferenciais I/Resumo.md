@@ -22,7 +22,7 @@ Solução:
 
 $\displaystyle \ln|y|= \int{g(t)}+c$
 
-$S:\color{yellow} \displaystyle y(t)=c\cdot e^{\int{g(t)}}$
+$S:\color{purple} \displaystyle y(t)=c\cdot e^{\int{g(t)}}$
 
 ---
 
@@ -34,11 +34,11 @@ $\displaystyle y'+a(t)y=b(t)$
 
 ### Fator integrante:
 
-$\color{pink} \displaystyle \mu(t)=e^{\int a(t)dt}$
+$\color{blue} \displaystyle \mu(t)=e^{\int a(t)dt}$
 
 Solução:
 
-$\color{yellow} \displaystyle y\mu=\int \mu b(t)dt + C$
+$\color{purple} \displaystyle y\mu=\int \mu b(t)dt + C$
 
 ---
 
@@ -50,7 +50,7 @@ $\displaystyle M(x,y)+N(x,y)y'=0$
 
 Verificar:
 
-$\color{pink} \displaystyle \frac{\partial M}{\partial y}=\frac{\partial N}{\partial x}$
+$\color{blue} \displaystyle \frac{\partial M}{\partial y}=\frac{\partial N}{\partial x}$
 
 Se sim, é exata.
 
@@ -60,7 +60,7 @@ $\displaystyle d\psi = Mdx+Ndy$
 
 Solução:
 
-$S:\color{yellow} \displaystyle \psi(x,y)=C$
+$S:\color{purple} \displaystyle \psi(x,y)=C$
 
 Resolução:
 
@@ -82,21 +82,21 @@ $\displaystyle y''+ay'+by=0$
 
 Equação característica:
 
-$\color{pink} \displaystyle r^2+ar+b=0$
+$\color{blue} \displaystyle r^2+ar+b=0$
 
 ### Raízes reais diferentes:
 
-$\displaystyle S: \color{yellow} y(t)=c_1e^{r_1t}+c_2e^{r_2t}$
+$\displaystyle S: \color{purple} y(t)=c_1e^{r_1t}+c_2e^{r_2t}$
 
 ### Raízes reais iguais:
 
-$\displaystyle S: \color{yellow}  y(t)=(c_1+c_2t)e^{rt}$
+$\displaystyle S: \color{purple}  y(t)=(c_1+c_2t)e^{rt}$
 
 ### Raízes Complexas:
 
 $r_{1,2}=\lambda \pm \mu i$
 
-$\displaystyle S: \color{yellow}  y(t)=e^{\lambda t}(c_1\cos \mu t + c_2\sin \mu t)$
+$\displaystyle S: \color{purple}  y(t)=e^{\lambda t}(c_1\cos \mu t + c_2\sin \mu t)$
 
 ---
 
@@ -135,22 +135,20 @@ $\displaystyle y''+p(t)y'+q(t)y=g(t)$
 
 Se $y_1,y_2$ são soluções homogêneas:
 
-$\color{pink} \displaystyle Y_p=u_1y_1+u_2y_2$
+$\color{blue} \displaystyle Y_p=u_1y_1+u_2y_2$
 
 Onde:
 
-$\color{pink} \displaystyle u_1'=\frac{-g(t) \cdot y_2}{W}$
+$\color{blue} \displaystyle u_1'=\frac{-g(t) \cdot y_2}{W}$
 
-$\color{pink} \displaystyle u_2'=\frac{g(t) \cdot y_1}{W}$
+$\color{blue} \displaystyle u_2'=\frac{g(t) \cdot y_1}{W}$
 
 Wronskiano
 $\displaystyle W=y_1y_2'-y_2y_1'$
 
 Solução:
 
-$S: \color{yellow} \displaystyle Y_p = 
-\int{\frac{-g(t) \cdot y_2}{y_1 y_2'- y_2 y_1'}} dt \cdot y_1 + 
-\int{\frac{ g(t) \cdot y_1}{y_1 y_2'- y_2 y_1'}} dt \cdot y_2$
+$S: \color{purple} \displaystyle Y_p =\int{\frac{-g(t) \cdot y_2}{y_1 y_2'- y_2 y_1'}} dt \cdot y_1 +\int{\frac{ g(t) \cdot y_1}{y_1 y_2'- y_2 y_1'}} dt \cdot y_2$
 
 ---
 
@@ -166,7 +164,6 @@ Onde:
 * $c$ → amortecimento
 * $k$ → mola
 * $F(t)$ → força externa
-
 
 ### Caso Livre sem amortecimento
 
@@ -199,6 +196,7 @@ $\displaystyle r_{1,2}=\frac{-c \pm \sqrt{c^2-4km}}{2m}$
 | Subamortecido | $\displaystyle c^2<4mk$ | $e^{\frac{-c}{2}t}(A\cdot cos(\frac{\sqrt{4km-c^2}}{2m}\cdot t)+B\cdot sin(\frac{\sqrt{4km-c^2}}{2m}\cdot t))$ | Oscila com amplitude decrescente. |
 
 ### Ressonância
+
 $\displaystyle mx''+cx'+kx=F_0\cos(\omega t)$
 
 Ocorre quando frequência externa ≈ natural.
