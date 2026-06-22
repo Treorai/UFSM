@@ -24,28 +24,11 @@ $$\vec H = \frac{I\cdot\rho}{2\pi a^2} â_\phi$$
 
 $$\vec H = \frac{\alpha\cdot\rho^2}{3} â_\phi = \frac{I\cdot \rho^2}{2\pi a^3} â_\phi$$
 
+- Relação de Fluxo e Densidade
 
+$$\phi=\vec B \cdot A$$
 
-
-
-
-
-
-
-
-- Força sobre um condutor
-
-$$F=I\cdot (l \times \vec B)$$
-
-- Torque (63)
-
-$$\vec T= \vec m \times \vec B$$
-
-$$\vec T= (I\cdot A \^n) \times \vec B$$
-
-- Indutância Mútua Concêntrica
-
-$$M=\frac{\mu \pi r^2_1}{2r_2}$$
+---
 
 - Bobina em Toroide:
 
