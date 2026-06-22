@@ -30,10 +30,18 @@ $$\phi=\vec B \cdot A$$
 
 ---
 
-- Bobina em Toroide:
+- Espaço Livre
 
-$$N= \frac{B \cdot l}{\mu I}$$
+$$\beta=\frac{\omega}{c}$$
 
-- Circuitos magnéticos
+- Relação $H\times E$
 
-$$H\cdot l = N \cdot I$$
+$$\vec H = \frac{\vec E}{120\pi}$$
+
+- Comprimento de onda
+
+$$\lambda = \frac{2\pi}{\beta}$$
+
+- Sentido de $\beta$
+
+$$\vec E \times \vec H = arg(\beta)$$
