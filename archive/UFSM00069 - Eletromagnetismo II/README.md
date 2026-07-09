@@ -4,34 +4,44 @@
 
 - $\vec H$ em uma Espira
 
-$$\vec H = \frac{I \cdot R^2}{2(\sqrt{R^2+z^2})^3}$$
+$$\vec H = \frac{I \cdot \rho^2}{2(\sqrt{\rho^2+z^2})^3} â_z$$
 
 - Campo do fio retilíneo
 
-$$\vec H = \frac{I}{4\pi \rho} (sin \theta_1 + sin \theta_2)$$
+$$\vec H = \frac{I}{4\pi \rho} (sin \theta_2 - sin \theta_1) â_\phi$$
 
 - $\vec H$ pela Lei de Ampere
 
-$$\vec H=\frac{I_{env}}{2\pi\rho} $$
+$$\vec H=\frac{I}{2\pi\rho} â_\phi$$
 
-- Força sobre um condutor
+- $\vec H$ de um condutor cilíndrico ($\vec J$ uniforme)
+  - $\rho \le a$
 
-$$F=I\cdot (l \times \vec B)$$
+$$\vec H = \frac{I\cdot\rho}{2\pi a^2} â_\phi$$
 
-- Torque (63)
+- $\vec H$ de um condutor cilíndrico ($\vec J=\alpha \rho â_z$)
+  - $\rho \le a$
 
-$$\vec T= \vec m \times \vec B$$
+$$\vec H = \frac{\alpha\cdot\rho^2}{3} â_\phi = \frac{I\cdot \rho^2}{2\pi a^3} â_\phi$$
 
-$$\vec T= (I\cdot A \^n) \times \vec B$$
+- Relação de Fluxo e Densidade
 
-- Indutância Mútua Concêntrica
+$$\phi=\vec B \cdot A$$
 
-$$M=\frac{\mu \pi r^2_1}{2r_2}$$
+---
 
-- Bobina em Toroide:
+- Espaço Livre
 
-$$N= \frac{B \cdot l}{\mu I}$$
+$$\beta=\frac{\omega}{c}$$
 
-- Circuitos magnéticos
+- Relação $H\times E$
 
-$$H\cdot l = N \cdot I$$
+$$\vec H = \frac{\vec E}{120\pi}$$
+
+- Comprimento de onda
+
+$$\lambda = \frac{2\pi}{\beta}$$
+
+- Sentido de $\beta$
+
+$$\vec E \times \vec H = arg(\beta)$$
