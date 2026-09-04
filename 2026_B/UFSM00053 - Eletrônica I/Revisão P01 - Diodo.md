@@ -45,4 +45,11 @@ $$I_d=I_s(e^{\frac{V_d}{nV_t}}-1)$$
     - $V_{med}=\frac{Vm}{2}$
   - Full wave
     - $V_{med}=Vm-\frac{V_{r(p-p)}}{2}$
-- 
+- Diodo Zenner
+- Ceifador
+  - Fatia a onda sem mudar o nível
+  - Retificador geral
+    - Série
+    - Paralelo
+- Grampeador
+  - Muda o nível sem fatiar a onda
