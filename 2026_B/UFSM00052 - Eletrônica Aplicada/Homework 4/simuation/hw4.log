@@ -1,0 +1,17 @@
+LTspice 26.0.2 for Windows
+Circuit: C:\Users\conta\Documents\GitHub\UFSM\2026_B\UFSM00052 - Eletrônica Aplicada\Homework 4\hw4.net
+Start Time: Sun Aug 30 14:26:19 2026
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.679 seconds.
+
+Files loaded:
+C:\Users\conta\Documents\GitHub\UFSM\2026_B\UFSM00052 - Eletrônica Aplicada\Homework 4\hw4.net
+C:\Users\conta\AppData\Local\LTspice\lib\cmp\standard.mos
+C:\Users\conta\AppData\Local\LTspice\lib\sub\opamp.sub
+C:\Users\conta\AppData\Local\LTspice\lib\sub\UniversalOpAmp2.lib
+

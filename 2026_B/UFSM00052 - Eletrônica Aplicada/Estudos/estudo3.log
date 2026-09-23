@@ -1,0 +1,16 @@
+LTspice 26.0.2 for Windows
+Circuit: C:\Users\conta\Documents\GitHub\UFSM\2026_B\UFSM00052 - Eletrônica Aplicada\Estudos\template3.net
+Start Time: Mon Sep 21 14:51:31 2026
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Per .tran options, skipping operating point for transient analysis.
+Total elapsed time: 0.282 seconds.
+
+Files loaded:
+C:\Users\conta\Documents\GitHub\UFSM\2026_B\UFSM00052 - Eletrônica Aplicada\Estudos\template3.net
+C:\Users\conta\AppData\Local\LTspice\lib\sub\opamp.sub
+C:\Users\conta\AppData\Local\LTspice\lib\sub\UniversalOpAmp2.lib
+
